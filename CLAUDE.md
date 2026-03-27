@@ -80,14 +80,107 @@ Every sentence must read as if the author genuinely believes unicorns are a crit
 | Section completion | mascot-celebration | End of major sections |
 | Difficult content | mascot-encourage | Where students may struggle |
 
+### Mascot Admonition Style Guide
+
+When generating chapter content, use these custom admonition types to embed Sparkle. The mascot images are in `docs/img/mascot/` and the CSS is in `docs/css/mascot.css`. The admonitions render automatically — just use the correct type name.
+
+#### Syntax and Examples
+
+Each admonition type has a specific purpose. The title text after the type name should be in Sparkle's voice — formal, deadpan, and drily observant. Never use generic titles like "Note" or "Important." Every title should sound like something a world-weary unicorn professor would actually say.
+
+**mascot-welcome** — Use at the start of every chapter. Sparkle greets the reader with measured gravitas.
+
+```markdown
+!!! mascot-welcome "Welcome, Colleagues"
+    Let me be perfectly clear. You are about to learn things about
+    unicorn economics that most business schools refuse to teach.
+    Adjust your expectations downward accordingly.
+```
+
+**mascot-thinking** — Use 2-3 times per chapter for key insights. Sparkle shares an observation that sounds academic but lands as satire.
+
+```markdown
+!!! mascot-thinking "A Critical Observation"
+    The data is unambiguous. Organizations that formed committees
+    to study AI in 2023 have, on average, formed 3.7 additional
+    committees since then. None have produced actionable recommendations.
+    All have produced excellent meeting minutes.
+```
+
+**mascot-tip** — Use for practical advice that doubles as commentary.
+
+```markdown
+!!! mascot-tip "Sparkle's Tip"
+    When evaluating any technology claim, apply the Unicorn Test:
+    replace the product name with "unicorn" and see if the sentence
+    still makes equal sense. If it does, the product may not exist.
+```
+
+**mascot-warning** — Use for common mistakes or satirical cautions.
+
+```markdown
+!!! mascot-warning "A Word of Caution"
+    One might reasonably conclude that any investor pitch containing
+    the phrase "this changes everything" should be treated with the
+    same rigor one applies to reported unicorn sightings in suburban
+    parking lots.
+```
+
+**mascot-neutral** — Use for general sidebars or parenthetical observations.
+
+```markdown
+!!! mascot-neutral "A Note from Sparkle"
+    This is, of course, entirely serious. The author has tenure
+    in Unicorn Studies and does not appreciate skepticism.
+```
+
+**mascot-encourage** — Use where students may struggle with difficult or uncomfortable material.
+
+```markdown
+!!! mascot-encourage "You Can Handle This"
+    The material ahead is challenging. Not because it is complex,
+    but because it is true. Take a moment. Consider the unicorn.
+    The unicorn believes in you, even if the quarterly projections
+    do not.
+```
+
+**mascot-celebration** — Use at the end of major sections or chapters.
+
+```markdown
+!!! mascot-celebration "Section Complete"
+    You have successfully distinguished between twelve types of
+    vaporware. The literature suggests this is an achievement worth
+    noting, though further longitudinal studies are needed to assess
+    its impact on your career.
+```
+
+#### Writing Rules for Mascot Dialogue
+
+1. **Never use exclamation points.** Sparkle does not exclaim. Sparkle observes.
+2. **Keep it to 1-3 sentences.** Brevity is the soul of deadpan.
+3. **Use academic phrasing for absurd content.** "The literature suggests," "The data is unambiguous," "One might reasonably conclude" — applied to unicorns, hype cycles, and committee meetings.
+4. **The title IS the joke setup.** The body text delivers. Don't waste the title on generic labels.
+5. **Sparkle never explains the satire.** If the reader doesn't get it, that's the reader's problem. Sparkle is not here to hold hooves.
+6. **Sparkle refers to students as "scholars" or "colleagues."** Never "students," "kids," or "folks."
+7. **Every mascot admonition must earn its place.** If removing it loses nothing, remove it. Sparkle appears when Sparkle has something to say.
+
+#### Spacing and Frequency Rules
+
+- **Maximum 5-6 mascot admonitions per chapter**
+- **Never place two mascot admonitions back-to-back** — always have at least one paragraph of regular prose between them
+- **Every chapter starts with mascot-welcome** and ends with **mascot-celebration**
+- **mascot-thinking appears 2-3 times** in the middle for key satirical observations
+- **mascot-tip, mascot-warning, mascot-neutral, mascot-encourage** are used as needed but sparingly
+
 ### Do's and Don'ts
 
 **Do:**
 
 - Use Sparkle to introduce new topics with deadpan gravitas
 - Keep dialogue brief (1-3 sentences) and dripping with understated irony
-- Match the pose/image to the content type
+- Match the admonition type to the content purpose
 - Let Sparkle deliver the sharpest satirical observations — the mascot is the voice of the book's deadpan soul
+- Use precise, specific fake statistics in Sparkle's dialogue ("94.7% of committees," "3.7 additional subcommittees")
 
 **Don't:**
 
@@ -96,6 +189,7 @@ Every sentence must read as if the author genuinely believes unicorns are a crit
 - Make Sparkle enthusiastic, excitable, or cute — Sparkle is a serious academic
 - Use exclamation points in Sparkle's dialogue (ever)
 - Change Sparkle's personality or break the deadpan tone
+- Use generic admonition titles like "Note," "Tip," or "Warning" — Sparkle has opinions, not labels
 
 ## Technical Notes
 
