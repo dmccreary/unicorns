@@ -174,12 +174,15 @@ Implementation: p5.js with createSelect() dropdowns and createButton() controls.
 What follows is a comprehensive survey of the ten mythical beasts that appear throughout this textbook. Each entry follows the bestiary tradition: physical description, behavioral tendencies, and allegorical function. Unlike medieval bestiaries, ours also includes a "Modern Equivalent" field, because the creatures of myth are alive and well — they have simply changed industries.
 
 ### The Dragon
+![](../../img/dragon.png)
 
 The dragon is a large, fire-breathing reptilian creature found in mythologies across every inhabited continent. European dragons tend to hoard gold in mountain caves and terrorize villages. Chinese dragons tend to bring rain and symbolize imperial authority. Both types are enormous, powerful, and fundamentally indifferent to the concerns of the smaller creatures they displace.
 
 **Allegorical function:** The dragon represents disruptive technology — specifically, the kind that destroys existing industries and livelihoods while being too powerful to oppose directly. When a dragon arrives at your village, you do not negotiate. You evacuate, you adapt, or you are consumed. The same applies when a large language model arrives at your accounting firm.
 
 ### The Phoenix
+
+![](../../img/phoenix.png)
 
 The phoenix is a bird that burns to death and is reborn from its own ashes. It appears in Greek, Egyptian, and Chinese mythology, and in the mission statements of approximately 40% of companies that have undergone a "digital transformation." The phoenix's defining trait is not immortality — it dies, repeatedly. Its defining trait is the insistence that each death is actually a rebirth.
 
