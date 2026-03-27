@@ -1,0 +1,1 @@
+run the /book-chapter-generator skill

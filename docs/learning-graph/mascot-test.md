@@ -1,38 +1,51 @@
-# Mascot Style Guide: Sparkle the Unicorn
+# Mascot Style Guide
 
-This page previews all mascot admonition styles for reference.
+This page shows all Sparkle the Unicorn admonition styles for reference.
 
 !!! mascot-neutral "A Note from Sparkle"
-    The following examples demonstrate the seven standard poses available
-    for pedagogical interventions. Each has been rigorously field-tested
-    on imaginary students.
+
+    <img src="../../img/mascot/neutral.png" class="mascot-admonition-img">
+    This is the neutral style, used for general sidebars or introductions.
+    Sparkle appears here for general-purpose observations that require no
+    particular emotional investment.
 
 !!! mascot-welcome "Welcome, Colleagues"
-    Let me be perfectly clear. You are about to embark on an academic
-    journey of considerable importance. Adjust your reading glasses
-    accordingly.
 
-!!! mascot-thinking "Key Insight"
-    The data is unambiguous: unicorns and AI startups share a 94.7%
-    overlap in their primary value proposition, which is that they
-    sound impressive at dinner parties.
+    <img src="../../img/mascot/welcome.png" class="mascot-admonition-img">
+    This is the welcome style, used at chapter openings.
+    Sparkle greets scholars and previews the material ahead with
+    measured gravitas and carefully calibrated expectations.
+
+!!! mascot-thinking "A Critical Observation"
+
+    <img src="../../img/mascot/thinking.png" class="mascot-admonition-img">
+    This is the thinking style, used for key concepts and important insights.
+    Sparkle shares observations that the data makes unavoidable, however
+    inconvenient they may be for certain industries.
 
 !!! mascot-tip "Sparkle's Tip"
-    When evaluating any technology claim, ask yourself: "Could I
-    replace the product name with 'unicorn' and have the sentence
-    still make sense?" If yes, proceed with caution.
+
+    <img src="../../img/mascot/tip.png" class="mascot-admonition-img">
+    This is the tip style, used for helpful hints and practical advice.
+    Sparkle offers guidance that may prevent embarrassment at your next
+    board meeting or unicorn sighting.
 
 !!! mascot-warning "A Word of Caution"
-    One might reasonably conclude that any press release containing
-    the phrase "paradigm shift" should be treated with the same
-    skepticism as a unicorn sighting in a parking lot.
+
+    <img src="../../img/mascot/warning.png" class="mascot-admonition-img">
+    This is the warning style, used for common mistakes and pitfalls.
+    Sparkle alerts colleagues to errors that have been repeated so often
+    they now qualify as tradition.
+
+!!! mascot-celebration "Section Complete"
+
+    <img src="../../img/mascot/celebration.png" class="mascot-admonition-img">
+    This is the celebration style, used for achievements and chapter completions.
+    Sparkle acknowledges milestones with the restrained dignity they deserve.
 
 !!! mascot-encourage "You Can Handle This"
-    The material in this section is challenging. This is, of course,
-    entirely serious. Take a moment. Breathe. Consider the unicorn.
-    The unicorn believes in you, even if the data does not.
 
-!!! mascot-celebration "Well Done"
-    You have completed this section. The literature suggests that
-    this is an achievement worth noting, though further research
-    is needed to determine its long-term significance.
+    <img src="../../img/mascot/encouragement.png" class="mascot-admonition-img">
+    This is the encouraging style, used when content gets difficult.
+    Sparkle provides reassurance in the form of carefully worded statements
+    that stop just short of actual optimism.

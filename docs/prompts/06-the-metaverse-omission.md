@@ -1,0 +1,2 @@
+OMG, I totally forgot to add a chapter on "The Metaverse" and the hype on virtual reality.  Can you please add a chapter on that.  Move the current   
+chapter 18 to be 19 and insert it as the new chapter 18.  My apologies for the omission. 

@@ -88,7 +88,7 @@ This is an interactive intelligent textbook — yes, another one — featuring:
 
 14. **The Last Textbook** — A meta-fictional conclusion in which this textbook becomes self-aware and writes its own sequel. The author is both relieved and deeply concerned.
 
-### Unit 5: Unicorns and Other Technology Fantasies (Chapters 15–18)
+### Unit 5: Unicorns and Other Technology Fantasies (Chapters 15–19)
 
 A comparative study of unicorns and the technology promises that share their most defining characteristic: everyone talks about them, venture capitalists fund them, and nobody has actually seen one work at scale.
 
@@ -98,7 +98,9 @@ A comparative study of unicorns and the technology promises that share their mos
 
 17. **Ethical Bitcoin: A Contradiction in Horns** — Can Bitcoin be ethical? Can a unicorn be ordinary? This chapter examines the heroic efforts to make cryptocurrency environmentally sustainable and socially responsible, drawing uncomfortable parallels to attempts to domesticate mythical beasts. Features the tale of a well-meaning unicorn ranch that promised "free-range, organic, carbon-neutral magic" and collapsed when someone checked the math. Also covers the recurring phenomenon of crypto founders who promise to "bank the unbanked" while unbanking the already-banked.
 
-18. **The Bestiary of Vaporware: A Field Guide** — A comprehensive taxonomy comparing mythical creatures to mythical technologies. Self-driving cars are the griffins of Silicon Valley — half eagle, half lion, fully unable to handle a left turn in the rain. The metaverse is the kraken — enormous, tentacled, and currently at the bottom of the ocean. Fusion power is the phoenix — perpetually about to rise from the ashes, any decade now. This chapter provides a handy identification chart so students can quickly classify any new technology announcement as "real," "aspirational," "delusional," or "unicorn."
+18. **The Metaverse: A Kraken's Tale** — The metaverse was going to replace reality. Entire corporations pivoted, renamed themselves, and invested billions in the premise that what humanity truly wanted was to attend meetings as legless avatars in a virtual office that looked worse than the real one. This chapter examines the spectacular rise and quieter deflation of metaverse hype, the virtual reality promises that have been recycled every decade since the 1990s, and the uncomfortable question of why a technology whose primary use case remains "expensive video game" keeps attracting Fortune 500 investment. The kraken is enormous, tentacled, and currently at the bottom of the ocean. So is the metaverse.
+
+19. **The Bestiary of Vaporware: A Field Guide** — A comprehensive taxonomy comparing mythical creatures to mythical technologies. Self-driving cars are the griffins of Silicon Valley — half eagle, half lion, fully unable to handle a left turn in the rain. Fusion power is the phoenix — perpetually about to rise from the ashes, any decade now. This chapter provides a handy identification chart so students can quickly classify any new technology announcement as "real," "aspirational," "delusional," or "unicorn."
 
 ## Graphic Novels
 

@@ -8,6 +8,27 @@ nav:
   - Home: index.md
   - About: about.md
   - Course Description: course-description.md
+  - Chapters:
+    - Overview: chapters/index.md
+    - 1. History of Unicorns: chapters/01-history-of-unicorns/index.md
+    - 2. Taxonomy of Mythical Beasts: chapters/02-taxonomy-of-mythical-beasts/index.md
+    - 3. The Unicorn-Industrial Complex: chapters/03-unicorn-industrial-complex/index.md
+    - 4. The Emperor's New Algorithm: chapters/04-emperors-new-algorithm/index.md
+    - 5. Deer in the Headlights: chapters/05-deer-in-the-headlights/index.md
+    - 6. The Ostrich Academy: chapters/06-the-ostrich-academy/index.md
+    - 7. The Job Thief: chapters/07-the-job-thief/index.md
+    - 8. Centaur Workforce: chapters/08-centaur-workforce/index.md
+    - 9. Phoenix Rising: chapters/09-phoenix-rising/index.md
+    - 10. Siren Song of Automation: chapters/10-siren-song-of-automation/index.md
+    - 11. Unicorn Spotting: chapters/11-unicorn-spotting/index.md
+    - 12. Breeding Better Unicorns: chapters/12-breeding-better-unicorns/index.md
+    - 13. Grand Council of Beasts: chapters/13-grand-council-of-mythical-beasts/index.md
+    - 14. The Last Textbook: chapters/14-the-last-textbook/index.md
+    - 15. Quantum Computing: chapters/15-quantum-computing/index.md
+    - 16. Efficient Blockchain: chapters/16-efficient-blockchain/index.md
+    - 17. Ethical Bitcoin: chapters/17-ethical-bitcoin/index.md
+    - 18. The Metaverse: chapters/18-the-metaverse/index.md
+    - 19. Bestiary of Vaporware: chapters/19-bestiary-of-vaporware/index.md
   - Learning Graph:
     - Introduction: learning-graph/index.md
     - Course Description Assessment: learning-graph/course-description-assessment.md
@@ -15,6 +36,7 @@ nav:
     - Graph Quality Analysis: learning-graph/quality-metrics.md
     - Concept Taxonomy: learning-graph/concept-taxonomy.md
     - Taxonomy Distribution Report: learning-graph/taxonomy-distribution.md
+    - Mascot Test: learning-graph/mascot-test.md
   - License: license.md
   - Contact: contact.md
 

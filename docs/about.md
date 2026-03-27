@@ -20,7 +20,7 @@ Over the past two years, the author has used generative AI to produce more than 
 
 This book is the author's response. Rather than deny the accusation, he has leaned into it — producing yet another interactive intelligent textbook, this time about creatures that do not exist, technologies that may never work, and an education system that has formed 47 committees to study whether AI is worth forming a committee about.
 
-The 18 chapters use mythical beasts as allegories for the absurdities of modern technology culture. Unicorns stand in for overhyped startups. Dragons represent disruptive technologies that keep accidentally automating everyone's jobs. Ostriches represent institutions that have decided the best response to technological change is to pretend it isn't happening. The satirical targets include AI hype, education's refusal to adapt, quantum computing's perpetual five-year timeline, blockchain's energy consumption, and the recursive absurdity of an AI-generated textbook about AI-generated content.
+The 19 chapters use mythical beasts as allegories for the absurdities of modern technology culture. Unicorns stand in for overhyped startups. Dragons represent disruptive technologies that keep accidentally automating everyone's jobs. Ostriches represent institutions that have decided the best response to technological change is to pretend it isn't happening. The satirical targets include AI hype, education's refusal to adapt, quantum computing's perpetual five-year timeline, blockchain's energy consumption, and the recursive absurdity of an AI-generated textbook about AI-generated content.
 
 Some of the stories are based on real events. Some are complete fantasy. The reader is invited to determine which is which. Good luck.
 
@@ -28,7 +28,7 @@ Some of the stories are based on real events. Some are complete fantasy. The rea
 
 This textbook is designed for self-paced study, ideally accompanied by a stuffed unicorn for moral support. The book includes several types of resources:
 
-- **18 Chapters** across 5 units covering unicorn history, AI hype, education resistance, job displacement, and technology fantasies
+- **19 Chapters** across 5 units covering unicorn history, AI hype, education resistance, job displacement, and technology fantasies
 - **Interactive MicroSims** embedded in chapters — browser-based simulations including a unicorn timeline, AI feature generator, job displacement calculator, hype cycle roller coaster, population dynamics model, and vaporware field guide
 - **12 Graphic Novels** featuring mythical beasts navigating workplace situations that will feel painfully familiar
 - **Quizzes** at the end of each chapter, where the wrong answers are sometimes more true than the right ones
