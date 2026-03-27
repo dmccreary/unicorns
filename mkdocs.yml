@@ -1,4 +1,9 @@
 site_name: Unicorns and Other Mythical Beasts
+repo_url: https://github.com/dmccreary/unicorns
+site_url: https://dmccreary.github.io/unicorns/
+site_description: An interactive intelligent textbook about unicorns, mythical beasts, and the technologies that will improve them. A satirical exploration of AI hype, education resistance, and technology fantasies.
+site_author: Dan McCreary
+
 nav:
   - Home: index.md
   - Course Description: course-description.md
@@ -9,10 +14,69 @@ nav:
     - Graph Quality Analysis: learning-graph/quality-metrics.md
     - Concept Taxonomy: learning-graph/concept-taxonomy.md
     - Taxonomy Distribution Report: learning-graph/taxonomy-distribution.md
+  - License: license.md
+  - Contact: contact.md
+
+theme:
+  name: material
+  palette:
+    primary: 'purple'
+    accent: 'pink'
+  include_sidebar: true
+  features:
+    - content.code.copy
+    - navigation.expand
+    - navigation.path
+    - navigation.prune
+    - navigation.indexes
+    - toc.follow
+    - navigation.top
+    - navigation.footer
+    - content.action.edit
+
+plugins:
+  - search
+  - social
+  - glightbox:
+      touchNavigation: true
+      loop: false
+      effect: zoom
+      slide_effect: slide
+      width: 100%
+      height: auto
+      zoomable: true
+      draggable: true
+      auto_caption: false
+      caption_position: bottom
+
 markdown_extensions:
+  - md_in_html
+  - attr_list
   - admonition
+  - footnotes
   - pymdownx.details
   - pymdownx.superfences
-  - attr_list
+  - pymdownx.highlight:
+      linenums: true
+
 extra_css:
+  - css/extra.css
   - css/mascot.css
+
+extra_javascript:
+  - js/extra.js
+
+watch:
+  - docs
+  - mkdocs.yml
+
+exclude_docs: |
+  img/mascot/README.md
+
+copyright: Copyright &copy; 2025 Dan McCreary. Licensed under <a href="license/">CC BY-NC-SA 4.0</a> for non-commercial use.
+
+extra:
+  generator: false
+  schema: https://dmccreary.github.io/intelligent-textbooks/ns/textbook/v1
+  textbook_name: Unicorns and Other Mythical Beasts
+  textbook_version: "1.0"
