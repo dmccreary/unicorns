@@ -1,0 +1,106 @@
+{
+    "groups": [
+        { "id": "predictions", "content": "Predictions" },
+        { "id": "milestones", "content": "Milestones" }
+    ],
+    "items": [
+        {
+            "id": 1,
+            "content": "'10-20 years' (Shor's era)",
+            "start": "1994-01-01",
+            "end": "2014-01-01",
+            "type": "range",
+            "group": "predictions",
+            "title": "<b>1994-2014: Post-Shor's Algorithm Optimism</b><br>After Peter Shor demonstrates that a quantum computer could<br>factor large numbers, predictions converge on '10-20 years'<br>to practical quantum computing. The algorithm works perfectly.<br>The computer to run it does not yet exist.",
+            "style": "background-color: #E67E22; color: white; border-color: #CA6F1E;"
+        },
+        {
+            "id": 2,
+            "content": "'10-15 years' (IBM 7-qubit era)",
+            "start": "2001-01-01",
+            "end": "2016-01-01",
+            "type": "range",
+            "group": "predictions",
+            "title": "<b>2001-2016: IBM 7-Qubit Era</b><br>IBM successfully factors the number 15 using a 7-qubit<br>quantum computer. Predictions of '10-15 years' to practical<br>applications follow. Classical computers could factor 15<br>in 1952, but the press releases do not mention this.",
+            "style": "background-color: #E67E22; color: white; border-color: #CA6F1E;"
+        },
+        {
+            "id": 3,
+            "content": "'10 years' (D-Wave era)",
+            "start": "2011-01-01",
+            "end": "2021-01-01",
+            "type": "range",
+            "group": "predictions",
+            "title": "<b>2011-2021: D-Wave Commercial Era</b><br>D-Wave sells the first 'commercial' quantum computer.<br>Whether it performs quantum computation is debated.<br>Whether it outperforms a laptop is also debated.<br>Whether it qualifies as a computer is occasionally debated.",
+            "style": "background-color: #E67E22; color: white; border-color: #CA6F1E;"
+        },
+        {
+            "id": 4,
+            "content": "'5-10 years' (Supremacy era)",
+            "start": "2019-01-01",
+            "end": "2029-01-01",
+            "type": "range",
+            "group": "predictions",
+            "title": "<b>2019-2029: Google Quantum Supremacy Era</b><br>Google achieves 'quantum supremacy' on a problem specifically<br>designed to be hard for classical computers and easy for<br>quantum computers. Predictions tighten to '5-10 years.'<br>The problem solved has no known practical application.",
+            "style": "background-color: #E67E22; color: white; border-color: #CA6F1E;"
+        },
+        {
+            "id": 5,
+            "content": "'5-10 years' (1000+ qubit era)",
+            "start": "2023-01-01",
+            "end": "2033-01-01",
+            "type": "range",
+            "group": "predictions",
+            "title": "<b>2023-2033: IBM 1,000+ Qubit Era</b><br>IBM unveils a 1,121-qubit processor. Predictions remain<br>at '5-10 years.' The number of qubits grows exponentially.<br>The number of useful computations performed grows linearly,<br>from zero.",
+            "style": "background-color: #E67E22; color: white; border-color: #CA6F1E;"
+        },
+        {
+            "id": 6,
+            "content": "Shor's algorithm published",
+            "start": "1994-01-01",
+            "group": "milestones",
+            "title": "<b>1994: Shor's Algorithm</b><br>Peter Shor publishes an algorithm proving that a sufficiently<br>large quantum computer could break RSA encryption.<br>The 'sufficiently large' qualifier has been doing<br>heroic work for three decades.",
+            "style": "background-color: #2E86C1; color: white; border-color: #2471A3;"
+        },
+        {
+            "id": 7,
+            "content": "IBM factors 15",
+            "start": "2001-12-01",
+            "group": "milestones",
+            "title": "<b>2001: IBM Factors the Number 15</b><br>A 7-qubit quantum computer correctly determines that<br>15 = 3 x 5. The result is verified using a pocket calculator.",
+            "style": "background-color: #2E86C1; color: white; border-color: #2471A3;"
+        },
+        {
+            "id": 8,
+            "content": "D-Wave commercial system",
+            "start": "2011-05-01",
+            "group": "milestones",
+            "title": "<b>2011: D-Wave One</b><br>D-Wave sells its first commercial quantum computing system<br>for $10 million. It occupies a 10-square-meter room<br>cooled to near absolute zero, conditions also found<br>in most open-plan offices.",
+            "style": "background-color: #2E86C1; color: white; border-color: #2471A3;"
+        },
+        {
+            "id": 9,
+            "content": "Google 53-qubit supremacy",
+            "start": "2019-10-01",
+            "group": "milestones",
+            "title": "<b>2019: Google Quantum Supremacy</b><br>Google's 53-qubit Sycamore processor completes a calculation<br>in 200 seconds that would take a classical supercomputer<br>10,000 years. IBM disputes the 10,000-year claim,<br>estimating 2.5 days. Both numbers are impressive<br>for a problem nobody needed solved.",
+            "style": "background-color: #2E86C1; color: white; border-color: #2471A3;"
+        },
+        {
+            "id": 10,
+            "content": "IBM 1,121-qubit Condor",
+            "start": "2023-12-01",
+            "group": "milestones",
+            "title": "<b>2023: IBM Condor Processor</b><br>IBM unveils the 1,121-qubit Condor processor,<br>the first quantum processor to exceed 1,000 qubits.<br>Error rates remain too high for practical computation,<br>but the press release is error-free.",
+            "style": "background-color: #2E86C1; color: white; border-color: #2471A3;"
+        },
+        {
+            "id": 11,
+            "content": "No economically viable QC",
+            "start": "2026-01-01",
+            "group": "milestones",
+            "title": "<b>2026: Current State</b><br>Quantum computing remains approximately 5-10 years<br>from economic viability, as it has been since 1994.<br>The technology's primary output continues to be<br>press releases and venture capital consumption.",
+            "style": "background-color: #2E86C1; color: white; border-color: #2471A3;"
+        }
+    ]
+}

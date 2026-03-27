@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
+    <title>Ancient Unicorn Sightings Map</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #map {
+            width: 100%;
+            height: 500px;
+        }
+        .legend {
+            background: white;
+            padding: 10px 14px;
+            border-radius: 6px;
+            box-shadow: 0 1px 5px rgba(0,0,0,0.3);
+            font-size: 13px;
+            line-height: 1.6;
+        }
+        .legend h4 {
+            margin: 0 0 6px 0;
+            font-size: 14px;
+        }
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+        .legend-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            display: inline-block;
+            flex-shrink: 0;
+        }
+        .back-link {
+            padding: 8px 12px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div id="map"></div>
+    </main>
+    <a class="back-link" href=".">Back to Lesson Plan</a>
+
+    <script>
+        var map = L.map('map', {
+            scrollWheelZoom: false
+        }).setView([35, 30], 2);
+
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+            maxZoom: 18
+        }).addTo(map);
+
+        var colors = {
+            ancient: '#DAA520',
+            medieval: '#DC143C',
+            renaissance: '#008080',
+            modern: '#7B2D8E'
+        };
+
+        var sightings = [
+            {
+                lat: 25.4, lng: 68.3,
+                era: 'ancient',
+                title: 'Indus Valley',
+                text: '2600 BCE: Indus Valley civilization seal depicts one-horned beast. Earliest known unicorn-adjacent artifact.'
+            },
+            {
+                lat: 32.4, lng: 53.7,
+                era: 'ancient',
+                title: 'Persia',
+                text: '400 BCE: Ctesias of Cnidus describes "wild donkey" with single horn in Indica.'
+            },
+            {
+                lat: 41.9, lng: 12.5,
+                era: 'ancient',
+                title: 'Rome',
+                text: '77 CE: Pliny the Elder includes monoceros in Natural History.'
+            },
+            {
+                lat: 34.3, lng: 108.9,
+                era: 'ancient',
+                title: 'China',
+                text: '200 CE: Qilin traditions formalized. Chinese unicorn brings good fortune.'
+            },
+            {
+                lat: 56.5, lng: -4.0,
+                era: 'medieval',
+                title: 'Scotland',
+                text: '1300s: Unicorn adopted as royal symbol. Appears on Scottish coat of arms.'
+            },
+            {
+                lat: 51.0, lng: 10.0,
+                era: 'renaissance',
+                title: 'Germany',
+                text: '1560: Peak of alicorn (unicorn horn) trade. Narwhal tusks sold as unicorn horns.'
+            },
+            {
+                lat: 48.9, lng: 2.3,
+                era: 'renaissance',
+                title: 'France',
+                text: '1500: Lady and the Unicorn tapestries woven. Among most famous artworks in history.'
+            },
+            {
+                lat: 37.4, lng: -122.1,
+                era: 'modern',
+                title: 'Silicon Valley',
+                text: '2013: Aileen Lee coins "unicorn" for billion-dollar startups. The term spreads globally.'
+            }
+        ];
+
+        function createCircleMarker(sighting) {
+            var color = colors[sighting.era];
+            var marker = L.circleMarker([sighting.lat, sighting.lng], {
+                radius: 10,
+                fillColor: color,
+                color: '#333',
+                weight: 1.5,
+                opacity: 1,
+                fillOpacity: 0.85
+            }).addTo(map);
+
+            marker.bindPopup(
+                '<strong>' + sighting.title + '</strong><br>' + sighting.text
+            );
+
+            return marker;
+        }
+
+        sightings.forEach(createCircleMarker);
+
+        // Legend
+        var legend = L.control({ position: 'bottomright' });
+        legend.onAdd = function () {
+            var div = L.DomUtil.create('div', 'legend');
+            div.innerHTML = '<h4>Era</h4>' +
+                '<div class="legend-item"><span class="legend-dot" style="background:' + colors.ancient + '"></span> Ancient (BCE - 200 CE)</div>' +
+                '<div class="legend-item"><span class="legend-dot" style="background:' + colors.medieval + '"></span> Medieval (1300s)</div>' +
+                '<div class="legend-item"><span class="legend-dot" style="background:' + colors.renaissance + '"></span> Renaissance (1500s)</div>' +
+                '<div class="legend-item"><span class="legend-dot" style="background:' + colors.modern + '"></span> Modern (2013)</div>';
+            return div;
+        };
+        legend.addTo(map);
+    </script>
+</body>
+</html>

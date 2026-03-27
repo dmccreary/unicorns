@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
+    <title>Mythical Beast Allegory Network</title>
+    <script src="https://unpkg.com/vis-network@9.1.6/standalone/umd/vis-network.min.js"></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f5f5f5;
+        }
+        main {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 16px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+            margin: 8px 0 4px 0;
+            font-size: 1.5rem;
+        }
+        .subtitle {
+            text-align: center;
+            color: #666;
+            margin: 0 0 12px 0;
+            font-size: 0.95rem;
+        }
+        #network {
+            width: 100%;
+            height: 500px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            background: #ffffff;
+        }
+        #detail-panel {
+            margin-top: 10px;
+            padding: 12px 16px;
+            background: #fff;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            min-height: 40px;
+            color: #444;
+            font-size: 0.95rem;
+        }
+        #detail-panel strong {
+            color: #222;
+        }
+        .legend {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 14px;
+            justify-content: center;
+            margin: 10px 0 6px 0;
+            font-size: 0.85rem;
+            color: #555;
+        }
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        .legend-swatch {
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            border: 1px solid #999;
+        }
+        .legend-line {
+            width: 28px;
+            height: 0;
+            border-top: 3px solid;
+            display: inline-block;
+            vertical-align: middle;
+        }
+        .legend-line.dashed { border-top-style: dashed; }
+        .legend-line.dotted { border-top-style: dotted; }
+        a { color: #555; }
+    </style>
+</head>
+<body>
+<main>
+    <h1>Mythical Beast Allegory Network</h1>
+    <p class="subtitle">Each mythical beast maps to a real-world technology allegory. Click a node for details.</p>
+
+    <div class="legend">
+        <span class="legend-item"><span class="legend-swatch" style="background:#4CAF50"></span> Benevolent</span>
+        <span class="legend-item"><span class="legend-swatch" style="background:#FFB300"></span> Neutral</span>
+        <span class="legend-item"><span class="legend-swatch" style="background:#E53935"></span> Hostile</span>
+        <span class="legend-item"><span class="legend-swatch" style="background:#90CAF9"></span> Allegory</span>
+        <span class="legend-item"><span class="legend-line" style="border-color:#555;"></span> represents</span>
+        <span class="legend-item"><span class="legend-line dashed" style="border-color:#E53935;"></span> opposes</span>
+        <span class="legend-item"><span class="legend-line dotted" style="border-color:#43A047;"></span> collaborates</span>
+        <span class="legend-item"><span class="legend-line" style="border-color:#1E88E5;"></span> enables</span>
+    </div>
+
+    <div id="network"></div>
+    <div id="detail-panel">Hover over or click a node or edge to see details.</div>
+
+    <br>
+    <a href=".">Back to Lesson Plan</a>
+</main>
+
+<script>
+(function() {
+    var detailPanel = document.getElementById('detail-panel');
+
+    // Beast descriptions
+    var beastInfo = {
+        'Unicorn': 'The unicorn: beautiful, singular, and valued at $4.7 billion despite having no revenue. A creature whose primary evidence of existence is a pitch deck.',
+        'Pegasus': 'Pegasus: the winged horse that promises to elevate everything it touches. Much like cloud computing, it works best when nobody asks how it stays airborne.',
+        'Phoenix': 'The phoenix dies in flames and is reborn. Much like the tech industry, which calls bankruptcy "pivoting" and calls pivoting "innovation."',
+        'Griffin': 'Half eagle, half lion — the griffin combines two impressive things into something that probably should not exist. See also: every hybrid technology stack.',
+        'Centaur': 'Half human, half horse. The centaur represents the optimistic vision of human-AI collaboration, where both halves contribute equally. In practice, the horse does most of the work.',
+        'Mermaid': 'Beautiful from one angle, incompatible with your existing infrastructure from another. The mermaid is every technology that demos beautifully but cannot survive in production.',
+        'Dragon': 'The dragon: large, disruptive, and indifferent to your quarterly projections. It does not care about your org chart. It is restructuring the org chart.',
+        'Minotaur': 'Trapped in a labyrinth of its own making, the minotaur represents every bureaucratic obstacle that exists solely because someone built a process around a process.',
+        'Kraken': 'The kraken surfaces without warning and pulls entire fleets under. In technology terms, this is called a "platform-level incident." The postmortem will blame configuration drift.',
+        'Cyclops': 'The cyclops sees the world through a single eye: its own. This is called "tunnel vision" in management literature and "focus" in investor presentations.',
+        'Siren': 'The siren\'s song is irresistible and leads directly to shipwreck. In modern terms, this is called "frictionless onboarding to a product with 94% churn."'
+    };
+
+    var allegoryInfo = {
+        'Overhyped Startups': 'Companies valued on narrative momentum rather than revenue. The unicorn is their mascot for a reason.',
+        'Disruptive Technology': 'Technology that destroys existing industries. Unlike dragons, it does not have the courtesy to breathe fire first.',
+        'Industry Reinvention': 'The claim that an industry has been "reborn." Usually announced prematurely, often by the industry itself.',
+        'Hybrid Technology': 'Two technologies combined. Sometimes greater than the sum of parts. Usually just two sets of bugs.',
+        'Human-AI Collaboration': 'The theory that humans and AI work better together. The AI agrees. The human was not consulted.',
+        'Attractive But Incompatible Tech': 'Technology that looks perfect in the demo and breaks in the deployment. Every enterprise has a graveyard of these.',
+        'Bureaucratic Obstacles': 'Processes designed to prevent mistakes that now prevent everything, including progress.',
+        'Overextended Tools': 'Software that started simple and now has 847 features, 12 of which work reliably.',
+        'Large-Scale Tech Failure': 'When systems fail at scale. Distinguished from small failures by the number of zeros in the incident report.',
+        'Seductive Automation': 'Automation that promises to eliminate toil and instead eliminates jobs. The toil remains.',
+        'Tunnel Vision': 'The organizational inability to see threats outside one\'s own domain. Frequently diagnosed in retrospect.'
+    };
+
+    // Beast nodes (left side, circular)
+    var beasts = [
+        { id: 'Unicorn',   x: -350, y: -200, color: '#4CAF50' },
+        { id: 'Pegasus',   x: -350, y: -100, color: '#4CAF50' },
+        { id: 'Phoenix',   x: -350, y:    0, color: '#FFB300' },
+        { id: 'Griffin',   x: -350, y:   80, color: '#FFB300' },
+        { id: 'Centaur',   x: -350, y:  160, color: '#FFB300' },
+        { id: 'Mermaid',   x: -350, y:  240, color: '#FFB300' },
+        { id: 'Dragon',    x: -350, y:  320, color: '#E53935' },
+        { id: 'Minotaur',  x: -350, y:  400, color: '#E53935' },
+        { id: 'Kraken',    x: -350, y:  480, color: '#E53935' },
+        { id: 'Siren',     x: -350, y:  560, color: '#E53935' },
+        { id: 'Cyclops',   x: -350, y:  640, color: '#E53935' }
+    ];
+
+    var beastNodes = beasts.map(function(b) {
+        return {
+            id: b.id,
+            label: b.id,
+            shape: 'circle',
+            size: 28,
+            color: { background: b.color, border: '#333', highlight: { background: b.color, border: '#000' } },
+            font: { color: '#fff', size: 13, face: 'Arial', bold: true },
+            x: b.x,
+            y: b.y,
+            title: beastInfo[b.id]
+        };
+    });
+
+    // Allegory nodes (right side, box)
+    var allegories = [
+        'Overhyped Startups', 'Disruptive Technology', 'Industry Reinvention',
+        'Hybrid Technology', 'Human-AI Collaboration', 'Attractive But Incompatible Tech',
+        'Bureaucratic Obstacles', 'Overextended Tools', 'Large-Scale Tech Failure',
+        'Seductive Automation', 'Tunnel Vision'
+    ];
+
+    var allegoryNodes = allegories.map(function(a, i) {
+        return {
+            id: a,
+            label: a,
+            shape: 'box',
+            color: { background: '#BBDEFB', border: '#64B5F6', highlight: { background: '#90CAF9', border: '#1E88E5' } },
+            font: { color: '#222', size: 12, face: 'Arial' },
+            x: 350,
+            y: -200 + i * 84,
+            title: allegoryInfo[a]
+        };
+    });
+
+    var nodes = new vis.DataSet(beastNodes.concat(allegoryNodes));
+
+    // Edges
+    var representEdges = [
+        { from: 'Unicorn',  to: 'Overhyped Startups' },
+        { from: 'Pegasus',  to: 'Overhyped Startups' },
+        { from: 'Dragon',   to: 'Disruptive Technology' },
+        { from: 'Phoenix',  to: 'Industry Reinvention' },
+        { from: 'Griffin',  to: 'Hybrid Technology' },
+        { from: 'Centaur',  to: 'Human-AI Collaboration' },
+        { from: 'Mermaid',  to: 'Attractive But Incompatible Tech' },
+        { from: 'Minotaur', to: 'Bureaucratic Obstacles' },
+        { from: 'Cyclops',  to: 'Tunnel Vision' },
+        { from: 'Kraken',   to: 'Large-Scale Tech Failure' },
+        { from: 'Siren',    to: 'Seductive Automation' }
+    ].map(function(e, i) {
+        // Apply slight y-offset for near-horizontal edges
+        var fromBeast = beasts.find(function(b){ return b.id === e.from; });
+        var toIdx = allegories.indexOf(e.to);
+        var toY = -200 + toIdx * 84;
+        var dy = Math.abs(fromBeast.y - toY);
+        return {
+            id: 'rep-' + i,
+            from: e.from,
+            to: e.to,
+            label: 'represents',
+            arrows: 'to',
+            color: { color: '#555', highlight: '#000' },
+            font: { size: 10, color: '#555', strokeWidth: 2, strokeColor: '#fff' },
+            smooth: { type: 'curvedCW', roundness: dy < 20 ? 0.15 : 0.05 },
+            width: 1.5,
+            title: e.from + ' represents ' + e.to
+        };
+    });
+
+    var specialEdges = [
+        {
+            id: 'opp-1',
+            from: 'Phoenix', to: 'Dragon',
+            label: 'opposes',
+            dashes: [8, 4],
+            color: { color: '#E53935', highlight: '#B71C1C' },
+            font: { size: 10, color: '#E53935', strokeWidth: 2, strokeColor: '#fff' },
+            smooth: { type: 'curvedCW', roundness: 0.3 },
+            width: 2,
+            title: 'Phoenix opposes Dragon: Reinvention vs. destruction. The phoenix rebuilds what the dragon burns. This is called "the innovation cycle" by people who profit from burning things.'
+        },
+        {
+            id: 'col-1',
+            from: 'Centaur', to: 'Pegasus',
+            label: 'collaborates',
+            dashes: [2, 4],
+            color: { color: '#43A047', highlight: '#1B5E20' },
+            font: { size: 10, color: '#43A047', strokeWidth: 2, strokeColor: '#fff' },
+            smooth: { type: 'curvedCW', roundness: 0.3 },
+            width: 2,
+            title: 'Centaur collaborates with Pegasus: Human-AI collaboration works best when paired with aspirational technology. Or so the pitch deck claims.'
+        },
+        {
+            id: 'en-1',
+            from: 'Siren', to: 'Kraken',
+            label: 'enables',
+            arrows: 'to',
+            color: { color: '#1E88E5', highlight: '#0D47A1' },
+            font: { size: 10, color: '#1E88E5', strokeWidth: 2, strokeColor: '#fff' },
+            smooth: { type: 'curvedCW', roundness: 0.15 },
+            width: 2,
+            title: 'Siren enables Kraken: Seductive automation lures organizations into dependencies that, when they fail, fail catastrophically. The onboarding was frictionless. The outage was not.'
+        }
+    ];
+
+    var edges = new vis.DataSet(representEdges.concat(specialEdges));
+
+    // Network
+    var container = document.getElementById('network');
+    var data = { nodes: nodes, edges: edges };
+    var options = {
+        physics: {
+            enabled: true,
+            stabilization: { iterations: 200 },
+            barnesHut: {
+                gravitationalConstant: -3000,
+                centralGravity: 0.1,
+                springLength: 250,
+                springConstant: 0.01
+            }
+        },
+        interaction: {
+            hover: true,
+            tooltipDelay: 150,
+            zoomView: true,
+            dragView: true,
+            dragNodes: true
+        },
+        edges: {
+            smooth: { type: 'curvedCW', roundness: 0.05 }
+        },
+        layout: {
+            improvedLayout: true
+        }
+    };
+
+    var network = new vis.Network(container, data, options);
+
+    // Click handler for detail panel
+    network.on('click', function(params) {
+        if (params.nodes.length > 0) {
+            var nodeId = params.nodes[0];
+            var info = beastInfo[nodeId] || allegoryInfo[nodeId];
+            if (info) {
+                detailPanel.innerHTML = '<strong>' + nodeId + ':</strong> ' + info;
+            }
+        } else if (params.edges.length > 0) {
+            var edgeId = params.edges[0];
+            var edge = edges.get(edgeId);
+            if (edge && edge.title) {
+                detailPanel.innerHTML = '<strong>Relationship:</strong> ' + edge.title;
+            }
+        } else {
+            detailPanel.innerHTML = 'Hover over or click a node or edge to see details.';
+        }
+    });
+
+    network.on('hoverNode', function(params) {
+        var nodeId = params.node;
+        var info = beastInfo[nodeId] || allegoryInfo[nodeId];
+        if (info) {
+            detailPanel.innerHTML = '<strong>' + nodeId + ':</strong> ' + info;
+        }
+    });
+
+    network.on('hoverEdge', function(params) {
+        var edge = edges.get(params.edge);
+        if (edge && edge.title) {
+            detailPanel.innerHTML = '<strong>Relationship:</strong> ' + edge.title;
+        }
+    });
+
+    // Responsive resize
+    window.addEventListener('resize', function() {
+        network.fit();
+    });
+})();
+</script>
+</body>
+</html>

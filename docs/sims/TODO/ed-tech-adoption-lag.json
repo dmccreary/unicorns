@@ -1,0 +1,14 @@
+{
+  "sim_id": "ed-tech-adoption-lag",
+  "diagram_name": "Education Technology Adoption Lag",
+  "chapter_number": 6,
+  "chapter_title": "\"The Ostrich Academy: A School That Refuses to See AI\"",
+  "chapter_dir": "06-the-ostrich-academy",
+  "library": "Chart.js",
+  "bloom_level": null,
+  "bloom_verb": "Compare, Examine",
+  "learning_objective": "Students will compare the adoption lag for different technologies in education and examine whether the pattern of resistance followed by mandatory adoption is accelerating.",
+  "completion_status": "specified",
+  "extracted_date": "2026-03-27",
+  "specification": "Type: chart\n**sim-id:** ed-tech-adoption-lag<br/>\n**Library:** Chart.js<br/>\n**Status:** Specified\n\n**Bloom Taxonomy:** Analyze (L4)\n**Bloom Verb:** Compare, Examine\n**Learning Objective:** Students will compare the adoption lag for different technologies in education and examine whether the pattern of resistance followed by mandatory adoption is accelerating.\n\nChart type: Horizontal bar chart with paired bars\n\nY-axis: Technology (Calculator, Internet, Smartphones, Generative AI)\nX-axis: Years from public availability\n\nData (paired bars per technology):\n- Calculator: Available 1972, Mainstream in schools 1995, Lag: 23 years (blue bar), Resistance phase: 23 years (red bar)\n- Internet: Available 1995, Mainstream in schools 2005, Lag: 10 years (blue), Resistance: 10 years (red)\n- Smartphones: Available 2007, Mainstream in schools: TBD, Lag: 19+ years (blue), Resistance: ongoing (red, striped)\n- Generative AI: Available 2022, Mainstream in schools: TBD, Lag: 4+ years (blue), Resistance: ongoing (red, striped)\n\nAnnotations:\n- Vertical line at \"Now (2026)\" intersecting smartphone and AI bars\n- Note on calculator bar: \"Now required for SAT/ACT\"\n- Note on AI bar: \"Most schools still in committee phase\"\n\nInteractive features:\n- Hover over bars for detail popup with key dates and milestones\n- Toggle between \"years\" view and \"percentage of schools adopting\" view\n- Responsive to container width\n\nInstructional Rationale: Paired horizontal bars allow direct visual comparison of adoption lag across technologies, supporting Analyze-level pattern recognition. The \"ongoing\" striped bars for current technologies invite students to predict when adoption will become mainstream.\n\nImplementation: Chart.js with horizontal bar configuration, custom annotation plugin, and tooltip callbacks. Responsive container."
+}

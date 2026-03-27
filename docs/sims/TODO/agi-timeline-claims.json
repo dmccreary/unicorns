@@ -1,0 +1,14 @@
+{
+  "sim_id": "agi-timeline-claims",
+  "diagram_name": "AGI Timeline Claims History",
+  "chapter_number": 9,
+  "chapter_title": "\"Phoenix Rising: The Art of Reinvention\"",
+  "chapter_dir": "09-phoenix-rising",
+  "library": "vis-timeline",
+  "bloom_level": null,
+  "bloom_verb": "Examine, Compare",
+  "learning_objective": "Students will examine the historical pattern of AGI timeline predictions and compare them against actual AI milestones to identify the persistent gap between prediction and reality.",
+  "completion_status": "specified",
+  "extracted_date": "2026-03-27",
+  "specification": "Type: timeline\n**sim-id:** agi-timeline-claims<br/>\n**Library:** vis-timeline<br/>\n**Status:** Specified\n\n**Bloom Taxonomy:** Analyze (L4)\n**Bloom Verb:** Examine, Compare\n**Learning Objective:** Students will examine the historical pattern of AGI timeline predictions and compare them against actual AI milestones to identify the persistent gap between prediction and reality.\n\nPurpose: Interactive timeline showing AGI predictions alongside actual AI achievements, revealing the consistent pattern of overestimation.\n\nEvents (predictions shown as ranges, achievements as points):\n\nPredictions (orange bars):\n- 1956-1966: Dartmouth prediction (\"one generation\")\n- 1970-1978: Minsky prediction (\"3-8 years\")\n- 1997-2029: Kurzweil prediction (\"by 2029\")\n- 2015-2035: Multiple researcher predictions (\"10-20 years\")\n- 2023-2028: Altman era predictions (\"relatively soon\")\n\nActual achievements (blue points):\n- 1997: Deep Blue beats Kasparov\n- 2011: Watson wins Jeopardy\n- 2012: Deep learning revolution begins\n- 2016: AlphaGo beats Lee Sedol\n- 2020: GPT-3 released\n- 2022: ChatGPT released\n- 2023: GPT-4 released\n- 2026: Current state — impressive narrow AI, no AGI\n\nInteractive features:\n- Hover over prediction bars to see full quote and attribution\n- Hover over achievement points to see description and impact\n- Zoom and pan timeline\n- Toggle between \"predictions only,\" \"achievements only,\" and \"both\" views\n- Visual indicator: none of the prediction bars reach the current date without expiring\n\nLayout: Horizontal timeline 1956-2040, predictions above the line (orange), achievements below (blue)\n\nInstructional Rationale: Displaying predictions alongside achievements on the same timeline makes the persistent gap visually undeniable, supporting Analyze-level pattern recognition. Students can see that predictions consistently expire unfulfilled while actual achievements, though impressive, remain narrow.\n\nImplementation: vis-timeline with custom groups for predictions and achievements, range items for predictions, point items for achievements. Responsive container."
+}

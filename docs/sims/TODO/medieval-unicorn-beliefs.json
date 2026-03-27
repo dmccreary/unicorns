@@ -1,0 +1,14 @@
+{
+  "sim_id": "medieval-unicorn-beliefs",
+  "diagram_name": "Medieval Unicorn Belief System",
+  "chapter_number": 1,
+  "chapter_title": "A Brief and Totally Accurate History of Unicorns",
+  "chapter_dir": "01-history-of-unicorns",
+  "library": "vis-network",
+  "bloom_level": null,
+  "bloom_verb": "Explain, Classify",
+  "learning_objective": "Students will explain how medieval unicorn beliefs connected religious symbolism, medical claims, and economic incentives into a self-reinforcing system.",
+  "completion_status": "specified",
+  "extracted_date": "2026-03-27",
+  "specification": "Type: diagram\n**sim-id:** medieval-unicorn-beliefs<br/>\n**Library:** vis-network<br/>\n**Status:** Specified\n\n**Bloom Taxonomy:** Understand (L2)\n**Bloom Verb:** Explain, Classify\n**Learning Objective:** Students will explain how medieval unicorn beliefs connected religious symbolism, medical claims, and economic incentives into a self-reinforcing system.\n\nPurpose: Show the interconnected network of medieval beliefs, economic incentives, and cultural institutions that sustained unicorn mythology for over a millennium.\n\nNode types:\n\n1. Belief nodes (lavender circles):\n- \"Unicorn = Christ\" (religious allegory)\n- \"Horn purifies poison\" (medical claim)\n- \"Only pure can approach\" (moral gatekeeping)\n- \"Unicorns live in distant lands\" (unfalsifiability)\n\n2. Institution nodes (gold rectangles):\n- \"Church\" (promotes allegory)\n- \"Royal Courts\" (buys horns)\n- \"Pharmacies\" (sells powdered horn)\n- \"Trade Networks\" (supplies narwhal tusks)\n\n3. Outcome nodes (coral rounded rectangles):\n- \"Alicorn trade flourishes\"\n- \"Narwhal populations decline\"\n- \"Skeptics labeled impure\"\n- \"Belief perpetuated for 1,000+ years\"\n\nEdge types:\n- \"Reinforces\" (solid arrows between beliefs and institutions)\n- \"Produces\" (dashed arrows from institutions to outcomes)\n- \"Suppresses doubt\" (dotted red arrows from beliefs to skeptic outcome)\n\nLayout: Force-directed with belief nodes clustered center, institutions surrounding, outcomes on periphery.\n\nInteractive features:\n- Hover over any node to highlight all connected edges and nodes\n- Click a node to display a detail panel with historical sources and dates\n- Responsive design that repositions on window resize\n\nColor scheme: Lavender for beliefs, gold for institutions, coral for outcomes, dark gray edges\n\nInstructional Rationale: A network graph allows students to see the systemic nature of medieval unicorn belief — it was not a single claim but an interlocking set of religious, economic, and social structures that reinforced each other. This supports the Understand objective by making structural relationships visible.\n\nImplementation: vis-network with force-directed layout, slight y-offset on horizontal edges for label rendering"
+}

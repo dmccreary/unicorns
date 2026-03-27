@@ -1,0 +1,90 @@
+{
+    "groups": [
+        { "id": "ancient", "content": "Ancient", "style": "color: #DAA520;" },
+        { "id": "medieval", "content": "Medieval", "style": "color: #DC143C;" },
+        { "id": "modern", "content": "Modern", "style": "color: #008080;" },
+        { "id": "tech", "content": "Tech Era", "style": "color: #800080;" }
+    ],
+    "items": [
+        {
+            "id": 1,
+            "content": "Indus Valley Seals",
+            "start": "-002600-01-01",
+            "group": "ancient",
+            "title": "<b>2600 BCE: Indus Valley Seals</b><br>One-horned beasts appear on Indus Valley civilization seals,<br>representing what archaeologists diplomatically call 'profile-view bulls.'<br>The unicorn interpretation persists because it is more fundable.",
+            "style": "background-color: #DAA520; color: white; border-color: #B8860B;"
+        },
+        {
+            "id": 2,
+            "content": "Ctesias describes unicorn",
+            "start": "-000400-01-01",
+            "group": "ancient",
+            "title": "<b>400 BCE: Ctesias writes 'Indica'</b><br>Greek physician Ctesias describes a wild donkey with a single horn,<br>based on secondhand accounts from Persia. Peer review was not yet standard practice.",
+            "style": "background-color: #DAA520; color: white; border-color: #B8860B;"
+        },
+        {
+            "id": 3,
+            "content": "Chinese Qilin codified",
+            "start": "0200-01-01",
+            "group": "ancient",
+            "title": "<b>200 CE: Chinese Qilin Traditions</b><br>The Qilin, a chimerical beast sometimes depicted with a single horn,<br>is codified in Chinese literary traditions as an omen of prosperity.<br>Its appearance reportedly coincides with the arrival of sage rulers,<br>a correlation that has not held up to modern statistical analysis.",
+            "style": "background-color: #DAA520; color: white; border-color: #B8860B;"
+        },
+        {
+            "id": 4,
+            "content": "Marco Polo's 'unicorns'",
+            "start": "1298-01-01",
+            "group": "medieval",
+            "title": "<b>1298: Marco Polo Reports Unicorns</b><br>Marco Polo encounters rhinoceroses in Sumatra and identifies them as unicorns,<br>noting they are 'very ugly brutes to look at.' This is considered<br>the earliest known example of reality failing to match the pitch deck.",
+            "style": "background-color: #DC143C; color: white; border-color: #A01030;"
+        },
+        {
+            "id": 5,
+            "content": "Leonardo's Lady with Unicorn",
+            "start": "1503-01-01",
+            "group": "medieval",
+            "title": "<b>1503: Leonardo da Vinci's Drawing</b><br>Leonardo da Vinci creates sketches of a lady with a unicorn,<br>establishing the visual brand identity that would endure for five centuries.<br>The unicorn's marketing team has been remarkably consistent.",
+            "style": "background-color: #DC143C; color: white; border-color: #A01030;"
+        },
+        {
+            "id": 6,
+            "content": "Peak unicorn horn trade",
+            "start": "1560-01-01",
+            "group": "medieval",
+            "title": "<b>1560: Peak Unicorn Horn Trade</b><br>Narwhal tusks sold as 'unicorn horns' command prices exceeding<br>their weight in gold across European courts. The due diligence<br>process consisted primarily of wanting it to be true.",
+            "style": "background-color: #DC143C; color: white; border-color: #A01030;"
+        },
+        {
+            "id": 7,
+            "content": "Cuvier declares unicorns impossible",
+            "start": "1825-01-01",
+            "group": "modern",
+            "title": "<b>1825: Baron Cuvier's Declaration</b><br>French zoologist Baron Cuvier declares unicorns anatomically impossible,<br>citing the cloven hoof and divided frontal bone. The market<br>briefly corrects before resuming its previous trajectory.",
+            "style": "background-color: #008080; color: white; border-color: #006060;"
+        },
+        {
+            "id": 8,
+            "content": "One-horned shire horse born",
+            "start": "1933-01-01",
+            "group": "modern",
+            "title": "<b>1933: One-Horned Horse in Maine</b><br>A shire horse born with a single central horn in Maine<br>briefly reignites unicorn speculation. Scientists attribute it<br>to a developmental anomaly. The horse declines to comment.",
+            "style": "background-color: #008080; color: white; border-color: #006060;"
+        },
+        {
+            "id": 9,
+            "content": "Aileen Lee coins 'unicorn'",
+            "start": "2013-01-01",
+            "group": "tech",
+            "title": "<b>2013: The Unicorn Metaphor Is Born</b><br>Venture capitalist Aileen Lee coins 'unicorn' to describe<br>startups valued at $1 billion or more, on the grounds<br>that they are statistically rare. The metaphor ages poorly<br>as the count exceeds 1,000 within a decade.",
+            "style": "background-color: #800080; color: white; border-color: #600060;"
+        },
+        {
+            "id": 10,
+            "content": "1,200+ unicorn startups",
+            "start": "2024-01-01",
+            "group": "tech",
+            "title": "<b>2024: 1,200+ Unicorn Startups</b><br>The global unicorn count surpasses 1,200 with a combined valuation<br>of $4.7 trillion. The term 'unicorn,' chosen for its rarity,<br>now describes something more common than profitable companies.<br>The irony remains unacknowledged in investor presentations.",
+            "style": "background-color: #800080; color: white; border-color: #600060;"
+        }
+    ]
+}

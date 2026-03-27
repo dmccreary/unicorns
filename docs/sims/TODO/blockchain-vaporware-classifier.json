@@ -1,0 +1,14 @@
+{
+  "sim_id": "blockchain-vaporware-classifier",
+  "diagram_name": "Blockchain Application Vaporware Classifier",
+  "chapter_number": 16,
+  "chapter_title": "\"Efficient Blockchain: The Distributed Ledger of Narnia\"",
+  "chapter_dir": "16-efficient-blockchain",
+  "library": "p5.js",
+  "bloom_level": null,
+  "bloom_verb": "Judge, Assess",
+  "learning_objective": "Students will judge the maturity of various blockchain applications by classifying them on the vaporware taxonomy spectrum, assessing evidence for each application's current state.",
+  "completion_status": "specified",
+  "extracted_date": "2026-03-27",
+  "specification": "Type: microsim\n**sim-id:** blockchain-vaporware-classifier<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\n**Bloom Taxonomy:** Evaluate (L5)\n**Bloom Verb:** Judge, Assess\n**Learning Objective:** Students will judge the maturity of various blockchain applications by classifying them on the vaporware taxonomy spectrum, assessing evidence for each application's current state.\n\nPurpose: Interactive classifier where students drag blockchain application cards onto a five-level vaporware spectrum.\n\nVisual elements:\n- Top: Horizontal spectrum bar with five labeled zones: \"Shipping Product\" (green), \"Works in Lab\" (yellow-green), \"Aspirational\" (yellow), \"Announced\" (orange), \"Pure Unicorn\" (red)\n- Below: 8 draggable application cards, each with a brief description\n- Score display after checking answers\n- Explanation panel that appears after each card is checked\n\nApplication cards:\n1. \"Bitcoin for international remittances\" (Shipping Product — works, is used, though expensive)\n2. \"Ethereum smart contracts for DeFi\" (Shipping Product — works, with caveats)\n3. \"Blockchain supply chain for Walmart lettuce\" (Works in Lab — pilot programs exist)\n4. \"Self-sovereign digital identity\" (Aspirational — working prototypes, no adoption)\n5. \"Blockchain voting in national elections\" (Announced — multiple countries announced, none deployed)\n6. \"NFT-based real estate deeds\" (Aspirational — legal framework absent)\n7. \"Blockchain-verified organic food certification\" (Announced — press releases only)\n8. \"Decentralized autonomous country\" (Pure Unicorn)\n\nInteractive controls:\n- Drag cards to spectrum positions\n- Button: \"Check Answers\" — reveals correct positions with explanations\n- Button: \"Reset\" — returns all cards\n- Hover over spectrum zones for definitions\n\nInstructional Rationale: Drag-to-classify on a five-level spectrum (not binary) supports Evaluate-level learning by requiring students to make graduated judgments about technology maturity, using evidence from the chapter to justify their classifications.\n\nImplementation: p5.js with drag-and-drop, snap-to-zone positions, createButton() controls. Responsive canvas using updateCanvasSize(). Canvas parented to document.querySelector('main')."
+}

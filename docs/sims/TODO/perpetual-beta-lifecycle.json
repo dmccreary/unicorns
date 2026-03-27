@@ -1,0 +1,14 @@
+{
+  "sim_id": "perpetual-beta-lifecycle",
+  "diagram_name": "Perpetual Beta Product Lifecycle",
+  "chapter_number": 17,
+  "chapter_title": "\"Ethical Bitcoin: A Contradiction in Horns\"",
+  "chapter_dir": "17-ethical-bitcoin",
+  "library": "Chart.js",
+  "bloom_level": null,
+  "bloom_verb": "Compare, Examine",
+  "learning_objective": "Students will compare the product lifecycle of traditional software (which ships, stabilizes, and reaches end-of-life) with perpetual beta products (which never leave development), examining how the beta label prevents accountability.",
+  "completion_status": "specified",
+  "extracted_date": "2026-03-27",
+  "specification": "Type: chart\n**sim-id:** perpetual-beta-lifecycle<br/>\n**Library:** Chart.js<br/>\n**Status:** Specified\n\n**Bloom Taxonomy:** Analyze (L4)\n**Bloom Verb:** Compare, Examine\n**Learning Objective:** Students will compare the product lifecycle of traditional software (which ships, stabilizes, and reaches end-of-life) with perpetual beta products (which never leave development), examining how the beta label prevents accountability.\n\nChart type: Dual-line chart comparing two lifecycle patterns\n\nX-axis: Time (Year 1 through Year 10)\nY-axis: Product maturity percentage (0-100%)\n\nData series:\n1. \"Traditional Software\" (blue line): Rises from 10% to 90% over years 1-4, stabilizes at 90-95% for years 5-8, slight decline in years 9-10 (end-of-life)\n2. \"Perpetual Beta Product\" (gold dashed line): Rises from 10% to 40% in years 1-3, oscillates between 35-55% for years 4-10, never exceeds 60%\n3. Horizontal red dotted line at 80%: \"Minimum viable shipping threshold\"\n\nAnnotations:\n- Arrow at Traditional year 3: \"Version 1.0 ships\"\n- Arrow at Perpetual Beta year 5: \"Still in beta — 'exciting updates coming'\"\n- Arrow at Perpetual Beta year 8: \"Major rewrite announced — 'even better beta'\"\n- Shaded region above 80%: \"The zone crypto never reaches\"\n\nInteractive features:\n- Hover over data points for descriptions of what happens at each stage\n- Toggle: Show/hide a third line for \"Vaporware\" (stays at 5-10% forever)\n- Responsive to container width\n\nInstructional Rationale: Dual-line comparison makes the perpetual beta pattern visually distinct from normal product development. The \"shipping threshold\" line provides a reference point for evaluation, supporting Analyze-level pattern recognition.\n\nImplementation: Chart.js with line chart, annotation plugin, and custom tooltip callbacks. Responsive container."
+}

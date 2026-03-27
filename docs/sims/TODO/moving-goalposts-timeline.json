@@ -1,0 +1,14 @@
+{
+  "sim_id": "moving-goalposts-timeline",
+  "diagram_name": "Moving the Goalposts Timeline",
+  "chapter_number": 7,
+  "chapter_title": "\"The Job Thief: A Dragon's Tale\"",
+  "chapter_dir": "07-the-job-thief",
+  "library": "vis-timeline",
+  "bloom_level": null,
+  "bloom_verb": "Examine, Compare",
+  "learning_objective": "Students will examine the historical pattern of goalpost-moving in AI by comparing the \"threshold\" claim at each milestone with the dismissal that followed, identifying the recurring logical structure.",
+  "completion_status": "specified",
+  "extracted_date": "2026-03-27",
+  "specification": "Type: timeline\n**sim-id:** moving-goalposts-timeline<br/>\n**Library:** vis-timeline<br/>\n**Status:** Specified\n\n**Bloom Taxonomy:** Analyze (L4)\n**Bloom Verb:** Examine, Compare\n**Learning Objective:** Students will examine the historical pattern of goalpost-moving in AI by comparing the \"threshold\" claim at each milestone with the dismissal that followed, identifying the recurring logical structure.\n\nPurpose: Interactive timeline showing major AI milestones, each with a \"Before\" claim (what people said AI needed to do) and an \"After\" dismissal (how the achievement was minimized).\n\nEvents:\n- 1997: Deep Blue beats Kasparov. Before: \"Beat a grandmaster.\" After: \"Just computation.\"\n- 2011: Watson wins Jeopardy. Before: \"Understand natural language.\" After: \"Just retrieval.\"\n- 2016: AlphaGo beats Lee Sedol. Before: \"Beat a Go master (impossible, too many possibilities).\" After: \"Just tree search with neural nets.\"\n- 2020: GPT-3 generates coherent essays. Before: \"Write like a human.\" After: \"Just statistical patterns.\"\n- 2023: GPT-4 passes bar exam. Before: \"Pass a professional exam.\" After: \"Just memorization.\"\n- 2024: AI assists drug discovery. Before: \"Do real science.\" After: \"Just narrow application.\"\n- 2026?: Current goalpost: \"True reasoning and consciousness\"\n\nInteractive features:\n- Hover over each event to see expanded \"Before/After\" cards\n- Click event to see full description with quotes and sources\n- Zoom and pan along timeline\n- Color coding: green for achievement, red for dismissal\n\nLayout: Horizontal timeline with events as labeled points, expandable cards above and below\n\nImplementation: vis-timeline library with custom HTML content in items. Responsive container."
+}

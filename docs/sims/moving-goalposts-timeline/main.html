@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
+    <title>Moving the Goalposts: AI Achievement vs Dismissal</title>
+    <link rel="stylesheet" href="https://unpkg.com/vis-timeline@7.7.3/styles/vis-timeline-graph2d.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/vis-timeline@7.7.3/standalone/umd/vis-timeline-graph2d.min.js"></script>
+</head>
+<body>
+    <main>
+        <h2>Moving the Goalposts: AI Achievement vs Dismissal</h2>
+        <div id="timeline"></div>
+        <div id="legend">
+            <span class="legend-item"><span class="legend-dot" style="background:#27AE60;"></span> Achievement</span>
+            <span class="legend-item"><span class="legend-dot" style="background:#E74C3C;"></span> Dismissal</span>
+        </div>
+    </main>
+    <br/>
+    <a href=".">Back to Lesson Plan</a>
+
+    <script>
+    fetch('timeline.json')
+        .then(response => response.json())
+        .then(data => {
+            var groups = new vis.DataSet(data.groups);
+            var items = new vis.DataSet(data.items);
+            var container = document.getElementById('timeline');
+            var options = {
+                zoomable: false,
+                moveable: true,
+                showCurrentTime: false,
+                tooltip: { followMouse: true },
+                margin: { item: 10 },
+                orientation: { axis: 'bottom' },
+                min: new Date(1994, 0, 1),
+                max: new Date(2028, 0, 1),
+                height: '400px'
+            };
+            var timeline = new vis.Timeline(container, items, groups, options);
+        });
+    </script>
+</body>
+</html>

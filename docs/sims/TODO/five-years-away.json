@@ -1,0 +1,14 @@
+{
+  "sim_id": "five-years-away",
+  "diagram_name": "Five Years Away Timeline",
+  "chapter_number": 15,
+  "chapter_title": "\"Economically Viable Quantum Computing: The Unicorn of Physics\"",
+  "chapter_dir": "15-quantum-computing",
+  "library": "vis-timeline",
+  "bloom_level": null,
+  "bloom_verb": "Examine, Compare",
+  "learning_objective": "Students will examine the pattern of \"five years away\" predictions across quantum computing and other technology fantasies, comparing predicted arrival dates against actual progress to identify the recurring prediction pattern.",
+  "completion_status": "specified",
+  "extracted_date": "2026-03-27",
+  "specification": "Type: timeline\n**sim-id:** five-years-away<br/>\n**Library:** vis-timeline<br/>\n**Status:** Specified\n\n**Bloom Taxonomy:** Analyze (L4)\n**Bloom Verb:** Examine, Compare\n**Learning Objective:** Students will examine the pattern of \"five years away\" predictions across quantum computing and other technology fantasies, comparing predicted arrival dates against actual progress to identify the recurring prediction pattern.\n\nPurpose: Interactive dual-track timeline showing predictions (top track) and actual milestones (bottom track) for quantum computing, revealing the persistent gap.\n\nEvents:\nTop track (Predictions, orange bars showing predicted \"arrival\" windows):\n- 1994-2014: \"10-20 years\" prediction\n- 2001-2016: \"10-15 years\" prediction\n- 2011-2021: \"10 years\" prediction\n- 2019-2029: \"5-10 years\" prediction\n- 2023-2033: \"5-10 years\" prediction\n\nBottom track (Actual milestones, blue points):\n- 1994: Shor's algorithm published\n- 2001: IBM factors 15 with 7 qubits\n- 2011: D-Wave commercial system\n- 2019: Google 53-qubit supremacy claim\n- 2023: IBM 1,121-qubit processor\n- 2026: No economically viable general-purpose QC\n\nVisual indicator: Vertical \"Today\" line at 2026 showing that all prediction windows either expired or extend beyond today\n\nInteractive features:\n- Hover over prediction bars to see full quote and attribution\n- Hover over milestones to see description and qubit count\n- Toggle: Show/hide AGI prediction track for comparison (same pattern)\n- Zoom and pan\n\nInstructional Rationale: Dual-track timeline makes the prediction-reality gap visually undeniable. Overlapping prediction bars show that each generation's \"5 years\" expires and is replaced by the next, supporting pattern recognition at the Analyze level.\n\nImplementation: vis-timeline with groups for predictions and milestones, range items for predictions, point items for milestones. Responsive container."
+}
