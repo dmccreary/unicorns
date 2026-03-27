@@ -1,0 +1,14 @@
+{
+  "sim_id": "linkedin-skill-inflation",
+  "diagram_name": "LinkedIn Skill Inflation Tracker",
+  "chapter_number": 9,
+  "chapter_title": "\"Phoenix Rising: The Art of Reinvention\"",
+  "chapter_dir": "09-phoenix-rising",
+  "library": "Chart.js",
+  "bloom_level": null,
+  "bloom_verb": "Compare, Examine",
+  "learning_objective": "Students will compare the growth rate of LinkedIn skill claims against the growth rate of actual job openings requiring those skills, examining the gap between credential inflation and market demand.",
+  "completion_status": "specified",
+  "extracted_date": "2026-03-27",
+  "specification": "Type: chart\n**sim-id:** linkedin-skill-inflation<br/>\n**Library:** Chart.js<br/>\n**Status:** Specified\n\n**Bloom Taxonomy:** Analyze (L4)\n**Bloom Verb:** Compare, Examine\n**Learning Objective:** Students will compare the growth rate of LinkedIn skill claims against the growth rate of actual job openings requiring those skills, examining the gap between credential inflation and market demand.\n\nChart type: Dual-line chart with shaded gap area\n\nX-axis: Time (2020, 2021, 2022, 2023, 2024, 2025)\nY-axis: Percentage growth from 2020 baseline (0% to 500%)\n\nData series:\n1. \"LinkedIn profiles claiming AI skills\" (gold line):\n   2020: 0%, 2021: 20%, 2022: 50%, 2023: 200%, 2024: 350%, 2025: 480%\n2. \"Job postings requiring AI skills\" (blue line):\n   2020: 0%, 2021: 15%, 2022: 40%, 2023: 90%, 2024: 130%, 2025: 160%\n3. Shaded area between lines labeled \"The Inflation Gap\"\n\nAnnotations:\n- Arrow at Nov 2022: \"ChatGPT releases\"\n- Arrow at 2023 gap: \"Gap widens: 110 percentage points\"\n- Text box: \"By 2025, profiles claiming AI skills grew 3x faster than jobs requiring them\"\n\nInteractive features:\n- Hover over data points for exact values\n- Toggle individual skill trends (dropdown: \"AI/ML\", \"Prompt Engineering\", \"Data Science\", \"Blockchain\")\n- Responsive to container width\n\nInstructional Rationale: The shaded gap between skill claims and job requirements makes credential inflation visually immediate, supporting Analyze-level pattern recognition. The dropdown to view individual skills reveals that the pattern repeats across technologies.\n\nImplementation: Chart.js with line chart, filler plugin for shaded area, and annotation plugin. Responsive container."
+}

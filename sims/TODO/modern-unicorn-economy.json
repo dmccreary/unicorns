@@ -1,0 +1,14 @@
+{
+  "sim_id": "modern-unicorn-economy",
+  "diagram_name": "Modern Unicorn Economy Infographic",
+  "chapter_number": 1,
+  "chapter_title": "A Brief and Totally Accurate History of Unicorns",
+  "chapter_dir": "01-history-of-unicorns",
+  "library": "Chart.js",
+  "bloom_level": null,
+  "bloom_verb": "Compare, Examine",
+  "learning_objective": "Students will compare the economic scale of modern unicorn culture across sectors and examine the relationship between a mythical creature's cultural penetration and its commercial value.",
+  "completion_status": "specified",
+  "extracted_date": "2026-03-27",
+  "specification": "Type: infographic\n**sim-id:** modern-unicorn-economy<br/>\n**Library:** Chart.js<br/>\n**Status:** Specified\n\n**Bloom Taxonomy:** Analyze (L4)\n**Bloom Verb:** Compare, Examine\n**Learning Objective:** Students will compare the economic scale of modern unicorn culture across sectors and examine the relationship between a mythical creature's cultural penetration and its commercial value.\n\nPurpose: Visualize the economic footprint of modern unicorn culture across sectors, showing how a creature that does not exist generates real revenue measured in trillions.\n\nChart type: Multi-panel dashboard with interactive elements\n\nPanel 1 — Horizontal bar chart: \"Unicorn Economy by Sector\"\n- Unicorn startups (combined valuation): $4,700 billion\n- Unicorn merchandise: $7.2 billion\n- Unicorn-themed food/beverage: $0.5 billion\n- Unicorn media/entertainment: $1.3 billion\n- Unicorn tourism (Scottish Highlands, etc.): $0.2 billion\nX-axis: Billions of USD (logarithmic scale recommended due to range)\nColor: Gradient from lavender (smallest) to deep purple (largest)\n\nPanel 2 — Donut chart: \"Unicorn Emoji Usage by Platform\"\n- Instagram: 42%\n- TikTok: 28%\n- Twitter/X: 15%\n- LinkedIn: 10% (labeled \"Concerning\")\n- Other: 5%\n\nPanel 3 — Counter/statistic display:\n- \"1,200+\" unicorn startups worldwide\n- \"$4.7T\" combined valuation\n- \"4,500 years\" of unicorn mythology\n- \"0\" verified unicorn specimens\n\nInteractive features:\n- Hover over any bar or segment for exact values and a deadpan tooltip (e.g., hovering over LinkedIn: \"One in ten unicorn emoji uses occurs in a professional context. The implications are troubling.\")\n- Click sector bars to expand a detail panel showing top examples\n- Responsive layout: panels stack vertically on narrow screens, side-by-side on wide screens\n\nImplementation: Chart.js with custom tooltip plugin for satirical hover text"
+}

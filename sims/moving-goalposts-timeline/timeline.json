@@ -1,0 +1,112 @@
+{
+    "groups": [
+        { "id": "achievement", "content": "Achievement" },
+        { "id": "dismissal", "content": "Dismissal" }
+    ],
+    "items": [
+        {
+            "id": 1,
+            "content": "Deep Blue beats Kasparov",
+            "start": "1997-05-11",
+            "group": "achievement",
+            "title": "<b>1997: Deep Blue Defeats Kasparov</b><br>IBM's Deep Blue defeats the world chess champion<br>in a six-game match. Chess had been the accepted<br>benchmark for machine intelligence since the 1950s.<br>It is immediately retired as a benchmark.",
+            "style": "background-color: #27AE60; color: white; border-color: #1E8449;"
+        },
+        {
+            "id": 2,
+            "content": "'Just computation'",
+            "start": "1997-06-01",
+            "group": "dismissal",
+            "title": "<b>1997: The First Goalpost Move</b><br>'That's not intelligence, it's just brute-force computation.'<br>The goalpost is relocated from 'beat the best human at chess'<br>to 'understand what chess means.' No metric is provided<br>for the new goalpost.",
+            "style": "background-color: #E74C3C; color: white; border-color: #C0392B;"
+        },
+        {
+            "id": 3,
+            "content": "Watson wins Jeopardy!",
+            "start": "2011-02-16",
+            "group": "achievement",
+            "title": "<b>2011: Watson Wins Jeopardy!</b><br>IBM's Watson defeats the two greatest Jeopardy! champions<br>in history, demonstrating natural language understanding,<br>knowledge retrieval, and strategic wagering.",
+            "style": "background-color: #27AE60; color: white; border-color: #1E8449;"
+        },
+        {
+            "id": 4,
+            "content": "'Just retrieval'",
+            "start": "2011-03-01",
+            "group": "dismissal",
+            "title": "<b>2011: Goalpost Moved Again</b><br>'It's just fast information retrieval, not understanding.'<br>The definition of understanding is not provided,<br>though it is understood to mean 'whatever machines<br>cannot currently do.'",
+            "style": "background-color: #E74C3C; color: white; border-color: #C0392B;"
+        },
+        {
+            "id": 5,
+            "content": "AlphaGo beats Lee Sedol",
+            "start": "2016-03-15",
+            "group": "achievement",
+            "title": "<b>2016: AlphaGo Defeats Lee Sedol</b><br>DeepMind's AlphaGo defeats 18-time world champion Lee Sedol<br>at Go, a game with more possible positions than atoms<br>in the observable universe. Move 37 in Game 2 is described<br>as creative and beautiful by professional Go players.",
+            "style": "background-color: #27AE60; color: white; border-color: #1E8449;"
+        },
+        {
+            "id": 6,
+            "content": "'Just tree search'",
+            "start": "2016-04-01",
+            "group": "dismissal",
+            "title": "<b>2016: Goalpost in Transit</b><br>'It's just sophisticated tree search with pattern matching.'<br>The same description applies to most human cognition,<br>but this observation is not considered helpful.",
+            "style": "background-color: #E74C3C; color: white; border-color: #C0392B;"
+        },
+        {
+            "id": 7,
+            "content": "GPT-3 generates essays",
+            "start": "2020-06-11",
+            "group": "achievement",
+            "title": "<b>2020: GPT-3 Generates Coherent Essays</b><br>GPT-3 produces text indistinguishable from human writing<br>across a wide range of topics and styles. Multiple publications<br>unknowingly publish AI-generated op-eds.",
+            "style": "background-color: #27AE60; color: white; border-color: #1E8449;"
+        },
+        {
+            "id": 8,
+            "content": "'Just statistical patterns'",
+            "start": "2020-07-01",
+            "group": "dismissal",
+            "title": "<b>2020: Goalpost Accelerates</b><br>'It's just statistical patterns. It doesn't truly understand.'<br>The word 'truly' is now doing the work previously performed<br>by entire philosophy departments. Its load-bearing capacity<br>is not questioned.",
+            "style": "background-color: #E74C3C; color: white; border-color: #C0392B;"
+        },
+        {
+            "id": 9,
+            "content": "GPT-4 passes bar exam",
+            "start": "2023-03-14",
+            "group": "achievement",
+            "title": "<b>2023: GPT-4 Passes the Bar Exam</b><br>GPT-4 scores in the 90th percentile on the Uniform Bar Exam,<br>outperforming most human test-takers. It also passes<br>the SAT, GRE, and multiple AP exams.",
+            "style": "background-color: #27AE60; color: white; border-color: #1E8449;"
+        },
+        {
+            "id": 10,
+            "content": "'Just memorization'",
+            "start": "2023-04-01",
+            "group": "dismissal",
+            "title": "<b>2023: Goalpost Now Supersonic</b><br>'It just memorized the training data.' This explanation<br>is offered by people who passed the bar exam using<br>the same method, though they called it 'studying.'",
+            "style": "background-color: #E74C3C; color: white; border-color: #C0392B;"
+        },
+        {
+            "id": 11,
+            "content": "AI assists drug discovery",
+            "start": "2024-01-15",
+            "group": "achievement",
+            "title": "<b>2024: AI Accelerates Drug Discovery</b><br>AI-designed drugs enter clinical trials. Protein structure<br>prediction achieves near-experimental accuracy.<br>Molecular simulation timelines compress from years to hours.",
+            "style": "background-color: #27AE60; color: white; border-color: #1E8449;"
+        },
+        {
+            "id": 12,
+            "content": "'Just narrow application'",
+            "start": "2024-02-01",
+            "group": "dismissal",
+            "title": "<b>2024: Goalpost Achieves Escape Velocity</b><br>'That's just a narrow application, not general intelligence.'<br>The goalpost has now been moved so many times that<br>it qualifies for frequent flyer status. Its current location<br>is 'true reasoning,' a term that will be redefined<br>upon achievement.",
+            "style": "background-color: #E74C3C; color: white; border-color: #C0392B;"
+        },
+        {
+            "id": 13,
+            "content": "Current goalpost: 'True reasoning'",
+            "start": "2026-01-01",
+            "group": "dismissal",
+            "title": "<b>2026: Current Goalpost Location</b><br>The goalpost now reads 'true reasoning,' a concept<br>whose definition will be updated automatically<br>upon the next AI achievement. Previous goalposts<br>are available in the museum of things we said<br>computers could never do.",
+            "style": "background-color: #8E44AD; color: white; border-color: #6C3483;"
+        }
+    ]
+}

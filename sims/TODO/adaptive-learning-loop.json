@@ -1,0 +1,14 @@
+{
+  "sim_id": "adaptive-learning-loop",
+  "diagram_name": "Adaptive Learning Feedback Loop",
+  "chapter_number": 5,
+  "chapter_title": "\"Deer in the Headlights: When Disruption Comes Knocking\"",
+  "chapter_dir": "05-deer-in-the-headlights",
+  "library": "p5.js",
+  "bloom_level": null,
+  "bloom_verb": "Explain, Describe",
+  "learning_objective": "Students will explain how an adaptive learning system adjusts content based on student performance by tracing the feedback loop through its stages with concrete examples.",
+  "completion_status": "specified",
+  "extracted_date": "2026-03-27",
+  "specification": "Type: workflow\n**sim-id:** adaptive-learning-loop<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\n**Bloom Taxonomy:** Understand (L2)\n**Bloom Verb:** Explain, Describe\n**Learning Objective:** Students will explain how an adaptive learning system adjusts content based on student performance by tracing the feedback loop through its stages with concrete examples.\n\nPurpose: Step-through workflow visualization showing how an adaptive learning system processes student performance and adjusts content difficulty.\n\nData Visibility Requirements:\nStage 1: Student answers question — show question \"What is a unicorn?\" and answer \"A horse with a horn\" (correct)\nStage 2: System records performance — show score tracker: 4/5 correct, current mastery: 80%\nStage 3: AI evaluates — show decision tree: mastery > 85% → harder content, 60-85% → same level, < 60% → easier content. Current: 80% → same level\nStage 4: System selects next content — show pool of 3 questions at current difficulty level, one highlighted as selected\nStage 5: Student answers again — this time incorrectly. Mastery drops to 67%\nStage 6: System adjusts — now shows easier content selection path highlighted\n\nInteractive controls:\n- Button: \"Next Step\" — advances through the 6 stages\n- Button: \"Previous Step\" — returns to prior stage\n- Button: \"Reset\" — returns to Stage 1\n\nVisual elements:\n- Circular workflow diagram with 4 main nodes (Student, Assessment, AI Engine, Content Library)\n- Current active node highlighted\n- Data panels showing concrete values at each stage\n- Arrows between nodes showing flow direction\n\nInstructional Rationale: Step-through with concrete student data (actual questions, scores, and decisions) supports Understand-level learning by making the invisible feedback loop visible. Students trace the process with real values rather than abstract descriptions.\n\nImplementation: p5.js with state machine for stages, createButton() controls, workflow nodes drawn with ellipse() and connecting arrows. Responsive canvas using updateCanvasSize(). Canvas parented to document.querySelector('main')."
+}

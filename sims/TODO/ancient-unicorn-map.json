@@ -1,0 +1,14 @@
+{
+  "sim_id": "ancient-unicorn-map",
+  "diagram_name": "Ancient Unicorn Civilizations Map",
+  "chapter_number": 1,
+  "chapter_title": "A Brief and Totally Accurate History of Unicorns",
+  "chapter_dir": "01-history-of-unicorns",
+  "library": "Leaflet",
+  "bloom_level": null,
+  "bloom_verb": "Locate, Identify",
+  "learning_objective": "Students will locate the major ancient civilizations that contributed to unicorn mythology and identify the approximate time periods and key characteristics of each tradition.",
+  "completion_status": "specified",
+  "extracted_date": "2026-03-27",
+  "specification": "Type: map\n**sim-id:** ancient-unicorn-map<br/>\n**Library:** Leaflet<br/>\n**Status:** Specified\n\n**Bloom Taxonomy:** Remember (L1)\n**Bloom Verb:** Locate, Identify\n**Learning Objective:** Students will locate the major ancient civilizations that contributed to unicorn mythology and identify the approximate time periods and key characteristics of each tradition.\n\nGeographic scope: World map centered on Eurasia, showing Mesopotamia, Indus Valley, Greece, China, and Persia.\n\nLocations to mark:\n\n- Mesopotamia (modern Iraq, ~3000 BCE marker): Cylinder seal depictions of single-horned creatures. Tooltip: \"Earliest known single-horned animal depictions. Purpose: divine protection, or possibly early branding.\"\n- Indus Valley (modern Pakistan/NW India, ~2500 BCE marker): Harappan unicorn seals. Tooltip: \"Over 2,000 seals recovered. Most popular animal motif. Still no Series A funding.\"\n- Greece (Athens region, ~400 BCE marker): Ctesias and natural history tradition. Tooltip: \"Described by scholars who had never visited the locations they wrote about. A tradition that endures.\"\n- China (central China, ~2700 BCE marker): Qilin tradition. Tooltip: \"Omen of prosperity and good governance. Sightings declined sharply after the invention of auditing.\"\n- Persia (modern Iran, ~500 BCE marker): Karkadann tradition. Tooltip: \"A ferocious one-horned beast. Possibly a rhinoceros. The rhinoceros has declined to comment.\"\n\nMovement arrows:\n- Dashed arrows showing mythological transmission routes from Mesopotamia to Greece, from India to Persia, and from Persia to Europe\n- Arrow labels: \"Trade routes carried stories faster than fact-checking\"\n\nInteractive features:\n- Click markers to expand civilization detail panels with dates, key sources, and unicorn descriptions\n- Hover over arrows to see transmission routes and approximate dates\n- Zoom and pan enabled\n- Responsive design adapts to container width\n\nColor scheme: Warm earth tones for land, markers color-coded by era (gold for earliest, copper for middle, silver for latest)\n\nImplementation: Leaflet.js with custom markers and popup panels"
+}

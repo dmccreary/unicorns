@@ -1,0 +1,14 @@
+{
+  "sim_id": "llm-how-it-works",
+  "diagram_name": "How a Large Language Model Works",
+  "chapter_number": 4,
+  "chapter_title": "The Emperor's New Algorithm",
+  "chapter_dir": "04-emperors-new-algorithm",
+  "library": "p5.js",
+  "bloom_level": null,
+  "bloom_verb": "Explain, Interpret",
+  "learning_objective": "Students will explain the step-by-step process by which a large language model generates text, from tokenization through next-word prediction, using concrete examples with visible data at each stage.",
+  "completion_status": "specified",
+  "extracted_date": "2026-03-27",
+  "specification": "Type: microsim\n**sim-id:** llm-how-it-works<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\n**Bloom Taxonomy:** Understand (L2)\n**Bloom Verb:** Explain, Interpret\n**Learning Objective:** Students will explain the step-by-step process by which a large language model generates text, from tokenization through next-word prediction, using concrete examples with visible data at each stage.\n\nPurpose: Step-through visualization showing how an LLM processes a prompt and generates a response, one stage at a time with concrete data visible.\n\nData Visibility Requirements:\nStage 1: Show raw input prompt: \"What is a unicorn?\"\nStage 2: Show tokenization: [\"What\", \" is\", \" a\", \" un\", \"icorn\", \"?\"]\nStage 3: Show embedding — each token mapped to a vector (simplified as colored bars of varying heights)\nStage 4: Show attention — highlight which tokens attend to which others (arrows of varying thickness between tokens)\nStage 5: Show probability distribution for next word: \"A\" (32%), \"The\" (18%), \"Un\" (12%), \"In\" (8%), \"It\" (6%), other (24%)\nStage 6: Show selected word \"A\" appended, then repeat prediction: \"unicorn\" (45%), \"mythical\" (15%), \"horse\" (10%)...\nStage 7: Show generated sequence building word by word: \"A unicorn is a mythical creature that...\"\n\nInteractive controls:\n- Button: \"Next Stage\" — advances through the 7 stages\n- Button: \"Previous Stage\" — returns to prior stage\n- Button: \"Reset\" — returns to Stage 1\n- Button: \"Try Another Prompt\" — cycles through 3 preset prompts\n\nVisual elements:\n- Central display area showing the current stage's data\n- Token boxes with color coding\n- Probability bar chart at prediction stages\n- Growing output sequence at generation stage\n- Stage indicator (1/7, 2/7, etc.) at top\n\nInstructional Rationale: Step-through with concrete data at each stage supports Understand-level learning by making the invisible LLM pipeline visible. Students see actual tokens, attention weights, and probability distributions rather than abstract diagrams, enabling them to explain the process in their own words.\n\nImplementation: p5.js with state machine for stages, createButton() controls. Responsive canvas using updateCanvasSize(). Canvas parented to document.querySelector('main')."
+}

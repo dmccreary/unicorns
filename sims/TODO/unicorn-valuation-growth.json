@@ -1,0 +1,14 @@
+{
+  "sim_id": "unicorn-valuation-growth",
+  "diagram_name": "Unicorn Valuation Growth Chart",
+  "chapter_number": 3,
+  "chapter_title": "The Unicorn-Industrial Complex",
+  "chapter_dir": "03-unicorn-industrial-complex",
+  "library": "Chart.js",
+  "bloom_level": null,
+  "bloom_verb": "Examine, Compare",
+  "learning_objective": "Students will examine the exponential growth pattern in unicorn valuations and compare growth in the number of unicorns versus their combined valuation to identify whether valuations are inflating faster than the population.",
+  "completion_status": "specified",
+  "extracted_date": "2026-03-27",
+  "specification": "Type: chart\n**sim-id:** unicorn-valuation-growth<br/>\n**Library:** Chart.js<br/>\n**Status:** Specified\n\n**Bloom Taxonomy:** Analyze (L4)\n**Bloom Verb:** Examine, Compare\n**Learning Objective:** Students will examine the exponential growth pattern in unicorn valuations and compare growth in the number of unicorns versus their combined valuation to identify whether valuations are inflating faster than the population.\n\nChart type: Dual-axis bar and line chart\n\nX-axis: Year (2013, 2015, 2018, 2021, 2024)\nY-axis left: Number of unicorns (bar chart, blue bars)\nY-axis right: Combined valuation in trillions USD (line chart, gold line with markers)\n\nData:\n- 2013: 39 unicorns, $0.1T\n- 2015: 80 unicorns, $0.25T\n- 2018: 260 unicorns, $0.84T\n- 2021: 900 unicorns, $2.8T\n- 2024: 1200 unicorns, $4.7T\n\nAnnotations:\n- Arrow at 2013: \"Aileen Lee coins the term\"\n- Shaded region 2020-2021: \"ZIRP bubble\" (zero interest rate policy era)\n- Arrow at 2024 line: \"$4.7 trillion — more than Germany's GDP\"\n\nInteractive features:\n- Hover over bars/points to see exact values\n- Toggle between linear and logarithmic Y-axis scales\n- Responsive to container width\n\nInstructional Rationale: A dual-axis chart enables students to compare two related but distinct growth curves (count vs. valuation) and notice that average valuation per unicorn is also increasing, revealing compounding magical thinking at the portfolio level.\n\nImplementation: Chart.js with dual Y-axes, custom tooltip formatting, and annotation plugin."
+}

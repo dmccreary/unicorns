@@ -1,0 +1,14 @@
+{
+  "sim_id": "metaverse-hype-cycles",
+  "diagram_name": "Metaverse Hype Cycle History",
+  "chapter_number": 18,
+  "chapter_title": "\"The Metaverse: A Kraken's Tale\"",
+  "chapter_dir": "18-the-metaverse",
+  "library": "Chart.js",
+  "bloom_level": null,
+  "bloom_verb": "Compare, Examine",
+  "learning_objective": "Students will compare the four VR/metaverse hype cycles by examining investment levels, media coverage patterns, and adoption outcomes to identify the recurring boom-bust pattern.",
+  "completion_status": "specified",
+  "extracted_date": "2026-03-27",
+  "specification": "Type: chart\n**sim-id:** metaverse-hype-cycles<br/>\n**Library:** Chart.js<br/>\n**Status:** Specified\n\n**Bloom Taxonomy:** Analyze (L4)\n**Bloom Verb:** Compare, Examine\n**Learning Objective:** Students will compare the four VR/metaverse hype cycles by examining investment levels, media coverage patterns, and adoption outcomes to identify the recurring boom-bust pattern.\n\nChart type: Multi-line chart showing four overlapping hype curves\n\nX-axis: Years within each cycle (Year 0 to Year 8)\nY-axis: Hype intensity index (0-100, combining media coverage + investment + public interest)\n\nData series (four curves, each offset to align \"peak\" at Year 3):\n1. \"1990s VR\" (gray, dotted): Peaks at 45, troughs at 10\n2. \"Second Life\" (blue, dashed): Peaks at 55, troughs at 8\n3. \"Oculus era\" (green, dashed): Peaks at 65, troughs at 20\n4. \"Meta's Metaverse\" (gold, solid): Peaks at 95, current trough at 25\n\nAnnotations:\n- Vertical line at Year 3: \"Peak hype\"\n- Shaded region Year 4-6: \"Trough of disillusionment\"\n- Text box: \"Each cycle peaks higher and crashes to approximately the same level\"\n- Arrow at Meta peak: \"$10B+/year investment\"\n\nInteractive features:\n- Hover over data points for event descriptions at each year\n- Toggle individual cycles on/off to compare\n- Responsive to container width\n\nInstructional Rationale: Overlaying four hype curves on the same time axis makes the pattern of escalating peaks and consistent troughs visually undeniable. The escalation (each peak higher than the last) alongside consistent trough levels reveals that more money does not prevent the crash.\n\nImplementation: Chart.js with multi-dataset line chart, custom legend, and annotation plugin. Responsive container."
+}

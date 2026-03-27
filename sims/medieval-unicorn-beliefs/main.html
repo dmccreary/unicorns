@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
+    <title>Medieval Unicorn Belief Network</title>
+    <script src="https://unpkg.com/vis-network@9.1.6/standalone/umd/vis-network.min.js"></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f5f5f5;
+        }
+        main {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 16px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+            margin: 8px 0 4px 0;
+            font-size: 1.5rem;
+        }
+        .subtitle {
+            text-align: center;
+            color: #666;
+            margin: 0 0 12px 0;
+            font-size: 0.95rem;
+        }
+        #network {
+            width: 100%;
+            height: 500px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            background: #ffffff;
+        }
+        #detail-panel {
+            margin-top: 10px;
+            padding: 12px 16px;
+            background: #fff;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            min-height: 40px;
+            color: #444;
+            font-size: 0.95rem;
+        }
+        #detail-panel strong {
+            color: #222;
+        }
+        a { color: #555; }
+    </style>
+</head>
+<body>
+<main>
+    <h1>Medieval Unicorn Belief Network</h1>
+    <p class="subtitle">Connections between medieval beliefs about unicorns. Click a node for details.</p>
+
+    <div id="network"></div>
+    <div id="detail-panel">Hover over or click a node or edge to see details.</div>
+
+    <br>
+    <a href=".">Back to Lesson Plan</a>
+</main>
+
+<script>
+(function() {
+    var detailPanel = document.getElementById('detail-panel');
+
+    var nodeDescriptions = {
+        'Unicorn': 'The unicorn: central to medieval imagination, described with absolute certainty by people who had never seen one. Much like generative AI in board presentations.',
+        'Purity': 'Medieval scholars believed the unicorn embodied purity. Modern scholars believe the same about their data pipelines. Both are mistaken.',
+        'Virgin Capture': 'The only way to catch a unicorn was to lure it with a maiden of irreproachable virtue. This is also, approximately, how startups recruit senior engineers.',
+        'Healing': 'The unicorn possessed miraculous healing powers. Its horn could cure any ailment. This claim has the same evidentiary basis as most wellness apps.',
+        'Alicorn Trade': 'Narwhal tusks were sold as unicorn horns (alicorns) for prices exceeding their weight in gold. This is the medieval equivalent of selling SaaS licenses for vaporware.',
+        'Water Purification': 'A unicorn could purify poisoned water by dipping its horn. Medieval water treatment infrastructure thus depended on a creature that did not exist. Some modern infrastructure shares this dependency.',
+        'Christianity': 'The medieval Church adopted the unicorn as a symbol of Christ. The unicorn did not consent to this branding arrangement, but then, neither do most open-source projects.',
+        'Christ Symbol': 'In Christian allegory, the unicorn represented Christ: rare, pure, and captured through innocence. The metaphor was considered theologically sound by people who also believed in dragons.',
+        'Monastery Bestiaries': 'Monks cataloged unicorns alongside real animals in illuminated bestiaries. These were the peer-reviewed journals of their era. The peer review was conducted by other monks who also had not seen a unicorn.',
+        'Royalty': 'Unicorns appeared on royal coats of arms as symbols of sovereign power. This was effective branding. The unicorn could not object.',
+        'Royal Coat of Arms': 'The British Royal Coat of Arms features a unicorn chained to the crown. Scotland\'s unicorn, specifically. The symbolism of chaining a mythical creature to represent governance remains, one might argue, perfectly accurate.',
+        'Throne of Scotland': 'Scotland adopted the unicorn as its national animal. This is not a joke. It is the official national animal. The committee that decided this presumably met only once.',
+        'Natural History': 'Ancient and medieval natural historians recorded the unicorn as fact. Their methodology was "someone told me" — a tradition preserved in modern market research.',
+        'Pliny the Elder': 'Pliny the Elder described the unicorn in his Natural History (77 AD) as a fierce beast with a single black horn. He described it with the confidence of a LinkedIn thought leader describing Web3.',
+        'Ctesias of Cnidus': 'Ctesias, a Greek physician (5th century BC), provided the first Western account of the unicorn. He had never visited India, where he claimed they lived. His sourcing standards anticipated modern tech journalism by 2,400 years.'
+    };
+
+    // Central node
+    var nodeData = [
+        { id: 'Unicorn', label: 'Unicorn', x: 0, y: 0, size: 40,
+          color: { background: '#FFD54F', border: '#F9A825', highlight: { background: '#FFECB3', border: '#F57F17' } },
+          font: { size: 16, color: '#333', bold: true } },
+
+        // Category nodes (medium, ring 1)
+        { id: 'Purity', label: 'Purity', x: 0, y: -220,
+          color: { background: '#F5F5F5', border: '#9E9E9E', highlight: { background: '#fff', border: '#616161' } },
+          font: { size: 13, color: '#333' } },
+        { id: 'Healing', label: 'Healing', x: 210, y: -70,
+          color: { background: '#C8E6C9', border: '#43A047', highlight: { background: '#A5D6A7', border: '#2E7D32' } },
+          font: { size: 13, color: '#333' } },
+        { id: 'Christianity', label: 'Christianity', x: 130, y: 180,
+          color: { background: '#E1BEE7', border: '#8E24AA', highlight: { background: '#CE93D8', border: '#6A1B9A' } },
+          font: { size: 13, color: '#333' } },
+        { id: 'Royalty', label: 'Royalty', x: -130, y: 180,
+          color: { background: '#FFCDD2', border: '#C62828', highlight: { background: '#EF9A9A', border: '#B71C1C' } },
+          font: { size: 13, color: '#333' } },
+        { id: 'Natural History', label: 'Natural\nHistory', x: -210, y: -70,
+          color: { background: '#B2DFDB', border: '#00897B', highlight: { background: '#80CBC4', border: '#00695C' } },
+          font: { size: 13, color: '#333' } },
+
+        // Sub-nodes (ring 2)
+        { id: 'Virgin Capture', label: 'Virgin\nCapture', x: 80, y: -370,
+          color: { background: '#F8BBD0', border: '#EC407A', highlight: { background: '#F48FB1', border: '#D81B60' } },
+          font: { size: 11, color: '#333' } },
+
+        { id: 'Alicorn Trade', label: 'Alicorn\nTrade', x: 380, y: -140,
+          color: { background: '#FFE082', border: '#FFA000', highlight: { background: '#FFD54F', border: '#FF8F00' } },
+          font: { size: 11, color: '#333' } },
+        { id: 'Water Purification', label: 'Water\nPurification', x: 370, y: 40,
+          color: { background: '#BBDEFB', border: '#1E88E5', highlight: { background: '#90CAF9', border: '#1565C0' } },
+          font: { size: 11, color: '#333' } },
+
+        { id: 'Christ Symbol', label: 'Christ\nSymbol', x: 280, y: 310,
+          color: { background: '#E1BEE7', border: '#8E24AA', highlight: { background: '#CE93D8', border: '#6A1B9A' } },
+          font: { size: 11, color: '#333' } },
+        { id: 'Monastery Bestiaries', label: 'Monastery\nBestiaries', x: 60, y: 350,
+          color: { background: '#D7CCC8', border: '#795548', highlight: { background: '#BCAAA4', border: '#5D4037' } },
+          font: { size: 11, color: '#333' } },
+
+        { id: 'Royal Coat of Arms', label: 'Royal Coat\nof Arms', x: -280, y: 310,
+          color: { background: '#FFCDD2', border: '#C62828', highlight: { background: '#EF9A9A', border: '#B71C1C' } },
+          font: { size: 11, color: '#333' } },
+        { id: 'Throne of Scotland', label: 'Throne of\nScotland', x: -60, y: 350,
+          color: { background: '#FFCDD2', border: '#C62828', highlight: { background: '#EF9A9A', border: '#B71C1C' } },
+          font: { size: 11, color: '#333' } },
+
+        { id: 'Pliny the Elder', label: 'Pliny the\nElder', x: -380, y: -140,
+          color: { background: '#B2DFDB', border: '#00897B', highlight: { background: '#80CBC4', border: '#00695C' } },
+          font: { size: 11, color: '#333' } },
+        { id: 'Ctesias of Cnidus', label: 'Ctesias of\nCnidus', x: -370, y: 50,
+          color: { background: '#B2DFDB', border: '#00897B', highlight: { background: '#80CBC4', border: '#00695C' } },
+          font: { size: 11, color: '#333' } }
+    ];
+
+    nodeData.forEach(function(n) {
+        if (!n.size) n.size = 22;
+        n.shape = 'circle';
+        n.title = nodeDescriptions[n.id] || n.id;
+    });
+
+    var nodes = new vis.DataSet(nodeData);
+
+    // Edges with relationship labels
+    var edgeData = [
+        // Unicorn -> categories
+        { from: 'Unicorn', to: 'Purity', label: 'symbolizes', color: '#9E9E9E' },
+        { from: 'Unicorn', to: 'Healing', label: 'possesses', color: '#43A047' },
+        { from: 'Unicorn', to: 'Christianity', label: 'adopted by', color: '#8E24AA' },
+        { from: 'Unicorn', to: 'Royalty', label: 'claimed by', color: '#C62828' },
+        { from: 'Unicorn', to: 'Natural History', label: 'cataloged in', color: '#00897B' },
+
+        // Purity -> sub
+        { from: 'Purity', to: 'Virgin Capture', label: 'requires', color: '#EC407A', y_offset: true },
+
+        // Healing -> subs
+        { from: 'Healing', to: 'Alicorn Trade', label: 'monetized as', color: '#FFA000' },
+        { from: 'Healing', to: 'Water Purification', label: 'applied to', color: '#1E88E5' },
+
+        // Christianity -> subs
+        { from: 'Christianity', to: 'Christ Symbol', label: 'interpreted as', color: '#8E24AA' },
+        { from: 'Christianity', to: 'Monastery Bestiaries', label: 'recorded in', color: '#795548' },
+
+        // Royalty -> subs
+        { from: 'Royalty', to: 'Royal Coat of Arms', label: 'displayed on', color: '#C62828' },
+        { from: 'Royalty', to: 'Throne of Scotland', label: 'represents', color: '#C62828' },
+
+        // Natural History -> subs
+        { from: 'Natural History', to: 'Pliny the Elder', label: 'described by', color: '#00897B' },
+        { from: 'Natural History', to: 'Ctesias of Cnidus', label: 'first recorded by', color: '#00897B' },
+
+        // Cross-links
+        { from: 'Alicorn Trade', to: 'Royalty', label: 'sold to', color: '#FF8F00', dashes: [6, 3] },
+        { from: 'Monastery Bestiaries', to: 'Natural History', label: 'preserved by', color: '#795548', dashes: [6, 3] },
+        { from: 'Virgin Capture', to: 'Christianity', label: 'allegorized by', color: '#AB47BC', dashes: [6, 3] }
+    ];
+
+    var edges = new vis.DataSet(edgeData.map(function(e, i) {
+        var fromNode = nodeData.find(function(n) { return n.id === e.from; });
+        var toNode = nodeData.find(function(n) { return n.id === e.to; });
+        var dy = Math.abs((fromNode.y || 0) - (toNode.y || 0));
+
+        return {
+            id: 'e-' + i,
+            from: e.from,
+            to: e.to,
+            label: e.label,
+            arrows: 'to',
+            color: { color: e.color, highlight: '#333' },
+            font: { size: 10, color: e.color, strokeWidth: 2, strokeColor: '#fff' },
+            width: e.dashes ? 1.5 : 2,
+            dashes: e.dashes || false,
+            smooth: { type: 'curvedCW', roundness: dy < 30 ? 0.2 : 0.08 },
+            title: e.from + ' — ' + e.label + ' — ' + e.to
+        };
+    }));
+
+    // Network
+    var container = document.getElementById('network');
+    var data = { nodes: nodes, edges: edges };
+    var options = {
+        physics: {
+            enabled: true,
+            stabilization: { iterations: 200 },
+            barnesHut: {
+                gravitationalConstant: -4000,
+                centralGravity: 0.15,
+                springLength: 200,
+                springConstant: 0.015
+            }
+        },
+        interaction: {
+            hover: true,
+            tooltipDelay: 150,
+            zoomView: true,
+            dragView: true,
+            dragNodes: true
+        },
+        edges: {
+            smooth: { type: 'curvedCW', roundness: 0.08 }
+        },
+        layout: {
+            improvedLayout: true
+        }
+    };
+
+    var network = new vis.Network(container, data, options);
+
+    // Click handler for detail panel
+    network.on('click', function(params) {
+        if (params.nodes.length > 0) {
+            var nodeId = params.nodes[0];
+            var info = nodeDescriptions[nodeId];
+            if (info) {
+                detailPanel.innerHTML = '<strong>' + nodeId + ':</strong> ' + info;
+            }
+        } else if (params.edges.length > 0) {
+            var edge = edges.get(params.edges[0]);
+            if (edge && edge.title) {
+                detailPanel.innerHTML = '<strong>Relationship:</strong> ' + edge.title;
+            }
+        } else {
+            detailPanel.innerHTML = 'Hover over or click a node or edge to see details.';
+        }
+    });
+
+    network.on('hoverNode', function(params) {
+        var info = nodeDescriptions[params.node];
+        if (info) {
+            detailPanel.innerHTML = '<strong>' + params.node + ':</strong> ' + info;
+        }
+    });
+
+    network.on('hoverEdge', function(params) {
+        var edge = edges.get(params.edge);
+        if (edge && edge.title) {
+            detailPanel.innerHTML = '<strong>Relationship:</strong> ' + edge.title;
+        }
+    });
+
+    // Responsive resize
+    window.addEventListener('resize', function() {
+        network.fit();
+    });
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,106 @@
+{
+    "groups": [
+        { "id": "predictions", "content": "Predictions" },
+        { "id": "achievements", "content": "Achievements" }
+    ],
+    "items": [
+        {
+            "id": 1,
+            "content": "Dartmouth: 'one generation'",
+            "start": "1956-01-01",
+            "end": "1976-01-01",
+            "type": "range",
+            "group": "predictions",
+            "title": "<b>1956-1976: Dartmouth Conference Prediction</b><br>The founders of AI predicted that a machine as intelligent<br>as a human could be built in 'one generation.' The generation<br>in question has since retired without comment.",
+            "style": "background-color: #E67E22; color: white; border-color: #CA6F1E;"
+        },
+        {
+            "id": 2,
+            "content": "Minsky: '3-8 years'",
+            "start": "1970-01-01",
+            "end": "1978-01-01",
+            "type": "range",
+            "group": "predictions",
+            "title": "<b>1970-1978: Marvin Minsky's Prediction</b><br>Minsky predicted machines with the general intelligence of<br>an average human being within '3 to 8 years.'<br>The error bars on this estimate have since expanded to include infinity.",
+            "style": "background-color: #E67E22; color: white; border-color: #CA6F1E;"
+        },
+        {
+            "id": 3,
+            "content": "Kurzweil: 'by 2029'",
+            "start": "1997-01-01",
+            "end": "2029-01-01",
+            "type": "range",
+            "group": "predictions",
+            "title": "<b>1997-2029: Kurzweil's Prediction</b><br>Ray Kurzweil predicts AGI by 2029. He has been consistently<br>updating the definition of AGI to remain technically correct,<br>which is the best kind of correct when selling books.",
+            "style": "background-color: #E67E22; color: white; border-color: #CA6F1E;"
+        },
+        {
+            "id": 4,
+            "content": "Researchers: '10-20 years'",
+            "start": "2015-01-01",
+            "end": "2035-01-01",
+            "type": "range",
+            "group": "predictions",
+            "title": "<b>2015-2035: Survey of AI Researchers</b><br>Multiple surveys of AI researchers converge on '10-20 years'<br>as the expected timeline. This prediction has itself remained<br>stable at '10-20 years' for approximately 60 years.",
+            "style": "background-color: #E67E22; color: white; border-color: #CA6F1E;"
+        },
+        {
+            "id": 5,
+            "content": "Altman era: 'relatively soon'",
+            "start": "2023-01-01",
+            "end": "2028-01-01",
+            "type": "range",
+            "group": "predictions",
+            "title": "<b>2023-2028: The 'Relatively Soon' Era</b><br>Sam Altman and contemporaries predict AGI 'relatively soon,'<br>a formulation notable for its complete absence of falsifiability.<br>'Relatively' is doing considerable load-bearing work in this sentence.",
+            "style": "background-color: #E67E22; color: white; border-color: #CA6F1E;"
+        },
+        {
+            "id": 6,
+            "content": "Deep Blue beats Kasparov",
+            "start": "1997-05-11",
+            "group": "achievements",
+            "title": "<b>1997: Deep Blue Defeats Kasparov</b><br>IBM's Deep Blue defeats world chess champion Garry Kasparov.<br>Immediately reclassified as 'not real AI' by those who had<br>previously defined chess as the benchmark for intelligence.",
+            "style": "background-color: #2E86C1; color: white; border-color: #2471A3;"
+        },
+        {
+            "id": 7,
+            "content": "Watson wins Jeopardy",
+            "start": "2011-02-16",
+            "group": "achievements",
+            "title": "<b>2011: Watson Wins Jeopardy!</b><br>IBM's Watson defeats champions Ken Jennings and Brad Rutter.<br>Watson's subsequent career in healthcare has been less successful,<br>a trajectory familiar to many quiz show winners.",
+            "style": "background-color: #2E86C1; color: white; border-color: #2471A3;"
+        },
+        {
+            "id": 8,
+            "content": "AlphaGo beats Lee Sedol",
+            "start": "2016-03-15",
+            "group": "achievements",
+            "title": "<b>2016: AlphaGo Defeats Lee Sedol</b><br>DeepMind's AlphaGo defeats world Go champion Lee Sedol 4-1.<br>The victory is immediately downgraded to 'just tree search'<br>by observers who cannot play Go.",
+            "style": "background-color: #2E86C1; color: white; border-color: #2471A3;"
+        },
+        {
+            "id": 9,
+            "content": "GPT-3 released",
+            "start": "2020-06-11",
+            "group": "achievements",
+            "title": "<b>2020: GPT-3 Released</b><br>OpenAI releases GPT-3, a language model that can generate<br>convincing text. Critics note it doesn't 'truly understand.'<br>The same criticism applies to most email correspondence.",
+            "style": "background-color: #2E86C1; color: white; border-color: #2471A3;"
+        },
+        {
+            "id": 10,
+            "content": "ChatGPT released",
+            "start": "2022-11-30",
+            "group": "achievements",
+            "title": "<b>2022: ChatGPT Released</b><br>ChatGPT reaches 100 million users in two months.<br>Education administrators begin forming committees<br>to discuss its implications, a process expected<br>to conclude around 2047.",
+            "style": "background-color: #2E86C1; color: white; border-color: #2471A3;"
+        },
+        {
+            "id": 11,
+            "content": "Impressive narrow AI, no AGI",
+            "start": "2026-01-01",
+            "group": "achievements",
+            "title": "<b>2026: Current State</b><br>AI systems demonstrate remarkable capabilities in narrow domains.<br>AGI remains approximately 10-20 years away,<br>as it has been since 1956.",
+            "style": "background-color: #2E86C1; color: white; border-color: #2471A3;"
+        }
+    ]
+}
