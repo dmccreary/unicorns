@@ -1,0 +1,1 @@
+use the /book-installer skill to create a unicorn mascot for this book

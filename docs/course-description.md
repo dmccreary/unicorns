@@ -12,7 +12,7 @@
 
 ## Target Audience
 
-This course is designed for a general audience, ages 10 and up (5th grade through adult learners). No prior experience with unicorns, dragons, or artificial intelligence is required, though a willingness to suspend disbelief is strongly encouraged. The course is particularly relevant for:
+This course is designed for a general audience, ages 14 and up (9th grade through adult learners). No prior experience with unicorns, dragons, or artificial intelligence is required, though a willingness to suspend disbelief is strongly encouraged. The course is particularly relevant for:
 
 - Students who have been told "AI won't affect your job"
 - Educators who believe worksheets will never become obsolete

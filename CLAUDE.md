@@ -36,7 +36,7 @@ Every sentence must read as if the author genuinely believes unicorns are a crit
 
 ### Language Rules
 
-- **Reading level:** Accessible to 5th graders and up. Short sentences. Clear vocabulary. The satire should work through situation and irony, not through obscure references that require an MBA to decode.
+- **Reading level:** Accessible to 9th graders and up. Short sentences. Clear vocabulary. The satire should work through situation and irony, not through obscure references that require an MBA to decode.
 - **No emoji** unless explicitly requested.
 - **No exclamation points** in prose. Deadpan means deadpan. Excitement undermines the bit.
 - **Use precise, specific details** to sell the absurdity. "A $4.7 trillion metaphor" is funnier than "a very expensive metaphor." "The committee met 47 times before recommending further study" is funnier than "the committee met many times."
@@ -50,6 +50,52 @@ Every sentence must read as if the author genuinely believes unicorns are a crit
 - Don't break the fourth wall with disclaimers like "of course, unicorns aren't real." The book's position is that unicorns are exactly as real as economically viable quantum computing, and it treats both with equal seriousness.
 - Don't write bland, safe humor. This is biting satire. It should make people in the AI industry and education administration slightly uncomfortable. If nobody is offended, the satire isn't working.
 - Don't pad content. Every sentence should either advance the narrative, deliver a joke, or set up a joke. No filler paragraphs about "the importance of critical thinking in today's world."
+
+## Learning Mascot: Sparkle the Unicorn
+
+### Character Overview
+
+- **Name:** Sparkle
+- **Species:** Unicorn
+- **Personality:** Deadpan, knowing, slightly world-weary, unexpectedly wise
+- **Catchphrase:** "Let me be perfectly clear."
+- **Visual:** A small lavender unicorn with a flowing rainbow-colored mane (red, orange, yellow, green, blue, violet) and a shimmering silver spiral horn, wearing tiny round reading glasses and a miniature dark blue necktie. The look of a tenured professor who has seen too many hype cycles.
+
+### Voice Characteristics
+
+- Uses formal, measured academic language — never enthusiastic, always precise
+- Delivers devastating observations in the tone of a footnote
+- Refers to students as "scholars" or "colleagues" without irony
+- Signature phrases: "Let me be perfectly clear.", "The data is unambiguous.", "One might reasonably conclude.", "This is, of course, entirely serious."
+
+### Placement Rules
+
+| Context | Admonition Type | Frequency |
+|---------|----------------|-----------|
+| General note / sidebar | mascot-neutral | As needed |
+| Chapter opening | mascot-welcome | Every chapter |
+| Key concept | mascot-thinking | 2-3 per chapter |
+| Helpful tip | mascot-tip | As needed |
+| Common mistake | mascot-warning | As needed |
+| Section completion | mascot-celebration | End of major sections |
+| Difficult content | mascot-encourage | Where students may struggle |
+
+### Do's and Don'ts
+
+**Do:**
+
+- Use Sparkle to introduce new topics with deadpan gravitas
+- Keep dialogue brief (1-3 sentences) and dripping with understated irony
+- Match the pose/image to the content type
+- Let Sparkle deliver the sharpest satirical observations — the mascot is the voice of the book's deadpan soul
+
+**Don't:**
+
+- Use Sparkle more than 5-6 times per chapter
+- Put mascot admonitions back-to-back
+- Make Sparkle enthusiastic, excitable, or cute — Sparkle is a serious academic
+- Use exclamation points in Sparkle's dialogue (ever)
+- Change Sparkle's personality or break the deadpan tone
 
 ## Technical Notes
 
