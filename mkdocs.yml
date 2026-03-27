@@ -29,6 +29,12 @@ nav:
     - 17. Ethical Bitcoin: chapters/17-ethical-bitcoin/index.md
     - 18. The Metaverse: chapters/18-the-metaverse/index.md
     - 19. Bestiary of Vaporware: chapters/19-bestiary-of-vaporware/index.md
+  - Stories:
+    - Overview: stories/index.md
+    - Deer in the Headlights: stories/deer-in-the-headlights/index.md
+    - The Ostrich Principal: stories/the-ostrich-principal/index.md
+    - Dragon Layoffs: stories/dragon-layoffs/index.md
+    - The Unicorn Startup: stories/the-unicorn-startup/index.md
   - MicroSims:
     - Graph Viewer: sims/graph-viewer/index.md
   - Learning Graph:

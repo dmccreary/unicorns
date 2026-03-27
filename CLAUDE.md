@@ -88,10 +88,24 @@ When generating chapter content, use these custom admonition types to embed Spar
 
 Each admonition type has a specific purpose. The title text after the type name should be in Sparkle's voice — formal, deadpan, and drily observant. Never use generic titles like "Note" or "Important." Every title should sound like something a world-weary unicorn professor would actually say.
 
+**Required structure:** Every mascot admonition MUST include a blank line after the `!!!` line, followed by the `<img>` tag on the next indented line. The image path from chapter files is `../../img/mascot/{image}.png`. The image-to-type mapping is:
+
+| Admonition Type | Image File |
+|----------------|------------|
+| mascot-welcome | `welcome.png` |
+| mascot-thinking | `thinking.png` |
+| mascot-tip | `tip.png` |
+| mascot-warning | `warning.png` |
+| mascot-neutral | `neutral.png` |
+| mascot-encourage | `encouragement.png` |
+| mascot-celebration | `celebration.png` |
+
 **mascot-welcome** — Use at the start of every chapter. Sparkle greets the reader with measured gravitas.
 
 ```markdown
 !!! mascot-welcome "Welcome, Colleagues"
+
+    <img src="../../img/mascot/welcome.png" class="mascot-admonition-img">
     Let me be perfectly clear. You are about to learn things about
     unicorn economics that most business schools refuse to teach.
     Adjust your expectations downward accordingly.
@@ -101,6 +115,8 @@ Each admonition type has a specific purpose. The title text after the type name 
 
 ```markdown
 !!! mascot-thinking "A Critical Observation"
+
+    <img src="../../img/mascot/thinking.png" class="mascot-admonition-img">
     The data is unambiguous. Organizations that formed committees
     to study AI in 2023 have, on average, formed 3.7 additional
     committees since then. None have produced actionable recommendations.
@@ -111,6 +127,8 @@ Each admonition type has a specific purpose. The title text after the type name 
 
 ```markdown
 !!! mascot-tip "Sparkle's Tip"
+
+    <img src="../../img/mascot/tip.png" class="mascot-admonition-img">
     When evaluating any technology claim, apply the Unicorn Test:
     replace the product name with "unicorn" and see if the sentence
     still makes equal sense. If it does, the product may not exist.
@@ -120,6 +138,8 @@ Each admonition type has a specific purpose. The title text after the type name 
 
 ```markdown
 !!! mascot-warning "A Word of Caution"
+
+    <img src="../../img/mascot/warning.png" class="mascot-admonition-img">
     One might reasonably conclude that any investor pitch containing
     the phrase "this changes everything" should be treated with the
     same rigor one applies to reported unicorn sightings in suburban
@@ -130,6 +150,8 @@ Each admonition type has a specific purpose. The title text after the type name 
 
 ```markdown
 !!! mascot-neutral "A Note from Sparkle"
+
+    <img src="../../img/mascot/neutral.png" class="mascot-admonition-img">
     This is, of course, entirely serious. The author has tenure
     in Unicorn Studies and does not appreciate skepticism.
 ```
@@ -138,6 +160,8 @@ Each admonition type has a specific purpose. The title text after the type name 
 
 ```markdown
 !!! mascot-encourage "You Can Handle This"
+
+    <img src="../../img/mascot/encouragement.png" class="mascot-admonition-img">
     The material ahead is challenging. Not because it is complex,
     but because it is true. Take a moment. Consider the unicorn.
     The unicorn believes in you, even if the quarterly projections
@@ -148,6 +172,8 @@ Each admonition type has a specific purpose. The title text after the type name 
 
 ```markdown
 !!! mascot-celebration "Section Complete"
+
+    <img src="../../img/mascot/celebration.png" class="mascot-admonition-img">
     You have successfully distinguished between twelve types of
     vaporware. The literature suggests this is an achievement worth
     noting, though further longitudinal studies are needed to assess
