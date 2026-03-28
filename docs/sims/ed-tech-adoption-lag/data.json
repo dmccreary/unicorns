@@ -1,0 +1,89 @@
+{
+    "title": "Education Technology Adoption Lag",
+    "views": {
+        "years": {
+            "subtitle": "Time from public availability to mainstream classroom adoption",
+            "xAxisLabel": "Years from Public Availability",
+            "xMax": 30,
+            "xStep": 5,
+            "adoptedLabel": "Years to adoption",
+            "resistanceLabel": "Resistance phase (ongoing)"
+        },
+        "percent": {
+            "subtitle": "Current adoption rates across educational institutions",
+            "xAxisLabel": "Percentage of Schools Adopting",
+            "xMax": 110,
+            "xStep": 20,
+            "adoptedLabel": "% of schools adopted",
+            "resistanceLabel": "% of schools adopting (ongoing)"
+        }
+    },
+    "technologies": [
+        {
+            "name": "Calculator",
+            "description": "Handheld electronic calculators became affordable in the early 1970s. Schools resisted adoption for over two decades, fearing students would lose the ability to perform arithmetic by hand. The device was banned from most classrooms and standardized tests until 1995, when the College Board reversed course and required graphing calculators for the SAT.",
+            "availableYear": 1972,
+            "years": { "adopted": 23, "resistance": 0 },
+            "percent": { "adopted": 100, "resistance": 0 },
+            "annotation": {
+                "years": { "text": "23 yrs", "suffix": "Now required for SAT/ACT", "bar": "adopted" },
+                "percent": { "text": "100%", "suffix": "Now required for SAT/ACT", "bar": "adopted" }
+            }
+        },
+        {
+            "name": "Internet",
+            "description": "The World Wide Web became publicly accessible in the mid-1990s. Schools cited infrastructure costs, inappropriate content, and the belief that students would use it to cheat on research papers. By 2005, federal E-Rate funding and the sheer impossibility of ignoring the internet forced mainstream adoption.",
+            "availableYear": 1995,
+            "years": { "adopted": 10, "resistance": 0 },
+            "percent": { "adopted": 98, "resistance": 2 },
+            "annotation": {
+                "years": { "text": "10 yrs", "suffix": "(adopted 2005)", "bar": "adopted" },
+                "percent": { "text": "95%", "suffix": "(mainstream since 2005)", "bar": "adopted" }
+            }
+        },
+        {
+            "name": "Smartphones",
+            "description": "The iPhone launched in 2007, putting a connected computer in every student's pocket. Schools responded by banning them, citing distraction, cyberbullying, and the conviction that no learning could possibly occur on a device that also runs TikTok. Nineteen years later, most districts are still debating phone policies rather than leveraging the technology.",
+            "availableYear": 2007,
+            "years": { "adopted": 0, "resistance": 19 },
+            "percent": { "adopted": 65, "resistance": 35 },
+            "annotation": {
+                "years": { "text": "19+ yrs", "suffix": "(ongoing)", "bar": "resistance" },
+                "percent": { "text": "35%", "suffix": "(still debating policies)", "bar": "resistance" }
+            }
+        },
+        {
+            "name": "Generative AI",
+            "description": "ChatGPT launched in December 2022 and reached 100 million users in two months. Schools moved with comparable urgency, forming committees to study the situation. Primary concerns include plagiarism, academic integrity, and the unsettling possibility that a free tool might outperform the essay-grading rubric developed in 1987.",
+            "availableYear": 2022,
+            "years": { "adopted": 1, "resistance": 4 },
+            "percent": { "adopted": 1, "resistance": 99 },
+            "annotation": {
+                "years": { "text": "4+ yrs (predicted)", "suffix": "(ChatGPT released in Dec. 2022)", "bar": "resistance" },
+                "percent": { "text": "12%", "suffix": "Most schools still in committee phase", "bar": "resistance" }
+            }
+        },
+        {
+            "name": "MicroSims",
+            "description": "Small, focused interactive simulations designed to teach single concepts became viable in 2024 when generative AI made them cheap to produce. Schools have not adopted them because most administrators have never heard of them, and the ones who have assume they require a budget line item that does not exist.",
+            "availableYear": 2023,
+            "years": { "adopted": 1, "resistance": 3 },
+            "percent": { "adopted": 1, "resistance": 99 },
+            "annotation": {
+                "years": { "text": "3+ yrs (predicted)", "suffix": "(released in 2024)", "bar": "resistance" },
+                "percent": { "text": "0.1%", "suffix": "Few schools have heard of MicroSims", "bar": "resistance" }
+            }
+        },
+        {
+            "name": "Intelligent Textbooks",
+            "description": "AI-generated interactive textbooks with embedded simulations, adaptive quizzes, and concept graphs emerged in 2025. Adoption stands at approximately zero because textbook procurement committees operate on three-year review cycles, and the concept of a free, customizable textbook threatens a $14 billion publishing industry that prefers not to be threatened.",
+            "availableYear": 2023,
+            "years": { "adopted": 1, "resistance": 3 },
+            "percent": { "adopted": 1, "resistance": 99 },
+            "annotation": {
+                "years": { "text": "3+ yrs (predicted)", "suffix": "(released in 2025)", "bar": "resistance" },
+                "percent": { "text": "0.1%", "suffix": "Few schools have heard of Intelligent Textbooks", "bar": "resistance" }
+            }
+        }
+    ]
+}

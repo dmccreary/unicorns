@@ -1,19 +1,57 @@
 // Education Technology Adoption Lag - Horizontal Bar Chart
 // Shows how long it takes schools to adopt widely available technology
+// Data loaded from data.json
 
 document.addEventListener('DOMContentLoaded', function () {
     document.body.style.backgroundColor = 'aliceblue';
     const main = document.querySelector('main');
 
-    // Create wrapper
-    const wrapper = document.createElement('div');
+    fetch('data.json')
+        .then(function (response) { return response.json(); })
+        .then(function (data) { buildChart(main, data); });
+});
+
+function buildChart(main, data) {
+    var techs = data.technologies;
+    var views = data.views;
+
+    // Extract arrays from grouped data
+    var labels = techs.map(function (t) { return t.name; });
+    var availableYears = techs.map(function (t) { return t.availableYear; });
+    var adoptionData = techs.map(function (t) { return t.years.adopted; });
+    var resistanceData = techs.map(function (t) { return t.years.resistance; });
+    var adoptionPctData = techs.map(function (t) { return t.percent.adopted; });
+    var resistancePctData = techs.map(function (t) { return t.percent.resistance; });
+    var descriptions = techs.map(function (t) { return t.description || ''; });
+
+    // Build annotation lookup objects from data
+    function buildAnnotations(view) {
+        var annotations = {};
+        techs.forEach(function (t, i) {
+            var ann = t.annotation[view];
+            annotations[i] = {
+                text: ann.text,
+                suffix: ann.suffix,
+                dataset: ann.bar === 'adopted' ? 0 : 1
+            };
+        });
+        return annotations;
+    }
+    var yearsAnnotations = buildAnnotations('years');
+    var pctAnnotations = buildAnnotations('percent');
+
+    var showingYears = true;
+
+    // --- Build DOM ---
+
+    var wrapper = document.createElement('div');
     wrapper.style.maxWidth = '900px';
     wrapper.style.margin = '0 auto';
     main.appendChild(wrapper);
 
-    // Title at the very top
-    const title = document.createElement('div');
-    title.textContent = 'Education Technology Adoption Lag';
+    // Title
+    var title = document.createElement('div');
+    title.textContent = data.title;
     title.style.textAlign = 'center';
     title.style.fontSize = '20px';
     title.style.fontWeight = 'bold';
@@ -22,17 +60,16 @@ document.addEventListener('DOMContentLoaded', function () {
     wrapper.appendChild(title);
 
     // Subtitle
-    const subtitle = document.createElement('div');
-    subtitle.id = 'chart-subtitle';
-    subtitle.textContent = 'Time from public availability to mainstream classroom adoption';
+    var subtitle = document.createElement('div');
+    subtitle.textContent = views.years.subtitle;
     subtitle.style.textAlign = 'center';
     subtitle.style.fontSize = '13px';
     subtitle.style.color = '#666';
     subtitle.style.padding = '0 0 6px 0';
     wrapper.appendChild(subtitle);
 
-    // Folder tabs below subtitle
-    const tabBar = document.createElement('div');
+    // Folder tabs
+    var tabBar = document.createElement('div');
     tabBar.style.display = 'flex';
     tabBar.style.justifyContent = 'center';
     tabBar.style.gap = '0';
@@ -74,61 +111,25 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     // Chart container
-    const container = document.createElement('div');
+    var container = document.createElement('div');
     container.style.position = 'relative';
     container.style.width = '100%';
     container.style.height = '520px';
     container.style.borderTop = '2px solid #bbb';
     wrapper.appendChild(container);
 
-    const canvas = document.createElement('canvas');
+    var canvas = document.createElement('canvas');
     canvas.id = 'chart';
     container.appendChild(canvas);
 
-    const ctx = canvas.getContext('2d');
+    var ctx = canvas.getContext('2d');
 
-    // Data — 6 technologies
-    const technologies = [
-        'Intelligent Textbooks', 'MicroSims', 'Generative AI',
-        'Smartphones', 'Internet', 'Calculator'
-    ];
-    const availableYears = [2023, 2023, 2022, 2007, 1995, 1972];
-
-    // "Years" view data
-    const adoptionData =    [0, 0, 0, 0, 10, 23];
-    const resistanceData =  [3, 3, 4, 19, 0,  0];
-
-    // "Percentage of schools adopting" view data
-    const adoptionPctData =    [0,  0,  0,  0,  95, 100];
-    const resistancePctData =  [0,  0,  12, 35, 0,  0];
-
-    // Annotations for each view
-    const yearsAnnotations = {
-        0: { text: '3+ yrs (predicted)', suffix: '(released in 2025)', dataset: 1 },
-        1: { text: '3+ yrs (predicted)', suffix: '(released in 2024)', dataset: 1 },
-        2: { text: '4+ yrs (predicted)', suffix: '(ChatGPT released in Dec. 2022)', dataset: 1 },
-        3: { text: '19+ yrs', suffix: '(ongoing)', dataset: 1 },
-        4: { text: '10 yrs', suffix: '(adopted 2005)', dataset: 0 },
-        5: { text: '23 yrs', suffix: 'Now required for SAT/ACT', dataset: 0 }
-    };
-
-    const pctAnnotations = {
-        0: { text: '0.1%', suffix: 'Few schools have heard of Intelligent Textbooks', dataset: 1 },
-        1: { text: '0.1%', suffix: 'Few schools have heard of MicroSims', dataset: 1 },
-        2: { text: '12%', suffix: 'Most schools still in committee phase', dataset: 1 },
-        3: { text: '35%', suffix: '(still debating policies)', dataset: 1 },
-        4: { text: '95%', suffix: '(mainstream since 2005)', dataset: 0 },
-        5: { text: '100%', suffix: 'Now required for SAT/ACT', dataset: 0 }
-    };
-
-    let showingYears = true;
-
-    // Create striped pattern for ongoing resistance bars
+    // Striped pattern for resistance bars
     function createStripedPattern(baseColor) {
-        const patternCanvas = document.createElement('canvas');
+        var patternCanvas = document.createElement('canvas');
         patternCanvas.width = 16;
         patternCanvas.height = 16;
-        const pctx = patternCanvas.getContext('2d');
+        var pctx = patternCanvas.getContext('2d');
 
         pctx.fillStyle = baseColor;
         pctx.fillRect(0, 0, 16, 16);
@@ -145,92 +146,82 @@ document.addEventListener('DOMContentLoaded', function () {
         return ctx.createPattern(patternCanvas, 'repeat');
     }
 
-    const stripedRed = createStripedPattern('rgba(220, 80, 70, 0.85)');
+    var stripedRed = createStripedPattern('rgba(220, 80, 70, 0.85)');
 
-    // "Now" vertical line plugin — only shown in "years" view
-    const nowLinePlugin = {
+    // "Now" vertical line plugin — years view only
+    var nowLinePlugin = {
         id: 'nowLine',
         afterDatasetsDraw: function (chart) {
             if (!showingYears) return;
 
-            const xScale = chart.scales.x;
-            const yScale = chart.scales.y;
-            const ctx = chart.ctx;
+            var xScale = chart.scales.x;
+            var yScale = chart.scales.y;
+            var drawCtx = chart.ctx;
 
-            ctx.save();
-            ctx.setLineDash([5, 4]);
-            ctx.strokeStyle = 'rgba(100, 100, 100, 0.6)';
-            ctx.lineWidth = 1.5;
-
-            var nowValues = [];
-            resistanceData.forEach(function (val) {
-                if (val > 0) nowValues.push(val);
-            });
-            adoptionData.forEach(function (val) {
-                if (val > 0) nowValues.push(val);
-            });
-            var maxVal = Math.max.apply(null, nowValues);
+            var allValues = adoptionData.concat(resistanceData).filter(function (v) { return v > 0; });
+            var maxVal = Math.max.apply(null, allValues);
             var xPos = xScale.getPixelForValue(maxVal);
 
-            ctx.beginPath();
-            ctx.moveTo(xPos, yScale.top);
-            ctx.lineTo(xPos, yScale.bottom);
-            ctx.stroke();
+            drawCtx.save();
+            drawCtx.setLineDash([5, 4]);
+            drawCtx.strokeStyle = 'rgba(100, 100, 100, 0.6)';
+            drawCtx.lineWidth = 1.5;
+            drawCtx.beginPath();
+            drawCtx.moveTo(xPos, yScale.top);
+            drawCtx.lineTo(xPos, yScale.bottom);
+            drawCtx.stroke();
 
-            ctx.setLineDash([]);
-            ctx.font = 'bold 11px Arial';
-            ctx.fillStyle = '#666';
-            ctx.textAlign = 'center';
-            ctx.fillText('Longest lag: ' + maxVal + ' yrs', xPos, yScale.top - 6);
-
-            ctx.restore();
+            drawCtx.setLineDash([]);
+            drawCtx.font = 'bold 11px Arial';
+            drawCtx.fillStyle = '#666';
+            drawCtx.textAlign = 'center';
+            drawCtx.fillText('Longest lag: ' + maxVal + ' yrs', xPos, yScale.top - 6);
+            drawCtx.restore();
         }
     };
 
-    // Custom plugin to draw annotations on bars (and for zero-value items)
-    const barAnnotationsPlugin = {
+    // Bar annotation plugin
+    var barAnnotationsPlugin = {
         id: 'barAnnotations',
         afterDatasetsDraw: function (chart) {
-            const ctx = chart.ctx;
-            ctx.save();
+            var drawCtx = chart.ctx;
+            drawCtx.save();
 
             var annotations = showingYears ? yearsAnnotations : pctAnnotations;
-            const xScale = chart.scales.x;
+            var xScale = chart.scales.x;
 
             Object.keys(annotations).forEach(function (index) {
                 var ann = annotations[index];
                 var meta = chart.getDatasetMeta(ann.dataset);
                 var bar = meta.data[index];
-
                 if (!bar) return;
 
                 var value = chart.data.datasets[ann.dataset].data[index];
-
-                // For zero-value bars, anchor annotation at x=0
                 var anchorX = value === 0 ? xScale.getPixelForValue(0) : bar.x;
 
-                ctx.font = 'bold 12px Arial';
-                ctx.fillStyle = '#333';
-                ctx.textAlign = 'left';
-                ctx.textBaseline = 'middle';
-                ctx.fillText(ann.text, anchorX + 8, bar.y - 7);
+                drawCtx.font = 'bold 12px Arial';
+                drawCtx.fillStyle = '#333';
+                drawCtx.textAlign = 'left';
+                drawCtx.textBaseline = 'middle';
+                drawCtx.fillText(ann.text, anchorX + 8, bar.y - 7);
 
-                ctx.font = '11px Arial';
-                ctx.fillStyle = '#777';
-                ctx.fillText(ann.suffix, anchorX + 8, bar.y + 8);
+                drawCtx.font = '11px Arial';
+                drawCtx.fillStyle = '#777';
+                drawCtx.fillText(ann.suffix, anchorX + 8, bar.y + 8);
             });
 
-            ctx.restore();
+            drawCtx.restore();
         }
     };
 
+    // Create chart
     var chart = new Chart(ctx, {
         type: 'bar',
         data: {
-            labels: technologies,
+            labels: labels,
             datasets: [
                 {
-                    label: 'Years to adoption',
+                    label: views.years.adoptedLabel,
                     data: adoptionData.slice(),
                     backgroundColor: 'rgba(54, 120, 200, 0.85)',
                     borderColor: 'rgba(54, 120, 200, 1)',
@@ -239,7 +230,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     categoryPercentage: 0.8
                 },
                 {
-                    label: 'Resistance phase (ongoing)',
+                    label: views.years.resistanceLabel,
                     data: resistanceData.slice(),
                     backgroundColor: stripedRed,
                     borderColor: 'rgba(220, 80, 70, 1)',
@@ -253,33 +244,31 @@ document.addEventListener('DOMContentLoaded', function () {
             indexAxis: 'y',
             responsive: true,
             maintainAspectRatio: false,
+            interaction: {
+                mode: 'index',
+                axis: 'y',
+                intersect: false
+            },
             layout: {
-                padding: {
-                    top: 10,
-                    right: 200,
-                    bottom: 10,
-                    left: 10
-                }
+                padding: { top: 10, right: 200, bottom: 10, left: 10 }
             },
             scales: {
                 x: {
                     stacked: true,
                     beginAtZero: true,
-                    max: 30,
+                    max: views.years.xMax,
                     title: {
                         display: true,
-                        text: 'Years from Public Availability',
+                        text: views.years.xAxisLabel,
                         font: { size: 14, weight: 'bold' },
                         color: '#333'
                     },
                     ticks: {
-                        stepSize: 5,
+                        stepSize: views.years.xStep,
                         font: { size: 12 },
                         color: '#555'
                     },
-                    grid: {
-                        color: 'rgba(0, 0, 0, 0.08)'
-                    }
+                    grid: { color: 'rgba(0, 0, 0, 0.08)' }
                 },
                 y: {
                     stacked: true,
@@ -293,18 +282,12 @@ document.addEventListener('DOMContentLoaded', function () {
                         font: { size: 13, weight: 'bold' },
                         color: '#333'
                     },
-                    grid: {
-                        display: false
-                    }
+                    grid: { display: false }
                 }
             },
             plugins: {
-                title: {
-                    display: false
-                },
-                subtitle: {
-                    display: false
-                },
+                title: { display: false },
+                subtitle: { display: false },
                 legend: {
                     display: true,
                     position: 'bottom',
@@ -317,35 +300,52 @@ document.addEventListener('DOMContentLoaded', function () {
                     }
                 },
                 tooltip: {
-                    backgroundColor: 'rgba(0, 0, 0, 0.8)',
+                    backgroundColor: 'rgba(0, 0, 0, 0.85)',
                     titleFont: { size: 14, weight: 'bold' },
-                    bodyFont: { size: 13 },
-                    padding: 12,
+                    bodyFont: { size: 12 },
+                    padding: 14,
                     cornerRadius: 6,
+                    maxWidth: 350,
+                    position: 'nearest',
+                    xAlign: 'left',
+                    yAlign: 'center',
                     callbacks: {
                         title: function (items) {
-                            return items[0].label;
+                            var idx = items[0].dataIndex;
+                            return items[0].label + ' (available ' + availableYears[idx] + ')';
                         },
                         label: function (item) {
-                            var techIndex = item.dataIndex;
-                            var year = availableYears[techIndex];
                             var value = item.raw;
-
                             if (value === 0) return null;
 
                             if (showingYears) {
-                                if (item.datasetIndex === 0) {
-                                    return 'Adopted after ' + value + ' years (available ' + year + ')';
-                                } else {
-                                    return 'Still resisting: ' + value + '+ years and counting (available ' + year + ')';
-                                }
+                                return item.datasetIndex === 0
+                                    ? 'Adopted after ' + value + ' years'
+                                    : 'Still resisting: ' + value + '+ years and counting';
                             } else {
-                                if (item.datasetIndex === 0) {
-                                    return value + '% of schools have adopted (available ' + year + ')';
+                                return item.datasetIndex === 0
+                                    ? value + '% of schools have adopted'
+                                    : value + '% have not adopted';
+                            }
+                        },
+                        afterBody: function (items) {
+                            var desc = descriptions[items[0].dataIndex];
+                            if (!desc) return [];
+                            // Word-wrap description to ~50 chars per line
+                            var words = desc.split(' ');
+                            var lines = [];
+                            var line = '';
+                            for (var i = 0; i < words.length; i++) {
+                                if (line.length + words[i].length + 1 > 50) {
+                                    lines.push(line);
+                                    line = words[i];
                                 } else {
-                                    return 'Only ' + value + '% of schools adopting (available ' + year + ')';
+                                    line = line ? line + ' ' + words[i] : words[i];
                                 }
                             }
+                            if (line) lines.push(line);
+                            lines.unshift('');
+                            return lines;
                         }
                     }
                 }
@@ -355,36 +355,31 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     // Tab click handlers
-    function switchToYears() {
+    function applyView(view) {
+        var v = views[view];
+        var isYears = view === 'years';
+        subtitle.textContent = v.subtitle;
+        chart.data.datasets[0].data = (isYears ? adoptionData : adoptionPctData).slice();
+        chart.data.datasets[1].data = (isYears ? resistanceData : resistancePctData).slice();
+        chart.data.datasets[0].label = v.adoptedLabel;
+        chart.data.datasets[1].label = v.resistanceLabel;
+        chart.options.scales.x.max = v.xMax;
+        chart.options.scales.x.title.text = v.xAxisLabel;
+        chart.options.scales.x.ticks.stepSize = v.xStep;
+        chart.update();
+    }
+
+    tabYears.addEventListener('click', function () {
         if (showingYears) return;
         showingYears = true;
         setActiveTab(tabYears);
-        subtitle.textContent = 'Time from public availability to mainstream classroom adoption';
-        chart.data.datasets[0].data = adoptionData.slice();
-        chart.data.datasets[1].data = resistanceData.slice();
-        chart.data.datasets[0].label = 'Years to adoption';
-        chart.data.datasets[1].label = 'Resistance phase (ongoing)';
-        chart.options.scales.x.max = 30;
-        chart.options.scales.x.title.text = 'Years from Public Availability';
-        chart.options.scales.x.ticks.stepSize = 5;
-        chart.update();
-    }
+        applyView('years');
+    });
 
-    function switchToPct() {
+    tabPct.addEventListener('click', function () {
         if (!showingYears) return;
         showingYears = false;
         setActiveTab(tabPct);
-        subtitle.textContent = 'Current adoption rates across educational institutions';
-        chart.data.datasets[0].data = adoptionPctData.slice();
-        chart.data.datasets[1].data = resistancePctData.slice();
-        chart.data.datasets[0].label = '% of schools adopted';
-        chart.data.datasets[1].label = '% of schools adopting (ongoing)';
-        chart.options.scales.x.max = 110;
-        chart.options.scales.x.title.text = 'Percentage of Schools Adopting';
-        chart.options.scales.x.ticks.stepSize = 20;
-        chart.update();
-    }
-
-    tabYears.addEventListener('click', switchToYears);
-    tabPct.addEventListener('click', switchToPct);
-});
+        applyView('percent');
+    });
+}
