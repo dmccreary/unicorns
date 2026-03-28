@@ -1,8 +1,10 @@
 # About This Textbook
 
+**Publication Date:** April 1st, 2026
+
 ## Welcome From Sparkle the Unicorn
 
-![](./img/mascot/welcome.png){ width="150px" align="left"}
+![](./img/mascot/welcome.png){ width="170px" align="left"}
 Good day, colleagues. Welcome to the interactive intelligent textbook
 *Unicorns and Other Mythical Beasts: An Essential Guide to Creatures
 That Definitely Exist and the Technologies That Will Improve Them*.
@@ -41,7 +43,7 @@ The [Learning Graph](learning-graph/index.md) visualizes how concepts connect ac
 
 ## About the Author
 
-![](./img/dan-headshot-small.png){ width="150px" align="right"}
+![](./img/dan-riding-a-unicorn.png){ width="150px" align="right"}
 Dan McCreary is a retired AI researcher with too much time on his hands. After three decades helping Fortune 100 organizations reason over massive datasets — including founding the Generative AI Center of Excellence at Optum and building one of the world's largest healthcare knowledge graphs (over 25 billion vertices) — he now channels his considerable free time into generating interactive intelligent textbooks at a rate that alarms his family and mystifies his neighbors.
 
 He is the co-author of *Making Sense of NoSQL* (Manning Publications), the founding chair of the NoSQL Now! conference, and a person who has produced over 70 intelligent textbooks in roughly the time it takes most authors to outline one. You can visit the [Intelligent Textbooks Case Studies](https://dmccreary.github.io/intelligent-textbooks/case-studies/) to see the evidence. He has been a STEM volunteer since 2014, which provides a thin veneer of respectability to what is otherwise a compulsive hobby.
