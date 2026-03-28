@@ -1,0 +1,88 @@
+{
+  "project_path": "/Users/dan/Documents/ws/unicorns",
+  "scan_date": "2026-03-27T20:10:47.408572",
+  "mkdocs_yml_found": true,
+  "docs_dir_found": true,
+  "site_name": "Unicorns and Other Mythical Beasts",
+  "site_description": "An interactive intelligent textbook about unicorns, mythical beasts, and the technologies that will improve them. A satirical exploration of AI hype, education resistance, and technology fantasies.",
+  "site_author": "Dan McCreary",
+  "chapter_count": 19,
+  "microsim_count": 33,
+  "glossary_term_count": 0,
+  "faq_question_count": 0,
+  "quiz_file_count": 0,
+  "basic": {
+    "navigation_sidebar": true,
+    "search_functionality": true,
+    "table_of_contents": true,
+    "site_title": true,
+    "site_author": true,
+    "github_repo": true,
+    "custom_logo": true,
+    "custom_favicon": true,
+    "color_theme": true,
+    "footer_navigation": true,
+    "navigation_expand": true,
+    "back_to_top": true,
+    "breadcrumbs": true,
+    "section_index": true,
+    "license_page": true,
+    "contact_page": true,
+    "about_page": true,
+    "how_we_built": false,
+    "copyright_footer": true
+  },
+  "content_enhancement": {
+    "glightbox": true,
+    "katex": false,
+    "mathjax": false,
+    "admonitions": true,
+    "code_copy_button": true,
+    "syntax_highlighting": true,
+    "tabbed_content": false,
+    "task_lists": false,
+    "mark_highlight": false,
+    "strikethrough": false,
+    "magic_links": false,
+    "snippets": false,
+    "emoji": false,
+    "collapsible_details": true,
+    "mermaid": true
+  },
+  "site_resources": {
+    "glossary": false,
+    "faq": false,
+    "references": false,
+    "custom_css": true,
+    "custom_js": true,
+    "google_analytics": false
+  },
+  "publishing": {
+    "social_media_cards": true,
+    "edit_page_button": false
+  },
+  "interactive_learning": {
+    "microsims": true,
+    "microsim_index": true,
+    "per_chapter_quizzes": false
+  },
+  "learning_graph": {
+    "course_description": true,
+    "learning_graph_csv": true,
+    "learning_graph_json": true,
+    "graph_viewer": true,
+    "concept_taxonomy": true,
+    "concept_list": true,
+    "quality_metrics": true,
+    "book_metrics": false,
+    "chapter_metrics": false,
+    "glossary_quality_report": false,
+    "faq_quality_report": false,
+    "faq_coverage_gaps": false,
+    "quiz_generation_report": false
+  },
+  "content_generation": {
+    "chapters": true,
+    "prompts_collection": true
+  }
+}
