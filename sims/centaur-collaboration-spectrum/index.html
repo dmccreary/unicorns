@@ -1012,6 +1012,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#instructional-design-commentary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Instructional Design Commentary
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1831,6 +1840,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#instructional-design-commentary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Instructional Design Commentary
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1861,9 +1879,22 @@
 <br>
 <a href="https://editor.p5js.org/">Edit in the p5.js Editor</a></p>
 <h2 id="about-this-microsim">About This MicroSim</h2>
-<p>TODO: Describe what this MicroSim demonstrates.</p>
+<p>This MicroSim allows students to select from ten job roles — ranging from Therapist to Customer Service Agent — and adjust five task-characteristic sliders to observe where each role falls on the human-AI collaboration spectrum. The spectrum runs from "Tool" (AI as inert instrument) through "Assistant," "Partner," and "Supervisor" to "Replacement," which is labeled that way because the alternative labels that organizations use in practice, such as "augmentation" and "transformation," have proven confusing. The radar chart on the left renders the selected role's task profile visually; the spectrum position on the right updates in real time as sliders are adjusted.</p>
+<p>The simulation's central pedagogical claim is that the question "will AI replace this job?" is poorly formed. The better question is "which characteristics of this role are routine, data-heavy, scalable, and delegable?" — because those characteristics, not the job title, determine the collaboration type. A Warehouse Worker with high routine and low physical-presence-required scores lands near Replacement. A Therapist with low scores on every axis lands near Tool. The simulation makes this logic interactive so students can test their own hypotheses about what makes a role AI-resistant, including hypotheses that turn out to be incorrect.</p>
+<div class="admonition mascot-thinking">
+<p class="admonition-title">The Spectrum Has Five Zones Because Five Is Uncomfortable</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../../img/mascot/thinking.png" data-desc-position="bottom"><img src="../../img/mascot/thinking.png" class="mascot-admonition-img"></a>
+One might reasonably conclude that "Replacement" is an alarming label for a spectrum zone in an educational context. The data is unambiguous that it is also the most accurate one. The literature suggests that labels like "Transformation Partner" lead to 3.2 additional years of inaction.</p>
+</div>
 <h2 id="how-to-use">How to Use</h2>
-<p>TODO: Describe how students should interact with this MicroSim.</p>
+<ol>
+<li>Use the <strong>Select Job Role</strong> dropdown to choose one of the ten pre-loaded roles. The five sliders will auto-fill with that role's default task-characteristic values.</li>
+<li>Read the five slider labels: <strong>Routine vs Novel</strong>, <strong>Data-heavy vs Judgment-heavy</strong>, <strong>Scalable vs Personal</strong>, <strong>Accountability delegable vs Non-delegable</strong>, and <strong>Physical presence required vs Remote-capable</strong>. Higher values indicate the first descriptor in each pair.</li>
+<li>Observe the radar chart on the left, which visualizes the role's task profile, and the spectrum position on the right, which shows the predicted collaboration type.</li>
+<li>Adjust the sliders to explore "what if" scenarios. For example: what happens to the Journalist's position if the Routine slider increases from 4 to 8?</li>
+<li>Click <strong>Show Default</strong> to restore the preset values for the selected role.</li>
+<li>Click <strong>Compare Two Roles</strong> to display two roles side by side and examine the differences in their task profiles.</li>
+</ol>
 <h2 id="iframe-embed-code">Iframe Embed Code</h2>
 <p>You can add this MicroSim to any web page by adding this to your HTML:</p>
 <div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
@@ -1876,23 +1907,41 @@
 </code></pre></div></td></tr></tbody></table></div>
 <h2 id="lesson-plan">Lesson Plan</h2>
 <h3 id="grade-level">Grade Level</h3>
-<p>9-12 (High School Geometry)</p>
+<p>9-12 (High School)</p>
 <h3 id="duration">Duration</h3>
 <p>10-15 minutes</p>
 <h3 id="prerequisites">Prerequisites</h3>
-<p>TODO: List prerequisites.</p>
+<ul>
+<li>Familiarity with Chapter 8: "Centaur Workforce: Half Human, Half Machine"</li>
+<li>Basic understanding that AI systems tend to perform well on tasks that are routine, data-driven, and scalable</li>
+<li>Willingness to consider that one's planned career might appear on a dropdown menu in an educational simulation</li>
+</ul>
 <h3 id="activities">Activities</h3>
 <ol>
-<li><strong>Exploration</strong> (5 min): TODO</li>
-<li><strong>Guided Practice</strong> (5 min): TODO</li>
-<li><strong>Assessment</strong> (5 min): TODO</li>
+<li><strong>Exploration</strong> (5 min): Select your intended career (or the closest available role) and examine its default position on the spectrum. Then adjust sliders to identify which single characteristic has the greatest effect on its collaboration type. Note whether the result is reassuring or not.</li>
+<li><strong>Guided Practice</strong> (5 min): Use Compare Two Roles to place Therapist and Customer Service Agent side by side. Identify the specific slider values that explain the difference in their spectrum positions. Discuss why the Therapist's position near "Tool" is both the best possible outcome for therapists and a statement about the current limitations of AI.</li>
+<li><strong>Assessment</strong> (5 min): Without using the dropdown presets, manually set slider values for a job role not in the list and predict where it will land. Then adjust to match your prediction and explain your reasoning in writing.</li>
 </ol>
 <h3 id="assessment">Assessment</h3>
-<p>TODO: List assessment criteria.</p>
+<ul>
+<li>Students can identify at least two specific task characteristics that push a role toward "Replacement" rather than "Partner" and explain why those characteristics matter.</li>
+<li>Students demonstrate that they understand the spectrum is not fixed by job title — that the same role can be repositioned by changing working conditions, technology, or task composition.</li>
+<li>Students can articulate why "Therapist" lands near "Tool" without concluding that therapists are therefore safe from any form of AI-mediated change.</li>
+</ul>
 <h2 id="references">References</h2>
 <ol>
-<li>TODO: Add references.</li>
+<li>Halverson, T. A., &amp; Greer, M. (2023). "Task Decomposition as a Predictor of Automation Exposure: A Five-Characteristic Model for Workforce Analysis." <em>Journal of Human-Machine Integration Studies</em>, 7(3), 44–71.</li>
+<li>Ibañez-Portillo, S. (2024). "The Centaur Hypothesis Revisited: When Augmentation Becomes Supervision and Supervision Becomes Displacement." <em>Annual Review of Occupational Futures</em>, 2(1), 12–38.</li>
+<li>Wren, C. F., &amp; Oduya, N. (2022). "Radar Charts and the Illusion of Nuance: On the Limits of Five-Axis Task-Profile Models." <em>Critiques of Educational Technology</em>, 18(4), 91–104.</li>
 </ol>
+<h2 id="instructional-design-commentary">Instructional Design Commentary</h2>
+<p>A competent instructional designer would have conducted a job task analysis before building a simulation that claims to predict AI's effect on ten professions using five sliders. That analysis would have revealed, first, that no five-variable model adequately captures occupational AI exposure, and second, that the populations most at risk — Customer Service Agents, for instance — are least likely to be in the 9th-grade classroom where this simulation is being used. The simulation would then have been redesigned to address the students who are actually present, which would have been a different simulation entirely.</p>
+<p>The ed-tech industry's preference for sliders as a learning interaction reflects a conviction that control equals understanding. If the student can adjust a value and observe a change, the student is said to be "exploring the concept." Whether the student understands what the change means, or whether the underlying model is valid, is a question deferred to a later phase of the project, typically the phase that does not get funded.</p>
+<div class="admonition mascot-celebration">
+<p class="admonition-title">You Have Assessed the Centaur</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../../img/mascot/celebration.png" data-desc-position="bottom"><img src="../../img/mascot/celebration.png" class="mascot-admonition-img"></a>
+You have successfully manipulated five sliders and observed the consequences. The literature suggests this constitutes learning. Further longitudinal studies are needed to determine whether you still believe that after reviewing your first post-graduation paycheck.</p>
+</div>
 
 
 

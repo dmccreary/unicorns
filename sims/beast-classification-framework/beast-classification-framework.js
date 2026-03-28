@@ -3,7 +3,8 @@
 
 let canvasWidth = 400;
 let canvasHeight = 500;
-let drawHeight = 450;
+let drawHeight = 430;
+let instructionHeight = 20;
 let controlHeight = 50;
 
 let beastSelect, compareSelect, compareBtn, randomBtn;
@@ -81,17 +82,41 @@ function updateCanvasSize() {
   if (main) {
     canvasWidth = Math.max(500, main.offsetWidth);
   }
-  canvasHeight = drawHeight + controlHeight;
+  canvasHeight = drawHeight + instructionHeight + controlHeight;
 }
 
 function setup() {
   updateCanvasSize();
   const canvas = createCanvas(canvasWidth, canvasHeight);
-  canvas.parent(document.querySelector('main'));
+  const mainEl = document.querySelector('main');
+  canvas.parent(mainEl);
 
-  // Controls
+  // Make main position-relative so we can overlay controls on the canvas
+  mainEl.style.position = 'relative';
+
+  // Controls container positioned over the canvas control region
+  let controlsDiv = createDiv('');
+  controlsDiv.parent(mainEl);
+  controlsDiv.style('position', 'absolute');
+  controlsDiv.style('bottom', '0');
+  controlsDiv.style('left', '0');
+  controlsDiv.style('width', '100%');
+  controlsDiv.style('height', controlHeight + 'px');
+  controlsDiv.style('display', 'flex');
+  controlsDiv.style('align-items', 'center');
+  controlsDiv.style('box-sizing', 'border-box');
+
+  // Left section: beast select, compare toggle, compare select
+  let leftSection = createDiv('');
+  leftSection.parent(controlsDiv);
+  leftSection.style('flex', '1');
+  leftSection.style('display', 'flex');
+  leftSection.style('justify-content', 'flex-end');
+  leftSection.style('align-items', 'center');
+  leftSection.style('gap', '8px');
+
   beastSelect = createSelect();
-  beastSelect.parent(document.querySelector('main'));
+  beastSelect.parent(leftSection);
   for (let name of beastNames) {
     beastSelect.option(name);
   }
@@ -99,38 +124,49 @@ function setup() {
   beastSelect.style('padding', '4px');
 
   compareBtn = createButton('Compare: OFF');
-  compareBtn.parent(document.querySelector('main'));
+  compareBtn.parent(leftSection);
   compareBtn.mousePressed(toggleCompare);
   compareBtn.style('font-size', '14px');
   compareBtn.style('padding', '4px 10px');
-  compareBtn.style('margin-left', '8px');
 
   compareSelect = createSelect();
-  compareSelect.parent(document.querySelector('main'));
+  compareSelect.parent(leftSection);
   for (let name of beastNames) {
     compareSelect.option(name);
   }
   compareSelect.selected('Phoenix');
   compareSelect.style('font-size', '14px');
   compareSelect.style('padding', '4px');
-  compareSelect.style('margin-left', '8px');
-  compareSelect.hide();
+  compareSelect.attribute('disabled', '');
+  compareSelect.style('opacity', '0.4');
+
+  // Center section: Randomize button (fixed center)
+  let centerSection = createDiv('');
+  centerSection.parent(controlsDiv);
+  centerSection.style('flex', '0 0 auto');
+  centerSection.style('padding', '0 16px');
 
   randomBtn = createButton('Randomize');
-  randomBtn.parent(document.querySelector('main'));
+  randomBtn.parent(centerSection);
   randomBtn.mousePressed(randomizeBeast);
   randomBtn.style('font-size', '14px');
   randomBtn.style('padding', '4px 10px');
-  randomBtn.style('margin-left', '8px');
+
+  // Right spacer to balance the layout
+  let rightSection = createDiv('');
+  rightSection.parent(controlsDiv);
+  rightSection.style('flex', '1');
 }
 
 function toggleCompare() {
   compareMode = !compareMode;
   compareBtn.html(compareMode ? 'Compare: ON' : 'Compare: OFF');
   if (compareMode) {
-    compareSelect.show();
+    compareSelect.removeAttribute('disabled');
+    compareSelect.style('opacity', '1');
   } else {
-    compareSelect.hide();
+    compareSelect.attribute('disabled', '');
+    compareSelect.style('opacity', '0.4');
   }
 }
 
@@ -341,10 +377,15 @@ function draw() {
   strokeWeight(1);
   rect(0, 0, canvasWidth, drawHeight);
 
+  // Instruction text area
+  fill('aliceblue');
+  stroke('silver');
+  rect(0, drawHeight, canvasWidth, instructionHeight);
+
   // Control area background
   fill('white');
   stroke('silver');
-  rect(0, drawHeight, canvasWidth, controlHeight);
+  rect(0, drawHeight + instructionHeight, canvasWidth, controlHeight);
 
   // Title
   noStroke();
@@ -437,12 +478,12 @@ function draw() {
     }
   }
 
-  // Control area label
+  // Instruction text just above control region
   noStroke();
   fill(120);
-  textAlign(LEFT, CENTER);
+  textAlign(CENTER, CENTER);
   textSize(10);
-  text('Select a beast to examine. Toggle Compare to overlay a second specimen.', 10, drawHeight + controlHeight / 2);
+  text('Select a beast to examine. Toggle Compare to overlay a second specimen.', canvasWidth / 2, drawHeight + instructionHeight / 2);
 }
 
 function windowResized() {

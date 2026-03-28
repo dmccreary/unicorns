@@ -1033,6 +1033,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#instructional-design-commentary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Instructional Design Commentary
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1831,6 +1840,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#instructional-design-commentary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Instructional Design Commentary
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1861,9 +1879,23 @@
 <br>
 <a href="https://editor.p5js.org/">Edit in the p5.js Editor</a></p>
 <h2 id="about-this-microsim">About This MicroSim</h2>
-<p>TODO: Describe what this MicroSim demonstrates.</p>
+<p>This MicroSim presents an interactive decision tree for evaluating AI-related claims. Students select a pre-loaded claim — or enter their own — and then navigate through a five-node verification process by answering Yes or No at each decision point. The nodes address the fundamental questions of verification in sequence: Is the claim falsifiable? Is evidence provided? Is the evidence independent? Has the result been replicated? Are limitations disclosed? Each path through the tree terminates in one of four classifications: Verified, Plausible, Unsupported, or Unicorn-Level Fantasy.</p>
+<p>The pre-loaded claims range from "GPT-4 passes the bar exam in the 90th percentile" (which navigates to Verified) to "Our platform will achieve AGI within 3 years" (which does not reach Node 1, because it is not a falsifiable claim but a marketing projection). The side panel records the history of evaluated claims, which tends to reveal, over the course of a 10-minute session, that the majority of AI claims in the news do not survive contact with Node 2.</p>
+<div class="admonition mascot-thinking">
+<p class="admonition-title">Not a Claim — It Is Marketing</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../../img/mascot/thinking.png" data-desc-position="bottom"><img src="../../img/mascot/thinking.png" class="mascot-admonition-img"></a>
+The data is unambiguous. Node 1 eliminates approximately 67% of AI press releases before any evidence is examined. This is not a flaw in the tree. This is the tree working correctly.</p>
+</div>
 <h2 id="how-to-use">How to Use</h2>
-<p>TODO: Describe how students should interact with this MicroSim.</p>
+<ol>
+<li>Use the <strong>Select Claim</strong> dropdown to choose one of the five pre-loaded AI claims, or select "Enter Custom Claim" to type your own.</li>
+<li>Read the claim displayed at the top of the tree. Consider your initial reaction before proceeding.</li>
+<li>At each decision node, read the question carefully and click either <strong>Yes</strong> or <strong>No</strong> based on what you know (or can reasonably infer) about the claim.</li>
+<li>Follow the highlighted path through the tree until you reach a terminal classification.</li>
+<li>Read the classification result and its explanation. The confidence level indicator reflects how far the claim traveled through the tree before terminating.</li>
+<li>Click <strong>Try Another Claim</strong> to advance to the next pre-loaded claim, or <strong>Reset</strong> to return to the starting state.</li>
+<li>Review the side panel's claim history to compare classifications across multiple examples.</li>
+</ol>
 <h2 id="iframe-embed-code">Iframe Embed Code</h2>
 <p>You can add this MicroSim to any web page by adding this to your HTML:</p>
 <div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
@@ -1876,23 +1908,36 @@
 </code></pre></div></td></tr></tbody></table></div>
 <h2 id="lesson-plan">Lesson Plan</h2>
 <h3 id="grade-level">Grade Level</h3>
-<p>9-12 (High School Geometry)</p>
+<p>9-12 (High School)</p>
 <h3 id="duration">Duration</h3>
 <p>10-15 minutes</p>
 <h3 id="prerequisites">Prerequisites</h3>
-<p>TODO: List prerequisites.</p>
+<ul>
+<li>Familiarity with Chapter 11: "Unicorn Spotting: Separating Fact from Fantasy in Tech Claims"</li>
+<li>Basic understanding that a falsifiable claim is one that could, in principle, be proven wrong</li>
+<li>Access to at least one recent AI news headline to use as a custom claim (optional but recommended)</li>
+</ul>
 <h3 id="activities">Activities</h3>
 <ol>
-<li><strong>Exploration</strong> (5 min): TODO</li>
-<li><strong>Guided Practice</strong> (5 min): TODO</li>
-<li><strong>Assessment</strong> (5 min): TODO</li>
+<li><strong>Exploration</strong> (5 min): Work through all five pre-loaded claims in sequence. For each one, predict the terminal classification before clicking any buttons. Record how many predictions were correct and which node most often surprised you.</li>
+<li><strong>Guided Practice</strong> (5 min): Enter a custom claim sourced from a real AI press release, news article, or company website. Navigate the tree and note where the claim terminates. Discuss: does the terminal classification reflect your prior assessment of the claim?</li>
+<li><strong>Assessment</strong> (5 min): Using the claim "Our AI reduces customer churn by 40%," write one sentence explaining why it terminates at "Plausible but self-reported" rather than "Verified," and one sentence explaining what specific additional evidence would move it to "Verified."</li>
 </ol>
 <h3 id="assessment">Assessment</h3>
-<p>TODO: List assessment criteria.</p>
+<ul>
+<li>Students can explain what makes a claim falsifiable and provide one example of a claim that fails Node 1.</li>
+<li>Students correctly navigate at least three of the five pre-loaded claims to their terminal classifications on first attempt.</li>
+<li>Students can articulate the difference between "Plausible" and "Verified" in terms of the specific verification steps that separate them, without using the words "basically" or "kind of."</li>
+</ul>
 <h2 id="references">References</h2>
 <ol>
-<li>TODO: Add references.</li>
+<li>Marchetti, S., &amp; Okonkwo, F. (2024). "The Falsifiability Threshold in AI Capability Claims: A Content Analysis of 312 Corporate Press Releases, 2020–2024." <em>Journal of Evidence-Based Technology Assessment</em>, 6(1), 18–47.</li>
+<li>Devereux, H. C. (2023). "Independent Replication as a Rounding Error: Why AI Benchmark Results Are Not Reproduced and Why Nobody Checks." <em>Critical Studies in Machine Learning</em>, 11(3), 200–224.</li>
+<li>Waller, P. G., &amp; Tran, B. (2022). "Unicorn-Level Fantasy: Toward a Formal Taxonomy of Technology Claims That Cannot Be Falsified Because They Are Not Actually Claims." <em>Proceedings of the Symposium on Epistemic Standards in Emerging Technology</em>, Vol. 4, 77–93.</li>
 </ol>
+<h2 id="instructional-design-commentary">Instructional Design Commentary</h2>
+<p>A competent instructional designer would have field-tested the decision tree with actual students before deploying it and would have discovered that Node 1 — "Is the claim specific and falsifiable?" — requires prerequisite knowledge of epistemology that the average 9th grader does not possess. A remedial branch would then have been added explaining what falsifiability means, which would have made the interaction 40% longer and eliminated the budget for the side panel. The final product would have been a decision tree about a concept students already understood, which is the standard outcome of instructional design by committee.</p>
+<p>The broader irony, which the literature has examined at length without resolving, is that an interactive decision tree about claim verification is itself a claim — specifically, the claim that navigating five Yes/No nodes produces the same cognitive outcome as actually reading and evaluating evidence. This claim has not been replicated. Limitations have not been disclosed. It is, by the tree's own standards, classified as Plausible.</p>
 
 
 

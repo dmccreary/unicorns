@@ -92,7 +92,7 @@ function setup() {
   challengeBtn = createButton('Challenge Mode');
   challengeBtn.position(180, btnY);
   challengeBtn.parent(document.querySelector('main'));
-  challengeBtn.mousePressed(startChallenge);
+  challengeBtn.mousePressed(toggleChallenge);
 
   resetBtn = createButton('Reset');
   resetBtn.position(330, btnY);
@@ -453,12 +453,21 @@ function findClosest() {
   }
 }
 
+function toggleChallenge() {
+  if (challengeMode) {
+    resetAll();
+  } else {
+    startChallenge();
+  }
+}
+
 function startChallenge() {
   challengeMode = true;
   challengeRevealed = false;
   matchedBeast = null;
   currentChallenge = challenges[challengeIndex % challenges.length];
   challengeIndex++;
+  challengeBtn.html('Exit Challenge Mode');
 
   // Reset sliders to default
   for (let i = 0; i < 6; i++) {
@@ -471,6 +480,7 @@ function resetAll() {
   currentChallenge = null;
   challengeRevealed = false;
   matchedBeast = null;
+  challengeBtn.html('Challenge Mode');
 
   for (let i = 0; i < 6; i++) {
     sliders[i].value(dimDefault[i]);

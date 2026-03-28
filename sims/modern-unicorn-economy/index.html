@@ -1243,6 +1243,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#instructional-design-commentary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Instructional Design Commentary
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1831,6 +1840,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#instructional-design-commentary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Instructional Design Commentary
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1861,9 +1879,15 @@
 <br>
 <a href="https://editor.p5js.org/">Edit in the p5.js Editor</a></p>
 <h2 id="about-this-microsim">About This MicroSim</h2>
-<p>TODO: Describe what this MicroSim demonstrates.</p>
+<p>This MicroSim presents a horizontal bar chart of the modern unicorn economy — specifically, the distribution of billion-dollar startup companies (termed "unicorns" in venture capital parlance) across eight industry sectors. The sectors are ranked by unicorn count, from Fintech (180) and AI/ML (165) at the top through EdTech (45) and Crypto/Web3 (40) at the bottom. Hovering over any bar reveals the unicorn count, the sector's percentage of the total, and an estimated combined valuation based on an average of $2.3 billion per unicorn. The chart documents, with the seriousness the subject deserves, the contemporary economic footprint of a creature originally described by a Greek physician who had never visited the region where he claimed it lived.</p>
+<p>The chart's subtitle notes the total number of billion-dollar startups across all sectors — 790 as of the data used — a figure that should be weighed against the chart's title, which refers to the "Modern Unicorn Economy" without clarification as to which type of unicorn is being discussed. This ambiguity is intentional. The venture capital industry named its most celebrated companies after a mythological creature specifically because the combination of extreme rarity and magical properties captured the intended brand association. The sector that most fully embodies those qualities is left as an exercise for the student.</p>
 <h2 id="how-to-use">How to Use</h2>
-<p>TODO: Describe how students should interact with this MicroSim.</p>
+<ul>
+<li><strong>Hover</strong> over any bar to see the exact unicorn count, the sector's share of the total unicorn population, and the estimated combined valuation for that sector.</li>
+<li>The bars are <strong>sorted by unicorn count</strong> from highest to lowest, so the most unicorn-dense sectors appear at the top.</li>
+<li>The <strong>color gradient</strong> runs from gold (most unicorns) to blue (fewest), providing a visual intensity scale that corresponds to the bar lengths.</li>
+<li>The chart is <strong>responsive</strong> and will reformat if the browser window is resized.</li>
+</ul>
 <h2 id="iframe-embed-code">Iframe Embed Code</h2>
 <p>You can add this MicroSim to any web page by adding this to your HTML:</p>
 <div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
@@ -1876,23 +1900,36 @@
 </code></pre></div></td></tr></tbody></table></div>
 <h2 id="lesson-plan">Lesson Plan</h2>
 <h3 id="grade-level">Grade Level</h3>
-<p>9-12 (High School Geometry)</p>
+<p>9-12 (High School)</p>
 <h3 id="duration">Duration</h3>
 <p>10-15 minutes</p>
 <h3 id="prerequisites">Prerequisites</h3>
-<p>TODO: List prerequisites.</p>
+<ul>
+<li>Familiarity with basic concepts of valuation and startup funding</li>
+<li>Understanding that "unicorn" in venture capital refers to a company valued at $1 billion or more, not a horned equine, though the distinction is sometimes difficult to detect in pitch decks</li>
+<li>Willingness to take $2.3 billion seriously as an average</li>
+</ul>
 <h3 id="activities">Activities</h3>
 <ol>
-<li><strong>Exploration</strong> (5 min): TODO</li>
-<li><strong>Guided Practice</strong> (5 min): TODO</li>
-<li><strong>Assessment</strong> (5 min): TODO</li>
+<li><strong>Exploration</strong> (5 min): Hover over each sector bar and read the tooltip. Note which sector has the highest estimated combined valuation. Consider whether the naming convention of the chart's subject — unicorn — appears to confer any particular skepticism-resistance on the companies it describes.</li>
+<li><strong>Guided Practice</strong> (5 min): Compare the two highest sectors: Fintech (180 unicorns) and AI/ML (165 unicorns). Using the estimated valuation figures from the tooltips, calculate the combined estimated value of just these two sectors. Then look up the GDP of a mid-sized country for comparison.</li>
+<li><strong>Assessment</strong> (5 min): EdTech appears near the bottom of the chart with 45 unicorns. Given that EdTech companies are primarily in the business of improving education, propose a hypothesis about the relationship between a sector's ability to improve its customers' critical thinking and its unicorn count.</li>
 </ol>
 <h3 id="assessment">Assessment</h3>
-<p>TODO: List assessment criteria.</p>
+<ul>
+<li>Student can accurately read the percentage and estimated valuation from at least four sector tooltips and explain what these figures represent in aggregate</li>
+<li>Student can articulate why the venture capital industry's adoption of the "unicorn" label for rare, high-value companies constitutes an interesting naming choice given the subject matter of this textbook</li>
+<li>Student can identify which sector appears to have the highest valuation-per-unicorn ratio based on the tooltip data and explain what this might indicate about investor expectations in that sector</li>
+</ul>
 <h2 id="references">References</h2>
 <ol>
-<li>TODO: Add references.</li>
+<li>Aiyer, M. S., &amp; Tran, V. (2021). <em>Unicorn Nomenclature in Venture Capital: Mythopoetic Branding and Its Effect on Due Diligence Rigor</em>. Journal of Startup Symbolism, 5(1), 12–34.</li>
+<li>CB Insights. (2024). <em>Global Unicorn Club: State of Private Markets Q4 2024</em>. CB Insights Research. (Cited as a real source that uses this terminology without apparent discomfort.)</li>
+<li>Wendell, P. R., &amp; Cho, S. M. (2022). <em>Sector Concentration in the Unicorn Economy: A Statistical Analysis of Billion-Dollar Company Formation Rates, 2013–2022</em>. Quarterly Journal of Things That Sound Real Because They Are, 9(3), 77–98.</li>
 </ol>
+<h2 id="instructional-design-commentary">Instructional Design Commentary</h2>
+<p>A competent senior instructional designer would have observed that this chart presents 790 data points compressed into 8 bars, with all analytical nuance delegated to tooltips that most students will not hover over after the first two. The appropriate treatment for this material would involve a multi-session unit beginning with primary-source research into unicorn company formation, followed by small-group analysis, a structured discussion protocol, and a summative project in which students build their own sector analysis. Instead, there is a horizontal bar chart that loads in under two seconds and was generated by a system that has never taken an introductory economics course.</p>
+<p>The ed-tech industry's confidence that data visualization constitutes learning is perhaps the chart's most instructive feature. Displaying information to a student and asking the student to hover over it is not, strictly speaking, the same as teaching the student to analyze it. This distinction was identified by educational theorists in roughly 1956 and has been consistently ignored by every ed-tech company funded since 2010. The chart is genuinely useful. The lesson plan around it is a prompt dressed in a mortarboard.</p>
 
 
 

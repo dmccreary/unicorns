@@ -1,91 +1,149 @@
 // Product-Market Fit Spectrum MicroSim
-// Students drag startup scenario cards to positions on a PMF continuum.
+// Drag startup scenario cards into drop zones for immediate feedback.
 
 let canvasWidth = 750;
-let drawHeight = 450;
-let controlHeight = 50;
 let canvasHeight = 500;
 
-// Spectrum zones: 0=Verified (left), 1=Aspirational (center), 2=Mythical (right)
 const zoneLabels = ["Verified PMF", "Aspirational", "Mythical PMF"];
-const zoneColors = [
-  [60, 180, 75],    // green
-  [220, 190, 50],   // gold
-  [210, 60, 60]     // red
+const zoneDescriptions = [
+  "Real revenue, real users",
+  "Some traction, much spin",
+  "Pure fantasy metrics"
 ];
-
-const spectrumMarkers = [
-  { label: "Revenue exceeds\ncosts",         xFrac: 0.10 },
-  { label: "Organic\ngrowth",                xFrac: 0.30 },
-  { label: "Growth requires\nsubsidy",       xFrac: 0.50 },
-  { label: "Metrics\nselective",             xFrac: 0.70 },
-  { label: "Product doesn't\nexist yet",     xFrac: 0.90 }
+const zoneColors = [
+  [60, 180, 75],   // green
+  [220, 190, 50],  // gold
+  [210, 60, 60]    // red
 ];
 
 const scenarios = [
-  { text: "2M MAU, 40% organic growth, 85% retention",          correct: 0 },
-  { text: "$50M ARR; $48M from one contract",                    correct: 1 },
-  { text: "Hockey stick growth starting yesterday",              correct: 2 },
-  { text: "100K free users, 12 paying",                          correct: 1 },
-  { text: "$500B TAM if we capture 1% of China",                 correct: 2 },
-  { text: "Revenue doubled after 80% price cut",                 correct: 1 },
-  { text: "95% annual renewal, zero marketing",                  correct: 0 },
-  { text: "Demo works on founder's laptop only",                 correct: 2 }
+  { text: "2M MAU, 40% organic growth, 85% retention",   correct: 0 },
+  { text: "$50M ARR; $48M from one contract",             correct: 1 },
+  { text: "Hockey stick growth starting yesterday",       correct: 2 },
+  { text: "100K free users, 12 paying",                   correct: 1 },
+  { text: "$500B TAM if we capture 1% of China",          correct: 2 },
+  { text: "Revenue doubled after 80% price cut",          correct: 1 },
+  { text: "95% annual renewal, zero marketing",           correct: 0 },
+  { text: "Demo works on founder's laptop only",          correct: 2 }
 ];
 
 let cards = [];
-let checkBtn, resetBtn;
-let checked = false;
-let score = 0;
+let resetBtn;
 let dragIndex = -1;
 let dragOffX = 0;
 let dragOffY = 0;
+let score = 0;
+let correctCount = 0;
 
-// Spectrum geometry
-let specLeft, specRight, specY, specH;
+// Zone geometry (recalculated on resize)
+let zones = [];
+let zoneTop, zoneH;
+
+// Card tray geometry
+let trayTop;
+const cardW = 140;
+const cardH = 58;
+
+// Flash animation for wrong answers
+let flashCard = -1;
+let flashTimer = 0;
+const FLASH_DURATION = 30;
 
 function updateCanvasSize() {
   const container = document.querySelector('main');
   if (container) {
     canvasWidth = container.offsetWidth;
   }
-  canvasHeight = drawHeight + controlHeight;
+  canvasHeight = 500;
 }
 
-function getZoneForX(x) {
-  // 0=Verified (left third), 1=Aspirational (middle third), 2=Mythical (right third)
-  let frac = (x - specLeft) / (specRight - specLeft);
-  frac = constrain(frac, 0, 1);
-  if (frac < 0.333) return 0;
-  if (frac < 0.666) return 1;
-  return 2;
+function updateZoneGeometry() {
+  let margin = canvasWidth * 0.04;
+  let gap = 12;
+  let totalGap = gap * 2;
+  let zoneW = (canvasWidth - margin * 2 - totalGap) / 3;
+  zoneTop = 55;
+  zoneH = 160;
+
+  zones = [];
+  for (let i = 0; i < 3; i++) {
+    zones.push({
+      x: margin + i * (zoneW + gap),
+      y: zoneTop,
+      w: zoneW,
+      h: zoneH
+    });
+  }
+
+  trayTop = zoneTop + zoneH + 30;
 }
 
 function initCards() {
   cards = [];
-  let cardW = 130;
-  let cardH = 65;
-  let startY = specY + specH + 60;
+  score = 0;
+  correctCount = 0;
+  flashCard = -1;
+  flashTimer = 0;
+
+  // Shuffle scenarios for variety
+  let indices = scenarios.map((_, i) => i);
+  for (let i = indices.length - 1; i > 0; i--) {
+    let j = Math.floor(Math.random() * (i + 1));
+    [indices[i], indices[j]] = [indices[j], indices[i]];
+  }
+
   let cols = 4;
-  let rows = 2;
-  let gapX = 12;
-  let gapY = 14;
+  let gapX = 10;
+  let gapY = 10;
   let totalW = cols * cardW + (cols - 1) * gapX;
   let startX = (canvasWidth - totalW) / 2;
 
-  for (let i = 0; i < scenarios.length; i++) {
+  for (let i = 0; i < indices.length; i++) {
+    let si = indices[i];
     let col = i % cols;
     let row = Math.floor(i / cols);
     cards.push({
       x: startX + col * (cardW + gapX),
-      y: startY + row * (cardH + gapY),
+      y: trayTop + row * (cardH + gapY),
+      homeX: startX + col * (cardW + gapX),
+      homeY: trayTop + row * (cardH + gapY),
       w: cardW,
       h: cardH,
-      text: scenarios[i].text,
-      correct: scenarios[i].correct,
-      placed: -1  // -1 = not placed on spectrum
+      text: scenarios[si].text,
+      correct: scenarios[si].correct,
+      locked: false,     // true after correct placement
+      placedZone: -1     // which zone the card is snapped into
     });
   }
+}
+
+function getZoneAtPoint(px, py) {
+  for (let i = 0; i < zones.length; i++) {
+    let z = zones[i];
+    if (px >= z.x && px <= z.x + z.w && py >= z.y && py <= z.y + z.h) {
+      return i;
+    }
+  }
+  return -1;
+}
+
+const lockedCardH = Math.round(cardH / 3);
+
+function snapCardToZone(card, zoneIdx) {
+  // Count how many cards are already in this zone
+  let count = 0;
+  for (let c of cards) {
+    if (c.locked && c.placedZone === zoneIdx) count++;
+  }
+  let z = zones[zoneIdx];
+  let padX = 8;
+  let padY = 30;
+  let stackGap = 4;
+  // Shrink card and stack vertically within the zone
+  card.x = z.x + padX;
+  card.w = z.w - padX * 2;
+  card.h = lockedCardH;
+  card.y = z.y + padY + count * (lockedCardH + stackGap);
 }
 
 function setup() {
@@ -94,149 +152,121 @@ function setup() {
   canvas.parent(document.querySelector('main'));
   textFont('Arial');
 
-  checkBtn = createButton('Check Answers');
-  checkBtn.parent(document.querySelector('main'));
-  checkBtn.mousePressed(() => {
-    checked = true;
-    score = 0;
-    for (let c of cards) {
-      if (c.placed === c.correct) score++;
-    }
-  });
-
   resetBtn = createButton('Reset');
   resetBtn.parent(document.querySelector('main'));
   resetBtn.mousePressed(() => {
-    checked = false;
-    score = 0;
+    updateZoneGeometry();
     initCards();
   });
 
+  updateZoneGeometry();
   initCards();
 }
 
 function draw() {
   updateCanvasSize();
   resizeCanvas(canvasWidth, canvasHeight);
+  updateZoneGeometry();
 
-  // Recalculate spectrum geometry
-  specLeft = canvasWidth * 0.08;
-  specRight = canvasWidth * 0.92;
-  specY = 60;
-  specH = 36;
-
-  // Reposition cards on resize (only the initial grid, not dragged ones)
-  // We handle this in initCards and rely on relative positions
-
-  // Draw area background
-  fill('aliceblue');
-  stroke('silver');
-  rect(0, 0, canvasWidth, drawHeight);
-
-  // Control area background
-  fill('white');
-  noStroke();
-  rect(0, drawHeight, canvasWidth, controlHeight);
-
-  // Position buttons
-  let btnY = drawHeight + 12;
-  checkBtn.position(canvasWidth * 0.28, btnY);
-  resetBtn.position(canvasWidth * 0.55, btnY);
+  // Background
+  background(240, 248, 255); // aliceblue
 
   // Title
   noStroke();
   fill(30);
   textSize(16);
   textAlign(CENTER, TOP);
-  text("Product-Market Fit Spectrum", canvasWidth / 2, 10);
+  text("Product-Market Fit Spectrum", canvasWidth / 2, 8);
   textSize(11);
   fill(100);
-  text("Drag each scenario card to its position on the spectrum", canvasWidth / 2, 32);
+  text("Drag each scenario into the correct zone", canvasWidth / 2, 28);
 
-  // Draw spectrum gradient bar
+  // Score
   noStroke();
-  let barW = specRight - specLeft;
-  for (let px = 0; px < barW; px++) {
-    let frac = px / barW;
-    let r, g, b;
-    if (frac < 0.5) {
-      let t = frac / 0.5;
-      r = lerp(zoneColors[0][0], zoneColors[1][0], t);
-      g = lerp(zoneColors[0][1], zoneColors[1][1], t);
-      b = lerp(zoneColors[0][2], zoneColors[1][2], t);
-    } else {
-      let t = (frac - 0.5) / 0.5;
-      r = lerp(zoneColors[1][0], zoneColors[2][0], t);
-      g = lerp(zoneColors[1][1], zoneColors[2][1], t);
-      b = lerp(zoneColors[1][2], zoneColors[2][2], t);
-    }
-    fill(r, g, b);
-    rect(specLeft + px, specY, 1, specH);
-  }
+  textSize(13);
+  textAlign(RIGHT, TOP);
+  fill(50);
+  text(correctCount + " / " + cards.length + " placed", canvasWidth - 16, 10);
 
-  // Spectrum border
-  noFill();
-  stroke(120);
-  strokeWeight(1);
-  rect(specLeft, specY, barW, specH, 4);
-
-  // Zone labels on the bar
-  noStroke();
-  textSize(11);
-  textAlign(CENTER, CENTER);
-  let thirdW = barW / 3;
+  // Draw drop zones
   for (let i = 0; i < 3; i++) {
-    fill(255);
-    text(zoneLabels[i], specLeft + thirdW * i + thirdW / 2, specY + specH / 2);
-  }
+    let z = zones[i];
+    let zc = zoneColors[i];
+    let isHover = false;
 
-  // Spectrum markers below bar
-  noStroke();
-  fill(70);
-  textSize(9);
-  textAlign(CENTER, TOP);
-  for (let m of spectrumMarkers) {
-    let mx = specLeft + m.xFrac * barW;
-    // Tick mark
-    stroke(100);
-    strokeWeight(1);
-    line(mx, specY + specH, mx, specY + specH + 8);
-    // Label
-    noStroke();
-    let lines = m.label.split('\n');
-    for (let li = 0; li < lines.length; li++) {
-      text(lines[li], mx, specY + specH + 10 + li * 11);
-    }
-  }
-
-  // Draw cards
-  let cardW = 130;
-  let cardH = 65;
-
-  for (let i = 0; i < cards.length; i++) {
-    let c = cards[i];
-
-    // Card background
-    strokeWeight(1);
-
-    if (checked) {
-      c.placed = getZoneForX(c.x + c.w / 2);
-      if (c.placed === c.correct) {
-        fill(200, 240, 200);
-        stroke(60, 160, 60);
-      } else {
-        fill(255, 210, 210);
-        stroke(200, 60, 60);
+    // Highlight zone if dragging a card over it
+    if (dragIndex >= 0) {
+      let c = cards[dragIndex];
+      let cx = c.x + c.w / 2;
+      let cy = c.y + c.h / 2;
+      if (getZoneAtPoint(cx, cy) === i) {
+        isHover = true;
       }
+    }
+
+    // Zone background
+    if (isHover) {
+      fill(zc[0], zc[1], zc[2], 60);
+      stroke(zc[0], zc[1], zc[2]);
+      strokeWeight(3);
     } else {
+      fill(zc[0], zc[1], zc[2], 25);
+      stroke(zc[0], zc[1], zc[2], 150);
+      strokeWeight(2);
+    }
+    drawingContext.setLineDash(isHover ? [] : [8, 5]);
+    rect(z.x, z.y, z.w, z.h, 8);
+    drawingContext.setLineDash([]);
+
+    // Zone label
+    noStroke();
+    fill(zc[0] * 0.6, zc[1] * 0.6, zc[2] * 0.6);
+    textSize(13);
+    textAlign(CENTER, TOP);
+    text(zoneLabels[i], z.x + z.w / 2, z.y + 6);
+    textSize(9);
+    fill(zc[0] * 0.7, zc[1] * 0.7, zc[2] * 0.7, 200);
+    text(zoneDescriptions[i], z.x + z.w / 2, z.y + 22);
+  }
+
+  // Flash timer
+  if (flashTimer > 0) flashTimer--;
+
+  // Draw cards (locked first, then unlocked, dragged last)
+  let drawOrder = cards.map((_, i) => i);
+  // Sort: locked cards first, then unlocked, dragged card last
+  drawOrder.sort((a, b) => {
+    if (a === dragIndex) return 1;
+    if (b === dragIndex) return -1;
+    if (cards[a].locked && !cards[b].locked) return -1;
+    if (!cards[a].locked && cards[b].locked) return 1;
+    return 0;
+  });
+
+  for (let idx of drawOrder) {
+    let c = cards[idx];
+    strokeWeight(1);
+
+    if (c.locked) {
+      // Correct card in zone — green tint
+      fill(210, 245, 210);
+      stroke(60, 160, 60);
+      strokeWeight(2);
+    } else if (idx === flashCard && flashTimer > 0) {
+      // Wrong answer flash — red
+      let pulse = Math.sin(flashTimer * 0.5) * 0.5 + 0.5;
+      fill(255, 200 + pulse * 55, 200 + pulse * 55);
+      stroke(210, 60, 60);
+      strokeWeight(2);
+    } else if (idx === dragIndex) {
+      // Currently dragging
+      fill(255, 255, 240);
+      stroke(70, 100, 200);
+      strokeWeight(2);
+    } else {
+      // Default card
       fill(255);
       stroke(160);
-    }
-
-    // Highlight if dragging
-    if (i === dragIndex) {
-      strokeWeight(2);
-      stroke(70, 100, 200);
     }
 
     rect(c.x, c.y, c.w, c.h, 5);
@@ -246,45 +276,38 @@ function draw() {
     fill(40);
     textSize(9);
     textAlign(CENTER, CENTER);
-    wrapText(c.text, c.x + c.w / 2, c.y + c.h / 2, c.w - 10, c.h - 8);
+    wrapText(c.text, c.x + c.w / 2, c.y + c.h / 2, c.w - 12, c.h - 8);
 
-    // Correct/incorrect indicator
-    if (checked) {
+    // Checkmark on locked cards
+    if (c.locked) {
       noStroke();
-      textSize(14);
+      fill(40, 150, 40);
+      textSize(16);
       textAlign(RIGHT, TOP);
-      c.placed = getZoneForX(c.x + c.w / 2);
-      if (c.placed === c.correct) {
-        fill(40, 150, 40);
-        text('\u2713', c.x + c.w - 4, c.y + 2);
-      } else {
-        fill(200, 40, 40);
-        text('\u2717', c.x + c.w - 4, c.y + 2);
-      }
+      text('\u2713', c.x + c.w - 4, c.y + 2);
     }
   }
 
-  // Score display
-  if (checked) {
+  // Completion message
+  if (correctCount === cards.length) {
     noStroke();
     fill(30);
-    textSize(14);
-    textAlign(CENTER, BOTTOM);
-    text("Score: " + score + " / " + cards.length + " correct", canvasWidth / 2, drawHeight - 10);
+    textSize(15);
+    textAlign(CENTER, TOP);
+    text("All scenarios correctly classified.", canvasWidth / 2, trayTop + 10);
   }
 
-  // Instructions at bottom of draw area
-  if (!checked) {
+  // Instruction
+  if (correctCount < cards.length && dragIndex < 0) {
     noStroke();
-    fill(120);
+    fill(140);
     textSize(10);
     textAlign(CENTER, BOTTOM);
-    text("Drag cards onto the spectrum, then click Check Answers.", canvasWidth / 2, drawHeight - 10);
+    text("Drag cards into the drop zones. Correct placements lock in place.", canvasWidth / 2, canvasHeight - 8);
   }
 }
 
 function wrapText(txt, cx, cy, maxW, maxH) {
-  // Simple word-wrap centered at (cx, cy)
   let words = txt.split(' ');
   let lines = [];
   let current = '';
@@ -311,20 +334,15 @@ function wrapText(txt, cx, cy, maxW, maxH) {
 }
 
 function mousePressed() {
-  if (checked) return;
-
-  // Check cards in reverse order (top card first)
+  // Check cards in reverse order (top card first), skip locked
   for (let i = cards.length - 1; i >= 0; i--) {
     let c = cards[i];
+    if (c.locked) continue;
     if (mouseX >= c.x && mouseX <= c.x + c.w &&
         mouseY >= c.y && mouseY <= c.y + c.h) {
       dragIndex = i;
       dragOffX = mouseX - c.x;
       dragOffY = mouseY - c.y;
-      // Move to end of array for top rendering
-      let card = cards.splice(i, 1)[0];
-      cards.push(card);
-      dragIndex = cards.length - 1;
       return;
     }
   }
@@ -335,13 +353,39 @@ function mouseDragged() {
     let c = cards[dragIndex];
     c.x = mouseX - dragOffX;
     c.y = mouseY - dragOffY;
-    // Constrain within draw area
     c.x = constrain(c.x, 0, canvasWidth - c.w);
-    c.y = constrain(c.y, 0, drawHeight - c.h);
+    c.y = constrain(c.y, 0, canvasHeight - c.h);
   }
 }
 
 function mouseReleased() {
+  if (dragIndex < 0) return;
+
+  let c = cards[dragIndex];
+  let cx = c.x + c.w / 2;
+  let cy = c.y + c.h / 2;
+  let zone = getZoneAtPoint(cx, cy);
+
+  if (zone >= 0) {
+    if (zone === c.correct) {
+      // Correct — lock card into zone
+      c.locked = true;
+      c.placedZone = zone;
+      correctCount++;
+      snapCardToZone(c, zone);
+    } else {
+      // Wrong — flash and return to tray
+      flashCard = dragIndex;
+      flashTimer = FLASH_DURATION;
+      c.x = c.homeX;
+      c.y = c.homeY;
+    }
+  } else {
+    // Dropped outside any zone — return home
+    c.x = c.homeX;
+    c.y = c.homeY;
+  }
+
   dragIndex = -1;
 }
 

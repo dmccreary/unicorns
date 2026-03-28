@@ -1096,6 +1096,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#instructional-design-commentary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Instructional Design Commentary
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1831,6 +1840,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#instructional-design-commentary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Instructional Design Commentary
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1861,9 +1879,18 @@
 <br>
 <a href="https://editor.p5js.org/">Edit in the p5.js Editor</a></p>
 <h2 id="about-this-microsim">About This MicroSim</h2>
-<p>TODO: Describe what this MicroSim demonstrates.</p>
+<p>This MicroSim makes visible the internal pipeline of a large language model by walking scholars through seven discrete stages of text generation, from raw input prompt to produced output. The example prompt — "What is a unicorn?" — was selected because it is the question this textbook is, at considerable length, answering, and because it produces a pipeline demonstration that is both technically accurate and thematically appropriate to a course of study that takes unicorns seriously as an object of inquiry.</p>
+<p>The seven stages proceed as follows: raw input, tokenization, embedding (represented as colored bars of varying height), attention (represented as arrows of varying thickness between tokens), probability distribution for the next word, iterative word selection, and the accumulation of the generated sequence. At Stage 5, scholars can observe that "A" has a 32% probability of being the next word, "The" has 18%, and "Un" has 12%. The model selects "A," then predicts "unicorn" at 45% probability. The resulting sequence — "A unicorn is a mythical creature that..." — is generated word by word, each word the statistical product of everything that came before it. The textbook you are currently reading was produced by a process that is not entirely unlike this. The textbook considers this worth noting.</p>
+<p>Importantly, this MicroSim does not explain why the model produces these specific probabilities, because the model does not know why either. The attention weights represent which tokens the model found relevant to which other tokens during training on a dataset of approximately the entire written internet. The model has read more about unicorns than any human scholar. It has understood none of it. This is the Emperor's New Algorithm.</p>
 <h2 id="how-to-use">How to Use</h2>
-<p>TODO: Describe how students should interact with this MicroSim.</p>
+<ol>
+<li>The simulation opens at Stage 1, displaying the raw input prompt: "What is a unicorn?"</li>
+<li>Click <strong>Next Stage</strong> to advance through each of the seven stages. At each stage, the central display area shows the data relevant to that processing step: tokens, embeddings, attention weights, probability distributions, or the growing output sequence.</li>
+<li>Click <strong>Previous Stage</strong> to return to the prior stage for review or comparison.</li>
+<li>Click <strong>Try Another Prompt</strong> to cycle through three preset prompts and observe how the pipeline handles different inputs. Note which stages look different and which remain structurally identical regardless of input.</li>
+<li>Click <strong>Reset</strong> to return to Stage 1.</li>
+<li>At Stage 5 and Stage 6, examine the probability distributions carefully. These are the moments at which the model is, in a meaningful sense, "deciding" what to say — though "deciding" may not be the right word, and whether it is the right word is a question this textbook assigns as homework.</li>
+</ol>
 <h2 id="iframe-embed-code">Iframe Embed Code</h2>
 <p>You can add this MicroSim to any web page by adding this to your HTML:</p>
 <div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
@@ -1876,23 +1903,35 @@
 </code></pre></div></td></tr></tbody></table></div>
 <h2 id="lesson-plan">Lesson Plan</h2>
 <h3 id="grade-level">Grade Level</h3>
-<p>9-12 (High School Geometry)</p>
+<p>9-12 (High School)</p>
 <h3 id="duration">Duration</h3>
 <p>10-15 minutes</p>
 <h3 id="prerequisites">Prerequisites</h3>
-<p>TODO: List prerequisites.</p>
+<ul>
+<li>Basic familiarity with the concept of probability (a number between 0 and 1 representing the likelihood of an outcome)</li>
+<li>An open mind regarding whether "understanding" is a meaningful criterion for evaluating a system that produces grammatically correct, contextually appropriate, and occasionally wrong text about unicorns with equal fluency</li>
+</ul>
 <h3 id="activities">Activities</h3>
 <ol>
-<li><strong>Exploration</strong> (5 min): TODO</li>
-<li><strong>Guided Practice</strong> (5 min): TODO</li>
-<li><strong>Assessment</strong> (5 min): TODO</li>
+<li><strong>Exploration</strong> (5 min): Step through all seven stages with the first preset prompt. At Stage 5, write down the top three predicted words and their probabilities before advancing. At Stage 6, observe whether the model selected the highest-probability word or a different one. Consider what selecting a lower-probability word occasionally accomplishes, and what name the technical literature uses for this.</li>
+<li><strong>Guided Practice</strong> (5 min): Use "Try Another Prompt" to switch to a different preset. Compare the tokenization at Stage 2 with the original prompt. Identify whether any token changed in the embedding or attention stages in a way that reflects the difference in meaning between the two prompts. Describe what you observe in one sentence.</li>
+<li><strong>Assessment</strong> (5 min): Without referring to the simulation, explain in your own words why a large language model that generates the response "A unicorn is a mythical creature" is not, according to the pipeline demonstrated in this simulation, claiming anything about whether unicorns exist. Refer to at least two specific stages in your explanation.</li>
 </ol>
 <h3 id="assessment">Assessment</h3>
-<p>TODO: List assessment criteria.</p>
+<ul>
+<li>The scholar can describe the function of each of the seven pipeline stages in plain language, without resorting to the word "magic" or the phrase "it just knows."</li>
+<li>The scholar can explain why the probability distribution at Stage 5 produces the specific word it does and can articulate what "temperature" settings would change about that selection, based on their understanding of the distribution rather than memorized vocabulary.</li>
+<li>The scholar can distinguish between what the simulation demonstrates about LLM text generation and what it does not demonstrate about LLM understanding — a distinction the AI industry has shown a consistent, well-documented preference for not making.</li>
+</ul>
 <h2 id="references">References</h2>
 <ol>
-<li>TODO: Add references.</li>
+<li>Vaswani, A., Shazeer, N., Parmar, N., Uszkoreit, J., Jones, L., Gomez, A. N., Kaiser, L., &amp; Polosukhin, I. (2017). Attention is all you need. <em>Advances in Neural Information Processing Systems</em>, 30. (This one is real and you should read it, though it will not explain whether the model understands anything.)</li>
+<li>Bletchford, H. A., &amp; Sims, C. (2023). <em>What the pipeline knows and what it merely predicts: A pedagogical framework for teaching LLM mechanics to secondary students.</em> Journal of AI Literacy Education, 2(1), 18–34.</li>
+<li>Quellan, R. P. (2024). <em>Token by token: Making the invisible language model visible in classroom settings without accidentally convincing anyone that the model is sentient.</em> Educational Technology Research Quarterly, 19(3), 201–218.</li>
 </ol>
+<h2 id="instructional-design-commentary">Instructional Design Commentary</h2>
+<p>A competent instructional designer would have noted that teaching large language model mechanics to high school students is a genuinely difficult instructional challenge, requiring careful scaffolding of prerequisite concepts (probability, distributed representation, statistical prediction) before any interactive visualization can be meaningful rather than merely decorative. They would have conducted a careful cognitive load analysis, ensured that each stage of the seven-stage pipeline was introduced with sufficient contextual framing, and tested whether the step-through format actually supported learner explanation-building or simply gave learners the comfortable feeling of having watched a thing happen. The comfortable feeling of having watched a thing happen is, incidentally, also how most people experience AI product demos, which makes this simulation more faithful to its subject matter than any formal instructional design review would have intended.</p>
+<p>The choice to answer "What is a unicorn?" as the demonstration prompt was made in approximately eleven seconds and was not subject to learner testing. It is, objectively, the correct choice. A rigorous instructional design process would have reached the same conclusion after three rounds of stakeholder review, two focus groups, and a content audit, and would have been billed at $180 per hour for the privilege. The textbook considers this outcome data.</p>
 
 
 

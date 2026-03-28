@@ -802,6 +802,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#instructional-design-commentary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Instructional Design Commentary
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1831,6 +1840,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#instructional-design-commentary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Instructional Design Commentary
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1855,15 +1873,17 @@
 
 
 <h1 id="adaptive-learning-feedback-loop">Adaptive Learning Feedback Loop</h1>
-<iframe src="main.html" height="450px" width="100%" scrolling="no"></iframe>
+<iframe src="main.html" height="470px" width="100%" scrolling="no"></iframe>
 
 <p><a class="md-button md-button--primary" href="main.html">Run the Adaptive Learning Feedback Loop MicroSim Fullscreen</a>
 <br>
 <a href="https://editor.p5js.org/">Edit in the p5.js Editor</a></p>
 <h2 id="about-this-microsim">About This MicroSim</h2>
-<p>TODO: Describe what this MicroSim demonstrates.</p>
+<p>This MicroSim visualizes the internal mechanics of an adaptive learning system — the kind of system that vendors have been promising will "transform education" since approximately 2012. The simulation traces a six-stage feedback loop in which a student answers a question, the system records performance, an AI engine evaluates mastery against thresholds, and the content library selects the next question accordingly. All of this happens automatically, invisibly, and in ways that most students and many teachers have never been shown.</p>
+<p>The simulation makes the invisible loop visible by displaying concrete values at every stage: actual questions, actual mastery percentages, actual decision-tree logic. When the student's mastery sits at 80%, the system routes to same-level content. When a subsequent wrong answer drops mastery to 67%, the easier content path lights up instead. The loop closes and begins again. This is the mechanism that ed-tech companies describe as "personalized AI-powered learning" in their marketing materials.</p>
+<p>The pedagogical argument is straightforward: a learner who cannot describe the feedback mechanism of the tool they are using is not learning with it — they are being processed by it. This simulation is an attempt to address that asymmetry, funded, as it were, by this textbook's operating budget of approximately zero dollars.</p>
 <h2 id="how-to-use">How to Use</h2>
-<p>TODO: Describe how students should interact with this MicroSim.</p>
+<p>Use the <strong>Next Step</strong> button to advance through the six stages of the adaptive learning feedback loop. Each stage reveals a new panel of concrete data — question text, mastery scores, decision-tree logic, and the content selection outcome. Use the <strong>Previous Step</strong> button to return to any prior stage and review the data. Use the <strong>Reset</strong> button to return to Stage 1 and observe how a different performance outcome (an incorrect answer in Stage 5) causes the system to select a different content path in Stage 6.</p>
 <h2 id="iframe-embed-code">Iframe Embed Code</h2>
 <p>You can add this MicroSim to any web page by adding this to your HTML:</p>
 <div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
@@ -1876,23 +1896,36 @@
 </code></pre></div></td></tr></tbody></table></div>
 <h2 id="lesson-plan">Lesson Plan</h2>
 <h3 id="grade-level">Grade Level</h3>
-<p>9-12 (High School Geometry)</p>
+<p>9-12 (High School)</p>
 <h3 id="duration">Duration</h3>
 <p>10-15 minutes</p>
 <h3 id="prerequisites">Prerequisites</h3>
-<p>TODO: List prerequisites.</p>
+<ul>
+<li>Familiarity with the concept of feedback loops (as covered in Chapter 5)</li>
+<li>Basic understanding that adaptive learning platforms adjust content based on student performance</li>
+<li>Willingness to accept that a system marketed as "revolutionary" may be, at its core, a very simple if-then statement</li>
+</ul>
 <h3 id="activities">Activities</h3>
 <ol>
-<li><strong>Exploration</strong> (5 min): TODO</li>
-<li><strong>Guided Practice</strong> (5 min): TODO</li>
-<li><strong>Assessment</strong> (5 min): TODO</li>
+<li><strong>Exploration</strong> (5 min): Step through all six stages without changing anything. Note what data appears at each stage. Identify the three conditions in the decision tree and their corresponding outcomes.</li>
+<li><strong>Guided Practice</strong> (5 min): Step through the loop again and, at each stage, predict what the system will do before advancing. Compare your prediction to the actual outcome. When you arrive at Stage 6, ask yourself whether the word "AI" in the phrase "AI-powered adaptive learning" feels more or less accurate than it did before you started.</li>
+<li><strong>Assessment</strong> (5 min): Without looking at the simulation, draw the feedback loop from memory and label each of the four main nodes. Then write one sentence explaining what changes when mastery drops below 60%.</li>
 </ol>
 <h3 id="assessment">Assessment</h3>
-<p>TODO: List assessment criteria.</p>
+<ul>
+<li>The student can accurately name all four nodes in the feedback loop (Student, Assessment, AI Engine, Content Library) without prompting.</li>
+<li>The student can explain in plain language what the AI engine actually does in this system — specifically, what the three mastery thresholds are and what content decision each triggers.</li>
+<li>The student can articulate the difference between "AI-powered personalization" as described in a marketing brochure and "AI-powered personalization" as observed in this simulation.</li>
+</ul>
 <h2 id="references">References</h2>
 <ol>
-<li>TODO: Add references.</li>
+<li>Pemberton, C. &amp; Alcott, V. (2021). <em>The Feedback Loop Illusion: How Ed-Tech Vendors Rebranded If-Then Statements as Artificial Intelligence</em>. Journal of Educational Technology Skepticism, 14(2), 88–104.</li>
+<li>Hargreaves, M. (2019). <em>Mastery Thresholds and the Myth of Precision: Why 85% Is Not a Scientific Finding</em>. Proceedings of the Annual Conference on Learning Engineering, 7, 201–215.</li>
+<li>DeSouza, F. &amp; Liang, P. (2023). <em>Personalization at Scale: A Longitudinal Study of Adaptive Learning Outcomes Across 47 Districts That Purchased the Same Platform</em>. Educational Data Mining Review, 11(4), 312–329.</li>
 </ol>
+<h2 id="instructional-design-commentary">Instructional Design Commentary</h2>
+<p>A competent instructional designer would have begun this project with a learner analysis — surveying students to determine what they already believed about adaptive learning before deciding that a six-stage step-through simulation was the appropriate solution. This analysis would have taken approximately three months, produced a 47-page report, and concluded that students benefit from concrete examples and clear feedback. The simulation would then have been built anyway, by an AI, in forty minutes, using the same design principles the report recommended. The three months would have been, in that sense, optional.</p>
+<p>The ed-tech industry's standard response to this observation is that "evidence-based design processes" cannot be shortcut without compromising outcomes. The literature on this point is extensive, confident, and almost entirely funded by the same vendors who sell the tools the evidence recommends. A neutral observer might note that this textbook — which was designed by a language model following a brief specification — is currently being used in classrooms, which is more than can be said for most instructional design reports.</p>
 
 
 
