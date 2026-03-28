@@ -3,15 +3,17 @@
 
 let canvasWidth = 750;
 let drawHeight = 350;
-let controlHeight = 220;
+let controlHeight = 150;
 let canvasHeight = drawHeight + controlHeight;
 
 let beliefSlider, fundingSlider, instagramSlider, realitySlider, decaySlider;
-let runBtn, resetBtn, hypeBtn, correctionBtn;
+let runBtn, resetBtn, scenarioRadio;
 
 let simData = null;
 let simYears = 20;
 let maxPopulation = 2000;
+let displayedSteps = 0;
+let isAnimating = false;
 
 function updateCanvasSize() {
   const container = document.querySelector('main');
@@ -65,7 +67,6 @@ function setup() {
   // Buttons
   let btnX = canvasWidth > 500 ? 340 : 300;
   let btnY = y0;
-  let btnSpacing = 34;
 
   runBtn = createButton('Run Simulation');
   runBtn.parent(document.querySelector('main'));
@@ -77,30 +78,17 @@ function setup() {
   resetBtn.position(btnX + 130, btnY);
   resetBtn.mousePressed(resetAll);
 
-  hypeBtn = createButton('Scenario: Hype Bubble');
-  hypeBtn.parent(document.querySelector('main'));
-  hypeBtn.position(btnX, btnY + btnSpacing);
-  hypeBtn.mousePressed(function () {
-    beliefSlider.value(90);
-    fundingSlider.value(90);
-    instagramSlider.value(80);
-    realitySlider.value(5);
-    decaySlider.value(5);
-  });
+  // Scenario radio buttons
+  scenarioRadio = createRadio();
+  scenarioRadio.parent(document.querySelector('main'));
+  scenarioRadio.position(btnX, btnY + 34);
+  scenarioRadio.option('Default');
+  scenarioRadio.option('Hype Bubble');
+  scenarioRadio.option('Correction');
+  scenarioRadio.selected('Default');
+  scenarioRadio.changed(applyScenario);
 
-  correctionBtn = createButton('Scenario: Correction');
-  correctionBtn.parent(document.querySelector('main'));
-  correctionBtn.position(btnX, btnY + btnSpacing * 2);
-  correctionBtn.mousePressed(function () {
-    beliefSlider.value(20);
-    fundingSlider.value(10);
-    instagramSlider.value(10);
-    realitySlider.value(90);
-    decaySlider.value(50);
-  });
-
-  // Run initial simulation
-  runSimulation();
+  // Don't run simulation automatically — wait for user to click Run
 }
 
 function draw() {
@@ -123,6 +111,15 @@ function draw() {
   textSize(16);
   textAlign(CENTER, TOP);
   text("Unicorn Population Dynamics", canvasWidth / 2, 8);
+
+  // Animate line drawing
+  if (isAnimating && simData) {
+    displayedSteps = min(displayedSteps + 1, simData.population.length);
+    if (displayedSteps >= simData.population.length) {
+      isAnimating = false;
+      runBtn.removeAttribute('disabled');
+    }
+  }
 
   // Draw chart
   if (simData) {
@@ -188,6 +185,10 @@ function runSimulation() {
     reality: realData,
     belief: beliefData
   };
+
+  displayedSteps = 0;
+  isAnimating = true;
+  runBtn.attribute('disabled', '');
 
   // Recalculate max for population axis
   let maxPop = 0;
@@ -305,8 +306,9 @@ function drawLine(data, chartLeft, chartTop, chartW, chartH, minVal, maxVal, col
   stroke(col);
   strokeWeight(weight);
   noFill();
+  let count = min(data.length, displayedSteps);
   beginShape();
-  for (let i = 0; i < data.length; i++) {
+  for (let i = 0; i < count; i++) {
     let px = chartLeft + (data[i].x / simYears) * chartW;
     let py = chartTop + chartH - ((data[i].y - minVal) / (maxVal - minVal)) * chartH;
     py = constrain(py, chartTop, chartTop + chartH);
@@ -340,7 +342,31 @@ function drawControlLabels() {
   text(decaySlider.value(), valX, y0 + rowH * 4);
 }
 
+function applyScenario() {
+  let scenario = scenarioRadio.value();
+  if (scenario === 'Hype Bubble') {
+    beliefSlider.value(90);
+    fundingSlider.value(90);
+    instagramSlider.value(80);
+    realitySlider.value(5);
+    decaySlider.value(5);
+  } else if (scenario === 'Correction') {
+    beliefSlider.value(20);
+    fundingSlider.value(10);
+    instagramSlider.value(10);
+    realitySlider.value(90);
+    decaySlider.value(50);
+  } else {
+    beliefSlider.value(50);
+    fundingSlider.value(40);
+    instagramSlider.value(30);
+    realitySlider.value(20);
+    decaySlider.value(10);
+  }
+}
+
 function resetAll() {
+  scenarioRadio.selected('Default');
   beliefSlider.value(50);
   fundingSlider.value(40);
   instagramSlider.value(30);
@@ -348,4 +374,7 @@ function resetAll() {
   decaySlider.value(10);
   simData = null;
   maxPopulation = 2000;
+  displayedSteps = 0;
+  isAnimating = false;
+  runBtn.removeAttribute('disabled');
 }

@@ -146,6 +146,12 @@ function draw() {
   stroke('silver');
   rect(0, drawHeight, canvasWidth, controlHeight);
 
+  // Update button states
+  if (currentPhase <= 1) prevButton.attribute('disabled', '');
+  else prevButton.removeAttribute('disabled');
+  if (currentPhase >= totalPhases) nextButton.attribute('disabled', '');
+  else nextButton.removeAttribute('disabled');
+
   // Phase indicator
   noStroke();
   fill(60);
@@ -408,31 +414,32 @@ function drawSlopePhase(y) {
 }
 
 function drawPlateauPhase(y) {
+  let cx = canvasWidth/2 + 30;
   noStroke();
   fill(80);
   textSize(14);
   textAlign(CENTER, TOP);
-  text('Boring but useful — the tools that actually stuck:', canvasWidth/2, y);
+  text('Boring but useful — the tools that actually stuck:', cx, y);
 
   for (let i = 0; i < plateauApps.length; i++) {
     let appY = y + 30 + i * 32;
     // Muted box
     fill(220);
     noStroke();
-    rect(canvasWidth/2 - 150, appY, 300, 26, 4);
+    rect(cx - 150, appY, 300, 26, 4);
 
     fill(80);
     textSize(14);
     textAlign(CENTER, CENTER);
-    text(plateauApps[i], canvasWidth/2, appY + 13);
+    text(plateauApps[i], cx, appY + 13);
   }
 
   // Observation
   fill(120);
   textSize(12);
   textAlign(CENTER, TOP);
-  text('Nobody writes breathless headlines about spam filters.', canvasWidth/2, y + 30 + plateauApps.length * 32 + 10);
-  text('That is how you know they work.', canvasWidth/2, y + 30 + plateauApps.length * 32 + 28);
+  text('Nobody writes breathless headlines about spam filters.', cx, y + 30 + plateauApps.length * 32 + 10);
+  text('That is how you know they work.', cx, y + 30 + plateauApps.length * 32 + 28);
 }
 
 function drawDeerState() {

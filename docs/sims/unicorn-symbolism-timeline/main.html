@@ -12,13 +12,13 @@
 <body>
     <main>
         <h2>Timeline of Unicorns in History</h2>
-        <div id="timeline"></div>
         <div id="legend">
             <span class="legend-item"><span class="legend-dot" style="background:#DAA520;"></span> Ancient</span>
             <span class="legend-item"><span class="legend-dot" style="background:#DC143C;"></span> Medieval</span>
             <span class="legend-item"><span class="legend-dot" style="background:#008080;"></span> Modern</span>
             <span class="legend-item"><span class="legend-dot" style="background:#800080;"></span> Tech Era</span>
         </div>
+        <div id="timeline"></div>
     </main>
     <br/>
     <a href=".">Back to Lesson Plan</a>
@@ -32,16 +32,28 @@
             var container = document.getElementById('timeline');
             var options = {
                 zoomable: false,
-                moveable: true,
+                movable: true,
                 showCurrentTime: false,
-                tooltip: { followMouse: true },
+                tooltip: { followMouse: true, overflowMethod: 'cap' },
                 margin: { item: 10 },
                 orientation: { axis: 'bottom' },
                 min: new Date(-3200, 0, 1),
-                max: new Date(2030, 0, 1),
-                height: '450px'
+                max: new Date(2800, 0, 1),
+                start: new Date(-3000, 0, 1),
+                end: new Date(1700, 0, 1),
+                height: '450px',
+                groupOrder: 'id',
+                showMajorLabels: true,
+                showMinorLabels: true
             };
             var timeline = new vis.Timeline(container, items, groups, options);
+
+            // Prevent vertical scroll hijacking — let page scroll normally
+            container.addEventListener('wheel', function(e) {
+                if (Math.abs(e.deltaY) > Math.abs(e.deltaX)) {
+                    e.stopImmediatePropagation();
+                }
+            }, true);
         });
     </script>
 </body>

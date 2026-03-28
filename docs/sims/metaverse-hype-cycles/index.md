@@ -11,11 +11,9 @@ quality_score: 0
 
 # Metaverse Hype Cycle History
 
-<iframe src="main.html" height="450px" width="100%" scrolling="no"></iframe>
+<iframe src="main.html" height="510px" width="100%" scrolling="no"></iframe>
 
 [Run the Metaverse Hype Cycle History MicroSim Fullscreen](./main.html){ .md-button .md-button--primary }
-<br/>
-[Edit in the p5.js Editor](https://editor.p5js.org/)
 
 ## About This MicroSim
 

@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 8px;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #fff;
+    background-color: aliceblue;
 }
 
 main {
@@ -13,6 +13,7 @@ main {
 h2 {
     text-align: center;
     color: #333;
+    margin-top: 0.4em;
     margin-bottom: 16px;
     font-size: 1.4em;
 }
@@ -20,13 +21,18 @@ h2 {
 #timeline {
     border: 1px solid #ddd;
     border-radius: 4px;
+    background-color: aliceblue;
+}
+
+#timeline .vis-timeline {
+    background-color: aliceblue;
 }
 
 #legend {
     display: flex;
     justify-content: center;
     gap: 24px;
-    margin-top: 12px;
+    margin-bottom: 12px;
     font-size: 0.9em;
     color: #555;
 }
@@ -46,4 +52,12 @@ h2 {
 
 .vis-item .vis-item-overflow {
     overflow: visible;
+}
+
+.vis-labelset .vis-label {
+    display: none;
+}
+
+.vis-timeline .vis-panel.vis-left {
+    display: none;
 }

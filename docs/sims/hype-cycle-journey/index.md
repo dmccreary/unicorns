@@ -11,7 +11,7 @@ quality_score: 0
 
 # Hype Cycle Journey Interactive Timeline
 
-<iframe src="main.html" height="450px" width="100%" scrolling="no"></iframe>
+<iframe src="main.html" height="470px" width="100%" scrolling="no"></iframe>
 
 [Run the Hype Cycle Journey Interactive Timeline MicroSim Fullscreen](./main.html){ .md-button .md-button--primary }
 <br/>

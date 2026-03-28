@@ -11,7 +11,7 @@ quality_score: 0
 
 # Unicorn Population Dynamics Simulator
 
-<iframe src="main.html" height="450px" width="100%" scrolling="no"></iframe>
+<iframe src="main.html" height="500px" width="100%" scrolling="no"></iframe>
 
 [Run the Unicorn Population Dynamics Simulator MicroSim Fullscreen](./main.html){ .md-button .md-button--primary }
 <br/>

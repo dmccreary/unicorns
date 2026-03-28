@@ -11,11 +11,9 @@ quality_score: 0
 
 # Unicorn Valuation Growth Chart
 
-<iframe src="main.html" height="450px" width="100%" scrolling="no"></iframe>
+<iframe src="main.html" height="580px" width="100%" scrolling="no"></iframe>
 
 [Run the Unicorn Valuation Growth Chart MicroSim Fullscreen](./main.html){ .md-button .md-button--primary }
-<br/>
-[Edit in the p5.js Editor](https://editor.p5js.org/)
 
 ## About This MicroSim
 
