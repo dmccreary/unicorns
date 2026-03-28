@@ -36,7 +36,41 @@ nav:
     - Dragon Layoffs: stories/dragon-layoffs/index.md
     - The Unicorn Startup: stories/the-unicorn-startup/index.md
   - MicroSims:
-    - Graph Viewer: sims/graph-viewer/index.md
+    - List of MicroSims: sims/index.md
+    - Adaptive Learning Feedback Loop: sims/adaptive-learning-loop/index.md
+    - AGI Timeline Claims History: sims/agi-timeline-claims/index.md
+    - AI Hype Cycle with Mythical Beasts: sims/ai-hype-cycle-beasts/index.md
+    - AI Unicorn Feature Generator: sims/ai-unicorn-generator/index.md
+    - Anatomy of an AI Pitch Deck: sims/ai-pitch-deck-anatomy/index.md
+    - Ancient Unicorn Civilizations Map: sims/ancient-unicorn-map/index.md
+    - Beast Classification Framework: sims/beast-classification-framework/index.md
+    - Beast Classification MicroSim: sims/beast-classifier/index.md
+    - Bestiary of Vaporware Interactive Field Guide: sims/bestiary-vaporware-guide/index.md
+    - Blockchain Application Vaporware Classifier: sims/blockchain-vaporware-classifier/index.md
+    - Centaur Workforce Collaboration Spectrum: sims/centaur-collaboration-spectrum/index.md
+    - Claim Verification Decision Tree: sims/claim-verification-tree/index.md
+    - Education Technology Adoption Lag: sims/ed-tech-adoption-lag/index.md
+    - Five Years Away Timeline: sims/five-years-away/index.md
+    - How a Large Language Model Works: sims/llm-how-it-works/index.md
+    - Hype Cycle Journey Interactive Timeline: sims/hype-cycle-journey/index.md
+    - Learning Graph Viewer: sims/graph-viewer/index.md
+    - LinkedIn Skill Inflation Tracker: sims/linkedin-skill-inflation/index.md
+    - Media Literacy Evaluation Framework: sims/media-literacy-framework/index.md
+    - Medieval Unicorn Belief System: sims/medieval-unicorn-beliefs/index.md
+    - Metaverse Hype Cycle History: sims/metaverse-hype-cycles/index.md
+    - Modern Unicorn Economy Infographic: sims/modern-unicorn-economy/index.md
+    - Moving the Goalposts Timeline: sims/moving-goalposts-timeline/index.md
+    - Mythical Beast Allegory Network: sims/beast-allegory-network/index.md
+    - Perpetual Beta Product Lifecycle: sims/perpetual-beta-lifecycle/index.md
+    - Product-Market Fit Spectrum: sims/product-market-fit-spectrum/index.md
+    - Real or Fake Interactive Quiz: sims/real-or-fake-quiz/index.md
+    - The Great Mythical Venn Diagram: sims/great-mythical-venn/index.md
+    - Unicorn Population Dynamics Simulator: sims/unicorn-population-dynamics/index.md
+    - Unicorn Startup Lifecycle Allegory: sims/unicorn-lifecycle-allegory/index.md
+    - Unicorn Symbolism Timeline: sims/unicorn-symbolism-timeline/index.md
+    - Unicorn Valuation Growth Chart: sims/unicorn-valuation-growth/index.md
+
+
   - Learning Graph:
     - Introduction: learning-graph/index.md
     - Course Description Assessment: learning-graph/course-description-assessment.md
