@@ -31,6 +31,25 @@
   font-size: inherit;
 }
 
+/* Remove the default MkDocs Material admonition icon from title bar
+   so the mascot image only appears in the body text area. */
+.md-typeset .mascot-neutral > .admonition-title::before,
+.md-typeset .mascot-neutral > summary::before,
+.md-typeset .mascot-welcome > .admonition-title::before,
+.md-typeset .mascot-welcome > summary::before,
+.md-typeset .mascot-thinking > .admonition-title::before,
+.md-typeset .mascot-thinking > summary::before,
+.md-typeset .mascot-tip > .admonition-title::before,
+.md-typeset .mascot-tip > summary::before,
+.md-typeset .mascot-warning > .admonition-title::before,
+.md-typeset .mascot-warning > summary::before,
+.md-typeset .mascot-celebration > .admonition-title::before,
+.md-typeset .mascot-celebration > summary::before,
+.md-typeset .mascot-encourage > .admonition-title::before,
+.md-typeset .mascot-encourage > summary::before {
+  display: none;
+}
+
 /* Neutral admonition (general purpose) */
 .md-typeset .admonition.mascot-neutral,
 .md-typeset details.mascot-neutral {
@@ -41,16 +60,6 @@
 .md-typeset .mascot-neutral > summary {
   background-color: #546e7a;
   color: white;
-}
-.md-typeset .mascot-neutral > .admonition-title::before,
-.md-typeset .mascot-neutral > summary::before {
-  content: "";
-  background: url('../img/mascot/neutral.png') center/contain no-repeat;
-  width: 1.2em;
-  height: 1.2em;
-  display: inline-block;
-  vertical-align: middle;
-  margin-right: 0.4em;
 }
 
 /* Welcome admonition */
@@ -64,16 +73,6 @@
   background-color: var(--mascot-primary);
   color: white;
 }
-.md-typeset .mascot-welcome > .admonition-title::before,
-.md-typeset .mascot-welcome > summary::before {
-  content: "";
-  background: url('../img/mascot/welcome.png') center/contain no-repeat;
-  width: 1.2em;
-  height: 1.2em;
-  display: inline-block;
-  vertical-align: middle;
-  margin-right: 0.4em;
-}
 
 /* Thinking admonition */
 .md-typeset .admonition.mascot-thinking,
@@ -85,16 +84,6 @@
 .md-typeset .mascot-thinking > summary {
   background-color: var(--mascot-secondary);
   color: white;
-}
-.md-typeset .mascot-thinking > .admonition-title::before,
-.md-typeset .mascot-thinking > summary::before {
-  content: "";
-  background: url('../img/mascot/thinking.png') center/contain no-repeat;
-  width: 1.2em;
-  height: 1.2em;
-  display: inline-block;
-  vertical-align: middle;
-  margin-right: 0.4em;
 }
 
 /* Tip admonition */
@@ -108,16 +97,6 @@
   background-color: #66bb6a;
   color: white;
 }
-.md-typeset .mascot-tip > .admonition-title::before,
-.md-typeset .mascot-tip > summary::before {
-  content: "";
-  background: url('../img/mascot/tip.png') center/contain no-repeat;
-  width: 1.2em;
-  height: 1.2em;
-  display: inline-block;
-  vertical-align: middle;
-  margin-right: 0.4em;
-}
 
 /* Warning admonition */
 .md-typeset .admonition.mascot-warning,
@@ -129,16 +108,6 @@
 .md-typeset .mascot-warning > summary {
   background-color: #ef5350;
   color: white;
-}
-.md-typeset .mascot-warning > .admonition-title::before,
-.md-typeset .mascot-warning > summary::before {
-  content: "";
-  background: url('../img/mascot/warning.png') center/contain no-repeat;
-  width: 1.2em;
-  height: 1.2em;
-  display: inline-block;
-  vertical-align: middle;
-  margin-right: 0.4em;
 }
 
 /* Celebration admonition */
@@ -152,16 +121,6 @@
   background-color: #ab47bc;
   color: white;
 }
-.md-typeset .mascot-celebration > .admonition-title::before,
-.md-typeset .mascot-celebration > summary::before {
-  content: "";
-  background: url('../img/mascot/celebration.png') center/contain no-repeat;
-  width: 1.2em;
-  height: 1.2em;
-  display: inline-block;
-  vertical-align: middle;
-  margin-right: 0.4em;
-}
 
 /* Encouraging admonition */
 .md-typeset .admonition.mascot-encourage,
@@ -173,16 +132,6 @@
 .md-typeset .mascot-encourage > summary {
   background-color: #29b6f6;
   color: white;
-}
-.md-typeset .mascot-encourage > .admonition-title::before,
-.md-typeset .mascot-encourage > summary::before {
-  content: "";
-  background: url('../img/mascot/encouraging.png') center/contain no-repeat;
-  width: 1.2em;
-  height: 1.2em;
-  display: inline-block;
-  vertical-align: middle;
-  margin-right: 0.4em;
 }
 
 /* --- Mascot image in admonition body (larger, decorative) --- */
