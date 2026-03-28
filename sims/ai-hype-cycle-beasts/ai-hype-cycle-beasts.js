@@ -17,15 +17,22 @@ const phases = [
 
 // Technology markers with correct phase index (0-4)
 let techMarkers = [
-  { label: "AGI",                    correctPhase: 1, x: 0, y: 0, dragging: false },
-  { label: "Self-driving (L5)",      correctPhase: 1, x: 0, y: 0, dragging: false },
-  { label: "Generative AI (text)",   correctPhase: 2, x: 0, y: 0, dragging: false },
-  { label: "AI code assistants",     correctPhase: 3, x: 0, y: 0, dragging: false },
-  { label: "Spam filters",          correctPhase: 4, x: 0, y: 0, dragging: false },
-  { label: "Machine translation",   correctPhase: 4, x: 0, y: 0, dragging: false }
+  { label: "AGI",                    correctPhase: 1, x: 0, y: 0, dragging: false, desc: "Artificial General Intelligence: always arriving next year. The unicorn of computer science." },
+  { label: "Self-driving (L5)",      correctPhase: 1, x: 0, y: 0, dragging: false, desc: "Fully autonomous vehicles. Perpetually 18 months away since 2015." },
+  { label: "Generative AI (text)",   correctPhase: 2, x: 0, y: 0, dragging: false, desc: "Large language models. Currently explaining why they cannot be trusted while being trusted." },
+  { label: "AI code assistants",     correctPhase: 3, x: 0, y: 0, dragging: false, desc: "Tools that write code for you, then help you debug the code they wrote for you." },
+  { label: "Spam filters",          correctPhase: 4, x: 0, y: 0, dragging: false, desc: "AI that actually works. Nobody writes breathless articles about it anymore." },
+  { label: "Machine translation",   correctPhase: 4, x: 0, y: 0, dragging: false, desc: "Once impossible, now mundane. The lifecycle every AI technology aspires to but few achieve." },
+  { label: "Intelligent Textbook", correctPhase: 0, x: 0, y: 0, dragging: false, desc: "AI-generated textbooks that satirize AI-generated content. The recursion is the feature." },
+  { label: "MicroSims",            correctPhase: 0, x: 0, y: 0, dragging: false, desc: "Tiny interactive simulations that teach concepts. Surprisingly effective. Suspiciously fun." }
 ];
 
 let showExpertBtn, resetBtn;
+let animating = false;
+let animStartT = [];   // starting t values for animated markers
+let animTargetT = [];  // target t values
+let animProgress = 0;  // 0 to 1
+let animIndices = [];   // which markers are animating
 let hoveredPhase = -1;
 let dragIndex = -1;
 let dragOffX = 0;
@@ -109,9 +116,23 @@ function snapToCorrectPosition(marker) {
   marker.y = getCurveY(t);
 }
 
+function getMarkerT(marker) {
+  // Find the t value closest to the marker's current position
+  let bestDist = Infinity;
+  let bestT = 0;
+  for (let pt of curvePoints) {
+    let d = dist(marker.x, marker.y, pt.x, pt.y);
+    if (d < bestDist) {
+      bestDist = d;
+      bestT = pt.t;
+    }
+  }
+  return bestT;
+}
+
 function scatterMarkers() {
   // Place markers at semi-random positions along the curve
-  let offsets = [0.25, 0.32, 0.55, 0.65, 0.80, 0.88];
+  let offsets = [0.25, 0.32, 0.55, 0.65, 0.80, 0.88, 0.10, 0.15];
   for (let i = 0; i < techMarkers.length; i++) {
     let t = offsets[i];
     techMarkers[i].x = getCurveX(t);
@@ -125,12 +146,24 @@ function setup() {
   canvas.parent(document.querySelector('main'));
   textFont('Arial');
 
-  showExpertBtn = createButton('Show Expert Placement');
+  showExpertBtn = createButton('Show Impact of This Book');
   showExpertBtn.parent(document.querySelector('main'));
   showExpertBtn.mousePressed(() => {
-    for (let m of techMarkers) {
-      snapToCorrectPosition(m);
+    // Animate Intelligent Textbook and MicroSims along the curve
+    animIndices = [];
+    animStartT = [];
+    animTargetT = [];
+    for (let i = 0; i < techMarkers.length; i++) {
+      let m = techMarkers[i];
+      if (m.label === "Intelligent Textbook" || m.label === "MicroSims") {
+        animIndices.push(i);
+        animStartT.push(getMarkerT(m));
+        let target = (m.label === "MicroSims") ? phases[1].xFrac + 0.10 : phases[1].xFrac;
+        animTargetT.push(target);
+      }
     }
+    animProgress = 0;
+    animating = true;
   });
 
   resetBtn = createButton('Reset');
@@ -148,6 +181,21 @@ function draw() {
   updateCanvasSize();
   resizeCanvas(canvasWidth, canvasHeight);
   buildCurvePoints();
+
+  // Animate markers along the curve
+  if (animating) {
+    animProgress += 0.008;
+    let ease = animProgress < 1 ? animProgress * animProgress * (3 - 2 * animProgress) : 1; // smoothstep
+    for (let j = 0; j < animIndices.length; j++) {
+      let idx = animIndices[j];
+      let t = animStartT[j] + (animTargetT[j] - animStartT[j]) * ease;
+      techMarkers[idx].x = getCurveX(t);
+      techMarkers[idx].y = getCurveY(t);
+    }
+    if (animProgress >= 1) {
+      animating = false;
+    }
+  }
 
   // Draw area background
   fill('aliceblue');
@@ -214,8 +262,9 @@ function draw() {
     textSize(9);
     textAlign(CENTER, TOP);
     let lines = ph.name.split('\n');
+    let labelYOffset = (i === 1 || i === 3) ? 58 : 28; // Push Peak and Slope labels down 30
     for (let li = 0; li < lines.length; li++) {
-      text(lines[li], px, py + 28 + li * 12);
+      text(lines[li], px, py + labelYOffset + li * 12);
     }
 
     // Beast circle above curve
@@ -271,15 +320,52 @@ function draw() {
     fill(isHovered ? color(255, 220, 80) : color(255, 255, 255));
     ellipse(m.x, m.y, 12, 12);
 
-    // Label
+    // Label — custom offsets per marker to avoid overlapping phase labels
     noStroke();
     fill(30);
     textSize(10);
-    textAlign(LEFT, CENTER);
-    // Alternate label above/below to reduce overlap
-    let labelOffset = (i % 2 === 0) ? -14 : 14;
-    textAlign(CENTER, (i % 2 === 0) ? BOTTOM : TOP);
-    text(m.label, m.x, m.y + labelOffset);
+    // [xOff, yOff, alignH, alignV] per marker
+    let labelLayouts = [
+      [0, -14, CENTER, BOTTOM],    // AGI — above
+      [14, 0, LEFT, CENTER],       // Self-driving (L5) — right
+      [0, 24, CENTER, TOP],         // Generative AI (text) — below
+      [0, 24, CENTER, TOP],        // AI code assistants — below
+      [0, -14, CENTER, BOTTOM],    // Spam filters — above
+      [0, 14, CENTER, TOP],        // Machine translation — below
+      [14, 0, LEFT, CENTER],    // Intelligent Textbook
+      [14, -0, LEFT, CENTER] // MicroSims — above
+    ];
+    let layout = labelLayouts[i];
+    textAlign(layout[2], layout[3]);
+    text(m.label, m.x + layout[0], m.y + layout[1]);
+  }
+
+  // Tooltip for hovered tech marker
+  let hoveredMarker = -1;
+  for (let i = 0; i < techMarkers.length; i++) {
+    if (dist(mouseX, mouseY, techMarkers[i].x, techMarkers[i].y) < 14) {
+      hoveredMarker = i;
+      break;
+    }
+  }
+  if (hoveredMarker >= 0) {
+    let m = techMarkers[hoveredMarker];
+    noStroke();
+    fill(255, 255, 255, 230);
+    let tooltipY = drawHeight - 85;
+    let tooltipW = canvasWidth * 0.8;
+    let tooltipX = (canvasWidth - tooltipW) / 2;
+    rect(tooltipX, tooltipY, tooltipW, 42, 6);
+    stroke(180);
+    strokeWeight(1);
+    noFill();
+    rect(tooltipX, tooltipY, tooltipW, 42, 6);
+
+    noStroke();
+    fill(50);
+    textSize(11);
+    textAlign(CENTER, TOP);
+    text(m.label + ": " + m.desc, tooltipX + 10, tooltipY + 6, tooltipW - 20, 36);
   }
 
   // Tooltip area for hovered phase
@@ -287,7 +373,7 @@ function draw() {
     let ph = phases[hoveredPhase];
     noStroke();
     fill(255, 255, 255, 230);
-    let tooltipY = drawHeight - 55;
+    let tooltipY = drawHeight - 85;
     let tooltipW = canvasWidth * 0.8;
     let tooltipX = (canvasWidth - tooltipW) / 2;
     rect(tooltipX, tooltipY, tooltipW, 42, 6);
