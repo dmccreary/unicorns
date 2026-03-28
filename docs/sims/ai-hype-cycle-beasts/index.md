@@ -11,7 +11,7 @@ quality_score: 0
 
 # AI Hype Cycle with Mythical Beasts
 
-<iframe src="main.html" height="450px" width="100%" scrolling="no"></iframe>
+<iframe src="main.html" height="470px" width="100%" scrolling="no"></iframe>
 
 [Run the AI Hype Cycle with Mythical Beasts MicroSim Fullscreen](./main.html){ .md-button .md-button--primary }
 <br/>
