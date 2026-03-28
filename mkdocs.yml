@@ -117,6 +117,7 @@ nav:
     - Concept Taxonomy: learning-graph/concept-taxonomy.md
     - Taxonomy Distribution Report: learning-graph/taxonomy-distribution.md
     - Mascot Test: learning-graph/mascot-test.md
+  - Glossary: glossary.md
   - Teachers Guide: teachers-guide/index.md
   - Feature Checklist: feature-checklist.md
   - License: license.md
@@ -180,10 +181,15 @@ watch:
 exclude_docs: |
   img/mascot/README.md
 
-copyright: Copyright &copy; 2025 Dan McCreary. Licensed under <a href="license/">CC BY-NC-SA 4.0</a> for non-commercial use.
+copyright: Copyright &copy; 2026 Dan McCreary. Licensed under <a href="license/">CC BY-NC-SA 4.0</a> for non-commercial use.
 
 extra:
   generator: false
   schema: https://dmccreary.github.io/intelligent-textbooks/ns/textbook/v1
   textbook_name: Unicorns and Other Mythical Beasts
   textbook_version: "1.0"
+
+# Google Analytics G-MFG19PNVDW
+analytics:
+  provider: google
+  property: G-MFG19PNVDW
