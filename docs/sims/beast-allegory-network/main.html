@@ -80,6 +80,26 @@
         .legend-line.dashed { border-top-style: dashed; }
         .legend-line.dotted { border-top-style: dotted; }
         a { color: #555; }
+        .vis-tooltip {
+            background: #2c3e50 !important;
+            color: white !important;
+            padding: 8px 12px !important;
+            border-radius: 6px !important;
+            font-size: 13px !important;
+            max-width: 250px !important;
+            line-height: 1.4 !important;
+            word-wrap: break-word !important;
+            overflow-wrap: break-word !important;
+            white-space: normal !important;
+            box-sizing: border-box !important;
+            pointer-events: none !important;
+        }
+        .vis-tooltip div {
+            max-width: 230px !important;
+            word-wrap: break-word !important;
+            overflow-wrap: break-word !important;
+            white-space: normal !important;
+        }
     </style>
 </head>
 <body>
@@ -157,12 +177,12 @@
         return {
             id: b.id,
             label: b.id,
-            shape: 'circle',
-            size: 28,
+            shape: 'ellipse',
             color: { background: b.color, border: '#333', highlight: { background: b.color, border: '#000' } },
-            font: { color: '#fff', size: 13, face: 'Arial', bold: true },
+            font: { color: '#fff', size: 28, face: 'Arial', bold: true },
             x: b.x,
             y: b.y,
+            fixed: { x: true, y: true },
             title: beastInfo[b.id]
         };
     });
@@ -181,9 +201,10 @@
             label: a,
             shape: 'box',
             color: { background: '#BBDEFB', border: '#64B5F6', highlight: { background: '#90CAF9', border: '#1E88E5' } },
-            font: { color: '#222', size: 12, face: 'Arial' },
-            x: 350,
+            font: { color: '#222', size: 28, face: 'Arial' },
+            x: 460,
             y: -200 + i * 84,
+            fixed: { x: true, y: true },
             title: allegoryInfo[a]
         };
     });
@@ -216,7 +237,7 @@
             label: 'represents',
             arrows: 'to',
             color: { color: '#555', highlight: '#000' },
-            font: { size: 10, color: '#555', strokeWidth: 2, strokeColor: '#fff' },
+            font: { size: 26, color: '#555', strokeWidth: 2, strokeColor: '#fff' },
             smooth: { type: 'curvedCW', roundness: dy < 20 ? 0.15 : 0.05 },
             width: 1.5,
             title: e.from + ' represents ' + e.to
@@ -230,8 +251,8 @@
             label: 'opposes',
             dashes: [8, 4],
             color: { color: '#E53935', highlight: '#B71C1C' },
-            font: { size: 10, color: '#E53935', strokeWidth: 2, strokeColor: '#fff' },
-            smooth: { type: 'curvedCW', roundness: 0.3 },
+            font: { size: 26, color: '#E53935', strokeWidth: 2, strokeColor: '#fff' },
+            smooth: { type: 'curvedCW', roundness: 0.7 },
             width: 2,
             title: 'Phoenix opposes Dragon: Reinvention vs. destruction. The phoenix rebuilds what the dragon burns. This is called "the innovation cycle" by people who profit from burning things.'
         },
@@ -241,8 +262,8 @@
             label: 'collaborates',
             dashes: [2, 4],
             color: { color: '#43A047', highlight: '#1B5E20' },
-            font: { size: 10, color: '#43A047', strokeWidth: 2, strokeColor: '#fff' },
-            smooth: { type: 'curvedCW', roundness: 0.3 },
+            font: { size: 26, color: '#43A047', strokeWidth: 2, strokeColor: '#fff' },
+            smooth: { type: 'curvedCW', roundness: 0.7 },
             width: 2,
             title: 'Centaur collaborates with Pegasus: Human-AI collaboration works best when paired with aspirational technology. Or so the pitch deck claims.'
         },
@@ -252,8 +273,8 @@
             label: 'enables',
             arrows: 'to',
             color: { color: '#1E88E5', highlight: '#0D47A1' },
-            font: { size: 10, color: '#1E88E5', strokeWidth: 2, strokeColor: '#fff' },
-            smooth: { type: 'curvedCW', roundness: 0.15 },
+            font: { size: 26, color: '#1E88E5', strokeWidth: 2, strokeColor: '#fff' },
+            smooth: { type: 'curvedCW', roundness: 0.7 },
             width: 2,
             title: 'Siren enables Kraken: Seductive automation lures organizations into dependencies that, when they fail, fail catastrophically. The onboarding was frictionless. The outage was not.'
         }
@@ -278,9 +299,12 @@
         interaction: {
             hover: true,
             tooltipDelay: 150,
-            zoomView: true,
+            zoomView: false,
             dragView: true,
-            dragNodes: true
+            dragNodes: true,
+            tooltip: {
+                delay: 150
+            }
         },
         edges: {
             smooth: { type: 'curvedCW', roundness: 0.05 }
@@ -325,6 +349,25 @@
             detailPanel.innerHTML = '<strong>Relationship:</strong> ' + edge.title;
         }
     });
+
+    // Clamp tooltips inside the network container
+    var observer = new MutationObserver(function(mutations) {
+        var tip = document.querySelector('.vis-tooltip');
+        if (tip) {
+            var rect = container.getBoundingClientRect();
+            var tipRect = tip.getBoundingClientRect();
+            if (tipRect.right > rect.right) {
+                tip.style.left = (rect.right - tipRect.width - 10) + 'px';
+            }
+            if (tipRect.bottom > rect.bottom) {
+                tip.style.top = (rect.bottom - tipRect.height - 10) + 'px';
+            }
+            if (tipRect.left < rect.left) {
+                tip.style.left = (rect.left + 10) + 'px';
+            }
+        }
+    });
+    observer.observe(document.body, { childList: true, subtree: true });
 
     // Responsive resize
     window.addEventListener('resize', function() {
