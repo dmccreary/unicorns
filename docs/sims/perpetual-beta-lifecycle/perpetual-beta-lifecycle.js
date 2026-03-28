@@ -1,6 +1,7 @@
 // Perpetual Beta Product Lifecycle - Dual Line Chart
 // Compares traditional software maturity vs perpetual beta products
 document.addEventListener('DOMContentLoaded', function () {
+    document.body.style.backgroundColor = 'aliceblue';
     const main = document.querySelector('main');
 
     // Create container for responsive sizing

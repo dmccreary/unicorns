@@ -211,3 +211,5 @@ The hype cycle visualization introduced in Chapter 4's MicroSim spec is revisite
     and metaphors are harder to automate than processes. The
     literature suggests this is correct. The Kraken suggests
     this is cold comfort.
+
+[See Annotated References](./references.md)

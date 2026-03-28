@@ -311,3 +311,5 @@ The Academy's overall performance suggests an institution that has optimized for
     investing in calligraphy supplies. The literature suggests
     this is a cautionary tale. The Academy suggests it is a
     curriculum decision. Both are correct.
+
+[See Annotated References](./references.md)

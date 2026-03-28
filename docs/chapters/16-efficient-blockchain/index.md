@@ -195,3 +195,5 @@ Implementation: p5.js with drag-and-drop, snap-to-zone positions, createButton()
     a laptop. The distributed ledger of Narnia remains, like
     Narnia itself, more compelling in theory than in daily
     commute. The wardrobe is optional.
+
+[See Annotated References](./references.md)

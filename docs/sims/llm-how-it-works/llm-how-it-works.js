@@ -102,6 +102,12 @@ function draw() {
   stroke('silver');
   rect(0, drawHeight, canvasWidth, controlHeight);
 
+  // Update button states
+  if (currentStage <= 1) prevButton.attribute('disabled', '');
+  else prevButton.removeAttribute('disabled');
+  if (currentStage >= totalStages) nextButton.attribute('disabled', '');
+  else nextButton.removeAttribute('disabled');
+
   // Stage indicator
   noStroke();
   fill(60);

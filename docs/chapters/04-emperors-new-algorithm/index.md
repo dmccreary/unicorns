@@ -276,6 +276,11 @@ Automation — the use of technology to perform tasks without human intervention
 
 ## The Hype Cycle: A Framework for Disappointment
 
+<iframe src="https://dmccreary.github.io/tracking-ai-course/sims/hype-cycle/main.html"  height="470px" scrolling="no"
+  style="overflow: hidden;"></iframe>
+
+[Source from the Tracking AI Intelligent Textbook](https://dmccreary.github.io/tracking-ai-course/sims/hype-cycle/)
+
 The Gartner Hype Cycle is a graphical model developed by the research firm Gartner to represent the maturity, adoption, and social application of emerging technologies. It describes five phases that nearly every new technology passes through:
 
 1. **Technology Trigger** — A breakthrough or announcement generates early interest. No usable product exists. Media coverage begins.
@@ -290,7 +295,7 @@ The Gartner Hype Cycle is a graphical model developed by the research firm Gartn
 
 #### Diagram: AI Hype Cycle with Mythical Beasts
 
-<iframe src="../../sims/ai-hype-cycle-beasts/main.html" width="100%" height="550px" scrolling="no"></iframe>
+<iframe src="../../sims/ai-hype-cycle-beasts/main.html" width="100%" height="480px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>AI Hype Cycle with Mythical Beasts</summary>
@@ -390,3 +395,5 @@ The child who says "but the emperor has no clothes" is the equivalent of the eng
     can do, and what it cannot. You also understand that the gap
     between these categories is where the money lives. The
     literature confirms this is, of course, entirely serious.
+
+[See Annotated References](./references.md)

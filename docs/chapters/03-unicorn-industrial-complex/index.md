@@ -419,3 +419,5 @@ This reading does not require cynicism. It requires literacy. The allegorical in
     horn is real. The literature suggests this is the most
     important lesson in modern economics. Further research is,
     as always, needed.
+
+[See Annotated References](./references.md)

@@ -347,3 +347,5 @@ The disruption narrative says this is the price of progress. The villagers say t
     is optimized for a metric that does not include your well-being.
     The literature suggests this distinction is academic. The
     villagers suggest it is not.
+
+[See Annotated References](./references.md)

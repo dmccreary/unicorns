@@ -13,60 +13,79 @@ nav:
     - 1. History of Unicorns:
       - Content: chapters/01-history-of-unicorns/index.md
       - Quiz: chapters/01-history-of-unicorns/quiz.md
+      - Annotated References: chapters/01-history-of-unicorns/references.md
     - 2. Taxonomy of Mythical Beasts:
       - Content: chapters/02-taxonomy-of-mythical-beasts/index.md
       - Quiz: chapters/02-taxonomy-of-mythical-beasts/quiz.md
+      - Annotated References: chapters/02-taxonomy-of-mythical-beasts/references.md
     - 3. The Unicorn-Industrial Complex:
       - Content: chapters/03-unicorn-industrial-complex/index.md
       - Quiz: chapters/03-unicorn-industrial-complex/quiz.md
+      - Annotated References: chapters/03-unicorn-industrial-complex/references.md
     - 4. The Emperor's New Algorithm:
       - Content: chapters/04-emperors-new-algorithm/index.md
       - Quiz: chapters/04-emperors-new-algorithm/quiz.md
+      - Annotated References: chapters/04-emperors-new-algorithm/references.md
     - 5. Deer in the Headlights:
       - Content: chapters/05-deer-in-the-headlights/index.md
       - Quiz: chapters/05-deer-in-the-headlights/quiz.md
+      - Annotated References: chapters/05-deer-in-the-headlights/references.md
     - 6. The Ostrich Academy:
       - Content: chapters/06-the-ostrich-academy/index.md
       - Quiz: chapters/06-the-ostrich-academy/quiz.md
+      - Annotated References: chapters/06-the-ostrich-academy/references.md
     - 7. The Job Thief:
       - Content: chapters/07-the-job-thief/index.md
       - Quiz: chapters/07-the-job-thief/quiz.md
+      - Annotated References: chapters/07-the-job-thief/references.md
     - 8. Centaur Workforce:
       - Content: chapters/08-centaur-workforce/index.md
       - Quiz: chapters/08-centaur-workforce/quiz.md
+      - Annotated References: chapters/08-centaur-workforce/references.md
     - 9. Phoenix Rising:
       - Content: chapters/09-phoenix-rising/index.md
       - Quiz: chapters/09-phoenix-rising/quiz.md
+      - Annotated References: chapters/09-phoenix-rising/references.md
     - 10. Siren Song of Automation:
       - Content: chapters/10-siren-song-of-automation/index.md
       - Quiz: chapters/10-siren-song-of-automation/quiz.md
+      - Annotated References: chapters/10-siren-song-of-automation/references.md
     - 11. Unicorn Spotting:
       - Content: chapters/11-unicorn-spotting/index.md
       - Quiz: chapters/11-unicorn-spotting/quiz.md
+      - Annotated References: chapters/11-unicorn-spotting/references.md
     - 12. Breeding Better Unicorns:
       - Content: chapters/12-breeding-better-unicorns/index.md
       - Quiz: chapters/12-breeding-better-unicorns/quiz.md
+      - Annotated References: chapters/12-breeding-better-unicorns/references.md
     - 13. Grand Council of Beasts:
       - Content: chapters/13-grand-council-of-mythical-beasts/index.md
       - Quiz: chapters/13-grand-council-of-mythical-beasts/quiz.md
+      - Annotated References: chapters/13-grand-council-of-mythical-beasts/references.md
     - 14. The Last Textbook:
       - Content: chapters/14-the-last-textbook/index.md
       - Quiz: chapters/14-the-last-textbook/quiz.md
+      - Annotated References: chapters/14-the-last-textbook/references.md
     - 15. Quantum Computing:
       - Content: chapters/15-quantum-computing/index.md
       - Quiz: chapters/15-quantum-computing/quiz.md
+      - Annotated References: chapters/15-quantum-computing/references.md
     - 16. Efficient Blockchain:
       - Content: chapters/16-efficient-blockchain/index.md
       - Quiz: chapters/16-efficient-blockchain/quiz.md
+      - Annotated References: chapters/16-efficient-blockchain/references.md
     - 17. Ethical Bitcoin:
       - Content: chapters/17-ethical-bitcoin/index.md
       - Quiz: chapters/17-ethical-bitcoin/quiz.md
+      - Annotated References: chapters/17-ethical-bitcoin/references.md
     - 18. The Metaverse:
       - Content: chapters/18-the-metaverse/index.md
       - Quiz: chapters/18-the-metaverse/quiz.md
+      - Annotated References: chapters/18-the-metaverse/references.md
     - 19. Bestiary of Vaporware:
       - Content: chapters/19-bestiary-of-vaporware/index.md
       - Quiz: chapters/19-bestiary-of-vaporware/quiz.md
+      - Annotated References: chapters/19-bestiary-of-vaporware/references.md
   - Stories:
     - Overview: stories/index.md
     - Deer in the Headlights: stories/deer-in-the-headlights/index.md
@@ -116,7 +135,24 @@ nav:
     - Graph Quality Analysis: learning-graph/quality-metrics.md
     - Concept Taxonomy: learning-graph/concept-taxonomy.md
     - Taxonomy Distribution Report: learning-graph/taxonomy-distribution.md
+    - Book Metrics: learning-graph/book-metrics.md
+    - Chapter Metrics: learning-graph/chapter-metrics.md
+    - Diagram Table: learning-graph/diagram-table.md
+    - Diagram Details: learning-graph/diagram-details.md
     - Mascot Test: learning-graph/mascot-test.md
+  
+  - Sample Prompts:
+    - List of Prompts: prompts/index.md
+    - Seed Prompt: prompts/01-seed-promot.md
+    - Mascot: prompts/03-mascot.md
+    - Book Chapters: prompts/05-book-chapter-generator.md
+    - Metaverse Omission: prompts/06-the-metaverse-omission.md
+    - Cover Image: prompts/07-cover-image.md
+    - Beast Prompts: prompts/09-beast-prompts.md
+
+  
+  
+  
   - FAQ: faq.md
   - Glossary: glossary.md
   - Teachers Guide: teachers-guide/index.md
@@ -192,8 +228,9 @@ extra:
   schema: https://dmccreary.github.io/intelligent-textbooks/ns/textbook/v1
   textbook_name: Unicorns and Other Mythical Beasts
   textbook_version: "1.0"
-
-# Google Analytics G-MFG19PNVDW
-analytics:
-  provider: google
-  property: G-MFG19PNVDW
+  
+  # Google Analytics G-MFG19PNVDW
+  # Test Page https://analytics.google.com/analytics/web/#/a1420179p530273448/admin/streams/table/14265190830
+  analytics:
+    provider: google
+    property: G-MFG19PNVDW

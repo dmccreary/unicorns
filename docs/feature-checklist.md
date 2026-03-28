@@ -79,7 +79,7 @@ These features make your content more engaging and easier to read.
 | Strikethrough text | :x: | Trivial | Use `~~text~~` syntax to cross out deprecated or incorrect info |
 | Magic links (auto-linking) | :x: | Trivial | URLs and emails automatically become clickable |
 | Snippets (file includes) | :x: | Trivial | Use `--8<-- "file.md"` syntax to include content from other files |
-| Emoji support | :x: | Trivial | Use :emoji_name: shortcodes like :rocket: |
+| Emoji support | :white_check_mark: | Trivial | Use :emoji_name: shortcodes like :rocket: |
 | Collapsible details blocks | :white_check_mark: | Trivial | Hide/show content with expandable sections |
 | Mermaid diagrams | :white_check_mark: | Trivial | Flowcharts, sequence diagrams from text |
 
@@ -89,12 +89,12 @@ These are pages and files that support the entire textbook rather than individua
 
 | Feature | Status | Effort | Notes |
 |---------|--------|--------|-------|
-| Glossary | :x: | Medium | 0 terms with ISO 11179 compliant definitions |
-| FAQ page | :x: | Medium | 0 answers to common student questions |
-| References page | :x: | Medium | Curated bibliography with links per chapter or site-wide |
+| Glossary | :white_check_mark: | Medium | 145 terms with ISO 11179 compliant definitions |
+| FAQ page | :white_check_mark: | Medium | 85 answers to common student questions |
+| References page | :white_check_mark: | Medium | Curated bibliography with links per chapter or site-wide |
 | Custom CSS styling | :white_check_mark: | Low | Override theme colors, fonts, and layouts |
 | Custom JavaScript | :white_check_mark: | Low | Add interactivity beyond built-in features |
-| Google Analytics | :x: | Trivial | Track page views and user behavior |
+| Google Analytics | :white_check_mark: | Trivial | Track page views and user behavior (G-MFG19PNVDW) |
 
 ### Publishing Features
 
@@ -119,7 +119,7 @@ MicroSims are small, browser-based simulations that let students experiment with
 |---------|--------|--------|-------|
 | MicroSims (interactive simulations) | :white_check_mark: | High | 33 browser-based apps for hands-on learning |
 | MicroSim index catalog | :white_check_mark: | Medium | Visual gallery with cards showing all available simulations |
-| Per-chapter quizzes | :x: | High | 0 quiz files with questions aligned to learning objectives |
+| Per-chapter quizzes | :white_check_mark: | High | 19 quiz files with questions aligned to learning objectives |
 
 ### Learning Graph System
 
@@ -134,8 +134,8 @@ A learning graph maps every concept in the course and shows which concepts depen
 | Learning graph viewer (vis-network) | :white_check_mark: | Medium | Interactive diagram where you can click and explore concepts |
 | Concept taxonomy classification | :white_check_mark: | Medium | Grouping concepts into categories |
 | Quality metrics report | :white_check_mark: | Low | Statistics about graph completeness and structure |
-| Book metrics | :x: | Medium | Word counts, reading time, and chapter statistics |
-| Chapter metrics | :x: | Medium | Detailed stats for each chapter individually |
+| Book metrics | :white_check_mark: | Medium | Word counts, reading time, and chapter statistics |
+| Chapter metrics | :white_check_mark: | Medium | Detailed stats for each chapter individually |
 | Glossary quality report | :x: | Low | Check definitions follow standards |
 | FAQ quality report | :x: | Low | Check FAQ completeness |
 | FAQ coverage gaps | :x: | Low | Find concepts not addressed in FAQ |
@@ -148,6 +148,7 @@ These features involve creating the actual educational content.
 | Feature | Status | Effort | Notes |
 |---------|--------|--------|-------|
 | Chapter content | :white_check_mark: | Very High | 19 chapters with full text, examples, and exercises |
+| Pedagogical Agent (Mascot) | :white_check_mark: | High | Seven poses in admonitions created using text-to-image generator |
 | Sample prompts collection | :white_check_mark: | Medium | Saved AI prompts so content can be regenerated consistently |
 
 ---

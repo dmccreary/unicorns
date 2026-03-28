@@ -259,3 +259,5 @@ The future of assessment is not the elimination of testing. It is the redesign o
     human and half machine is a promising configuration. The
     question, which the literature has not resolved, is which
     half gets to steer.
+
+[See Annotated References](./references.md)

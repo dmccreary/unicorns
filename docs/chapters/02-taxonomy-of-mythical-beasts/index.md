@@ -472,3 +472,5 @@ For reference throughout the remainder of this textbook, the following table map
 
 ??? question "Self-Assessment: Can you classify a technology as a mythical beast? Click to test yourself."
     A new AI tool is announced. It promises to "revolutionize" your industry. The demo is spectacular. The product ships six months late with half the features. The company raises $2 billion anyway. Which beast is this? If you answered "unicorn," you are correct. If you answered "mermaid," you are also correct. If you answered "all of them simultaneously," you may have a future in venture capital.
+
+[See Annotated References](./references.md)

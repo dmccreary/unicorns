@@ -214,3 +214,5 @@ The world this textbook has built — a world of mythical beasts and real techno
     attention to the technologies that share their most defining
     characteristic: everyone talks about them, and nobody has
     seen one work at scale. Sparkle will see you there.
+
+[See Annotated References](./references.md)

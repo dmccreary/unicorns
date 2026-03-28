@@ -83,6 +83,12 @@ function setup() {
 function draw() {
   updateCanvasSize();
 
+  // Update button states
+  if (currentStage >= STAGES.length - 1) nextBtn.attribute('disabled', '');
+  else nextBtn.removeAttribute('disabled');
+  if (currentStage <= 0) prevBtn.attribute('disabled', '');
+  else prevBtn.removeAttribute('disabled');
+
   // Draw area background
   fill('aliceblue');
   stroke('silver');
@@ -215,7 +221,7 @@ function drawArrows() {
 
 function drawDataPanel() {
   let stage = STAGES[currentStage];
-  let panelY = 200;
+  let panelY = 250;
   let panelH = drawHeight - panelY - 10;
 
   fill(255, 255, 255, 230);
@@ -240,12 +246,12 @@ function drawDataPanel() {
   textSize(11);
   text(stage.desc, tx, panelY + 30, tw, 80);
 
-  // Data panel
-  let dataY = panelY + 115;
+  // Data panel light blue
+  let dataY = panelY + 65;
   fill(240, 245, 255);
   stroke(66, 133, 244, 80);
   strokeWeight(1);
-  rect(tx, dataY, tw, panelH - 125, 6);
+  rect(tx, dataY, tw, panelH - 80, 6);
 
   fill(66, 133, 244);
   noStroke();

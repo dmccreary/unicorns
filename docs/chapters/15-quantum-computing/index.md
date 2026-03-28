@@ -216,3 +216,5 @@ The unicorn of physics is not a fraud. The scientists working on quantum computi
     it will be commercially viable in approximately five years.
     The literature has been saying this since 1994. The literature
     is cautiously optimistic.
+
+[See Annotated References](./references.md)

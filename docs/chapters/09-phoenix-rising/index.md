@@ -298,3 +298,5 @@ Implementation: vis-timeline with custom groups for predictions and achievements
     first. The literature suggests that most "rebirths" are
     rebranding exercises. The ashes are real. The rising is
     optional.
+
+[See Annotated References](./references.md)

@@ -251,3 +251,5 @@ Some unicorns are real. The giant squid was mythical until it was photographed. 
     Spot unicorns. Trust the evidence. And remember: if it
     sounds too good to be true, it is probably a horse with
     accessories.
+
+[See Annotated References](./references.md)

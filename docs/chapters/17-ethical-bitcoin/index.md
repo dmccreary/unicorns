@@ -194,3 +194,5 @@ Implementation: Chart.js with line chart, annotation plugin, and custom tooltip 
     atmosphere does not. The literature suggests that the
     contradiction will be resolved by mathematics, not by
     press releases. Mathematics is patient. Mathematics always wins.
+
+[See Annotated References](./references.md)

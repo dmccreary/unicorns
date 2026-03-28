@@ -183,3 +183,5 @@ The legacy of the metaverse is not the metaverse. It is the specific, narrow app
     The literature suggests this was already known. The kraken
     suggests it was not obvious from the bottom of the ocean.
     Both are correct.
+
+[See Annotated References](./references.md)

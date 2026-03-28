@@ -293,3 +293,5 @@ The inverse correlation between valuation and probability of working is not a co
     worth billions of dollars. The literature suggests this is
     the most accurate simulation of the AI industry yet
     constructed. Further testing is, as always, not planned.
+
+[See Annotated References](./references.md)

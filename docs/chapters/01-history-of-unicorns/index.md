@@ -412,3 +412,5 @@ The foundational concepts introduced in this chapter — what a mythical beast i
 
 ??? question "Self-Assessment: Can you distinguish unicorn mythology from a modern press release? Click to test yourself."
     Consider the following statement: "A transformative force of unprecedented purity, capable of neutralizing toxins and accessible only to those deemed worthy." Is this a description of (a) a medieval unicorn, (b) a blockchain startup, or (c) a new AI model? The correct answer is that all three descriptions are functionally identical. If you recognized this, you are ready for Chapter 2.
+
+[See Annotated References](./references.md)

@@ -267,3 +267,5 @@ For practical use in evaluating any technology claim, the following checklist sy
     You have acquired the complete toolkit for spotting unicorns
     in the wild. The unicorns will not appreciate being spotted.
     The literature suggests this is exactly the point.
+
+[See Annotated References](./references.md)

@@ -26,9 +26,14 @@ h2 {
     display: flex;
     justify-content: center;
     gap: 24px;
-    margin-top: 12px;
+    margin-bottom: 12px;
     font-size: 0.9em;
     color: #555;
+}
+
+.vis-labelset,
+.vis-labelset .vis-label {
+    display: none;
 }
 
 .legend-item {

@@ -300,7 +300,7 @@ function draw() {
     // For "all three" — if they picked any single one, technically not wrong but not full credit
     let isPartial = (correct === 3 && chosen !== 3);
 
-    let cardH = drawHeight - cardY - 10;
+    let cardH = drawHeight - cardY - 40;
     if (isCorrect) {
       fill(235, 250, 235);
       stroke(80, 180, 80);

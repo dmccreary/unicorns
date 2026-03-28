@@ -17,7 +17,7 @@ hide:
   ![Unicorns and Other Mythical Beasts](./img/cover.png){ width="100%" }
 </figure>
 
-Welcome to **Unicorns and Other Mythical Beasts: An Essential Guide to Creatures That Definitely Exist and the Technologies That Will Improve Them**.
+Welcome to **Unicorns and Other Mythical Beasts: An Essential Guide to Creatures That Definitely Exist and the AI Technologies That Will Improve Them**.
 
 This is a rigorous, evidence-adjacent exploration of mythical creatures and the parallel universe of artificial intelligence — a field that, like unicorns, promises magical solutions to all of humanity's problems and may or may not actually deliver. Through 19 chapters of satirical stories, interactive simulations, and graphic novels, you will develop the critical thinking skills necessary to distinguish between things that are real, things that are imaginary, and things that are "in beta."
 

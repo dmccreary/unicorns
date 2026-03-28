@@ -234,3 +234,5 @@ The siren sang. MythCorp listened. The rocks were exactly where they always are.
     rope is media literacy. The literature suggests that tying
     yourself to the mast is uncomfortable but significantly
     preferable to drowning.
+
+[See Annotated References](./references.md)

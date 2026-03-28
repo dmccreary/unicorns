@@ -366,3 +366,5 @@ The rest of this textbook is designed to help you choose the third option. The f
     formation. It is literacy. The literature confirms that
     literate deer have a statistically significant survival
     advantage. Further research is, regrettably, still needed.
+
+[See Annotated References](./references.md)
