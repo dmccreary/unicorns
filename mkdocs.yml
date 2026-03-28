@@ -10,25 +10,63 @@ nav:
   - Course Description: course-description.md
   - Chapters:
     - Overview: chapters/index.md
-    - 1. History of Unicorns: chapters/01-history-of-unicorns/index.md
-    - 2. Taxonomy of Mythical Beasts: chapters/02-taxonomy-of-mythical-beasts/index.md
-    - 3. The Unicorn-Industrial Complex: chapters/03-unicorn-industrial-complex/index.md
-    - 4. The Emperor's New Algorithm: chapters/04-emperors-new-algorithm/index.md
-    - 5. Deer in the Headlights: chapters/05-deer-in-the-headlights/index.md
-    - 6. The Ostrich Academy: chapters/06-the-ostrich-academy/index.md
-    - 7. The Job Thief: chapters/07-the-job-thief/index.md
-    - 8. Centaur Workforce: chapters/08-centaur-workforce/index.md
-    - 9. Phoenix Rising: chapters/09-phoenix-rising/index.md
-    - 10. Siren Song of Automation: chapters/10-siren-song-of-automation/index.md
-    - 11. Unicorn Spotting: chapters/11-unicorn-spotting/index.md
-    - 12. Breeding Better Unicorns: chapters/12-breeding-better-unicorns/index.md
-    - 13. Grand Council of Beasts: chapters/13-grand-council-of-mythical-beasts/index.md
-    - 14. The Last Textbook: chapters/14-the-last-textbook/index.md
-    - 15. Quantum Computing: chapters/15-quantum-computing/index.md
-    - 16. Efficient Blockchain: chapters/16-efficient-blockchain/index.md
-    - 17. Ethical Bitcoin: chapters/17-ethical-bitcoin/index.md
-    - 18. The Metaverse: chapters/18-the-metaverse/index.md
-    - 19. Bestiary of Vaporware: chapters/19-bestiary-of-vaporware/index.md
+    - 1. History of Unicorns:
+      - Content: chapters/01-history-of-unicorns/index.md
+      - Quiz: chapters/01-history-of-unicorns/quiz.md
+    - 2. Taxonomy of Mythical Beasts:
+      - Content: chapters/02-taxonomy-of-mythical-beasts/index.md
+      - Quiz: chapters/02-taxonomy-of-mythical-beasts/quiz.md
+    - 3. The Unicorn-Industrial Complex:
+      - Content: chapters/03-unicorn-industrial-complex/index.md
+      - Quiz: chapters/03-unicorn-industrial-complex/quiz.md
+    - 4. The Emperor's New Algorithm:
+      - Content: chapters/04-emperors-new-algorithm/index.md
+      - Quiz: chapters/04-emperors-new-algorithm/quiz.md
+    - 5. Deer in the Headlights:
+      - Content: chapters/05-deer-in-the-headlights/index.md
+      - Quiz: chapters/05-deer-in-the-headlights/quiz.md
+    - 6. The Ostrich Academy:
+      - Content: chapters/06-the-ostrich-academy/index.md
+      - Quiz: chapters/06-the-ostrich-academy/quiz.md
+    - 7. The Job Thief:
+      - Content: chapters/07-the-job-thief/index.md
+      - Quiz: chapters/07-the-job-thief/quiz.md
+    - 8. Centaur Workforce:
+      - Content: chapters/08-centaur-workforce/index.md
+      - Quiz: chapters/08-centaur-workforce/quiz.md
+    - 9. Phoenix Rising:
+      - Content: chapters/09-phoenix-rising/index.md
+      - Quiz: chapters/09-phoenix-rising/quiz.md
+    - 10. Siren Song of Automation:
+      - Content: chapters/10-siren-song-of-automation/index.md
+      - Quiz: chapters/10-siren-song-of-automation/quiz.md
+    - 11. Unicorn Spotting:
+      - Content: chapters/11-unicorn-spotting/index.md
+      - Quiz: chapters/11-unicorn-spotting/quiz.md
+    - 12. Breeding Better Unicorns:
+      - Content: chapters/12-breeding-better-unicorns/index.md
+      - Quiz: chapters/12-breeding-better-unicorns/quiz.md
+    - 13. Grand Council of Beasts:
+      - Content: chapters/13-grand-council-of-mythical-beasts/index.md
+      - Quiz: chapters/13-grand-council-of-mythical-beasts/quiz.md
+    - 14. The Last Textbook:
+      - Content: chapters/14-the-last-textbook/index.md
+      - Quiz: chapters/14-the-last-textbook/quiz.md
+    - 15. Quantum Computing:
+      - Content: chapters/15-quantum-computing/index.md
+      - Quiz: chapters/15-quantum-computing/quiz.md
+    - 16. Efficient Blockchain:
+      - Content: chapters/16-efficient-blockchain/index.md
+      - Quiz: chapters/16-efficient-blockchain/quiz.md
+    - 17. Ethical Bitcoin:
+      - Content: chapters/17-ethical-bitcoin/index.md
+      - Quiz: chapters/17-ethical-bitcoin/quiz.md
+    - 18. The Metaverse:
+      - Content: chapters/18-the-metaverse/index.md
+      - Quiz: chapters/18-the-metaverse/quiz.md
+    - 19. Bestiary of Vaporware:
+      - Content: chapters/19-bestiary-of-vaporware/index.md
+      - Quiz: chapters/19-bestiary-of-vaporware/quiz.md
   - Stories:
     - Overview: stories/index.md
     - Deer in the Headlights: stories/deer-in-the-headlights/index.md
