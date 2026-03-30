@@ -12,10 +12,12 @@
             margin: 0;
             padding: 0;
             font-family: Arial, Helvetica, sans-serif;
+            background-color: aliceblue;
         }
         #map {
             width: 100%;
             height: 500px;
+            background-color: aliceblue;
         }
         .legend {
             background: white;
@@ -41,6 +43,12 @@
             display: inline-block;
             flex-shrink: 0;
         }
+        h1 {
+            text-align: center;
+            margin: 0;
+            padding: 8px 0;
+            font-size: 24px;
+        }
         .back-link {
             padding: 8px 12px;
             display: inline-block;
@@ -49,6 +57,8 @@
 </head>
 <body>
     <main>
+        <h1>Ancient Unicorn Civilizations</h1>
+        <p style="text-align:center; margin:0 0 4px 0; font-size:14px; color:#666;">Click on a point for details.</p>
         <div id="map"></div>
     </main>
     <a class="back-link" href=".">Back to Lesson Plan</a>
@@ -56,7 +66,9 @@
     <script>
         var map = L.map('map', {
             scrollWheelZoom: false
-        }).setView([35, 30], 2);
+        });
+
+        // Bounds will be set after markers are added
 
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
             attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
@@ -139,7 +151,13 @@
             return marker;
         }
 
-        sightings.forEach(createCircleMarker);
+        var markers = sightings.map(createCircleMarker);
+        var group = L.featureGroup(markers);
+        var bounds = group.getBounds().pad(0.1);
+        map.fitBounds(bounds);
+        // Pan down 10% so bottom markers aren't cut off
+        var offset = map.getSize().y * 0.1;
+        map.panBy([0, offset], { animate: false });
 
         // Legend
         var legend = L.control({ position: 'bottomright' });

@@ -11,7 +11,7 @@
             margin: 0;
             padding: 0;
             font-family: Arial, Helvetica, sans-serif;
-            background: #f5f5f5;
+            background: aliceblue;
         }
         main {
             max-width: 1100px;
@@ -35,7 +35,7 @@
             height: 500px;
             border: 1px solid #ccc;
             border-radius: 6px;
-            background: #ffffff;
+            background: aliceblue;
         }
         #detail-panel {
             margin-top: 10px;
@@ -91,63 +91,63 @@
     var nodeData = [
         { id: 'Unicorn', label: 'Unicorn', x: 0, y: 0, size: 40,
           color: { background: '#FFD54F', border: '#F9A825', highlight: { background: '#FFECB3', border: '#F57F17' } },
-          font: { size: 16, color: '#333', bold: true } },
+          font: { size: 20, color: '#333', bold: true } },
 
         // Category nodes (medium, ring 1)
         { id: 'Purity', label: 'Purity', x: 0, y: -220,
           color: { background: '#F5F5F5', border: '#9E9E9E', highlight: { background: '#fff', border: '#616161' } },
-          font: { size: 13, color: '#333' } },
+          font: { size: 15, color: '#333' } },
         { id: 'Healing', label: 'Healing', x: 210, y: -70,
           color: { background: '#C8E6C9', border: '#43A047', highlight: { background: '#A5D6A7', border: '#2E7D32' } },
-          font: { size: 13, color: '#333' } },
+          font: { size: 15, color: '#333' } },
         { id: 'Christianity', label: 'Christianity', x: 130, y: 180,
           color: { background: '#E1BEE7', border: '#8E24AA', highlight: { background: '#CE93D8', border: '#6A1B9A' } },
-          font: { size: 13, color: '#333' } },
+          font: { size: 15, color: '#333' } },
         { id: 'Royalty', label: 'Royalty', x: -130, y: 180,
           color: { background: '#FFCDD2', border: '#C62828', highlight: { background: '#EF9A9A', border: '#B71C1C' } },
-          font: { size: 13, color: '#333' } },
+          font: { size: 15, color: '#333' } },
         { id: 'Natural History', label: 'Natural\nHistory', x: -210, y: -70,
           color: { background: '#B2DFDB', border: '#00897B', highlight: { background: '#80CBC4', border: '#00695C' } },
-          font: { size: 13, color: '#333' } },
+          font: { size: 17, color: '#333' } },
 
         // Sub-nodes (ring 2)
         { id: 'Virgin Capture', label: 'Virgin\nCapture', x: 80, y: -370,
           color: { background: '#F8BBD0', border: '#EC407A', highlight: { background: '#F48FB1', border: '#D81B60' } },
-          font: { size: 11, color: '#333' } },
+          font: { size: 15, color: '#333' } },
 
         { id: 'Alicorn Trade', label: 'Alicorn\nTrade', x: 380, y: -140,
           color: { background: '#FFE082', border: '#FFA000', highlight: { background: '#FFD54F', border: '#FF8F00' } },
-          font: { size: 11, color: '#333' } },
+          font: { size: 15, color: '#333' } },
         { id: 'Water Purification', label: 'Water\nPurification', x: 370, y: 40,
           color: { background: '#BBDEFB', border: '#1E88E5', highlight: { background: '#90CAF9', border: '#1565C0' } },
-          font: { size: 11, color: '#333' } },
+          font: { size: 15, color: '#333' } },
 
         { id: 'Christ Symbol', label: 'Christ\nSymbol', x: 280, y: 310,
           color: { background: '#E1BEE7', border: '#8E24AA', highlight: { background: '#CE93D8', border: '#6A1B9A' } },
-          font: { size: 11, color: '#333' } },
+          font: { size: 15, color: '#333' } },
         { id: 'Monastery Bestiaries', label: 'Monastery\nBestiaries', x: 60, y: 350,
           color: { background: '#D7CCC8', border: '#795548', highlight: { background: '#BCAAA4', border: '#5D4037' } },
-          font: { size: 11, color: '#333' } },
+          font: { size: 15, color: '#333' } },
 
         { id: 'Royal Coat of Arms', label: 'Royal Coat\nof Arms', x: -280, y: 310,
           color: { background: '#FFCDD2', border: '#C62828', highlight: { background: '#EF9A9A', border: '#B71C1C' } },
-          font: { size: 11, color: '#333' } },
+          font: { size: 15, color: '#333' } },
         { id: 'Throne of Scotland', label: 'Throne of\nScotland', x: -60, y: 350,
           color: { background: '#FFCDD2', border: '#C62828', highlight: { background: '#EF9A9A', border: '#B71C1C' } },
-          font: { size: 11, color: '#333' } },
+          font: { size: 15, color: '#333' } },
 
         { id: 'Pliny the Elder', label: 'Pliny the\nElder', x: -380, y: -140,
           color: { background: '#B2DFDB', border: '#00897B', highlight: { background: '#80CBC4', border: '#00695C' } },
-          font: { size: 11, color: '#333' } },
+          font: { size: 15, color: '#333' } },
         { id: 'Ctesias of Cnidus', label: 'Ctesias of\nCnidus', x: -370, y: 50,
           color: { background: '#B2DFDB', border: '#00897B', highlight: { background: '#80CBC4', border: '#00695C' } },
-          font: { size: 11, color: '#333' } }
+          font: { size: 15, color: '#333' } }
     ];
 
     nodeData.forEach(function(n) {
         if (!n.size) n.size = 22;
-        n.shape = 'circle';
-        n.title = nodeDescriptions[n.id] || n.id;
+        n.shape = 'ellipse';
+        n.title = undefined;
     });
 
     var nodes = new vis.DataSet(nodeData);
@@ -198,11 +198,11 @@
             label: e.label,
             arrows: 'to',
             color: { color: e.color, highlight: '#333' },
-            font: { size: 10, color: e.color, strokeWidth: 2, strokeColor: '#fff' },
+            font: { size: 14, color: e.color, strokeWidth: 2, strokeColor: '#fff' },
             width: e.dashes ? 1.5 : 2,
             dashes: e.dashes || false,
             smooth: { type: 'curvedCW', roundness: dy < 30 ? 0.2 : 0.08 },
-            title: e.from + ' — ' + e.label + ' — ' + e.to
+            title: undefined
         };
     }));
 
@@ -222,9 +222,9 @@
         },
         interaction: {
             hover: true,
-            tooltipDelay: 150,
-            zoomView: true,
-            dragView: true,
+            zoomView: false,
+            dragView: false,
+            navigationButtons: true,
             dragNodes: true
         },
         edges: {

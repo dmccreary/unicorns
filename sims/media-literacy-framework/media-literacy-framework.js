@@ -98,8 +98,8 @@ const questions = [
 ];
 
 let canvasWidth = 750;
-let drawHeight = 420;
-let controlHeight = 60;
+let drawHeight = 460;
+let controlHeight = 50;
 let canvasHeight = 480;
 
 let currentScenario = 0;
@@ -166,8 +166,8 @@ function draw() {
 
   // Control area background
   fill('white');
-  noStroke();
   rect(0, drawHeight, canvasWidth, controlHeight);
+  noStroke();
 
   let sc = scenarios[currentScenario];
   let margin = 20;
@@ -229,12 +229,20 @@ function draw() {
     let optStartX = margin + 120;
     let optSpacing = Math.min(140, (usableWidth - 120) / opts.length);
 
+    // Determine correct answer index for this question
+    let expertKeys = ['source', 'claim', 'beneficiary', 'omission', 'precedent'];
+    let correctValue = sc.expert[expertKeys[q]];
+    let correctIdx = opts.indexOf(correctValue);
+    let isSubmitted = submitted[currentScenario];
+    let selectedIdx = answers[currentScenario][q];
+    let isCorrect = (selectedIdx === correctIdx);
+
     for (let o = 0; o < opts.length; o++) {
       let cx = optStartX + o * optSpacing + 10;
       let cy = qy + 18;
       let r = 10;
 
-      let isSelected = (answers[currentScenario][q] === o);
+      let isSelected = (selectedIdx === o);
       let col = questions[q].colors[o];
 
       // Circle
@@ -249,6 +257,22 @@ function draw() {
       }
       ellipse(cx, cy, r * 2, r * 2);
 
+      // After submission: green ring on correct answer, red X on wrong selection
+      if (isSubmitted) {
+        if (o === correctIdx) {
+          noFill();
+          stroke(0, 160, 0);
+          strokeWeight(3);
+          ellipse(cx, cy, r * 2 + 8, r * 2 + 8);
+        }
+        if (isSelected && !isCorrect && o === selectedIdx) {
+          stroke(200, 40, 40);
+          strokeWeight(2.5);
+          line(cx - 6, cy - 6, cx + 6, cy + 6);
+          line(cx + 6, cy - 6, cx - 6, cy + 6);
+        }
+      }
+
       // Label
       noStroke();
       fill(isSelected ? col[0] : 90, isSelected ? col[1] : 90, isSelected ? col[2] : 90);
@@ -261,8 +285,9 @@ function draw() {
   // Expert analysis card (if submitted)
   if (submitted[currentScenario]) {
     let expert = sc.expert;
-    let cardY = qStartY + questions.length * qSpacing + 5;
-    let cardH = drawHeight - cardY - 10;
+    let cardY = qStartY + questions.length * qSpacing - 10;
+    // The height of the infobox card
+    let cardH = drawHeight - cardY - 15;
 
     fill(245, 248, 255);
     stroke(100, 140, 200);

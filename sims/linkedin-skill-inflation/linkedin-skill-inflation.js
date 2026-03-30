@@ -77,6 +77,8 @@ document.addEventListener('DOMContentLoaded', function () {
                     padding: { bottom: 15 }
                 },
                 tooltip: {
+                    backgroundColor: 'rgb(0, 0, 0)',
+                    opacity: 1,
                     callbacks: {
                         label: function (context) {
                             return context.dataset.label + ': ' + context.parsed.y + '%';
@@ -139,7 +141,7 @@ document.addEventListener('DOMContentLoaded', function () {
         },
         plugins: [{
             id: 'customAnnotations',
-            afterDraw: function (chart) {
+            afterDatasetsDraw: function (chart) {
                 const ctx = chart.ctx;
                 const xScale = chart.scales.x;
                 const yScale = chart.scales.y;
