@@ -163,7 +163,7 @@ Generative AI is the broader category of AI systems that create new content — 
 
 #### Diagram: How a Large Language Model Works
 
-<iframe src="../../sims/llm-how-it-works/main.html" width="100%" height="550px" scrolling="no"></iframe>
+<iframe src="../../sims/llm-how-it-works/main.html" width="100%" height="470px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>How a Large Language Model Works</summary>

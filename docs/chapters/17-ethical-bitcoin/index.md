@@ -127,7 +127,7 @@ The parallels to five years away syndrome from Chapter 15 are exact. Quantum com
 
 #### Diagram: Perpetual Beta Product Lifecycle
 
-<iframe src="../../sims/perpetual-beta-lifecycle/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../sims/perpetual-beta-lifecycle/main.html" width="100%" height="450px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Perpetual Beta Product Lifecycle</summary>

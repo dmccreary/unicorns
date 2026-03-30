@@ -142,7 +142,7 @@ Odysseus survived the sirens by having his crew plug their ears with wax while h
 
 #### Diagram: Media Literacy Evaluation Framework
 
-<iframe src="../../sims/media-literacy-framework/main.html" width="100%" height="550px" scrolling="no"></iframe>
+<iframe src="../../sims/media-literacy-framework/main.html" width="100%" height="515px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Media Literacy Evaluation Framework</summary>

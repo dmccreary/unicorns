@@ -124,7 +124,7 @@ The honest assessment is that blockchain has produced one shipping product (Bitc
 
 #### Diagram: Blockchain Application Vaporware Classifier
 
-<iframe src="../../sims/blockchain-vaporware-classifier/main.html" width="100%" height="550px" scrolling="no"></iframe>
+<iframe src="../../sims/blockchain-vaporware-classifier/main.html" width="100%" height="450px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Blockchain Application Vaporware Classifier</summary>

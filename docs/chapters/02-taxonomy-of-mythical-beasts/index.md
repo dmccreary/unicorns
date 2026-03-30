@@ -120,7 +120,7 @@ The classification framework used in this textbook evaluates each creature acros
 
 #### Diagram: Beast Classification Framework
 
-<iframe src="../../sims/beast-classification-framework/main.html" width="100%" height="600px" scrolling="no"></iframe>
+<iframe src="../../sims/beast-classification-framework/main.html" width="100%" height="510px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Beast Classification Framework</summary>
@@ -280,7 +280,7 @@ The following table summarizes all ten beasts and the unicorn from Chapter 1, or
 
 #### Diagram: Mythical Beast Allegory Network
 
-<iframe src="../../sims/beast-allegory-network/main.html" width="100%" height="600px" scrolling="no"></iframe>
+<iframe src="../../sims/beast-allegory-network/main.html" width="100%" height="735px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Mythical Beast Allegory Network</summary>
@@ -378,7 +378,7 @@ The AI chatbot, evaluated against our six dimensions:
 
 #### Diagram: Beast Classification MicroSim
 
-<iframe src="../../sims/beast-classifier/main.html" width="100%" height="550px" scrolling="no"></iframe>
+<iframe src="../../sims/beast-classifier/main.html" width="100%" height="650px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Beast Classification MicroSim</summary>

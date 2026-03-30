@@ -147,7 +147,7 @@ The middle manager who navigates this successfully is the centaur in its purest 
 
 #### Diagram: Centaur Workforce Collaboration Spectrum
 
-<iframe src="../../sims/centaur-collaboration-spectrum/main.html" width="100%" height="550px" scrolling="no"></iframe>
+<iframe src="../../sims/centaur-collaboration-spectrum/main.html" width="100%" height="450px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Centaur Workforce Collaboration Spectrum</summary>

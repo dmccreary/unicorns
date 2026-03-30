@@ -157,7 +157,7 @@ On the plateau:
 
 #### Diagram: Hype Cycle Journey Interactive Timeline
 
-<iframe src="../../sims/hype-cycle-journey/main.html" width="100%" height="550px" scrolling="no"></iframe>
+<iframe src="../../sims/hype-cycle-journey/main.html" width="100%" height="470px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Hype Cycle Journey Interactive Timeline</summary>
@@ -264,7 +264,7 @@ The promise of adaptive learning is that every student gets a personalized educa
 
 #### Diagram: Adaptive Learning Feedback Loop
 
-<iframe src="../../sims/adaptive-learning-loop/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../sims/adaptive-learning-loop/main.html" width="100%" height="470px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Adaptive Learning Feedback Loop</summary>

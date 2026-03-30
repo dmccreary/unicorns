@@ -94,7 +94,7 @@ The kraken pattern differs from five years away syndrome in one important respec
 
 #### Diagram: Metaverse Hype Cycle History
 
-<iframe src="../../sims/metaverse-hype-cycles/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../sims/metaverse-hype-cycles/main.html" width="100%" height="510px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Metaverse Hype Cycle History</summary>

@@ -162,7 +162,7 @@ The pattern is clear: schools eventually adopt every significant technology, but
 
 #### Diagram: Education Technology Adoption Lag
 
-<iframe src="../../sims/ed-tech-adoption-lag/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../sims/ed-tech-adoption-lag/main.html" width="100%" height="570px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Education Technology Adoption Lag</summary>

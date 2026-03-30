@@ -89,7 +89,7 @@ The key civilizations that contributed to ancient unicorn mythology include:
 
 #### Diagram: Ancient Unicorn Civilizations Map
 
-<iframe src="../../sims/ancient-unicorn-map/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../sims/ancient-unicorn-map/main.html" width="100%" height="550px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Ancient Unicorn Civilizations Map</summary>
@@ -151,7 +151,7 @@ Medieval unicorn beliefs included:
 
 #### Diagram: Medieval Unicorn Belief System
 
-<iframe src="../../sims/medieval-unicorn-beliefs/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../sims/medieval-unicorn-beliefs/main.html" width="100%" height="680px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Medieval Unicorn Belief System</summary>
@@ -251,7 +251,7 @@ The major phases of unicorn symbolism can be summarized as follows:
 
 #### Diagram: Unicorn Symbolism Timeline
 
-<iframe src="../../sims/unicorn-symbolism-timeline/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../sims/unicorn-symbolism-timeline/main.html" width="100%" height="550px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Unicorn Symbolism Timeline</summary>
@@ -327,7 +327,7 @@ The modern unicorn industrial complex operates across several sectors:
 
 #### Diagram: Modern Unicorn Economy Infographic
 
-<iframe src="../../sims/modern-unicorn-economy/main.html" width="100%" height="600px" scrolling="no"></iframe>
+<iframe src="../../sims/modern-unicorn-economy/main.html" width="100%" height="450px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Modern Unicorn Economy Infographic</summary>

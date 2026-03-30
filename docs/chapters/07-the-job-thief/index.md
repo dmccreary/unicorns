@@ -142,7 +142,7 @@ The pitch deck is not a document of record. It is a narrative device. Its purpos
 
 #### Diagram: Anatomy of an AI Pitch Deck
 
-<iframe src="../../sims/ai-pitch-deck-anatomy/main.html" width="100%" height="550px" scrolling="no"></iframe>
+<iframe src="../../sims/ai-pitch-deck-anatomy/main.html" width="100%" height="500px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Anatomy of an AI Pitch Deck</summary>
@@ -267,7 +267,7 @@ Moving the goalposts serves both sides of the AI debate. Optimists use it to arg
 
 #### Diagram: Moving the Goalposts Timeline
 
-<iframe src="../../sims/moving-goalposts-timeline/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../sims/moving-goalposts-timeline/main.html" width="100%" height="450px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Moving the Goalposts Timeline</summary>

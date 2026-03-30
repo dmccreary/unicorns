@@ -81,7 +81,7 @@ The unicorn feature generator described in this course's MicroSim list is an int
 
 #### Diagram: AI Unicorn Feature Generator
 
-<iframe src="../../sims/ai-unicorn-generator/main.html" width="100%" height="600px" scrolling="no"></iframe>
+<iframe src="../../sims/ai-unicorn-generator/main.html" width="100%" height="550px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>AI Unicorn Feature Generator</summary>
@@ -189,7 +189,7 @@ Population dynamics models are relevant to this textbook because they illustrate
 
 #### Diagram: Unicorn Population Dynamics Simulator
 
-<iframe src="../../sims/unicorn-population-dynamics/main.html" width="100%" height="550px" scrolling="no"></iframe>
+<iframe src="../../sims/unicorn-population-dynamics/main.html" width="100%" height="500px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Unicorn Population Dynamics Simulator</summary>

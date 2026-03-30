@@ -137,7 +137,7 @@ LinkedIn skill inflation is the professional equivalent of the unicorn's horn. I
 
 #### Diagram: LinkedIn Skill Inflation Tracker
 
-<iframe src="../../sims/linkedin-skill-inflation/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../sims/linkedin-skill-inflation/main.html" width="100%" height="530px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>LinkedIn Skill Inflation Tracker</summary>
@@ -219,7 +219,7 @@ The problem with AGI timeline claims is not that they are ambitious. It is that 
 
 #### Diagram: AGI Timeline Claims History
 
-<iframe src="../../sims/agi-timeline-claims/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../sims/agi-timeline-claims/main.html" width="100%" height="520px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>AGI Timeline Claims History</summary>

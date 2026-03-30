@@ -103,7 +103,7 @@ The pattern is identical to AGI timeline claims from Chapter 9. Each prediction 
 
 #### Diagram: Five Years Away Timeline
 
-<iframe src="../../sims/five-years-away/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../sims/five-years-away/main.html" width="100%" height="450px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Five Years Away Timeline</summary>

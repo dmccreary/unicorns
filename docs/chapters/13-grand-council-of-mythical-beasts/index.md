@@ -129,7 +129,7 @@ Statements 1, 3, and 5 could be from either the fictional Council or a real tech
 
 #### Diagram: Real or Fake Interactive Quiz
 
-<iframe src="../../sims/real-or-fake-quiz/main.html" width="100%" height="550px" scrolling="no"></iframe>
+<iframe src="../../sims/real-or-fake-quiz/main.html" width="100%" height="450px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Real or Fake Interactive Quiz</summary>

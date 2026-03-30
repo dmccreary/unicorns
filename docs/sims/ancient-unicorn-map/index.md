@@ -11,7 +11,7 @@ quality_score: 0
 
 # Ancient Unicorn Civilizations Map
 
-<iframe src="main.html" height="450px" width="100%" scrolling="no"></iframe>
+<iframe src="main.html" height="550px" width="100%" scrolling="no"></iframe>
 
 [Run the Ancient Unicorn Civilizations Map MicroSim Fullscreen](./main.html){ .md-button .md-button--primary }
 

@@ -147,7 +147,7 @@ A practical claim verification process:
 
 #### Diagram: Claim Verification Decision Tree
 
-<iframe src="../../sims/claim-verification-tree/main.html" width="100%" height="550px" scrolling="no"></iframe>
+<iframe src="../../sims/claim-verification-tree/main.html" width="100%" height="450px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Claim Verification Decision Tree</summary>

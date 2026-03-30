@@ -129,7 +129,7 @@ The following table synthesizes the entire Unit 5 analysis into a single referen
 
 #### Diagram: Bestiary of Vaporware Interactive Field Guide
 
-<iframe src="../../sims/bestiary-vaporware-guide/main.html" width="100%" height="600px" scrolling="no"></iframe>
+<iframe src="../../sims/bestiary-vaporware-guide/main.html" width="100%" height="480px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Bestiary of Vaporware Interactive Field Guide</summary>
