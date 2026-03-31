@@ -7,12 +7,14 @@
 ![](./img/mascot/welcome.png){ width="170px" align="left"}
 Good day, colleagues. Welcome to the interactive intelligent textbook
 *Unicorns and Other Mythical Beasts: An Essential Guide to Creatures
-That Definitely Exist and the Technologies That Will Improve Them*.
+That Definitely Exist and the AI Technologies That Will Improve Them*.
 My name is Sparkle, and I will be your guide throughout this entirely
 serious academic endeavor. I will introduce each chapter, share
-observations that the data makes unavoidable, and offer the occasional
-word of measured encouragement. Let me be perfectly clear: unicorn
-literacy has never been more important.
+observations that the data makes unavoidable, 
+give tips that are always distracting and occasionally useful, 
+offer the occasional word of measured encouragement,
+and celebrate your achievements if you ever reach the end of the chapter.
+Let me be perfectly clear: unicorn literacy has never been more important.
 
 <div style="clear: both;"></div>
 
@@ -64,23 +66,23 @@ This textbook is what happens when a retired AI researcher discovers that genera
 
 **APA (7th edition)**
 
-McCreary, D. (2025). *Unicorns and other mythical beasts: An essential guide to creatures that definitely exist and the technologies that will improve them*. https://dmccreary.github.io/unicorns/
+McCreary, D. (2026). *Unicorns and other mythical beasts: An essential guide to creatures that definitely exist and the AI technologies that will improve them*. https://dmccreary.github.io/unicorns/
 
 **Chicago (17th edition)**
 
-McCreary, Dan. 2025. *Unicorns and Other Mythical Beasts: An Essential Guide to Creatures That Definitely Exist and the Technologies That Will Improve Them*. https://dmccreary.github.io/unicorns/.
+McCreary, Dan. 2026. *Unicorns and Other Mythical Beasts: An Essential Guide to Creatures That Definitely Exist and the AI Technologies That Will Improve Them*. https://dmccreary.github.io/unicorns/.
 
 **MLA (9th edition)**
 
-McCreary, Dan. *Unicorns and Other Mythical Beasts: An Essential Guide to Creatures That Definitely Exist and the Technologies That Will Improve Them*. 2025, dmccreary.github.io/unicorns/.
+McCreary, Dan. *Unicorns and Other Mythical Beasts: An Essential Guide to Creatures That Definitely Exist and the AI Technologies That Will Improve Them*. 2026, dmccreary.github.io/unicorns/.
 
 **BibTeX**
 
 ```bibtex
 @book{mccreary2025unicorns,
-  title     = {Unicorns and Other Mythical Beasts: An Essential Guide to Creatures That Definitely Exist and the Technologies That Will Improve Them},
+  title     = {Unicorns and Other Mythical Beasts: An Essential Guide to Creatures That Definitely Exist and the AI Technologies That Will Improve Them},
   author    = {McCreary, Dan},
-  year      = {2025},
+  year      = {2026},
   url       = {https://dmccreary.github.io/unicorns/},
   note      = {Interactive intelligent textbook. April Fool's edition.}
 }
@@ -88,4 +90,4 @@ McCreary, Dan. *Unicorns and Other Mythical Beasts: An Essential Guide to Creatu
 
 To cite a specific chapter, append the chapter number and title — for example:
 
-McCreary, D. (2025). Chapter 5: Deer in the headlights: When disruption comes knocking. In *Unicorns and other mythical beasts: An essential guide to creatures that definitely exist and the technologies that will improve them*. https://dmccreary.github.io/unicorns/chapters/05-deer-in-the-headlights/
+McCreary, D. (2026). Chapter 5: Deer in the headlights: When disruption comes knocking. In *Unicorns and other mythical beasts: An essential guide to creatures that definitely exist and the AI technologies that will improve them*. https://dmccreary.github.io/unicorns/chapters/05-deer-in-the-headlights/
