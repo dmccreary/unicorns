@@ -11,7 +11,7 @@ quality_score: 0
 
 # Centaur Workforce Collaboration Spectrum
 
-<iframe src="main.html" height="450px" width="100%" scrolling="no"></iframe>
+<iframe src="main.html" height="600px" width="100%" scrolling="no"></iframe>
 
 [Run the Centaur Workforce Collaboration Spectrum MicroSim Fullscreen](./main.html){ .md-button .md-button--primary }
 <br/>

@@ -222,7 +222,7 @@ Mythical product-market fit is the economic equivalent of a unicorn sighting. So
 
 #### Diagram: Product-Market Fit Spectrum
 
-<iframe src="../../sims/product-market-fit-spectrum/main.html" width="100%" height="450px" scrolling="no"></iframe>
+<iframe src="../../sims/product-market-fit-spectrum/main.html" width="100%" height="540px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Product-Market Fit Spectrum</summary>
@@ -322,7 +322,7 @@ Consider how the lifecycle of a typical unicorn startup maps to the bestiary:
 
 #### Diagram: Unicorn Startup Lifecycle Allegory
 
-<iframe src="../../sims/unicorn-lifecycle-allegory/main.html" width="100%" height="450px" scrolling="no"></iframe>
+<iframe src="../../sims/unicorn-lifecycle-allegory/main.html" width="100%" height="500px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Unicorn Startup Lifecycle Allegory</summary>

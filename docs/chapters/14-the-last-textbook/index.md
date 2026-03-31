@@ -101,7 +101,7 @@ The overlap between Circle 1 and Circle 2 contains everything this textbook is a
 
 #### Diagram: The Great Mythical Venn Diagram
 
-<iframe src="../../sims/great-mythical-venn/main.html" width="100%" height="550px" scrolling="no"></iframe>
+<iframe src="../../sims/great-mythical-venn/main.html" width="100%" height="600px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>The Great Mythical Venn Diagram</summary>

@@ -11,7 +11,7 @@ quality_score: 0
 
 # Product-Market Fit Spectrum
 
-<iframe src="main.html" height="450px" width="100%" scrolling="no"></iframe>
+<iframe src="main.html" height="540px" width="100%" scrolling="no"></iframe>
 
 [Run the Product-Market Fit Spectrum MicroSim Fullscreen](./main.html){ .md-button .md-button--primary }
 <br/>
