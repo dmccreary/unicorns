@@ -1,12 +1,21 @@
 ---
 title: Graphic Novels
 description: Satirical graphic novels using mythical beasts as allegories for modern technology disruption, workplace dynamics, and institutional denial.
+image: stories/stories-cover.png
+og:image: stories/stories-cover.png
 ---
 
 # Graphic Novels
 
 Mini-graphic novels that serve as visual storytelling companions to the chapter content. Each story uses mythical beasts as allegories for modern technology disruption, workplace dynamics, and institutional denial. The humor comes from mythical creatures saying exactly what real people say in real workplaces.
 
+!!! mascot-warning "Incomplete Panel Generation Warning"
+    <img src="../img/mascot/warning.png" class="mascot-admonition-img">
+    Dan has not generated all the panels for all the stories yet since he got distracted
+    on another project.  I know that has never happened before.  DM Dan on [LinkedIn](https://www.linkedin.com/in/danmccreary/)
+    if you are interested in any specific story.  And check back again soon!  It makes our
+    page views to up!
+    
 <div class="grid cards" markdown>
 
 - **[Deer in the Headlights](deer-in-the-headlights/index.md)**

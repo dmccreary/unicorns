@@ -131,6 +131,103 @@ Within each chapter, you'll find a collapsible **details** section below each Mi
 
 These specifications are useful for lesson planning and for understanding the pedagogical intent behind each simulation.
 
+## Using the Glossary
+
+### What is the Glossary?
+
+The **glossary** is an alphabetical list of all key terms used in the textbook, each with a precise, concise definition. It serves as a quick-reference dictionary for students encountering unfamiliar vocabulary. Terms range from the genuinely technical ("hallucination," "hype cycle") to the precisely ridiculous ("hornification," "mythical product-market fit"). All are defined with equal seriousness.
+
+### How to Access the Glossary
+
+- Click **"Glossary"** in the left navigation sidebar from any page
+- Use the browser's built-in search (Ctrl+F on Windows/Linux, Cmd+F on Mac) to find a specific term on the glossary page
+- Use the site-wide **search bar** at the top of any page to search for a term across the entire textbook
+
+### Tips for Using the Glossary in Class
+
+- **Vocabulary preview** — Before starting a new chapter, have students look up the key terms in the glossary to build familiarity.
+- **Definition matching** — Create a warm-up activity where students match glossary definitions to terms from the current chapter. Some definitions are indistinguishable from real tech industry jargon, which is the point.
+- **Student-generated definitions** — After reading a chapter, have students write their own definitions, then compare with the glossary.
+- **Real or fake** — Read glossary definitions aloud and have students guess whether the term describes a real technology concept or a mythical beast concept. The difficulty of this exercise is pedagogically intentional.
+
+## Using the FAQ
+
+### What is the FAQ?
+
+The **FAQ** (Frequently Asked Questions) is a curated list of 85 common questions students ask about unicorns, mythical beasts, AI hype, and the technologies that may or may not exist, organized by topic. Each question includes a clear, concise answer written at the same reading level as the chapters.
+
+### How the FAQ is Organized
+
+The FAQ covers questions across all 19 chapters. Questions are grouped by topic area to make browsing easy.
+
+### Tips for Using the FAQ in Class
+
+- **Discussion starters** — Pick 2-3 FAQ questions at the start of class and have students discuss before revealing the answer.
+- **Homework support** — Point students to the FAQ when they have questions outside of class hours.
+- **Extension reading** — The FAQ often covers angles not addressed in the main chapter text, making it good supplementary material.
+- **Test review** — Students can use the FAQ as a study guide before assessments.
+
+## Using the Quizzes
+
+### What Are the Quizzes?
+
+Each chapter has an accompanying **quiz page** with multiple-choice questions designed for self-assessment. The textbook contains 190 quiz questions total. Quizzes test understanding of the concepts covered in that chapter and are aligned to specific items from the learning graph.
+
+### How Quizzes Work
+
+- Quizzes are accessed by clicking the **"Quiz"** link under each chapter in the left navigation
+- Each quiz contains 10 multiple-choice questions at varying Bloom's Taxonomy levels
+- Questions are presented as expandable sections — students can click to reveal the answer and explanation after attempting the question
+- Quizzes are **not graded automatically** — they are designed as formative self-check tools, not summative assessments
+- Some wrong answers describe things that are actually true about the tech industry, making them harder to eliminate. This is intentional.
+
+### Tips for Using Quizzes in Class
+
+- **Exit tickets** — Have students complete the quiz at the end of a class period as a quick check for understanding.
+- **Pre-reading check** — Assign the quiz before the chapter to see what students already know (diagnostic assessment).
+- **Post-reading review** — Use the quiz after reading to identify concepts that need re-teaching.
+- **Collaborative quiz** — Have students work in pairs to discuss each question before revealing the answer.
+- **Custom assessments** — Use the quiz questions as a bank to create your own tests. The questions are openly licensed (see "Understanding the License" below).
+
+### Bloom's Taxonomy Levels
+
+Each quiz question is tagged with a **Bloom's Taxonomy** level. Bloom's Taxonomy is a framework that classifies thinking skills from simple to complex:
+
+| Level | Name | What It Means | Example Verb |
+|-------|------|--------------|-------------|
+| L1 | Remember | Recall facts and definitions | Define, list, name |
+| L2 | Understand | Explain concepts in your own words | Explain, describe, compare |
+| L3 | Apply | Use concepts to solve problems | Calculate, demonstrate, solve |
+| L4 | Analyze | Break down and examine relationships | Differentiate, organize, compare |
+| L5 | Evaluate | Make judgments based on criteria | Assess, argue, justify |
+| L6 | Create | Produce original work or solutions | Design, construct, propose |
+
+A well-balanced assessment includes questions across multiple levels. The quizzes in this textbook primarily target levels L1-L4, with critical thinking challenges in the chapters targeting L5-L6.
+
+## Using the References
+
+### What Are the References?
+
+Each chapter has an accompanying **references page** with a curated list of approximately 10 high-quality sources that students can use for further reading. References prioritize Wikipedia articles for accessibility and reliability, supplemented by authoritative books and research papers.
+
+### How References Are Organized
+
+Each reference includes:
+
+- **Title** — The name of the source
+- **URL** — A clickable link to the source
+- **Relevance** — A brief description of why this source is useful and how it connects to the chapter content
+
+### A Note About Link Rot
+
+**Link rot** is when a web link (URL) stops working because the page has been moved, renamed, or deleted. This is a common problem with any resource that links to external websites. While we prioritize Wikipedia (which has very stable URLs), some links may become outdated over time.
+
+If you or your students encounter a broken link:
+
+1. Try searching for the article title on the source website
+2. Use the [Wayback Machine](https://web.archive.org/) to find archived versions of the page
+3. Report the broken link using GitHub Issues (see "Feedback" below)
+
 ## Feedback
 
 ### Reporting Issues and Suggestions
@@ -300,6 +397,59 @@ mkdocs gh-deploy
 ```
 
 This command builds the website and publishes it to `https://YOUR-USERNAME.github.io/unicorns/`. The process takes about 1-2 minutes.
+
+## Customizing Your Analytics
+
+### What is Web Analytics?
+
+**Web analytics** is the process of measuring how visitors use a website — which pages they visit, how long they stay, and where they come from. For an educational textbook, analytics can help you understand which chapters students read most, which MicroSims they interact with, and where they might be struggling.
+
+### Google Analytics
+
+This textbook includes **Google Analytics** — a free service from Google that tracks website visits. The author's analytics property is already configured, but if you create your own fork, you'll want to set up your own.
+
+#### Setting Up Your Own Google Analytics
+
+1. Go to [analytics.google.com](https://analytics.google.com/) and sign in with a Google account
+2. Create a new **property** (Google's term for a tracked website)
+3. Google will give you a **Measurement ID** — a code that looks like `G-XXXXXXXXXX`
+4. In your `mkdocs.yml`, update this section:
+
+```yaml
+extra:
+  analytics:
+    provider: google
+    property: G-YOUR-MEASUREMENT-ID
+```
+
+5. Rebuild and deploy your site. Analytics data will start appearing within 24-48 hours.
+
+#### What You Can Learn from Analytics
+
+- **Which chapters are most/least visited** — helps you identify where students might be skipping content
+- **Average time on page** — longer times may indicate engagement or confusion
+- **Device breakdown** — what percentage of students use phones vs. computers
+- **Geographic distribution** — where your students are accessing from
+- **Search terms** — what students search for on your site
+
+### xAPI Monitoring (Advanced)
+
+**xAPI** (Experience API, also called "Tin Can API") is an advanced standard for tracking detailed learning activities — not just page views, but specific interactions like "student moved a slider to position X" or "student answered quiz question 3 correctly."
+
+#### What is an LRS?
+
+An **LRS** (Learning Record Store) is a database that stores xAPI learning records. Think of it as a specialized analytics system designed specifically for education. If you use an LRS, you can track granular student learning data.
+
+#### Important: Regulatory Considerations
+
+Before collecting student-specific learning data, be aware of these regulations:
+
+- **FERPA** (Family Educational Rights and Privacy Act) — U.S. federal law that protects student education records. If you collect data that can identify individual students, you must comply with FERPA.
+- **COPPA** (Children's Online Privacy Protection Act) — U.S. federal law that applies to children under 13. If any of your students are under 13, additional restrictions apply.
+- **State laws** — Many U.S. states have additional student privacy laws.
+- **GDPR** (General Data Protection Regulation) — European Union law that applies if any of your students are in the EU.
+
+**Recommendation**: The Google Analytics setup described above is anonymous by default — it tracks aggregate page views, not individual students. This is the safest approach. If you want individual student tracking via xAPI, consult your school district's data privacy officer before proceeding.
 
 ## The Learning Graph
 
