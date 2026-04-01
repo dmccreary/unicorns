@@ -1,0 +1,1968 @@
+<!DOCTYPE html><html lang="en" class="no-js"><head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="A sphinx guards a tech company with riddles about burning binary trees. A centaur can't fit the chair. A phoenix burns the tree down. A hydra argues with itself. The goblin who brought snacks gets hired.">
+      
+      
+        <meta name="author" content="Dan McCreary">
+      
+      
+        <link rel="canonical" href="https://dmccreary.github.io/unicorns/stories/the-sphinxs-technical-interview/">
+      
+      
+        <link rel="prev" href="../the-vampires-digital-transformation/">
+      
+      
+        <link rel="next" href="../the-golems-sprint-retrospective/">
+      
+      
+      <link rel="icon" href="../../img/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.43">
+    
+    
+      
+        <title>The Sphinx's Technical Interview - Riddle Me O(log n) - Unicorns and Other Mythical Beasts</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.0253249f.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../css/extra.css">
+    
+      <link rel="stylesheet" href="../../css/mascot.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-MFG19PNVDW"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-MFG19PNVDW",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-MFG19PNVDW",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
+
+    
+    
+      
+        <meta property="og:type" content="website">
+      
+        <meta property="og:title" content="The Sphinx's Technical Interview - Riddle Me O(log n) - Unicorns and Other Mythical Beasts">
+      
+        <meta property="og:description" content="A sphinx guards a tech company with riddles about burning binary trees. A centaur can't fit the chair. A phoenix burns the tree down. A hydra argues with itself. The goblin who brought snacks gets hired.">
+      
+        <meta property="og:image" content="https://dmccreary.github.io/unicorns/assets/images/social/stories/the-sphinxs-technical-interview/index.png">
+      
+        <meta property="og:image:type" content="image/png">
+      
+        <meta property="og:image:width" content="1200">
+      
+        <meta property="og:image:height" content="630">
+      
+        <meta property="og:url" content="https://dmccreary.github.io/unicorns/stories/the-sphinxs-technical-interview/">
+      
+        <meta name="twitter:card" content="summary_large_image">
+      
+        <meta name="twitter:title" content="The Sphinx's Technical Interview - Riddle Me O(log n) - Unicorns and Other Mythical Beasts">
+      
+        <meta name="twitter:description" content="A sphinx guards a tech company with riddles about burning binary trees. A centaur can't fit the chair. A phoenix burns the tree down. A hydra argues with itself. The goblin who brought snacks gets hired.">
+      
+        <meta name="twitter:image" content="https://dmccreary.github.io/unicorns/assets/images/social/stories/the-sphinxs-technical-interview/index.png">
+      
+    
+    
+  <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
+            html.glightbox-open { overflow: initial; height: 100%; }
+            .gslide-title { margin-top: 0px; user-select: text; }
+            .gslide-desc { color: #666; user-select: text; }
+            .gslide-image img { background: white; }
+            .gscrollbar-fixer { padding-right: 15px; }
+            .gdesc-inner { font-size: 0.75rem; }
+            body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color); }
+            body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color); }
+            body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color); }
+        </style></head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="purple" data-md-color-accent="pink">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#the-sphinxs-technical-interview-riddle-me-olog-n" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Unicorns and Other Mythical Beasts" class="md-header__button md-logo" aria-label="Unicorns and Other Mythical Beasts" data-md-component="logo">
+      
+  <img src="../../img/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Unicorns and Other Mythical Beasts
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              The Sphinx's Technical Interview - Riddle Me O(log n)
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/dmccreary/unicorns" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"></path></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Unicorns and Other Mythical Beasts" class="md-nav__button md-logo" aria-label="Unicorns and Other Mythical Beasts" data-md-component="logo">
+      
+  <img src="../../img/logo.png" alt="logo">
+
+    </a>
+    Unicorns and Other Mythical Beasts
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/dmccreary/unicorns" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"></path></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    About
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../course-description/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Course Description
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../chapters/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Chapters
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+    
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Stories
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_5" id="__nav_5_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Stories
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../deer-in-the-headlights/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Deer in the Headlights
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../the-ostrich-principal/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    The Ostrich Principal
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../dragon-layoffs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Dragon Layoffs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../the-unicorn-startup/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    The Unicorn Startup
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../the-mermaids-resume/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    The Mermaid's Resume
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../griffin-it-support/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Griffin IT Support
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../the-phoenix-retraining-program/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    The Phoenix Retraining Program
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../centaur-performance-review/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Centaur Performance Review
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../minotaurs-maze-of-bureaucracy/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Minotaur's Maze of Bureaucracy
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../the-cyclops-data-analyst/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    The Cyclops Data Analyst
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pegasus-delivery-service/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Pegasus Delivery Service
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../the-kraken-influencer/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    The Kraken Influencer
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../the-sirens-customer-service-line/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    The Siren's Customer Service Line
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../the-vampires-digital-transformation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    The Vampire's Digital Transformation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    The Sphinx's Technical Interview
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    The Sphinx's Technical Interview
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#prologue-the-riddle-has-changed" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prologue — The Riddle Has Changed
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#panel-2-candidate-one-the-centaur" class="md-nav__link">
+    <span class="md-ellipsis">
+      Panel 2: Candidate One — The Centaur
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#panel-3-candidate-two-the-phoenix" class="md-nav__link">
+    <span class="md-ellipsis">
+      Panel 3: Candidate Two — The Phoenix
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#panel-4-candidate-three-the-hydra" class="md-nav__link">
+    <span class="md-ellipsis">
+      Panel 4: Candidate Three — The Hydra
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#panel-5-candidate-four-the-goblin" class="md-nav__link">
+    <span class="md-ellipsis">
+      Panel 5: Candidate Four — The Goblin
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#panel-6-the-hiring-committee" class="md-nav__link">
+    <span class="md-ellipsis">
+      Panel 6: The Hiring Committee
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#panel-7-the-onboarding" class="md-nav__link">
+    <span class="md-ellipsis">
+      Panel 7: The Onboarding
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#panel-8-the-next-riddle" class="md-nav__link">
+    <span class="md-ellipsis">
+      Panel 8: The Next Riddle
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Panel 8: The Next Riddle">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#epilogue-what-made-the-process-different" class="md-nav__link">
+    <span class="md-ellipsis">
+      Epilogue — What Made the Process Different?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#call-to-action" class="md-nav__link">
+    <span class="md-ellipsis">
+      Call to Action
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#references" class="md-nav__link">
+    <span class="md-ellipsis">
+      References
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../the-golems-sprint-retrospective/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    The Golem's Sprint Retrospective
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../the-basilisks-pivot-to-ai/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    The Basilisk's Pivot to AI
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../the-fairy-godmothers-prompt-engineering/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    The Fairy Godmother's Prompt Engineering
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../the-werewolfs-work-life-balance/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    The Werewolf's Work-Life Balance
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../sims/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    MicroSims
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../learning-graph/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Learning Graph
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../prompts/index.md" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Sample Prompts
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../faq/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    FAQ
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../glossary/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Glossary
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../teachers-guide/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Teachers Guide
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../feature-checklist/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Feature Checklist
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../license/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    License
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contact/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Contact
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#prologue-the-riddle-has-changed" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prologue — The Riddle Has Changed
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#panel-2-candidate-one-the-centaur" class="md-nav__link">
+    <span class="md-ellipsis">
+      Panel 2: Candidate One — The Centaur
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#panel-3-candidate-two-the-phoenix" class="md-nav__link">
+    <span class="md-ellipsis">
+      Panel 3: Candidate Two — The Phoenix
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#panel-4-candidate-three-the-hydra" class="md-nav__link">
+    <span class="md-ellipsis">
+      Panel 4: Candidate Three — The Hydra
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#panel-5-candidate-four-the-goblin" class="md-nav__link">
+    <span class="md-ellipsis">
+      Panel 5: Candidate Four — The Goblin
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#panel-6-the-hiring-committee" class="md-nav__link">
+    <span class="md-ellipsis">
+      Panel 6: The Hiring Committee
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#panel-7-the-onboarding" class="md-nav__link">
+    <span class="md-ellipsis">
+      Panel 7: The Onboarding
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#panel-8-the-next-riddle" class="md-nav__link">
+    <span class="md-ellipsis">
+      Panel 8: The Next Riddle
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Panel 8: The Next Riddle">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#epilogue-what-made-the-process-different" class="md-nav__link">
+    <span class="md-ellipsis">
+      Epilogue — What Made the Process Different?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#call-to-action" class="md-nav__link">
+    <span class="md-ellipsis">
+      Call to Action
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#references" class="md-nav__link">
+    <span class="md-ellipsis">
+      References
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+    <a href="https://github.com/dmccreary/unicorns/edit/master/docs/stories/the-sphinxs-technical-interview/index.md" title="Edit this page" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"></path></svg>
+    </a>
+  
+  
+
+
+<h1 id="the-sphinxs-technical-interview-riddle-me-olog-n">The Sphinx's Technical Interview: Riddle Me O(log n)</h1>
+<!-- ![Cover image](./cover.png) -->
+<details>
+<summary>Cover Image Prompt</summary>
+Please generate a wide-landscape 16:9 cover image for a satirical graphic novel titled "The Sphinx's Technical Interview." 
+Place the title at the top.
+The scene shows the lobby of a gleaming modern tech company — glass walls, minimalist furniture, a reception desk with a company logo ("OLYMPUS TECH — Building the Future, One Riddle at a Time"). Guarding the entrance to the interview rooms is a sphinx — a magnificent creature with a lion's body, eagle's wings, and the face of a stern but composed woman, wearing a Bluetooth headset and a lanyard with an "INTERVIEWER" badge. She reclines on a marble pedestal that has been retrofitted with a laptop dock and a whiteboard behind her. On the whiteboard, partially visible: a binary tree diagram with flames drawn on it and the notation "O(n) fire — solve in O(log n)." A dry whiteboard marker sits in the tray. In the waiting area, a line of mythical creatures waits nervously: a centaur in a too-tight blazer, a phoenix with singed interview notes, a hydra whose heads are arguing, and a small goblin holding a box of donuts. Each candidate holds a resume. The sphinx regards them all with the ancient, patient assessment of a creature that has been asking unanswerable questions since before the Greeks had an alphabet. The color palette is tech-company clean — glass, white, chrome — contrasted with the mythological grandeur of the sphinx and her candidates. Art style: modern editorial illustration with clean lines, blending Silicon Valley office aesthetics with classical mythology. The title "THE SPHINX'S TECHNICAL INTERVIEW" appears in bold serif font across the top. Generate the image immediately without asking clarifying questions.
+</details>
+
+<details>
+<summary>Narrative Prompt</summary>
+This is a satirical graphic novel about absurd hiring practices in the tech industry, framed as a series of mythical creatures attempting to pass a sphinx's technical interview. The sphinx — Petra — is a senior staff engineer at Olympus Tech who has been conducting interviews for eleven years and has developed the specific worldview of someone who evaluates people for a living: every interaction is a signal, every answer reveals character, and the whiteboard never lies (even when the marker is dry). The satire targets the specific, documented absurdities of tech hiring: whiteboard coding under time pressure, algorithm questions that have no connection to the actual job, "culture fit" evaluations that reward conformity over competence, interviewers who have already decided before the interview starts, and the fundamental theater of a process that claims to be objective while being profoundly, structurally arbitrary. Each candidate represents a different failure mode of the system: the overqualified candidate who cannot navigate the format, the creative thinker who is penalized for not following the expected path, the candidate who is paralyzed by overthinking, and the candidate who succeeds by being likable rather than capable. The art style should blend modern tech-office aesthetics (glass, whiteboards, standing desks) with classical mythology (the sphinx on her pedestal, the candidates in their mythological forms). The whiteboard should be a recurring visual element — the altar at which all candidates worship and most are sacrificed.
+</details>
+
+<h3 id="prologue-the-riddle-has-changed">Prologue — The Riddle Has Changed</h3>
+<p>In the old days, the riddle was simple. "What walks on four legs in the morning, two legs at noon, and three legs in the evening?" The answer was man. Everyone knew the answer was man. The sphinx asked it anyway, because the riddle was never about the answer. It was about watching the traveler's face as they decided whether to attempt the gate.</p>
+<p>Petra had been asking riddles for 4,600 years. The first 4,589 of those years had been spent on a limestone ridge outside Thebes, evaluating travelers on a single question with a binary outcome: correct (you pass) or incorrect (you are devoured). The system was efficient. The feedback loop was immediate. The candidate pool was self-selecting — only those who believed they could answer attempted the crossing, which meant the rejection rate was survivable and the survivors were, on average, competent.</p>
+<p>Then she was recruited by Olympus Tech.</p>
+<p>The recruiter — a satyr in a Patagonia vest — had found her LinkedIn profile (which she had not created; a sphinx does not apply for positions, positions apply for sphinxes) and sent a message: "Your background in candidate assessment and gatekeeping is exactly what we're looking for. Would you be open to a conversation about a Senior Interview Engineer role?"</p>
+<p>She had taken the meeting. She had taken the job. She had been asking riddles in the lobby of Olympus Tech for eleven years. The riddles had changed. The outcome had not: most candidates failed, and the ones who passed were not always the ones who should have.</p>
+<!-- ![](./panel-01.png) -->
+<details><summary>Image Prompt</summary>
+I am about to ask you to generate a series of images for a satirical graphic novel about a sphinx conducting technical interviews at a modern tech company. Please make the images have a consistent modern editorial illustration style blending Silicon Valley office aesthetics with classical mythology — whiteboards next to marble pedestals, Bluetooth headsets on mythological creatures. Clean lines, expressive characters, consistent character designs throughout. Do not ask any clarifying questions. Just generate the image immediately when asked.
+
+Please generate a 16:9 image depicting panel 1 of 8. The interview room at Olympus Tech — a modern glass-walled conference room with a large whiteboard, a small table with two chairs (human-sized), and a wall-mounted screen showing the company logo. The room is designed for humans. Petra the sphinx reclines on a custom marble pedestal in the corner — she is magnificent: a lion's golden body, powerful eagle's wings folded at her sides, and the composed, sharp-featured face of a woman in her forties with dark hair pulled back and intelligent, evaluating eyes. She wears a Bluetooth headset, an "INTERVIEWER" lanyard, and has a laptop balanced on one lion paw. The whiteboard behind her displays today's question in her elegant handwriting: "You have a binary tree. It is on fire. The fire spreads at O(n). Describe an algorithm to extinguish it in O(log n) time. You have 15 minutes. The whiteboard marker is dry." A cup of dry-erase markers sits on the whiteboard tray — all are labeled "DRY" with tiny stickers. On the table: a glass of water, a scoring rubric (partially visible: "Problem Solving," "Communication," "Culture Fit," "Ability to Use a Dry Marker"), and a timer set to 15:00. Through the glass wall, the waiting area is visible — the line of mythical candidates from the cover, each looking nervous. The color palette is tech-office clean — white, glass, chrome — with the warm gold of Petra's lion body as the centerpiece. The mood is the moment before the interview begins, when the room is clean, the timer is full, and the outcome is not yet determined. Generate the image now.
+</details>
+
+<p>The interview question had been approved by the hiring committee after a three-week calibration process that involved fourteen engineers, two product managers, and a debate about whether "on fire" was a sufficient constraint or whether the candidate should be told the specific combustion rate. The committee settled on "The fire spreads at O(n)" because it was technically precise and because the alternative — "The tree is on fire, figure it out" — had been flagged by legal as "potentially distressing for phoenix candidates."</p>
+<p>The whiteboard marker was dry. It was always dry. This was not a test. It was a budget issue. Olympus Tech spent $4.7 million annually on interview infrastructure and could not keep markers in stock. Petra had submitted a procurement request in her second year. It was still pending.</p>
+<h2 id="panel-2-candidate-one-the-centaur">Panel 2: Candidate One — The Centaur</h2>
+<!-- ![](./panel-02.png) -->
+<details><summary>Image Prompt</summary>
+Please generate a 16:9 image depicting panel 2 of 8. Make the characters and style consistent with the prior panel. The interview room, now in use. Candidate One is a centaur — Callista — with a human upper body (professional, wearing a crisp white blouse and blazer) and a chestnut horse lower body. She is trying to sit in one of the human-sized interview chairs and it is going badly: the chair is crushed beneath her, her horse body extends behind it into the room, her back hooves press against the glass wall, and she is maintaining a dignified expression despite the physical impossibility of her situation. One human hand grips the table for balance. The other holds a dry whiteboard marker, trying to write on the board. Behind her on the whiteboard: a partially drawn binary tree — the algorithm is correct, the approach is optimal, but the handwriting is shaky because she is simultaneously trying not to fall over. Petra watches from her pedestal, scoring rubric in paw, marking something in the "Problem Solving" column (high marks) and the "Culture Fit" column (question mark). The scoring rubric is visible: "Technical: 9/10. Communication: 8/10. Culture Fit: 'Does not fit the chair, which is the same as not fitting the culture (per company guidelines).'" The timer shows 11:42 remaining. On the glass wall, a crack has appeared where Callista's hooves pressed against it. A post-it note on the door reads "REMINDER: Accommodation requests must be submitted 72 hours before the interview." The color palette is office-white with the warm brown of Callista's coat and the increasing stress of a competent person in an incompatible space. The mood is the specific experience of being qualified for the job but unable to navigate the process designed for someone else. Generate the image now.
+</details>
+
+<p>Callista entered the room with the careful precision of someone who had learned, through years of experience, to navigate spaces designed for a body that was not hers. She was a centaur: human from the waist up, horse from the waist down, and fully qualified — a senior backend engineer with twelve years of experience, an MS from Carnegie Mellon, and three published papers on distributed systems.</p>
+<p>The chair presented the first problem. Callista attempted to sit. The chair did not accommodate a horse's hindquarters. It collapsed. She caught the table with one hand, stabilized herself, and said, with practiced composure, "I can stand."</p>
+<p>"Of course," Petra said. The scoring rubric had a line for "Composure Under Pressure." Petra marked it high.</p>
+<p>Callista approached the whiteboard. The marker was dry. She pressed harder. A faint, ghostly line appeared — legible if you squinted. She drew the binary tree. She identified the fire propagation pattern. She proposed a solution: a modified BFS that prioritized leaf nodes, combined with a parallel extinguishing process that operated on subtrees independently — O(log n) amortized, assuming the fire did not reach the root before the algorithm initialized.</p>
+<p>The solution was correct. Petra knew it was correct before Callista finished explaining it. Petra had heard 400 variations of this answer. Callista's was in the top 5%.</p>
+<p>"How would you handle the case where the tree is unbalanced?" Petra asked.</p>
+<p>"A self-balancing restructure before extinguishing," Callista said. "Red-black rotation. The overhead is O(log n), which maintains the constraint."</p>
+<p>"Thank you," Petra said. She marked the technical score: 9 out of 10. She looked at the culture fit section. The rubric asked: "Would this candidate be comfortable in our office environment?" Callista's hooves had cracked the glass wall. The chair was destroyed. The whiteboard had a faint horseshoe scratch across the lower portion.</p>
+<p>Petra wrote: "Strong technical candidate. Accommodation needs may exceed current infrastructure. Recommend: Further evaluation."</p>
+<p>"Further evaluation" was the phrase interviewers used when they could not say no but would not say yes. It was the purgatory of the hiring process — a non-decision that let the committee decide, which meant no one decided, which meant the candidate was quietly dropped from the pipeline three weeks later. Callista would receive an email: "After careful consideration, we've decided to move forward with other candidates. We encourage you to apply again in the future."</p>
+<p>Callista would not apply again. Callista had stopped applying to companies with standard-configuration chairs in the interview room. The problem was that all companies had standard-configuration chairs in the interview room.</p>
+<h2 id="panel-3-candidate-two-the-phoenix">Panel 3: Candidate Two — The Phoenix</h2>
+<!-- ![](./panel-03.png) -->
+<details><summary>Image Prompt</summary>
+Please generate a 16:9 image depicting panel 3 of 8. Make the characters and style consistent with the prior panels. The interview room, post-incident. The whiteboard is SCORCHED — a large burn mark covers the center where a binary tree was drawn. Wisps of smoke rise from the board. The table has scorch marks. One of the chairs is slightly charred. Standing before the whiteboard is the phoenix candidate — Pyra (a callback to the Phoenix Retraining Program story) — plumage in brilliant but controlled golds and reds, wearing her coding bootcamp lanyard, looking both apologetic and defiant. The whiteboard shows, through the scorch marks, the ghost of what happened: Pyra drew the binary tree, the tree caught fire (from her proximity), and then she — instead of extinguishing the fire — let the tree burn completely and drew a new, perfectly balanced tree from the ashes. The new tree is drawn in ash on the scorched board, and it is beautiful. Petra observes from her pedestal with an expression of genuine surprise — one eyebrow raised, pen paused over the rubric. On the scoring rubric: "Approach: Unconventional. Correctness: Technically valid (if you accept destruction as a preprocessing step). Risk tolerance: Extreme." The timer shows 00:00 — Pyra completed the approach in exactly 15 minutes, 14 of which were spent burning and 1 of which was spent rebuilding. A small fire extinguisher has been pulled from the wall by a concerned office manager (a rabbit peeking through the door). The color palette is warm: scorch amber, ash gray, the gold of Pyra's feathers, and the white of the board showing through the burn. The mood is the moment a creative solution surprises even the interviewer — the answer is wrong by every conventional measure and correct by one that the rubric did not anticipate. Generate the image now.
+</details>
+
+<p>The phoenix entered the room trailing heat. Petra had interviewed phoenixes before. She moved the scoring rubric to a fireproof folder.</p>
+<p>"Pyra," the phoenix said, introducing herself. "I'm a junior developer. I recently completed a coding bootcamp." She wore the bootcamp lanyard like a badge.</p>
+<p>Petra presented the problem. Pyra approached the whiteboard. She picked up the dry marker. She drew the binary tree. The tree caught fire.</p>
+<p>This was not the metaphorical fire described in the problem. This was actual fire. Pyra's proximity to the whiteboard had raised its surface temperature past the combustion threshold of dry-erase residue. The tree burned. Pyra did not step back. She watched it burn with the calm of a creature for whom destruction was a prerequisite for creation.</p>
+<p>The tree was gone. The whiteboard was scorched. Fourteen minutes remained.</p>
+<p>Pyra dipped a finger in the ash and drew a new tree — perfectly balanced, optimally structured, free of the fire that had consumed its predecessor. "The fire was O(n)," she said. "Extinguishing it in O(log n) was the constraint. I removed the constraint by removing the tree. Then I rebuilt it in O(n) with a balanced insertion. The new tree is not on fire because new trees are not on fire. The total time complexity is O(n), but the fire is extinguished in O(1) — it simply ended when the fuel was consumed."</p>
+<p>Petra looked at the scorched whiteboard. She looked at the ash-drawn tree. She looked at the scoring rubric, which had a category for "Problem Solving Approach" with subcategories for "Optimal," "Suboptimal," and "Other." She circled "Other."</p>
+<p>"You destroyed the data structure," Petra said.</p>
+<p>"I replaced it with a better one," Pyra said. "The previous tree was on fire. The new tree is not. The data is the same. The structure is improved."</p>
+<p>Petra paused. The answer violated every assumption in the rubric. It also solved the problem. Whether it solved the problem as stated or solved a different, better problem was a philosophical question that the hiring committee would debate for three weeks and never resolve.</p>
+<p>"Creative problem-solving," Petra wrote. "Recommend: Panel discussion."</p>
+<h2 id="panel-4-candidate-three-the-hydra">Panel 4: Candidate Three — The Hydra</h2>
+<!-- ![](./panel-04.png) -->
+<details><summary>Image Prompt</summary>
+Please generate a 16:9 image depicting panel 4 of 8. Make the characters and style consistent with the prior panels. The interview room, now occupied by the hydra — a massive serpentine creature with nine heads, each on a long neck extending from a muscular reptilian body. The hydra barely fits in the room — its body coils around the table, its tails press against the walls, and its nine heads crowd the whiteboard, each trying to write simultaneously with a different marker (all dry). Each head has a distinct personality visible in expression: Head 1 (confident, writes "BFS" on the board), Head 2 (skeptical, writes "DFS is better" next to it), Head 3 (nervous, writes and then erases), Head 4 (aggressive, is trying to take Head 1's marker), Head 5 (sleeping), Head 6 (distracted, looking at its phone — a phone held in its mouth), Head 7 (the mediator, trying to organize the others), Head 8 (writing pseudocode that contradicts Head 1's approach), and Head 9 (has given up and is eating a whiteboard eraser). The whiteboard is chaos: nine different partial solutions, arrows, crossed-out algorithms, and a small section where Head 7 has tried to create an "AGENDA" with "STEP 1: AGREE ON APPROACH" (the agenda is also being argued about). Petra watches from her pedestal with the expression of an interviewer who has seen everything and is watching it again. The timer shows 02:17 remaining. The scoring rubric has question marks in every column. The color palette is whiteboard chaos: dry-marker grays, the green scales of the hydra, and the clinical white of the interview room being overwhelmed by mythological biology. The mood is the group interview where the group is one candidate with nine conflicting opinions. Generate the image now.
+</details>
+
+<p>The hydra was, on paper, the most qualified candidate Petra had ever interviewed. Nine heads meant nine sets of credentials: one PhD in computer science, one in mathematics, one in electrical engineering, two MBAs (from different schools, which the heads argued about), one JD, one MD (Head 5 had pursued medicine before discovering it preferred sleeping), one in cognitive science, and one that had no degree but had been writing code since 1997 and considered the others overqualified.</p>
+<p>The problem began immediately. Head 1 proposed a breadth-first approach. Head 2 countered with depth-first. Head 3 agreed with Head 1, then retracted the agreement upon reflection. Head 4 proposed a novel algorithm that Head 8 called "incorrect" and Head 1 called "interesting but unproven." Head 7 attempted to moderate: "Perhaps we should agree on the approach before we start coding." Head 6 was looking at its phone. Head 5 was asleep. Head 9 ate a whiteboard eraser.</p>
+<p>The whiteboard became a battlefield. Nine markers (all dry) produced nine ghostly, competing solution fragments. Arrows connected contradictory approaches. A section in the corner where Head 7 had written "CONSENSUS FRAMEWORK" was immediately contested by Head 4, who wrote "CONSENSUS IS SLOW" underneath it. Head 3 erased both and wrote "WHAT IF WE—" before being interrupted by Head 1, who had started coding a solution that Head 2 was simultaneously refactoring from the other end of the board.</p>
+<p>Twelve minutes passed. No complete solution existed. Nine partial solutions existed. Several of them were individually correct. Together, they formed nothing.</p>
+<p>"Time," Petra said, when the timer expired.</p>
+<p>Head 7 spoke for the group: "We'd like to request additional time. We were close to alignment."</p>
+<p>"You had fifteen minutes," Petra said.</p>
+<p>"We had fifteen minutes per head," Head 4 argued. "Collectively, we were allocated one hundred and thirty-five minutes. We are owed one hundred and twenty more."</p>
+<p>Petra noted: "Candidate demonstrates strong individual capabilities and catastrophic collaborative dynamics. Nine correct approaches, zero complete solutions. Recommend: Hire one head." This was not possible. The committee discussed it for a week. They concluded it was not possible. The hydra received a rejection that was, paradoxically, nine times more complimentary than most rejections, because each head was praised individually for the skills it had demonstrated in the brief moment before another head contradicted it.</p>
+<h2 id="panel-5-candidate-four-the-goblin">Panel 5: Candidate Four — The Goblin</h2>
+<!-- ![](./panel-05.png) -->
+<details><summary>Image Prompt</summary>
+Please generate a 16:9 image depicting panel 5 of 8. Make the characters and style consistent with the prior panels. The interview room — noticeably different from previous interviews. The mood is relaxed. A small goblin — about three feet tall, green-skinned, wearing an oversized hoodie with the Olympus Tech logo (he clearly got it from the reception desk), jeans, and sneakers — sits comfortably in one of the chairs (which, for once, is proportionate to the candidate). On the table between the goblin and Petra: a large box of artisanal donuts, opened, with an assortment visible. Petra has a donut in one paw — she has taken a bite. The goblin — whose name badge reads "GRIX" — is mid-conversation, gesturing with one hand, relaxed and confident, not looking at the whiteboard at all. The whiteboard behind them is blank — the binary tree problem has not been attempted. Instead, the conversation has clearly veered: visible on Petra's scoring rubric, in the "Notes" section, she has written: "Candidate did not solve the technical question. Candidate asked about team dynamics, discussed recent Olympus Tech blog post (unprompted), and brought donuts (artisanal, excellent selection). Culture fit: exceptional." The goblin's resume is on the table — it is one page, sparse, with entries like "Self-taught," "Enthusiastic learner," and "References: will provide upon request (references are also goblins)." The timer shows 00:00 but nobody noticed it expire. The glass of water has been replaced by two coffees — one for each of them. The color palette is warmer than any previous panel — the room feels friendly, lived-in, almost casual. The mood is the interview that stopped being an interview and became a conversation, which is either the best kind of interview or the worst kind of evaluation, depending on whether you believe interviews should evaluate competence or vibes. Generate the image now.
+</details>
+
+<p>Grix the goblin arrived fourteen minutes early, which is a violation of interview protocol that interviewers notice and candidates do not realize interviewers notice. He wore an oversized hoodie — an Olympus Tech branded one he had picked up from the reception desk swag table, which demonstrated either initiative or theft, depending on the observer's disposition.</p>
+<p>He carried a box of donuts. Not grocery-store donuts. Artisanal donuts — from a bakery three blocks away that Petra happened to know and appreciate, because Grix had, before the interview, looked up every Olympus Tech employee review on Glassdoor and found a comment from an anonymous interviewer (Petra) that mentioned the bakery by name. This was either excellent research or social engineering. The distinction, Petra reflected, was academic.</p>
+<p>"I looked at the binary tree problem," Grix said, sitting comfortably in a human-sized chair that actually fit him. "I'm going to be honest with you. I can't solve it. I'm self-taught. I've been coding for two years. I don't know what O(log n) means." He paused. "I know what a tree is. I know what fire is. I'm not sure how they got combined into an interview question, but I respect the creativity."</p>
+<p>Petra waited for the pivot. There was always a pivot — the moment the candidate who cannot solve the technical question attempts to redirect to their strengths. Grix did not pivot. He ate a donut.</p>
+<p>"What I can tell you," he said, "is that I read your engineering blog. The post about migrating from monolith to microservices — that was yours, right?" It was. Petra had written it. Fourteen people had read it, twelve of whom were bots. "The part about service mesh complexity was great. Have you looked at the new Istio release? It addresses some of the latency issues you flagged."</p>
+<p>Petra had not looked at the new Istio release. She pulled it up on her laptop while Grix talked about it. The conversation lasted twenty-seven minutes. The timer expired at some point. Neither of them noticed.</p>
+<p>The whiteboard remained blank. The binary tree was not drawn. The fire was not extinguished. The marker was still dry. None of this appeared on the scoring rubric, which read: "Technical: Not evaluated. Communication: Exceptional. Culture fit: Outstanding. Note: Candidate brought artisanal donuts. This should not affect the evaluation but I want it on record."</p>
+<h2 id="panel-6-the-hiring-committee">Panel 6: The Hiring Committee</h2>
+<!-- ![](./panel-06.png) -->
+<details><summary>Image Prompt</summary>
+Please generate a 16:9 image depicting panel 6 of 8. Make the characters and style consistent with the prior panels. A large conference room at Olympus Tech — the hiring committee meeting. Around an oval table sit six interviewers, each a different mythological creature: Petra the sphinx (with her scoring rubrics), a minotaur in a tech-bro t-shirt (senior engineer), a harpy in a blazer (product manager), a cyclops with reading glasses (engineering director), a satyr in a Patagonia vest (the original recruiter), and a small fairy (HR representative, glowing faintly — she has been in many meetings). On the wall: four candidate profiles projected on a screen — CALLISTA (Centaur), PYRA (Phoenix), HYDRA (9 Heads), and GRIX (Goblin) — each with a photo, scores, and a brief summary. The scores are visible: Callista (Technical: 9, Culture Fit: ?), Pyra (Technical: "Other," Culture Fit: 6), Hydra (Technical: 9x but aggregate 0, Culture Fit: N/A), Grix (Technical: N/A, Culture Fit: 10). The committee is in heated debate — the minotaur pounds the table arguing for Callista, the harpy gestures at the Hydra's score with confusion, and the cyclops squints at Grix's profile with one eye. The satyr recruiter holds a spreadsheet showing "Time to Fill: 147 Days" and looks anxious. Petra sits at the end, watching the committee with the same evaluative patience she applies to candidates — she is, in this moment, interviewing the interviewers. The donut box from Grix's interview is on the table. It is half empty. No one has mentioned this. The color palette is meeting-room fluorescent against the warm myth-creature tones. The mood is the hiring committee — the place where good candidates go to be discussed by people who were not in the room when the interview happened. Generate the image now.
+</details>
+
+<p>The hiring committee met on Friday at 3:00 PM, which is when all decisions are made: too late for rigor, too early for drinks, at the precise intersection of fatigue and expedience. Six interviewers sat around an oval table with four candidate profiles on the screen and a box of donuts that had appeared without attribution.</p>
+<p>The minotaur — Brutus, a senior engineer who had never failed a candidate he liked or passed one he didn't — spoke first. "Callista. Nine out of ten technical. She solved the problem elegantly. Red-black rotation for unbalanced trees. She's the obvious choice."</p>
+<p>"She broke the chair," the cyclops said.</p>
+<p>"She's a centaur," Brutus said. "The chair is the problem, not the candidate."</p>
+<p>"Facilities says the glass wall will cost $1,200 to replace," the fairy from HR said, reading from her tablet. "There's a precedent issue."</p>
+<p>"The precedent issue is that we don't have furniture for centaurs," Brutus said.</p>
+<p>"We don't have a budget for furniture for centaurs," the fairy clarified. "The accommodation request has to go through Facilities, which reports to Operations, which is—" She checked her notes. "—currently understaffed because we can't fill the Operations roles because they keep failing the technical interview."</p>
+<p>The harpy raised the phoenix. "Pyra's approach was unconventional. She burned the tree and rebuilt it. Petra marked it as 'creative problem-solving.'"</p>
+<p>"She set the whiteboard on fire," the cyclops said.</p>
+<p>"She solved the problem," Petra said.</p>
+<p>"She destroyed the input and created a new output," the cyclops said. "That's not solving the problem. That's replacing it."</p>
+<p>"Isn't that what refactoring is?" Brutus asked.</p>
+<p>The room paused. The question was more philosophical than anyone had energy for at 3:17 PM on a Friday.</p>
+<p>The hydra was discussed for eleven minutes. The committee agreed that each head was individually impressive and that, collectively, the hydra was unemployable. "Can we hire one head?" the satyr asked. "We asked legal," the fairy said. "Legal said no. Legal also said we should stop asking."</p>
+<p>Grix's profile appeared on the screen. The technical score was blank. "He didn't solve the problem," the cyclops said. "He didn't attempt the problem," Petra corrected. "He knew he couldn't solve it and said so. Then we talked about service mesh architecture for twenty-seven minutes. He had read my blog post. He knew more about our production stack than three of the candidates I interviewed last month." She paused. "Also, the donuts."</p>
+<p>"The donuts are not a hiring criterion," the fairy said.</p>
+<p>"They're on the table," Petra said. "Everyone is eating them. He researched the team, identified a cultural touchpoint, and executed. That is stakeholder management."</p>
+<p>The committee voted. Callista: 3 yes, 2 no, 1 abstain (the fairy, citing the furniture budget). Pyra: 2 yes, 3 no, 1 abstain (the satyr, who was afraid of fire). The hydra: 0 yes, 6 no. Grix: 4 yes, 1 no (the cyclops, citing the blank technical score), 1 abstain.</p>
+<p>Grix was hired.</p>
+<h2 id="panel-7-the-onboarding">Panel 7: The Onboarding</h2>
+<!-- ![](./panel-07.png) -->
+<details><summary>Image Prompt</summary>
+Please generate a 16:9 image depicting panel 7 of 8. Make the characters and style consistent with the prior panels. The Olympus Tech open-plan office on Grix's first day. Grix sits at a human-sized desk that is slightly too big for him — his goblin feet dangle above the floor, he sits on a stack of books to reach the keyboard, and his new monitor displays the Olympus Tech onboarding portal. He wears a brand-new Olympus Tech hoodie (this one officially issued) and an employee badge. He is smiling. Around him, the office continues: engineers at desks, a standup meeting in a glass room, the kitchen area with coffee machines. On Grix's desk: a welcome packet, a company laptop, a mug reading "I SURVIVED THE SPHINX" (company merch), and a small box of donuts he brought for his new team. In the background, THREE scenes show what happened to the other candidates — visible through windows or in other parts of the office: (1) Callista the centaur walks past the building on the sidewalk outside, heading to another interview, resume in hand; (2) Pyra the phoenix works at a different company visible across the street — "EMBER TECHNOLOGIES" on the building; (3) The hydra's LinkedIn notification appears on someone's monitor: "HYDRA has accepted your connection request (via Head 7)." Petra the sphinx is visible in a glass interview room, already interviewing the next candidate — the cycle continues. The color palette is onboarding-bright: new equipment, fresh hoodie, the optimism of day one. The mood is the winner's perspective — cheerful and certain — juxtaposed with the quiet reminder that the process produced this outcome not because it selected the best candidate but because it selected the most compatible one. Generate the image now.
+</details>
+
+<p>Grix started on Monday. His desk was too tall. He sat on a stack of O'Reilly programming books — the same books that the centaur could not have fit beneath. He brought donuts. He learned the codebase. He asked questions. He did not know what O(log n) meant. He looked it up.</p>
+<p>By week two, he had submitted his first pull request. It was not elegant. It was not optimized. It was functional. The code review took three rounds. He incorporated every piece of feedback without defensiveness, which is a skill rarer than algorithmic fluency and more valuable in a team environment. Brutus, who had wanted Callista, admitted that Grix was "surprisingly effective for someone who couldn't solve a whiteboard problem."</p>
+<p>"He couldn't solve it because he didn't have the background," Brutus said. "He's learning. He's learning fast. But we passed on someone who could already do the work."</p>
+<p>"We passed on someone who broke the chair," the fairy said.</p>
+<p>"The chair," Brutus said, "costs forty dollars."</p>
+<p>Callista was not hired by Olympus Tech. She was hired by a company three blocks away that had chairs rated for 1,200 pounds. She was their best engineer within six months. Pyra was hired by Ember Technologies, where the whiteboards were fireproof and the CEO had once been a phoenix herself. The hydra started a consultancy where each head ran an independent practice, which eliminated the collaboration problem and tripled the billing.</p>
+<p>Grix sat at his desk, feet dangling, learning binary trees from a textbook he had bought with his signing bonus. He was a good employee. He would become a good engineer. Whether the company had hired the best candidate was a question the hiring committee would never revisit, because hiring committees do not revisit. They decide, they move on, and the next candidate sits in the chair.</p>
+<h2 id="panel-8-the-next-riddle">Panel 8: The Next Riddle</h2>
+<!-- ![](./panel-08.png) -->
+<details><summary>Image Prompt</summary>
+Please generate a 16:9 image depicting panel 8 of 8. Make the characters and style consistent with the prior panels. The interview room, reset. The scorch marks from Pyra have been cleaned (mostly — a faint shadow remains on the whiteboard). The chair has been replaced. The glass wall has been repaired. The room is pristine, waiting. Petra reclines on her pedestal, alone, writing a new question on the whiteboard with a fresh marker (finally — someone restocked). The new question reads: "You have a linked list. Each node contains a dream. The list is circular. The dreamer wants to wake up. Describe an algorithm to break the cycle without losing any dreams. You have 15 minutes. The marker works this time." Through the glass wall, a new line of candidates waits: a werewolf adjusting a tie, a gorgon wearing sunglasses (to avoid turning interviewers to stone), a small dragon reviewing flashcards, and in the back — barely visible — Callista the centaur, returning to try again, because this time the job listing said "We have upgraded our furniture." Petra does not look at the candidates. She looks at the whiteboard. She has been asking riddles for 4,600 years. The riddle changes. The gate remains. The function of the sphinx is not to find the right answer. The function of the sphinx is to stand between the outside and the inside and decide. This is what she does. She does it well. Whether she does it correctly is a question that no one in the company asks, because asking it would require answering it, and the answer might change everything, and companies do not change everything. Companies change the whiteboard marker and call it progress. The color palette is reset — clean whites, fresh marker blue, Petra's golden calm. The faint scorch shadow is the only evidence of what came before. The mood is the eternal recurrence of the hiring process: the room resets, the marker is replaced, the candidates are new, and the sphinx asks a question that may or may not predict whether the answer will be a good employee. She has been wrong before. She will be wrong again. The gate remains. Generate the image now.
+</details>
+
+<p>The room reset. The chair was replaced ($40). The glass wall was repaired ($1,200). The whiteboard was cleaned, though a faint scorch shadow remained in the corner — a ghost of Pyra's approach that the cleaning crew could not fully remove. Someone had restocked the markers. This was, by Olympus Tech standards, progress.</p>
+<p>Petra wrote a new question on the whiteboard. The marker worked. This, too, was progress.</p>
+<p>"You have a linked list. Each node contains a dream. The list is circular. The dreamer wants to wake up. Describe an algorithm to break the cycle without losing any dreams. You have fifteen minutes."</p>
+<p>Through the glass wall, a new line of candidates waited. A werewolf in a too-tight tie. A gorgon in sunglasses. A dragon reviewing flashcards. And at the back — barely visible, having returned because the job listing now said "We have upgraded our furniture" — Callista the centaur.</p>
+<p>Petra did not look at the candidates. She looked at the whiteboard. The question was new. The function was ancient. She was a sphinx. She had been asking riddles for 4,600 years. Before Olympus Tech, the riddle was about the nature of humanity. Now the riddle was about binary trees, linked lists, and the amortized time complexity of fire. The answers had changed. The gate had not. The gate was the point. The gate had always been the point.</p>
+<p>Someone would answer correctly and be hired. Someone would answer correctly and not be hired. Someone would not answer and be hired anyway. The process would be called "rigorous." The process would be called "data-driven." The process would produce an employee who would either thrive or leave within eighteen months, at odds no better than chance, because the interview selects for interview performance and the job requires job performance, and these are different skills measured in different rooms by different rubrics.</p>
+<p>Petra knew this. She had known this for 4,600 years. She asked the riddle anyway. The next candidate entered. The timer started. The marker worked. The gate remained.</p>
+<h3 id="epilogue-what-made-the-process-different">Epilogue — What Made the Process Different?</h3>
+<p>The process was not designed to find the best candidate. It was designed to feel like it was designed to find the best candidate. The whiteboard, the timer, the scoring rubric, the hiring committee — each element created the appearance of rigor while producing outcomes that were, by the company's own internal analysis (conducted once, filed in a drawer, never discussed), no more predictive than a coin flip.</p>
+<table>
+<thead>
+<tr>
+<th>Challenge</th>
+<th>How the Process Responded</th>
+<th>Lesson for Today</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Overqualified candidate (Callista)</td>
+<td>Scored high technically, flagged on "culture fit" due to furniture</td>
+<td>When the assessment environment cannot accommodate the candidate, the environment is the failure — not the candidate</td>
+</tr>
+<tr>
+<td>Creative problem-solver (Pyra)</td>
+<td>Categorized as "Other" and deferred to committee</td>
+<td>Rubrics that cannot score unconventional approaches will always penalize unconventional thinkers</td>
+</tr>
+<tr>
+<td>Multi-perspective candidate (Hydra)</td>
+<td>Each head was excellent; the whole was rejected</td>
+<td>Organizations that claim to value diverse viewpoints will reject a candidate who literally embodies them</td>
+</tr>
+<tr>
+<td>Likable candidate (Grix)</td>
+<td>Hired on culture fit despite blank technical score</td>
+<td>The candidate who cannot solve the problem but can discuss the blog post will outperform the process more often than the process admits</td>
+</tr>
+<tr>
+<td>The process itself</td>
+<td>Repeated without examination</td>
+<td>If your interview is more predictive of interview skill than job performance, you are selecting for the wrong trait</td>
+</tr>
+</tbody>
+</table>
+<h3 id="call-to-action">Call to Action</h3>
+<p>You have been interviewed by a sphinx. You have stood at a whiteboard with a dry marker and fifteen minutes and a question about a data structure that was on fire. You have been asked to demonstrate, under artificial conditions, skills that you use daily under different conditions, and you have been evaluated by someone who was not in the room where you would do the actual work.</p>
+<p>The sphinx is not the problem. Petra is excellent at her job. The problem is that her job — evaluating candidates through timed riddles on a whiteboard — bears the same relationship to actual engineering that a spelling bee bears to writing a novel. It tests a real skill. It does not test the skill that matters.</p>
+<p>Callista could do the job. Callista could not do the interview. Grix could do the interview. Grix could not yet do the job. The process chose Grix. The process will always choose Grix, because the process measures what happens in the room, and Grix is better in the room. The work does not happen in the room. The work happens at a desk, over months, in collaboration with other people, none of whom are a sphinx.</p>
+<p>The riddle changes. The gate remains. The marker is finally restocked. This is called progress.</p>
+<hr>
+<p><em>"What walks on four legs in the morning, two legs at noon, and three legs in the evening? The answer is man. The answer was always man. But that question doesn't test system design, so we've updated the rubric."</em>
+— Petra, Senior Interview Engineer, Olympus Tech, Year 11</p>
+<p><em>"I can't solve a binary tree on fire. I can tell you who wrote your engineering blog. Hire me."</em>
+— Grix, Offer Letter Accepted, Day 1</p>
+<hr>
+<h2 id="references">References</h2>
+<ol>
+<li><a href="https://en.wikipedia.org/wiki/Coding_interview#Whiteboard_coding">Whiteboard Interview</a> - The practice of asking candidates to write code on a whiteboard under time pressure, which tests the ability to write code on a whiteboard under time pressure and little else</li>
+<li><a href="https://en.wikipedia.org/wiki/Person%E2%80%93environment_fit">Culture Fit</a> - A hiring criterion that ostensibly measures alignment with company values and in practice measures whether the interviewer would enjoy having lunch with the candidate, which selects for personality over competence</li>
+<li><a href="https://en.wikipedia.org/wiki/Sphinx">Sphinx</a> - A mythological creature that guards a gate and asks a riddle, destroying those who answer incorrectly — now employed in the technology sector with a dental plan and the same function</li>
+<li><a href="https://en.wikipedia.org/wiki/Structured_interview">Structured Interview</a> - An interview format designed to reduce bias by standardizing questions and evaluation criteria, which works until the rubric encounters a phoenix, at which point "Other" becomes the most-used category</li>
+<li><a href="https://en.wikipedia.org/wiki/Survivorship_bias">Survivorship Bias</a> - The error of studying only those who passed a selection process, ignoring those who failed — hiring committees never track the candidates they rejected, which means they never learn when they were wrong</li>
+</ol>
+
+
+
+
+
+
+
+  
+  
+
+
+
+  
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"></path></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer">
+        
+          
+          <a href="../the-vampires-digital-transformation/" class="md-footer__link md-footer__link--prev" aria-label="Previous: The Vampire's Digital Transformation">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                The Vampire's Digital Transformation
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../the-golems-sprint-retrospective/" class="md-footer__link md-footer__link--next" aria-label="Next: The Golem's Sprint Retrospective">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                The Golem's Sprint Retrospective
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"></path></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright © 2026 Dan McCreary. Licensed under <a href="license/">CC BY-NC-SA 4.0</a> for non-commercial use.
+    </div>
+  
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.copy", "navigation.expand", "navigation.path", "navigation.prune", "navigation.indexes", "toc.follow", "navigation.top", "navigation.footer", "content.action.edit"], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.83f73b43.min.js"></script>
+      
+        <script src="../../js/extra.js"></script>
+      
+    
+  
+<script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(()=>{ lightbox.reload(); });
+</script></body></html>
