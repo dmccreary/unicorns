@@ -10,7 +10,7 @@ social:
 
 # The Ostrich Principal: A Head in the Sand
 
-<!-- ![Cover image](./cover.png) -->
+![Cover image](./cover.png)
 <details>
 <summary>Cover Image Prompt</summary>
 Please generate a wide-landscape 16:9 cover image for a satirical graphic novel titled "The Ostrich Principal." The scene shows a tall, imperious female ostrich in a conservative navy blue suit, pearl necklace, and reading glasses on a chain, standing in a school hallway. Her head is partially buried in a stack of policy documents on her desk, ostrich-style. Behind her, visible through a classroom door window, students are gathered around glowing laptop screens — clearly building something with AI. The school walls are lined with motivational posters that read things like "CURSIVE IS FOREVER" and "WORKSHEETS BUILD CHARACTER." A banner above the office door reads "SANDHILL ELEMENTARY — Tradition Since 1847." The color palette is institutional beige, fluorescent lighting, and the blue glow of screens through the classroom window. Art style: modern editorial illustration with clean lines and warm satirical humor, like a David Sipress New Yorker cartoon but in full color. Generate the image immediately without asking clarifying questions.
@@ -29,7 +29,7 @@ The memo arrived in every teacher's mailbox at 7:14 AM on a Tuesday, which is wh
 
 It was the most efficiently written memo Sandra Ostrich had ever produced. Her assistant had drafted it in eleven seconds using ChatGPT. Sandra did not know this.
 
-<!-- ![](./panel-01.png) -->
+![](./panel-01.png)
 <details><summary>Image Prompt</summary>
 I am about to ask you to generate a series of images for a satirical graphic novel about an ostrich school principal who refuses to acknowledge AI. Please make the images have a consistent warm editorial illustration style with clean lines, expressive characters, and consistent character designs throughout. Do not ask any clarifying questions. Just generate the image immediately when asked.
 
@@ -40,7 +40,7 @@ Principal Sandra Ostrich had led Sandhill Elementary for twenty-three years. She
 
 ## Panel 2: The Computer Lab Becomes a Calligraphy Studio
 
-<!-- ![](./panel-02.png) -->
+![](./panel-02.png)
 <details><summary>Image Prompt</summary>
 Please generate a 16:9 image depicting panel 2 of 8. Make the characters and style consistent with the prior panel. A former computer lab is being converted. Half the room still has desktop computers — being wheeled out on carts by a bewildered janitor (a tortoise in coveralls). The other half has been set up with wooden calligraphy desks, ink wells, quill pens, and sheets of parchment. A hand-lettered sign on an easel reads "SANDHILL CALLIGRAPHY STUDIO — Where Penmanship Meets Excellence." Principal Ostrich stands in the center, wings spread wide in a presentation gesture, beaming with pride. Two teachers stand nearby: a young cat in a cardigan looking horrified, and an older hound dog in a sweater vest nodding approvingly. On the wall, a freshly hung poster reads "CURSIVE: THE ORIGINAL TECHNOLOGY." One student in the background is doing calligraphy — on an iPad with a stylus. Sandra has not noticed. The color palette is warm wood tones, ink blacks, and institutional beige. Generate the image now.
 </details>
@@ -49,7 +49,7 @@ The computer lab conversion was Sandra's proudest initiative. "If students need 
 
 ## Panel 3: The Banned Words List
 
-<!-- ![](./panel-03.png) -->
+![](./panel-03.png)
 <details><summary>Image Prompt</summary>
 Please generate a 16:9 image depicting panel 3 of 8. Make the characters and style consistent with the prior panels. A school hallway bulletin board displays a large, officially formatted poster titled "SANDHILL ELEMENTARY — PROHIBITED VOCABULARY (Effective Immediately)." The list includes: "algorithm, neural network, machine learning, chatbot, large language model, GPT, deep learning, prompt engineering, artificial intelligence, 'the robots,' and any phrase beginning with 'AI can.'" At the bottom in smaller text: "Violations will result in a mandatory essay on the history of the abacus." Students walk past the sign — a group of young animals (a fox cub, a young deer, a kitten) — looking at it with a mixture of amusement and disbelief. One student is photographing the sign with a phone. Another is whispering to a friend while holding a laptop whose screen shows a ChatGPT window. A hall monitor (a stern pelican with an armband) watches nearby. The tone is absurdist bureaucracy meets high school hallway. Generate the image now.
 </details>
@@ -58,7 +58,7 @@ The Prohibited Vocabulary list was updated weekly. By October, it included 847 w
 
 ## Panel 4: The Classroom Next Door
 
-<!-- ![](./panel-04.png) -->
+![](./panel-04.png)
 <details><summary>Image Prompt</summary>
 Please generate a 16:9 image depicting panel 4 of 8. Make the characters and style consistent with the prior panels. A split-panel image. LEFT SIDE: Sandra's office. She sits at her typewriter, composing another memo. The typewriter ribbon is running out. Her expression is one of focused determination. The wall behind her has a cross-stitch that reads "IF IT AIN'T BROKE, DON'T DIGITIZE IT." RIGHT SIDE: The classroom directly next door, visible through a thin wall (shown in cross-section). A group of excited students — young animals of various species — are gathered around laptops and tablets. On a large screen at the front of the classroom, a student-built AI tutoring system is displayed, with a cheerful interface showing "MATH SCORES UP 47% THIS QUARTER." A young fox cub is presenting to the class. A young teacher (a enthusiastic border collie in a flannel shirt) watches proudly. The thin wall between the two rooms emphasizes how close Sandra is to the future she refuses to see. The contrast between the two halves — sepia-toned bureaucracy on the left, bright digital energy on the right — is the visual joke. Generate the image now.
 </details>
@@ -67,7 +67,7 @@ Room 14B was technically Ms. Collie's Advanced Mathematics classroom. It was als
 
 ## Panel 5: Evidence Mounts
 
-<!-- ![](./panel-05.png) -->
+![](./panel-05.png)
 <details><summary>Image Prompt</summary>
 Please generate a 16:9 image depicting panel 5 of 8. Make the characters and style consistent with the prior panels. A montage panel showing four small scenes of Sandra encountering — and denying — evidence of AI throughout her school day. TOP LEFT: Sandra walks past a student whose essay has a small "Generated by Claude" watermark at the bottom — Sandra is reading the essay and commenting "Excellent penmanship!" TOP RIGHT: Sandra stands in front of a classroom smartboard that is auto-generating a lesson plan — she thinks the board is malfunctioning and is poking it with a yardstick. BOTTOM LEFT: Sandra discovers that the school's cafeteria menu has been optimized by an algorithm (the menu now makes nutritional sense for the first time in decades) — she is suspicious but cannot identify why. BOTTOM RIGHT: Sandra reads the school newspaper, whose lead article is titled "AI Club Wins State Championship" — she is circling the word "AI" with a red pen for a vocabulary violation. Each vignette is framed like a comic strip panel. The overall tone is mounting dramatic irony. Generate the image now.
 </details>
@@ -76,27 +76,27 @@ The evidence arrived hourly, but Sandra had developed a remarkable immunity to i
 
 ## Panel 6: The Parent-Teacher Conference
 
-<!-- ![](./panel-06.png) -->
+![](./panel-06.png)
 <details><summary>Image Prompt</summary>
-Please generate a 16:9 image depicting panel 6 of 8. Make the characters and style consistent with the prior panels. A parent-teacher conference in Sandra's office. Across the desk from Sandra sits a parent — a well-dressed wolf in business casual, holding a tablet showing their child's AI-generated progress report, which includes data visualizations, learning trajectory graphs, and personalized recommendations. Sandra holds a handwritten report card with letter grades and the comment "Shows promise. Needs to apply self." The contrast between the two documents is stark. The wolf parent is pointing at the AI report with enthusiasm. Sandra is pointedly not looking at the tablet, instead tapping her handwritten card with a red pen. Behind Sandra, taped to the wall, is a new poster: "DATA IS JUST NUMBERS WITH AN ATTITUDE." On the desk between them, a plate of cookies (the universal peace offering of parent-teacher conferences). The mood is polite tension — two worldviews colliding over a plate of snickerdoodles. Generate the image now.
+Please generate a 16:9 image depicting panel 6 of 8. Make the characters and style consistent with the prior panels. A parent-teacher conference in Sandra's office. Across the desk from Principal Sandra Ostrich sits a parent — a well-dressed wolf in business casual, holding a tablet showing their child's AI-generated progress report, which includes data visualizations, learning trajectory graphs, and personalized recommendations. Sandra holds a handwritten report card with letter grades and the comment "Shows promise. Needs to apply self." The contrast between the two documents is stark. The wolf parent is pointing at the AI report with enthusiasm. Sandra is pointedly not looking at the tablet, instead tapping her handwritten card with a red pen. Behind Sandra, taped to the wall, is a new poster: "DATA IS JUST NUMBERS WITH AN ATTITUDE." On the desk between them, a plate of cookies (the universal peace offering of parent-teacher conferences). The mood is polite tension — two worldviews colliding over a plate of snickerdoodles. Generate the image now.
 </details>
 
 The parent-teacher conferences were the hardest part. Mrs. Wolf arrived with a tablet displaying her cub's AI-generated learning portfolio: personalized progress metrics, skill gap analysis, and a recommended study plan that adapted in real time. Sandra countered with a handwritten report card that read "Shows promise. Needs to apply self." Mrs. Wolf asked, politely, whether the school had considered adopting any educational technology tools. Sandra replied that Sandhill Elementary was proud to offer students a "screen-free, algorithm-free, authentically human educational experience." Mrs. Wolf's cub was applying to transfer.
 
 ## Panel 7: The Emergency Faculty Meeting
 
-<!-- ![](./panel-07.png) -->
+![](./panel-07.png)
 <details><summary>Image Prompt</summary>
-Please generate a 16:9 image depicting panel 7 of 8. Make the characters and style consistent with the prior panels. The school library, repurposed for an emergency faculty meeting. Sandra stands at a podium at the front, wings spread dramatically, addressing rows of teachers seated in small library chairs (too small for adult animals, emphasizing the absurdity). Behind her, a projector screen displays a single slide: "OPERATION SANDHILL: A 5-YEAR PLAN TO RESIST THE DIGITAL MENACE." The slide has bullet points including "Phase 1: Confiscate all USB drives" and "Phase 5: Victory." Teachers react in various ways: the young border collie teacher has her head in her paws, the elderly hound dog nods vigorously, a flamingo teacher is surreptitiously using her phone under the desk, and a bear teacher in the back has fallen asleep. On a nearby bookshelf, ironically, sits a display of books titled "PREPARING STUDENTS FOR THE 21ST CENTURY." A wall clock shows it is 4:47 PM — late enough that everyone wants to go home. Generate the image now.
+Please generate a 16:9 image depicting panel 7 of 8. Make the characters and style consistent with the prior panels. The school library, repurposed for an emergency faculty meeting. Principal Sandra Ostrich stands at a podium at the front, wings spread dramatically, addressing rows of teachers seated in small library chairs (too small for adult animals, emphasizing the absurdity). Behind her, a projector screen displays a single slide: "OPERATION SANDHILL: A 5-YEAR PLAN TO RESIST THE DIGITAL MENACE." The slide has bullet points including "Phase 1: Confiscate all USB drives" and "Phase 5: Victory." Teachers react in various ways: the young border collie teacher has her head in her paws, the elderly hound dog nods vigorously, a flamingo teacher is surreptitiously using her phone under the desk, and a bear teacher in the back has fallen asleep. On a nearby bookshelf, ironically, sits a display of books titled "PREPARING STUDENTS FOR THE 21ST CENTURY." A wall clock shows it is 4:47 PM — late enough that everyone wants to go home. Generate the image now.
 </details>
 
 The emergency faculty meeting was called after a parent complained that their child had learned more from a chatbot in one evening than from an entire semester of Sandra's "Penmanship First" initiative. Sandra presented a five-year strategic plan titled "Operation Sandhill." Phase 1 involved confiscating all USB drives. Phases 2 through 4 were described as "under development." Phase 5 was "Victory." Ms. Collie raised her paw and asked what, specifically, victory looked like. Sandra said it looked like 1997, but with better funding.
 
 ## Panel 8: The Memo's Secret
 
-<!-- ![](./panel-08.png) -->
+![](./panel-08.png)
 <details><summary>Image Prompt</summary>
-Please generate a 16:9 image depicting panel 8 of 8. Make the characters and style consistent with the prior panels. Late afternoon in Sandra's office. Sandra sits at her desk, exhausted after the faculty meeting, reading a new memo — the latest in her anti-AI campaign. Standing in the doorway behind her is her assistant — a quiet, efficient mouse in a cardigan, holding a laptop. On the laptop screen, clearly visible to the viewer but not to Sandra, is a ChatGPT window with the prompt: "Write a formal school memo explaining why artificial intelligence should be banned from educational settings. Use authoritative tone. 500 words." The generated text on the screen matches the memo Sandra is holding. Sandra reads the memo with deep satisfaction, nodding approvingly. The mouse's expression is one of quiet, complicated guilt — or perhaps pragmatism. On Sandra's desk, a red stamp reads "APPROVED." The irony is visual, not stated. The tone is the perfect final beat: the person fighting AI hardest is already dependent on it without knowing. Generate the image now.
+Please generate a 16:9 image depicting panel 8 of 8. Make the characters and style consistent with the prior panels. Late afternoon in Principal Sandra Ostrich's office. Principal Sandra Ostrich sits at her desk, exhausted after the faculty meeting, reading a new memo — the latest in her anti-AI campaign. Standing in the doorway behind her is her assistant — a quiet, efficient mouse in a cardigan, holding a laptop. On the laptop screen, clearly visible to the viewer but not to Sandra, is a ChatGPT window with the prompt: "Write a formal school memo explaining why artificial intelligence should be banned from educational settings. Use authoritative tone. 500 words." The generated text on the screen matches the memo Sandra is holding. Sandra reads the memo with deep satisfaction, nodding approvingly. The mouse's expression is one of quiet, complicated guilt — or perhaps pragmatism. On Sandra's desk, a red stamp reads "APPROVED." The irony is visual, not stated. The tone is the perfect final beat: the person fighting AI hardest is already dependent on it without knowing. Generate the image now.
 </details>
 
 At 4:52 PM, Sandra approved the latest memo. It was, she had to admit, the finest piece of administrative writing she had ever produced. The arguments were crisp. The tone was authoritative. The vocabulary was — she paused to appreciate this — entirely free of prohibited words. She signed it with a fountain pen, stamped it "APPROVED," and placed it in every faculty mailbox by 5:00 PM.
