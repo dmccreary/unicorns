@@ -13,7 +13,10 @@ social:
 <!-- ![Cover image](./cover.png) -->
 <details>
 <summary>Cover Image Prompt</summary>
-Please generate a 16:9 cover image in modern editorial illustration style depicting a fairy godmother sitting at a cluttered wooden desk in a cozy medieval cottage. She is an older woman with silver hair swept up in a bun, reading glasses, a sparkly blue cardigan, and translucent wings folded behind her. In front of her is an open laptop showing a chat interface. The screen glows in the dim room. On the desk are scattered handwritten notes, sticky notes reading things like "make it blue BUT not THAT blue" and "comfortable glass??" and empty mugs. Behind her, through an arched window, a carriage waits — it is visibly still a pumpkin with wheels attached. Cinderella stands in the background in what appears to be a hospital-blue gown, looking uncertain. The tone is exhausted determination, late-night deadline energy. Color palette: warm amber cottage light, cool laptop glow, dusty rose and silver accents. Generate the image immediately without asking clarifying questions.
+Please generate a 16:9 cover image in modern editorial illustration style depicting a fairy godmother sitting at a cluttered wooden desk in a cozy medieval cottage. 
+The title is "The Fairy Godmother's Prompt Engineering".
+Place the title at the top.
+She is an older woman with silver hair swept up in a bun, reading glasses, a sparkly blue cardigan, and translucent wings folded behind her. In front of her is an open laptop showing a chat interface. The screen glows in the dim room. On the desk are scattered handwritten notes, sticky notes reading things like "make it blue BUT not THAT blue" and "comfortable glass??" and empty mugs. Behind her, through an arched window, a carriage waits — it is visibly still a pumpkin with wheels attached. Cinderella stands in the background in what appears to be a hospital-blue gown, looking uncertain. The tone is exhausted determination, late-night deadline energy. Color palette: warm amber cottage light, cool laptop glow, dusty rose and silver accents. Generate the image immediately without asking clarifying questions.
 </details>
 
 <details>
