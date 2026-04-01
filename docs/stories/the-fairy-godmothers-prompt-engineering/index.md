@@ -10,7 +10,7 @@ social:
 
 # The Fairy Godmother's Prompt Engineering
 
-<!-- ![Cover image](./cover.png) -->
+![Cover image](./cover.png)
 <details>
 <summary>Cover Image Prompt</summary>
 Please generate a 16:9 cover image in modern editorial illustration style depicting a fairy godmother sitting at a cluttered wooden desk in a cozy medieval cottage. 

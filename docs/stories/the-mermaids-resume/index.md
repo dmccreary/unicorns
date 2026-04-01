@@ -10,7 +10,7 @@ social:
 
 # The Mermaid's Resume: Sinking in the AI Job Market
 
-<!-- ![Cover image](./cover.png) -->
+![Cover image](./cover.png)
 <details>
 <summary>Cover Image Prompt</summary>
 Please generate a wide-landscape 16:9 cover image for a satirical graphic novel titled "The Mermaid's Resume." The scene shows a mermaid sitting on a rock at the bottom of the ocean, illuminated by the glow of a waterproof laptop balanced on a coral shelf. She has long dark hair that floats upward in the current, iridescent green-blue scales on her tail, and a deeply frustrated expression. Her fingers hover over the keyboard. On the laptop screen, a LinkedIn profile is visible with the headline "Open to Work." Around her, bioluminescent fish drift past like floating notification badges. Scattered on the ocean floor are crumpled resume printouts, ink dissolving into the water. A sign made of driftwood reads "NOW HIRING: 5+ YEARS AI EXPERIENCE REQUIRED." The color palette is deep ocean blues and greens, punctuated by the cold white glow of the laptop screen and warm bioluminescent yellows. Art style: modern editorial illustration with clean lines and rich underwater detail, like a New Yorker cartoon set in the Mariana Trench. The title "THE MERMAID'S RESUME" appears in bold serif font across the top. Generate the image immediately without asking clarifying questions.

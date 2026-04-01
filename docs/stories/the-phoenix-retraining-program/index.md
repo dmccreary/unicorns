@@ -10,7 +10,7 @@ social:
 
 # The Phoenix Retraining Program: Learning to Code at 3,000
 
-<!-- ![Cover image](./cover.png) -->
+![Cover image](./cover.png)
 <details>
 <summary>Cover Image Prompt</summary>
 Please generate a wide-landscape 16:9 cover image for a satirical graphic novel titled "The Phoenix Retraining Program." The scene shows a magnificent phoenix — plumage in brilliant golds, oranges, and deep reds, with long elegant tail feathers — sitting at a small desk in a modern coding bootcamp classroom. The phoenix is hunched over a laptop, talons awkwardly positioned on the keyboard, with a look of deep frustration. The laptop screen shows JavaScript code with red error squiggles everywhere. Small embers drift from the phoenix's feathers, and scorch marks are visible on the desk, the laptop edges, and the ceiling directly above. Around the phoenix, other bootcamp students — a young raccoon, a fox, a rabbit — sit at identical desks, all giving the phoenix nervous sideways glances. On the whiteboard at the front of the room: "WEEK 1: VARIABLES AND TYPES — Please do not set the whiteboard on fire again." A motivational poster on the wall reads "LEARN. CODE. DEPLOY. (Repeat.)" with someone having written "I'VE BEEN REPEATING FOR 3000 YEARS" in red marker beneath it. The color palette is the warm golds and reds of the phoenix against the cold fluorescent blues and grays of a modern tech classroom. Art style: modern editorial illustration with clean lines, warm satirical detail, blending mythological grandeur with WeWork-office mundanity. The title "THE PHOENIX RETRAINING PROGRAM" appears in bold serif font across the top. Generate the image immediately without asking clarifying questions.

@@ -10,7 +10,7 @@ social:
 
 # The Basilisk's Pivot to AI: PetrifyAI
 
-<!-- ![Cover image](./cover.png) -->
+![Cover image](./cover.png)
 <details>
 <summary>Cover Image Prompt</summary>
 Please generate a 16:9 cover image in modern editorial illustration style depicting a sleek startup conference stage. A basilisk — a serpentine creature with a crown-like crest, wearing a slim-cut charcoal blazer and a lanyard that reads "SPEAKER" — stands confidently at a minimalist podium. Behind it, a massive LED screen displays the logo: "PetrifyAI" in clean sans-serif font with a subtle stone-texture gradient. In the foreground, the silhouettes of the audience are visible — some already gray and rigid, frozen mid-applause. Bright stage lights illuminate the basilisk in warm amber tones against a dark auditorium. The color palette is charcoal, slate, amber, and white. The tone is corporate triumphant, with an undercurrent of something deeply wrong. Generate the image immediately without asking clarifying questions.

@@ -10,7 +10,7 @@ social:
 
 # Dragon Layoffs: Your Role Has Been Reimagined
 
-<!-- ![Cover image](./cover.png) -->
+![Cover image](./cover.png)
 <details>
 <summary>Cover Image Prompt</summary>
 Please generate a wide-landscape 16:9 cover image for a satirical graphic novel titled "Dragon Layoffs.
@@ -33,7 +33,7 @@ It was signed "Algorithm ('Algo'), VP, People & Culture."
 
 The villagers had never heard of People & Culture. They had heard of dragons.
 
-<!-- ![](./panel-01.png) -->
+![](./panel-01.png)
 <details><summary>Image Prompt</summary>
 I am about to ask you to generate a series of images for a satirical graphic novel about a dragon conducting corporate layoffs in a medieval village. Please make the images have a consistent style blending medieval fantasy with modern corporate aesthetic — suits over scales, laptops on castle desks, HR language on parchment. Do not ask any clarifying questions. Just generate the image immediately when asked.
 
@@ -44,7 +44,7 @@ The dragon had arrived three weeks earlier, by executive decree. The King — wh
 
 ## Panel 2: The Blacksmith
 
-<!-- ![](./panel-02.png) -->
+![](./panel-02.png)
 <details><summary>Image Prompt</summary>
 Please generate a 16:9 image depicting panel 2 of 8. Make the characters and style consistent with the prior panel. A medieval castle conference room retrofitted as a corporate meeting space. A large round table (repurposed from the Great Hall) has been fitted with a conference phone shaped like a crystal ball. The dragon, Algo, sits on one side — massive, green-scaled, wearing a tailored charcoal suit with an HR lanyard. Algo's expression is one of practiced corporate empathy: concerned eyebrows, slight head tilt, both claws folded on the table. Across from Algo sits the blacksmith — a stocky brown bear in a leather apron, soot on his paws, looking small and confused in a chair designed for courtiers. Between them on the table: a manila folder labeled "BLACKSMITH — ROLE TRANSITION," a box of tissues, and a glass of water. On the wall behind Algo, a PowerPoint-style presentation is projected (via magic crystal) showing a slide titled "YOUR EXCITING NEXT CHAPTER" with a clip-art sunrise. The blacksmith's hammer leans against the wall by the door — he was not sure if he was supposed to bring it. The mood is the specific, terrible intimacy of a layoff meeting. Generate the image now.
 </details>
@@ -59,7 +59,7 @@ Bjorn stared. "You're replacing me with a machine."
 
 ## Panel 3: The Town Crier
 
-<!-- ![](./panel-03.png) -->
+![](./panel-03.png)
 <details><summary>Image Prompt</summary>
 Please generate a 16:9 image depicting panel 3 of 8. Make the characters and style consistent with the prior panels. Same conference room. Now Algo sits across from the town crier — a proud rooster in a feathered cap and official herald's tabard, sitting ramrod straight with dignity. The rooster holds a brass bell in one wing — his tool of the trade. On the table, the manila folder reads "TOWN CRIER — FUNCTION ABSORPTION." Algo has pulled up a new slide on the magic crystal projector: it shows a diagram of a push notification system with arrows pointing to every house in the village, labeled "AUTOMATED COMMUNITY MESSAGING PLATFORM v2.1." The rooster stares at the diagram with the specific horror of someone who has just seen their entire life's purpose reduced to a flowchart. Algo's claw is raised in a reassuring gesture. On the wall, a motivational poster reads "CHANGE IS THE ONLY CONSTANT — Ancient Dragon Proverb." A small detail: the rooster's bell has a crack in it — a visual metaphor he would appreciate if he weren't in shock. Generate the image now.
 </details>
@@ -78,7 +78,7 @@ The town crier arrived at 10:00 AM sharp, because the town crier was never late.
 
 ## Panel 4: The Court Jester
 
-<!-- ![](./panel-04.png) -->
+![](./panel-04.png)
 <details><summary>Image Prompt</summary>
 Please generate a 16:9 image depicting panel 4 of 8. Make the characters and style consistent with the prior panels. Same conference room, but the mood has shifted to something almost absurdist. Algo sits across from the court jester — a red fox in full motley (multicolored diamond-patterned outfit, bells on cap, carrying a marotte/jester's scepter with a tiny fox head on top). The fox's expression is one of bitter, knowing amusement — jesters understand irony better than anyone. On the table, the manila folder reads "COURT JESTER — HUMOR OPTIMIZATION." The magic crystal projector shows a slide titled "AI COMEDY ENGINE: PRELIMINARY RESULTS" with a bar chart comparing "Human Humor" vs "Algorithm Humor" on metrics like "Jokes Per Hour," "Audience Engagement Score," and "Cost Per Laugh." The algorithm wins on every metric except one: "Genuine Sadness Induced." The jester's marotte has fallen over on the table. Algo looks more uncomfortable than in any previous meeting — this one hits different. A detail: the jester's bells are silent. Generate the image now.
 </details>
@@ -103,7 +103,7 @@ Algo checked the spreadsheet. "That metric was not included in the assessment."
 
 ## Panel 5: The Severance Packages
 
-<!-- ![](./panel-05.png) -->
+![](./panel-05.png)
 <details><summary>Image Prompt</summary>
 Please generate a 16:9 image depicting panel 5 of 8. Make the characters and style consistent with the prior panels. The castle's great hall, repurposed as an "Offboarding Center." A long wooden table is set up like a job fair in reverse. Several stations are visible, each staffed by a small goblin in corporate casual (khakis and polo shirts with lanyards). Banners hang from the rafters reading "YOUR NEXT ADVENTURE STARTS HERE" and "WE BELIEVE IN YOUR FUTURE (ELSEWHERE)." Displaced villagers stand in line — the blacksmith, the town crier, the jester, along with others (a seamstress, a lamplighter, a scribe). Each receives a small wooden box containing their "severance package." One villager has opened theirs: it contains a scroll titled "Certificate of Appreciation," a small pouch of coins (visibly insufficient), and a pamphlet reading "RETRAINING OPPORTUNITIES: Learn to Code (Spells)." The jester is reading the pamphlet upside down — on purpose. In the corner, a bard plays a lute softly — the exit music. Algo watches from a balcony above, alone, wings folded. The dragon's expression is one of genuine, heavy sadness. Generate the image now.
 </details>
@@ -114,7 +114,7 @@ The blacksmith opened his box and stared at the Certificate of Appreciation for 
 
 ## Panel 6: The Exit Interviews
 
-<!-- ![](./panel-06.png) -->
+![](./panel-06.png)
 <details><summary>Image Prompt</summary>
 Please generate a 16:9 image depicting panel 6 of 8. Make the characters and style consistent with the prior panels. A small, windowless room in the castle — the kind of room where uncomfortable conversations happen. Algo sits across a tiny desk from the lamplighter — an elderly owl with weathered feathers, wearing a worn cloak and holding a long brass lamp-lighting pole. The owl is not angry. The owl is not confused. The owl is just tired — the expression of someone who has seen enough. On the desk, a form titled "EXIT INTERVIEW — Your Feedback Matters!" with questions like "On a scale of 1-5, how supported did you feel during your role transition?" and "Would you recommend this village as an employer? (Your response will remain anonymous)." The owl has not filled it out. The owl is looking directly at Algo with an expression that asks a question the form does not include. Algo cannot meet the owl's gaze. The dragon's claw rests on the table, inches from the owl's wing, not quite touching — a gesture of sympathy that cannot be completed without violating HR protocol. A single lamp, unlit, leans against the wall. The room is dim. Generate the image now.
 </details>
@@ -129,7 +129,7 @@ It was not on the form.
 
 ## Panel 7: The Empty Village
 
-<!-- ![](./panel-07.png) -->
+![](./panel-07.png)
 <details><summary>Image Prompt</summary>
 Please generate a 16:9 image depicting panel 7 of 8. Make the characters and style consistent with the prior panels. Evening in the village square. The village is eerily quiet. Shops are closed — shuttered windows, dark doorways. The blacksmith's forge is cold, no smoke rising. The town crier's podium stands empty in the square, the brass bell hung but silent. The jester's stage is bare. Automated systems have replaced everything: a robotic arm hammers at the forge (producing identical, soulless horseshoes), a digital notice board flashes push notifications that no one reads, and a small speaker on a pole plays algorithmically generated jokes to an empty courtyard. Efficiency metrics are displayed on screens mounted throughout the village — all numbers are up. Every chart trends green. The village has never been more productive. It has also never been more empty. Algo sits alone on a bench in the center of the square, still in the charcoal suit but with the tie loosened, laptop open on the bench beside showing a dashboard of KPIs — all hitting targets. The dragon stares at the empty forge. The laptop's glow is the brightest light in the village. The mood is deeply melancholy — this is the cost of optimization, and Algo knows it. Generate the image now.
 </details>
@@ -142,7 +142,7 @@ The dragon closed the laptop and sat in the dark, listening to the silence it ha
 
 ## Panel 8: The Quarterly Report
 
-<!-- ![](./panel-08.png) -->
+![](./panel-08.png)
 <details><summary>Image Prompt</summary>
 Please generate a 16:9 image depicting panel 8 of 8. Make the characters and style consistent with the prior panels. The King's throne room, now converted into a modern boardroom. The King (a lion in royal robes over a business suit) sits at the head of a long table, flanked by advisors. Algo stands at the front, presenting the quarterly results on a magic crystal projector. The slide reads "Q3 VILLAGE TRANSFORMATION: RESULTS" with bullet points: "Headcount reduced 73%," "Operating costs down 61%," "Productivity up 340%," "Employee satisfaction: N/A (insufficient remaining employees for statistically valid survey)." The King beams. The advisors nod. But Algo's expression tells a different story — the dragon presents the numbers dutifully but there is no triumph in it. Through the throne room's tall windows, the empty village is visible in the distance — dark, quiet, efficient. On the table in front of Algo, barely visible, sits a small object: Felix the jester's marotte, the tiny fox-head scepter, left behind after his exit interview. Algo has kept it. The dragon does not know why. The final image should feel like a corporate success story that is also, unmistakably, a tragedy. Generate the image now.
 </details>

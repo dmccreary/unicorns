@@ -10,7 +10,7 @@ social:
 
 # The Werewolf's Work-Life Balance
 
-<!-- ![Cover image](./cover.png) -->
+![Cover image](./cover.png)
 <details>
 <summary>Cover Image Prompt</summary>
 The title is "The Werewolf's Work-Life Balance" in light text at the top.

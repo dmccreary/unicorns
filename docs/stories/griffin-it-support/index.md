@@ -10,7 +10,7 @@ social:
 
 # Griffin IT Support: Have You Tried Turning Off the Trebuchet
 
-<!-- ![Cover image](./cover.png) -->
+![Cover image](./cover.png)
 <details>
 <summary>Cover Image Prompt</summary>
 Please generate a wide-landscape 16:9 cover image for a satirical graphic novel titled "Griffin IT Support." 
