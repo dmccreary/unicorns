@@ -25,7 +25,7 @@ This is a rigorous, evidence-adjacent exploration of mythical creatures and the 
 
 - **19 Chapters** across 5 units — from the history of unicorns to the bestiary of vaporware
 - **Interactive MicroSims** — browser-based simulations including population dynamics, hype cycle visualizations, and a vaporware field guide
-- **12 Graphic Novels** — mythical beasts navigating workplace situations that will feel painfully familiar
+- **19 Graphic Novels** — mythical beasts navigating workplace situations that will feel painfully familiar (some are in progress)
 - **Quizzes** — where the wrong answers are sometimes more accurate than the right ones
 - **A Glossary** — defining terms you never knew you needed, with dictionary precision and zero detectable irony
 - **A Learning Graph** — visualizing 140+ concept dependencies across the course, because even nonsense has structure

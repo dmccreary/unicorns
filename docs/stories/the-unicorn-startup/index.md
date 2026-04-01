@@ -29,7 +29,7 @@ It was, by all accounts, an impressive entrance. The horn caught the afternoon l
 
 "My name is Celeste," the unicorn said. "And I'm here to talk about magic."
 
-<!-- ![](./panel-01.png) -->
+![](./panel-01.png)
 <details><summary>Image Prompt</summary>
 I am about to ask you to generate a series of images for a satirical graphic novel about a unicorn startup in Silicon Valley. Please make the images have a consistent clean, bright modern editorial illustration style with the visual language of tech culture. Do not ask any clarifying questions. Just generate the image immediately when asked.
 
@@ -40,7 +40,7 @@ The pitch deck was twelve slides. The first said "MAGIC" in 200-point Helvetica.
 
 ## Panel 2: The Product Demo
 
-<!-- ![](./panel-02.png) -->
+![](./panel-02.png)
 <details><summary>Image Prompt</summary>
 Please generate a 16:9 image depicting panel 2 of 8. Make the characters and style consistent with the prior panel. The same boardroom. Celeste the unicorn stands in the center of the room, horn glowing faintly with iridescent light. A small, undeniably beautiful rainbow arcs from the horn to the conference table, where it illuminates the term sheet with prismatic light. Tiny sparkles float in the air. The three VCs react: the shark has removed his glasses and is staring with genuine wonder, the wolf is recording on an iPhone, and the hawk is furiously typing into a laptop (presumably updating the deal memo). On the projected screen behind Celeste, the pitch deck slide reads: "PRODUCT DEMO — WHAT YOU ARE SEEING IS REAL (results may vary at scale)." A small asterisk at the bottom of the slide reads "* Magic has not been independently verified by third-party auditors." None of the VCs are looking at the asterisk. The mood is reverence — the specific reverence that venture capitalists reserve for things they do not understand but want to own. Generate the image now.
 </details>
@@ -59,7 +59,7 @@ The wolf recorded it on his iPhone. The hawk updated the deal memo. The shark re
 
 ## Panel 3: The Term Sheet
 
-<!-- ![](./panel-03.png) -->
+![](./panel-03.png)
 <details><summary>Image Prompt</summary>
 Please generate a 16:9 image depicting panel 3 of 8. Make the characters and style consistent with the prior panels. A celebration scene in the VC office. The three partners stand around Celeste, shaking her hoof enthusiastically. The shark holds a champagne bottle. Confetti falls from somewhere (there is no visible confetti source — it may be magic). On the glass table, a term sheet is spread out with visible key terms: "Series A: $47 Million," "Pre-money Valuation: $800 Million," "Board Seat: Yes (chair must accommodate horn)." The wolf is already on his phone, talking to someone, saying (in a speech bubble) "We just funded an actual unicorn. No, literally." The hawk takes a selfie with Celeste for LinkedIn. On the wall screen, a headline from TechCrunch has appeared: "BREAKING: Sequoia Leads $47M Series A in Magic Startup Founded by Actual Unicorn." Below the headline, the comments section is already arguing about whether magic is a platform or a feature. A small detail: Celeste's hooves leave faint glitter prints on the glass floor. The mood is peak Silicon Valley euphoria. Generate the image now.
 </details>
@@ -70,7 +70,7 @@ The post received 14,000 likes. Seven hundred people commented "following for up
 
 ## Panel 4: The Hiring Spree
 
-<!-- ![](./panel-04.png) -->
+![](./panel-04.png)
 <details><summary>Image Prompt</summary>
 Please generate a 16:9 image depicting panel 4 of 8. Make the characters and style consistent with the prior panels. MagiCorp's new headquarters — a converted warehouse in San Francisco's SoMa district, now a gleaming open-plan office. The space is the platonic ideal of a tech startup: exposed brick, reclaimed wood tables, standing desks, a rock climbing wall, nap pods, a cold brew station, and a ball pit labeled "Innovation Zone." Hundreds of animal employees fill the space — foxes, rabbits, badgers, owls — all in startup casual (hoodies, sneakers, laptop stickers). Signs on the walls read "MOVE FAST AND MAKE MAGIC" and "WHAT WOULD CELESTE DO?" and "SCALE ENCHANTMENT." Celeste stands in the center on a small stage, addressing the team. A banner behind her reads "WELCOME, EMPLOYEE #2,000!" A massive screen shows the company org chart — it is incomprehensible, a web of dotted lines and matrix reporting structures. One section of the office is labeled "RAINBOW INFRASTRUCTURE" and contains servers wrapped in fairy lights. Another section is labeled "ENCHANTMENT OPS." An employee at a desk has a monitor showing nothing but a loading spinner and the text "Magic: Initializing..." The mood is optimistic chaos — the specific energy of a startup that has raised too much money and hired too fast. Generate the image now.
 </details>
@@ -81,7 +81,7 @@ The burn rate was $33 million per month. Celeste was told this number at a board
 
 ## Panel 5: The Pivot
 
-<!-- ![](./panel-05.png) -->
+![](./panel-05.png)
 <details><summary>Image Prompt</summary>
 Please generate a 16:9 image depicting panel 5 of 8. Make the characters and style consistent with the prior panels. A tense board meeting in MagiCorp's glass-walled conference room. Celeste stands at a whiteboard that tells the entire story in dry-erase marker. The whiteboard is divided into three columns: "ORIGINAL PRODUCT: Consumer Magic (crossed out)," "PIVOT 1: Enterprise Magic (crossed out)," and "PIVOT 2: Magic-as-a-Service (MaaS)" with a circle around it and an arrow pointing to a hastily drawn dollar sign. The board members sit at the table — the shark, wolf, and hawk from earlier, plus two new additions: a vulture in a pinstripe suit (representing later-stage investors) and a chameleon who keeps changing color (representing the advisory board). The shark's expression has shifted from reverence to concern. The wolf is checking Celeste's burn rate on a tablet and wincing. The hawk is drafting a press release titled "MagiCorp Announces Exciting Strategic Pivot." The vulture circles — metaphorically and, given the seating arrangement, almost literally. On the table: the remains of catered lunch and a copy of a Forbes article titled "Is Magic the Next Big Platform?" with a question mark circled in red. Celeste's expression is still optimistic — the unicorn still believes. The horn still glows faintly. But the rainbow is smaller than before. Generate the image now.
 </details>
@@ -92,7 +92,7 @@ The second pivot happened at month fourteen. Magic-as-a-Service (MaaS). The term
 
 ## Panel 6: The IPO
 
-<!-- ![](./panel-06.png) -->
+![](./panel-06.png)
 <details><summary>Image Prompt</summary>
 Please generate a 16:9 image depicting panel 6 of 8. Make the characters and style consistent with the prior panels. The New York Stock Exchange trading floor. A massive banner hangs from the balcony reading "MAGICORP — NYSE: MAGI" with the company's horn logo. Celeste stands at the iconic NYSE podium, hoof poised above the opening bell button. The unicorn wears a more formal version of the Patagonia vest — it now has the company logo embroidered in gold thread. Confetti cannons are loaded. The trading floor is packed with cheering traders (various animals in suits). On the massive digital ticker screens above: "MAGI — IPO PRICE: $48 — OPENING TRADE: $127 (+165%)" The shark VC stands nearby, grinning enormously, now wearing a hat that says "MAGI" on it. Cameras flash. In the crowd, a financial analyst — a skeptical-looking owl with round glasses — holds a sign reading "REVENUE: $0 — VALUATION: $12B — SEEMS FINE." Nobody looks at the owl. On the floor, glitter from Celeste's hooves has mixed with the traditional confetti. The mood is pure, concentrated financial euphoria — the specific joy of money being made from belief alone. Generate the image now.
 </details>
@@ -105,7 +105,7 @@ No one read the S-1. Everyone read the stock price.
 
 ## Panel 7: The Analyst Call
 
-<!-- ![](./panel-07.png) -->
+![](./panel-07.png)
 <details><summary>Image Prompt</summary>
 Please generate a 16:9 image depicting panel 7 of 8. Make the characters and style consistent with the prior panels. MagiCorp's first quarterly earnings call — set in a sleek studio-style room. Celeste sits at a desk with a microphone and the company logo behind her on a screen. A CFO (a methodical tortoise in a three-piece suit) sits beside her with a laptop open to a spreadsheet that is visibly, alarmingly empty — the revenue cells all read "$0.00." On the phone line (visualized as speech bubbles coming from a conference phone on the desk), analysts ask questions: "Can you speak to your path to profitability?" and "When do you expect magic to generate recurring revenue?" Celeste responds into the microphone with serene confidence. The tortoise CFO sweats visibly. On a monitor to the side, the stock price ticker shows MAGI ticking upward DURING the call despite the content of the call. A chyron at the bottom of the monitor reads "MAGICORP CEO: 'Revenue is a mindset, not a metric' — STOCK UP 8%." The absurdity is that everything Celeste says increases the stock price. Belief is self-reinforcing. The mood is surreal financial theater. Generate the image now.
 </details>
@@ -118,7 +118,7 @@ The stock rose 8% during the call. Gerald stared at his spreadsheet. The spreads
 
 ## Panel 8: The Headline
 
-<!-- ![](./panel-08.png) -->
+![](./panel-08.png)
 <details><summary>Image Prompt</summary>
 Please generate a 16:9 image depicting panel 8 of 8. Make the characters and style consistent with the prior panels. A simple, powerful final image. A newsstand — the physical kind, with papers and magazines displayed in rows. The camera focuses on the front page of a major financial newspaper. The headline, in large bold type, reads: "UNICORN STOCK SOARS ON PROMISE OF FUTURE MAGIC." Below the headline, a photo of Celeste ringing the NYSE bell, horn catching the light. Below the fold, in smaller text, additional headlines visible: "Analysts Upgrade MAGI to 'Strong Buy' on 'Vibes'" and "MagiCorp CFO Resigns, Cites 'Philosophical Differences with Reality.'" On the newsstand shelf below, the covers of tech magazines are visible: one reads "CELESTE: FOUNDER OF THE YEAR" with the unicorn on the cover; another shows "THE MAGIC ECONOMY: IS WONDER THE NEW OIL?" In front of the newsstand, on the wet sidewalk, a single glitter hoofprint catches the morning light. The mood is ambiguous — is this triumph or tragedy? Is this satire or just... Tuesday in Silicon Valley? The image should feel like it could be published today without anyone realizing it's a joke. Generate the image now.
 </details>
