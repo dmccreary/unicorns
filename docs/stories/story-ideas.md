@@ -150,11 +150,11 @@ A kraken becomes a social media influencer promoting AI tools from the bottom of
 
 ## The Siren's Customer Service Line
 
-**Allegory:** Automated customer service that lures you in and destroys you
+**Allegory:** Automated customer service avatar chatbot that lures you in and destroys you
 
-**Chapter tie-in:** Chapter 10 — The Siren Song of Automation
+**Chapter tie-in:** Chapter 10 — The Siren Song of Chatbot Customer Service Automation
 
-A shipping company replaces its customer service department with sirens — mythical creatures whose beautiful voices lure sailors to their doom. The parallel to automated phone systems is immediate and intentional. A customer calls to report a missing package. The siren's voice is enchanting: "Your call is important to us. You are currently caller number... forty-seven." Over six pages, the customer navigates an IVR menu designed by sirens: every option sounds beautiful but leads to rocks. "Press 1 to be enchanted. Press 2 to be enchanted differently. Press 3 to speak to a representative" — but pressing 3 loops back to the beginning. The customer never reaches a human. The siren never intended them to. The final page: a customer satisfaction survey arrives. It has one question: "How would you rate your experience being lured to your doom? (1-5 stars)"
+A shipping company replaces its customer service department with siren "avatars" chatbot — mythical creatures whose beautiful voices lure sailors to their doom. The parallel to automated phone systems is immediate and intentional. A customer starts a chat on their computer to report a missing package. The siren's voice and face is enchanting: "Your chat is important to us. You are currently chat number... forty-seven." Over six pages, the customer talks to the avatar chatbot designed by sirens: every option sounds beautiful but leads to rocks. "How can we help you?" the enchanted siren avatar asks.  "I hope that helped. Do you have any other questions?" — but every chat loops back to the beginning. The customer never reaches a human. The siren avatar chatbot never intended them to. The final page: a customer satisfaction survey arrives. It has one question: "How would you rate your experience being lured by our siren chatbot avatar to your doom? (1-5 stars)"
 
 **Tone:** The specific, grinding frustration of automated customer service, elevated to myth.
 
