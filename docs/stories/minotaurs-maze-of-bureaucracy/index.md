@@ -27,7 +27,7 @@ The contract had seemed straightforward. "Implement an AI-powered document proce
 
 Theseus was a minotaur — seven feet tall, broad-shouldered, with a bull's head, curved horns, and the build of someone who had spent centuries navigating labyrinths. He had been hired specifically for this quality. "We need someone who can find their way through complex organizational structures," the recruiter had said. "Someone with labyrinth experience." Theseus had assumed this was a metaphor. It was not.
 
-<!-- ![](./panel-01.png) -->
+![](./panel-01.png)
 <details><summary>Image Prompt</summary>
 I am about to ask you to generate a series of images for a satirical graphic novel about a minotaur navigating enterprise bureaucracy rendered as a horror labyrinth. Please make the images have a consistent style blending corporate office aesthetics with horror-labyrinth atmosphere — fluorescent lighting, filing cabinet walls, long ominous corridors, clean lines, and expressive characters. Consistent character designs throughout. Do not ask any clarifying questions. Just generate the image immediately when asked.
 
@@ -40,7 +40,7 @@ Theseus filled out Form 1-A. He submitted it to the receptionist, a sheep named 
 
 ## Panel 2: Form 27-B
 
-<!-- ![](./panel-02.png) -->
+![](./panel-02.png)
 <details><summary>Image Prompt</summary>
 Please generate a 16:9 image depicting panel 2 of 8. Make the characters and style consistent with the prior panel. Theseus sits at a small desk in a windowless room deep in the filing-cabinet maze. The room is a bureaucratic dead end — three walls of stacked forms and one door. The desk is buried under paperwork. Theseus holds a single form — Form 27-B — which is enormous: an unfolded document at least three feet wide and two feet tall, covered in tiny print, checkboxes, signature lines, and footnotes. The form's header reads "TECHNOLOGY PROCUREMENT AUTHORIZATION — Form 27-B (Rev. 14.3.7)." Theseus reads it with his magnifying glass — a comically small tool for a seven-foot minotaur. Visible sections include: "Section 4: Describe, in 500 words or fewer, why the requested technology cannot be replaced by an existing spreadsheet," "Section 7: Attach letters of support from three departments that will not use the technology," and "Section 12: Certify that the undersigned has read and understood Appendix Q (Appendix Q is not included — request separately via Form 27-B-Q)." Post-it notes on the wall track his progress: "Form 1-A: SUBMITTED ✓," "Form 7-C: PENDING," "Form 12-F: LOST (resubmitted)," "Form 27-B: IN PROGRESS." A calendar on the wall shows three months have passed since Panel 1. A half-eaten sandwich sits on a filing cabinet. The color palette is fluorescent white, manila tan, and the fading energy of a person who has been filling out forms for twelve weeks. Generate the image now.
 </details>
@@ -53,7 +53,7 @@ Section 7 required letters of support from three departments that would not use 
 
 ## Panel 3: The Security Review
 
-<!-- ![](./panel-03.png) -->
+![](./panel-03.png)
 <details><summary>Image Prompt</summary>
 Please generate a 16:9 image depicting panel 3 of 8. Make the characters and style consistent with the prior panels. A dark, imposing corridor in the maze — the security review section. The filing cabinet walls here are reinforced with chains and padlocks. Red warning lights line the ceiling. The corridor is guarded by a pangolin in a black tactical vest and mirrored sunglasses, sitting behind a desk with a stamp that reads "DENIED." Behind the pangolin, a massive vault-style door is labeled "SECURITY REVIEW — Authorized Personnel Only (Authorization requires Security Review)." Theseus stands before the desk, holding a thick binder — his completed security questionnaire. The binder is labeled "SECURITY ASSESSMENT QUESTIONNAIRE — 847 Questions." The pangolin examines a single page with a magnifying glass, expression unreadable behind the sunglasses. On the wall: a chart titled "THREAT ASSESSMENT MATRIX" with two axes — "Likelihood" and "Impact" — every single item plotted in the extreme corner of "HIGH/HIGH" regardless of what it is. Items visible include "AI system (proposed)," "break room microwave," and "Janet's desktop fan." A sign on the desk reads "DAYS SINCE LAST APPROVAL: 1,247." The color palette is security-dark: deep grays, red warning lights, the cold gleam of chains, and the fluorescent white of the questionnaire pages. The mood is bureaucratic security theater performed with deadly seriousness. Generate the image now.
 </details>
@@ -66,7 +66,7 @@ The security review took four months. The finding: "Approved with conditions." T
 
 ## Panel 4: The Compliance Audit
 
-<!-- ![](./panel-04.png) -->
+![](./panel-04.png)
 <details><summary>Image Prompt</summary>
 Please generate a 16:9 image depicting panel 4 of 8. Make the characters and style consistent with the prior panels. A vast, cathedral-like room deep in the maze — the Compliance Department. The ceiling is impossibly high, lost in shadow. The walls are lined floor-to-ceiling with binders — thousands of them, identical dark blue binders with white labels, stretching into the distance like the stacks of an infinite library. At a raised desk — almost a judge's bench — sits the Chief Compliance Officer, an ancient tortoise wearing a powdered wig (like a British judge) and half-moon spectacles, peering down at Theseus. The tortoise holds a gavel. Before the bench, Theseus stands at a small podium, presenting his case. His briefcase is open on the podium, papers spilling out. Behind Theseus, a gallery of empty chairs — as if this were a trial, but no one came to watch. On the bench: a sign reading "COMPLIANCE TRIBUNAL — Est. 1987, Last Updated: 1987." The tortoise has a name placard: "JUSTICE SHELDON — Chief Compliance Officer." An hourglass on the bench is running — the sand moves imperceptibly slowly. The color palette is library-dark: deep blues of the binders, the warm amber of old wood, the cold white of Theseus's papers, and the dusty gold of the powdered wig. The mood is Kafka meets a law library — ancient authority applied to modern technology with no awareness of the gap. Generate the image now.
 </details>
@@ -81,7 +81,7 @@ Theseus asked if there was a process to update the framework. Sheldon said there
 
 ## Panel 5: The Innovation Governance Board
 
-<!-- ![](./panel-05.png) -->
+![](./panel-05.png)
 <details><summary>Image Prompt</summary>
 Please generate a 16:9 image depicting panel 5 of 8. Make the characters and style consistent with the prior panels. A large, formal boardroom at the deepest navigable point of the maze — the chamber of the Innovation Governance Board. A long, dark mahogany table dominates the room, surrounded by twelve high-backed leather chairs. Nine of the chairs are empty. The three occupied chairs hold: a sleeping owl (head tucked under wing, gavel loosely held), a fox reading a newspaper from six months ago, and a hedgehog knitting a scarf that appears to be several years in progress. At the head of the table, a large chair is labeled "CHAIR — Position Vacant Since 2021." A projector screen at the far wall shows a slide that reads "INNOVATION GOVERNANCE BOARD — Q4 2025 Meeting — Agenda Item 1: Approval of Q3 2025 Minutes — Agenda Item 2: Discussion of Whether to Add New Agenda Items — Agenda Item 3: Adjournment." Theseus stands at a podium before the board, mid-presentation, his slides ready on a laptop. His expression is the desperate hope of someone presenting to people who are not listening. The walls display framed certificates: "0 INNOVATIONS APPROVED" in ornate gold frames for each year from 2015 to 2025. The color palette is boardroom-dark: mahogany brown, leather black, the warm gold of the empty-achievement frames, and the cold blue of the projector. The mood is the quietest form of institutional futility. Generate the image now.
 </details>
@@ -98,7 +98,7 @@ The owl woke briefly, asked if there was coffee, and fell back asleep. The fox t
 
 ## Panel 6: The Deprecated Technology
 
-<!-- ![](./panel-06.png) -->
+![](./panel-06.png)
 <details><summary>Image Prompt</summary>
 Please generate a 16:9 image depicting panel 6 of 8. Make the characters and style consistent with the prior panels. A corridor in the maze that serves as a technology graveyard. Along both walls, abandoned technologies are displayed like museum exhibits behind glass cases — each with a small placard. Visible exhibits include: "AI DOCUMENT PROCESSOR v1.0 — Proposed: January 2025 — Deprecated: May 2025 — Approval Status: Under Review," "AI DOCUMENT PROCESSOR v2.0 — Proposed: June 2025 — Deprecated: October 2025 — Approval Status: Pending Compliance Waiver," and "AI DOCUMENT PROCESSOR v3.0 — Proposed: November 2025 — Status: Does Not Exist Yet — Approval Status: Optimistic." Theseus walks down the corridor, examining his own proposals displayed as museum pieces. His suit is more rumpled now, his tie loosened, his visitor badge faded. He holds a new form — "AMENDMENT TO ORIGINAL PROPOSAL TO REFLECT THAT THE ORIGINAL TECHNOLOGY NO LONGER EXISTS (Form 27-B-Revised-Revised)." Behind the glass cases, cobwebs connect the older exhibits. A cleaning robot — one of the few approved technologies, approved in 2003 — bumps uselessly against a wall in the background. The color palette is museum-dim: warm amber spotlights on the exhibits, dusty glass, and the faded gray of Theseus's deteriorating suit. The mood is watching your own work become history while you are still trying to finish it. Generate the image now.
 </details>
@@ -111,7 +111,7 @@ By month fourteen, Theseus was proposing a technology that existed only as a pre
 
 ## Panel 7: The Center of the Maze
 
-<!-- ![](./panel-07.png) -->
+![](./panel-07.png)
 <details><summary>Image Prompt</summary>
 Please generate a 16:9 image depicting panel 7 of 8. Make the characters and style consistent with the prior panels. The center of the maze — a large, circular room, the heart of the labyrinth. The filing cabinet walls open into this space, which is lit by a single, warm overhead light — different from the harsh fluorescents of the corridors. The room is furnished as a makeshift living space. A desk is covered with old forms and a dusty laptop. A cot with a thin blanket sits against one wall. A small hot plate, a kettle, and a few canned goods are arranged on a filing cabinet shelf. And sitting at the desk, back turned to the entrance, is another minotaur — slightly smaller than Theseus, with graying fur around the muzzle, wearing a suit that was once professional but is now threadbare. A faded visitor badge reads "MARCUS — Digital Transformation Consultant — Arrived: March 2019." The walls are covered in handwritten notes, diagrams, and timelines — Marcus's attempts to map the maze. Red string connects pushpins in a conspiracy-board arrangement. A calendar on the wall has every day crossed off through 2025. Marcus turns to face Theseus with an expression that is not surprise — it is recognition. He has been waiting for this. He knew someone else would come. The color palette shifts dramatically: warm amber light in the center, the cold fluorescent maze visible through the entrance behind Theseus. The mood is the horror-movie reveal — the thing at the center of the maze is not a monster. It is a person who came before you and never left. Generate the image now.
 </details>
@@ -134,7 +134,7 @@ Marcus laughed. It was not a bitter laugh. It was the laugh of someone who had p
 
 ## Panel 8: The New Proposal
 
-<!-- ![](./panel-08.png) -->
+![](./panel-08.png)
 <details><summary>Image Prompt</summary>
 Please generate a 16:9 image depicting panel 8 of 8. Make the characters and style consistent with the prior panels. The center of the maze, now with two occupants. Theseus and Marcus sit across from each other at the desk, which is now covered with both their paperwork — Marcus's old cloud migration forms and Theseus's AI proposal documents, side by side. They are working together, but not on their original projects. On a whiteboard between them (propped against the wall), they have drawn a new diagram: "PROPOSAL: SIMPLIFY THE MAZE — Form 1-A (Requesting Permission to Request a Reduction in the Number of Required Forms)." The diagram shows the maze with corridors crossed out, a simplified path drawn in red marker, and a note reading "Step 1: Obtain approval to propose simplification. Step 2: See Step 1." Both minotaurs look at the diagram — Theseus with fading determination, Marcus with the patient acceptance of someone who knows this will also fail but finds value in the attempt. On the wall behind them, Marcus has added a new pushpin to his conspiracy board: "THESEUS — AI Implementation — Arrived Month 16 — Status: Contained." Near the desk, a small stack of canned goods suggests long-term planning. Through the entrance to the center room, the maze corridors stretch outward in every direction — endless, fluorescent, filed. The warm light of the center room holds, but just barely. The color palette balances the warm center (amber, wood, tea steam) against the cold maze (fluorescent, gray, manila). The mood is tragicomic solidarity — two people trapped in the same system, finding something human in the middle of something inhuman. Generate the image now.
 </details>
