@@ -32,7 +32,7 @@ Gideon had taken the job anyway. He was a griffin — half eagle, half lion — 
 
 His first day began with a tour of the infrastructure. It ended with a drink.
 
-<!-- ![](./panel-01.png) -->
+![](./panel-01.png)
 <details><summary>Image Prompt</summary>
 I am about to ask you to generate a series of images for a satirical graphic novel about a griffin IT director trying to modernize a medieval kingdom. Please make the images have a consistent warm medieval editorial illustration style blended with modern IT elements — clean lines, expressive characters, consistent character designs throughout. Think illuminated manuscript meets corporate IT department. Do not ask any clarifying questions. Just generate the image immediately when asked.
 
@@ -43,7 +43,7 @@ The Kingdom of Stonewall had been founded in 1066 and had not updated its infras
 
 ## Panel 2: The Firewall Audit
 
-<!-- ![](./panel-02.png) -->
+![](./panel-02.png)
 <details><summary>Image Prompt</summary>
 Please generate a 16:9 image depicting panel 2 of 8. Make the characters and style consistent with the prior panel. Gideon the griffin stands before the kingdom's "firewall" — a literal stone wall approximately fifteen feet tall that is genuinely, actively on fire. Flames rise from the top where oil has been poured along the battlements. Two guards — a stoic badger and a sleepy hedgehog, both in chainmail — stand at either end of the wall. A wooden sign nailed to the wall reads "KINGDOM FIREWALL — KEEPS THREATS OUT SINCE 1212." Gideon holds a clipboard and a pen, conducting a security audit, his expression flat with professional despair. He has written on the clipboard: "Q1: Does the firewall block unauthorized access? A: No. Q2: Does the firewall block ANYTHING? A: Also no. Q3: Is the firewall on fire? A: Yes." Behind the wall, clearly visible through a gap where the mortar has crumbled, a fox in a dark cloak simply walks through the hole. Neither guard notices. The color palette is firelight orange, stone gray, and the white of Gideon's clipboard. The mood is a routine security audit revealing non-routine catastrophe. Generate the image now.
 </details>
@@ -52,7 +52,7 @@ The firewall was, architecturally, a wall. It had been built in 1212 to repel th
 
 ## Panel 3: The Cloud
 
-<!-- ![](./panel-03.png) -->
+![](./panel-03.png)
 <details><summary>Image Prompt</summary>
 Please generate a 16:9 image depicting panel 3 of 8. Make the characters and style consistent with the prior panels. The kingdom's "server room" — a vaulted stone chamber in the castle basement. In the center of the ceiling, an actual gray rain cloud hovers, dripping a steady stream of water onto the equipment below. The "servers" are wooden shelves holding scrolls, ledger books, and a few crude mechanical devices that vaguely resemble early computing equipment. Water drips onto everything. A bucket collection system has been set up — dozens of wooden buckets catching drips — but they are overflowing. Gideon stands ankle-deep in water, wings held above his head to stay dry, staring up at the cloud with the expression of a person who has just been told that this is the cloud computing solution. A castle servant — a cheerful otter in a tunic — stands nearby wringing out a wet scroll and saying something. A small sign on the wall reads "CLOUD INFRASTRUCTURE — UPTIME: VARIABLE." The color palette is damp stone gray, water blue, and the warm amber of a single torch that is struggling not to go out. Generate the image now.
 </details>
@@ -61,7 +61,7 @@ Please generate a 16:9 image depicting panel 3 of 8. Make the characters and sty
 
 ## Panel 4: The Carrier Pigeon Email System
 
-<!-- ![](./panel-04.png) -->
+![](./panel-04.png)
 <details><summary>Image Prompt</summary>
 Please generate a 16:9 image depicting panel 4 of 8. Make the characters and style consistent with the prior panels. The kingdom's communication center — a large open tower room filled with hundreds of carrier pigeons on wooden perches. The room is chaos. Pigeons fly in every direction. Tiny scrolls are tied to their legs. Several pigeons sit on a perch labeled "INBOX" — most are asleep. A section labeled "SPAM" contains an enormous pile of pigeons, all carrying messages from the same sender. One pigeon wears a tiny hat labeled "PRIORITY" but appears lost. In the center, Gideon examines a pigeon with a magnifying glass while a pigeon-keeper — an elderly owl in spectacles and a leather apron — watches defensively. On a wall chart, the pigeon system's metrics are displayed: "DELIVERY RATE: 34%," "AVERAGE LATENCY: 3-7 DAYS," "DATA LOSS: FREQUENT (foxes)." A pigeon in the corner is eating one of the messages. Gideon is pointing at this pigeon. The owl is shrugging. The color palette is warm wood, white feathers, and the tan of tiny scrolls everywhere. The mood is a legacy system that everyone knows is broken but no one will replace. Generate the image now.
 </details>
@@ -70,7 +70,7 @@ The carrier pigeon email system had a 34% delivery rate, which the pigeon-keeper
 
 ## Panel 5: The Budget Meeting
 
-<!-- ![](./panel-05.png) -->
+![](./panel-05.png)
 <details><summary>Image Prompt</summary>
 Please generate a 16:9 image depicting panel 5 of 8. Make the characters and style consistent with the prior panels. The royal throne room, repurposed for a budget meeting. King Rampart III — a large, imposing ram with magnificent curled horns, wearing a gold crown, purple robes trimmed with ermine, and an expression of regal impatience — sits on his throne at the head of a long oak table. Gideon stands at the opposite end, presenting to the court using a large easel with hand-drawn charts. His presentation slide reads "PROPOSED IT BUDGET: 200 GOLD COINS" with a pie chart. The king holds up a single copper coin between two hooves with a look that says "this is your budget." Around the table: a fox chancellor in rich robes smirking, a tortoise treasurer clutching an abacus protectively, and several courtiers who are openly not paying attention — one is napping, another is feeding a pigeon under the table. On the wall behind the king, two banners hang side by side: "STONEWALL KINGDOM — TRADITION SINCE 1066" and a newer, smaller one reading "ALSO WE HAVE A WEBSITE NOW (hosted by the pigeon-keeper)." The color palette is royal purple, gold, warm torchlight, and the dim resignation of Gideon's posture. The mood is every IT budget presentation ever given. Generate the image now.
 </details>
@@ -79,7 +79,7 @@ The budget meeting lasted eleven minutes, nine of which were spent debating whet
 
 ## Panel 6: The Password Problem
 
-<!-- ![](./panel-06.png) -->
+![](./panel-06.png)
 <details><summary>Image Prompt</summary>
 Please generate a 16:9 image depicting panel 6 of 8. Make the characters and style consistent with the prior panels. A castle gatehouse interior. Gideon stands before the main gate mechanism, which is controlled by a large wooden combination lock — four rotating cylinders with letters carved into them. The current combination, clearly visible, reads "1-2-3-4." A laminated (well, wax-sealed) scroll posted next to the lock reads "DRAWBRIDGE ACCESS CODE — PLEASE DO NOT SHARE" and beneath it, in smaller text, "Code: 1234." A line of castle staff wait to enter: a duck carrying parcels, a rabbit in kitchen attire, a mouse with a mop. Every single one of them already knows the code — the duck is mouthing "one-two-three-four" as it approaches. Gideon holds a proposal document titled "MANDATORY PASSWORD ROTATION POLICY" which he is trying to present to the gate guard — a massive, indifferent bear in plate armor who is reading a tabloid scroll and eating an apple. A small sign above the gate reads "472 DAYS SINCE LAST SECURITY BREACH" but the "472" has been crossed out and replaced with "0" in fresh ink. The color palette is warm stone, iron gray, and the red of Gideon's frustration. Generate the image now.
 </details>
@@ -88,7 +88,7 @@ The drawbridge code was 1234. It had been 1234 since 1066. Gideon knew this beca
 
 ## Panel 7: The Siege
 
-<!-- ![](./panel-07.png) -->
+![](./panel-07.png)
 <details><summary>Image Prompt</summary>
 Please generate a 16:9 image depicting panel 7 of 8. Make the characters and style consistent with the prior panels. The castle under siege — but not a traditional siege. Outside the castle walls, instead of catapults and battering rams, there is a single, small wooden booth with a cheerful awning. Inside the booth sits a chatbot — depicted as a friendly, glowing orb with a simple smiley face, hovering above a small pedestal. A speech bubble from the chatbot reads: "Hello! I'm here to help. Could you please open the gate? The code is 1234, I believe." At the castle gate, the guard bear Gorm is reaching for the drawbridge lever, looking completely convinced. Two other guards — the badger and hedgehog from the firewall — stand nearby nodding agreeably. In the background on the castle battlements, Gideon stands with wings spread in alarm, screaming downward, clearly trying to stop them. His mouth is open, one talon pointing at the chatbot. Behind the chatbot booth, barely visible in the tree line, a massive army waits — siege towers, soldiers, catapults — but the chatbot is handling this alone. The color palette contrasts: warm, friendly glow around the chatbot versus alarmed red around Gideon. The mood is the exact moment social engineering succeeds while the security team watches helplessly. Generate the image now.
 </details>
@@ -101,7 +101,7 @@ Gideon watched from the battlements as the entire army walked through the front 
 
 ## Panel 8: The Resume Update
 
-<!-- ![](./panel-08.png) -->
+![](./panel-08.png)
 <details><summary>Image Prompt</summary>
 Please generate a 16:9 image depicting panel 8 of 8. Make the characters and style consistent with the prior panels. Aftermath. Gideon sits on a broken piece of castle wall in the ruins of the Stonewall Kingdom's courtyard. The castle is not destroyed — it has simply been taken over. New banners reading "UNDER NEW MANAGEMENT — ADVANCEMENT INC." hang from the towers. Workers are already installing modern equipment: fiber optic cables draped over medieval stonework, solar panels on the turrets, a proper server rack being wheeled through the gate. In the background, the chatbot booth is still at the gate, now with a longer queue of castles lined up for "consultation." Gideon sits with his laptop open on his knees, updating his resume. The laptop screen is visible: "LinkedIn — Edit Profile." His expression is not angry or sad — it is the serene calm of someone who knew this would happen, said it would happen, was ignored, and has made peace with it. On the ground beside him: his old ID badge ("STONEWALL IT — GIDEON"), a rejection letter stamped "BUDGET DENIED," and a single copper coin. A pigeon lands on his shoulder, carrying a tiny scroll that reads "Your ticket has been closed: RESOLVED — KINGDOM NO LONGER EXISTS." The color palette is a mix of old warm stone and new cold corporate steel. The mood is quiet, darkly funny acceptance. Generate the image now.
 </details>
