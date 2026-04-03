@@ -101,7 +101,7 @@ The distinction between reskilling and upskilling is critical because they imply
 
 The coding bootcamp myth is the belief that a short, intensive training program can reliably transform a person from any background into an employable software developer. The myth is sustained by marketing, testimonials, and the handful of bootcamp graduates who genuinely launched successful careers — a sample that is, in statistical terms, survivor bias in a graduation cap.
 
-Coding bootcamps emerged in the early 2010s as an alternative to four-year computer science degrees. They promised to teach programming in 12 to 16 weeks, at a cost of \$10,000 to \$20,000, and to place graduates in jobs paying \$70,000 or more. The promise was powerful because it was accessible: anyone could learn to code, the narrative went, regardless of background or prior experience.
+Coding bootcamps emerged in the early 2010s as an alternative to four-year computer science degrees. They promised to teach programming in 12 to 16 weeks, at a cost of $10,000 to $20,000, and to place graduates in jobs paying $70,000 or more. The promise was powerful because it was accessible: anyone could learn to code, the narrative went, regardless of background or prior experience.
 
 The reality is more complex:
 

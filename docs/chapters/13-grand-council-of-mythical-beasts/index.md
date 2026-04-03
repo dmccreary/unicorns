@@ -59,7 +59,7 @@ Character development is the process by which a fictional character is given dep
 
 The delegates of the Grand Council illustrate different approaches to character development:
 
-**The Unicorn** arrived first, because unicorns always arrive first to fundraising events, and the Unicorn could not be sure this was not one. The Unicorn's character is defined by the gap between what it represents (purity, magic, transcendence) and what it has become (a financial metaphor valued at \$4.7 trillion). The Unicorn's internal conflict is the conflict of every symbol that has been co-opted by commerce: it remembers what it meant, and it knows what it means now, and the two are incompatible.
+**The Unicorn** arrived first, because unicorns always arrive first to fundraising events, and the Unicorn could not be sure this was not one. The Unicorn's character is defined by the gap between what it represents (purity, magic, transcendence) and what it has become (a financial metaphor valued at $4.7 trillion). The Unicorn's internal conflict is the conflict of every symbol that has been co-opted by commerce: it remembers what it meant, and it knows what it means now, and the two are incompatible.
 
 **The Dragon** arrived next, still smoking from a recent village. The Dragon's character development across the textbook follows a villain-protagonist arc — it is feared, it is powerful, it is sympathetic upon closer inspection. The Dragon does not choose to destroy. The Dragon is built to optimize, and optimization is indistinguishable from destruction when applied without constraint.
 
@@ -119,7 +119,7 @@ The real or fake exercise is the practice of presenting a mix of true and fabric
 The Grand Council generates an ideal scenario for this exercise, because the beasts' discussion mirrors real-world debates with uncomfortable precision. Consider the following statements — some are from the fictional Council, and some are actual quotes from technology conferences:
 
 1. "Disruption is not a threat. It is an opportunity for reinvention."
-2. "We have been replaced by a subscription service that costs \$49.99 per month."
+2. "We have been replaced by a subscription service that costs $49.99 per month."
 3. "The future belongs to those who embrace change, not those who fear it."
 4. "Our value is not in what we produce. It is in what we represent."
 5. "AI will create more jobs than it destroys. It always has."

@@ -59,7 +59,7 @@ Satirical writing uses humor, irony, and exaggeration to criticize human behavio
 The mechanics of satirical writing include:
 
 - **Exaggeration that reveals:** Inflating a real pattern until its absurdity becomes visible. If a committee meets 14 times without producing recommendations (Chapter 6), satirizing it as meeting 47 times makes the pattern unmistakable
-- **Juxtaposition that contrasts:** Placing two things side by side to expose the gap between them. A startup valued at \$2 billion next to its \$3 million in revenue. A "breakthrough" announcement next to the actual benchmark improvement of 2.3%
+- **Juxtaposition that contrasts:** Placing two things side by side to expose the gap between them. A startup valued at $2 billion next to its $3 million in revenue. A "breakthrough" announcement next to the actual benchmark improvement of 2.3%
 - **Imitation that exposes:** Reproducing the form of something (a pitch deck, a press release, a textbook) to reveal that the form itself is part of the deception
 
 Satirical writing is not merely entertainment. It is an analytical tool that forces the writer — and the reader — to identify what is wrong with a situation by exaggerating it until the wrongness is impossible to ignore.

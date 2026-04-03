@@ -88,7 +88,7 @@ The Ranch was founded in 2021 with a mission to prove that unicorn farming could
 - The Ranch would purchase carbon offsets for any residual emissions
 - A portion of profits would fund unicorn habitat restoration
 
-The Ranch raised \$47 million in Series A funding. Investors were enthusiastic. The press coverage was glowing. The math was catastrophic.
+The Ranch raised $47 million in Series A funding. Investors were enthusiastic. The press coverage was glowing. The math was catastrophic.
 
 The Ranch discovered that:
 

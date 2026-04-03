@@ -37,7 +37,7 @@ This chapter builds on concepts from:
 
 ## The Kraken Surfaces
 
-In October 2021, Facebook — a company used by approximately three billion people to share photographs and argue with relatives — renamed itself Meta Platforms, Inc. The announcement was accompanied by a keynote presentation in which CEO Mark Zuckerberg described a future where people would live, work, and socialize in a persistent, shared virtual world called "the metaverse." The company committed over \$10 billion per year to building this future.
+In October 2021, Facebook — a company used by approximately three billion people to share photographs and argue with relatives — renamed itself Meta Platforms, Inc. The announcement was accompanied by a keynote presentation in which CEO Mark Zuckerberg described a future where people would live, work, and socialize in a persistent, shared virtual world called "the metaverse." The company committed over $10 billion per year to building this future.
 
 The presentation featured Zuckerberg's avatar — a cartoonish, legless figure that bore only a passing resemblance to a human and absolutely no resemblance to a reason to abandon physical reality. The internet responded with mockery. The stock market responded with enthusiasm. Investors saw a vision. Users saw a Wii character from 2006 and wondered if this was a joke.
 
@@ -50,17 +50,17 @@ The metaverse did not begin in 2021. The concept has been recycled in each techn
 - **1992:** Neal Stephenson's novel *Snow Crash* coins the term "metaverse" to describe a persistent virtual world. The novel is a dystopian satire. The technology industry reads it as an instruction manual
 - **1990s:** Virtual Reality (VR) enters its first hype cycle. Companies like VPL Research sell headsets that cost thousands of dollars, produce nausea in minutes, and render graphics that would embarrass a modern smartwatch
 - **2003:** Second Life launches, a virtual world where users create avatars, build environments, and conduct commerce. It attracts millions of users, several corporate offices (IBM builds a virtual campus), and extensive media coverage. Within a few years, the active user base collapses
-- **2012:** Oculus VR is founded, reviving consumer VR with a Kickstarter campaign. Facebook acquires it for \$2 billion in 2014
+- **2012:** Oculus VR is founded, reviving consumer VR with a Kickstarter campaign. Facebook acquires it for $2 billion in 2014
 - **2016:** VR enters its second hype cycle. Headsets from Oculus, HTC, and Sony reach consumers. Adoption is modest. The "killer app" remains gaming
 - **2021:** Meta's rebrand triggers a metaverse investment frenzy. Companies across industries announce metaverse strategies, hire metaverse officers, and issue metaverse press releases
-- **2023-2024:** Reality reasserts itself. Meta's Reality Labs division loses over \$40 billion. Metaverse user numbers are a fraction of projections. The hype cycle enters the trough
+- **2023-2024:** Reality reasserts itself. Meta's Reality Labs division loses over $40 billion. Metaverse user numbers are a fraction of projections. The hype cycle enters the trough
 
 | VR/Metaverse Cycle | Promise | Peak Hype | Trough Trigger |
 |-------------------|---------|-----------|----------------|
 | 1990s VR | "Replace reality" | ~1993 | Hardware limitations, nausea |
 | Second Life | "Virtual economy" | ~2007 | Novelty wore off, low retention |
 | Oculus era | "VR for everyone" | ~2016 | High cost, limited content |
-| Meta's Metaverse | "Live in virtual world" | ~2022 | Legless avatars, \$40B losses |
+| Meta's Metaverse | "Live in virtual world" | ~2022 | Legless avatars, $40B losses |
 
 !!! mascot-thinking "A Critical Observation"
 
@@ -82,7 +82,7 @@ The metaverse's 2021-2024 hype cycle failed for reasons that are instructive bec
 
 **Problem 3: The uncanny valley of social interaction.** Human social interaction depends on facial expressions, eye contact, body language, and physical presence. Avatars cannot reproduce these cues with sufficient fidelity. The result is a social experience that is worse than video calling (which at least shows real faces) and worse than phone calling (which at least doesn't ask you to put on a headset).
 
-**Problem 4: The hardware problem.** VR headsets are heavy, expensive, and cause discomfort during extended use. Until the hardware is as unobtrusive as glasses, widespread adoption for daily use remains impractical. Meta's Vision Pro competitor from Apple, at \$3,500, demonstrated that even excellent hardware does not create a mass market.
+**Problem 4: The hardware problem.** VR headsets are heavy, expensive, and cause discomfort during extended use. Until the hardware is as unobtrusive as glasses, widespread adoption for daily use remains impractical. Meta's Vision Pro competitor from Apple, at $3,500, demonstrated that even excellent hardware does not create a mass market.
 
 **Problem 5: The content problem.** A virtual world is only as compelling as what you can do in it. Gaming provides compelling content because games are designed for virtual interaction. Work meetings, shopping, and socializing are not improved by being virtual — they are made more cumbersome.
 
@@ -158,7 +158,7 @@ The legacy of the metaverse is not the metaverse. It is the specific, narrow app
 
     <img src="../../img/mascot/warning.png" class="mascot-admonition-img">
     One might reasonably conclude that a company which invested
-    over \$40 billion in a virtual world that fewer people visit
+    over $40 billion in a virtual world that fewer people visit
     than a mid-sized public library has discovered the most
     expensive way to confirm that humans prefer physical
     reality. The kraken will surface again. It always does.
@@ -178,7 +178,7 @@ The legacy of the metaverse is not the metaverse. It is the specific, narrow app
 !!! mascot-celebration "Chapter Complete"
 
     <img src="../../img/mascot/celebration.png" class="mascot-admonition-img">
-    You have studied a technology that invested \$40 billion
+    You have studied a technology that invested $40 billion
     to prove that people prefer sitting in the same room.
     The literature suggests this was already known. The kraken
     suggests it was not obvious from the bottom of the ocean.

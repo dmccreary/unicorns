@@ -48,7 +48,7 @@ This chapter builds on concepts from:
 
 ## The Birth of a Metaphor
 
-In 2013, venture capitalist Aileen Lee published an article in which she used the word "unicorn" to describe a privately held startup valued at \$1 billion or more. The term caught on immediately. This was not because it was particularly clever — it was because it was accurate in ways Lee may not have intended. Like the mythical creature from which it borrows its name, the billion-dollar startup is rare, beautiful to look at from a distance, and the subject of deeply unreliable sighting reports.
+In 2013, venture capitalist Aileen Lee published an article in which she used the word "unicorn" to describe a privately held startup valued at $1 billion or more. The term caught on immediately. This was not because it was particularly clever — it was because it was accurate in ways Lee may not have intended. Like the mythical creature from which it borrows its name, the billion-dollar startup is rare, beautiful to look at from a distance, and the subject of deeply unreliable sighting reports.
 
 Before 2013, calling a company a unicorn would have been an insult. It would have meant the company was imaginary. After 2013, it became the highest compliment the technology industry could bestow. This transformation — from "does not exist" to "most desirable thing in the world" — tells you everything you need to know about how Silicon Valley processes information.
 
@@ -85,7 +85,7 @@ Venture capital arrives in stages, each designated by a letter. Series A is the 
 
 Series B funding is the stage at which a startup transitions from "promising idea" to "company that must now justify its existence at scale." The company has usually built a product, acquired some customers, and demonstrated that people will pay for whatever it is selling. What it has not demonstrated, in most cases, is that it can do this profitably.
 
-The typical Series B raises between \$15 million and \$60 million. The valuation attached to this round often determines whether the company enters the conversation for unicorn status. A strong Series B can push a company's valuation past \$500 million, which means it is halfway to the horn.
+The typical Series B raises between $15 million and $60 million. The valuation attached to this round often determines whether the company enters the conversation for unicorn status. A strong Series B can push a company's valuation past $500 million, which means it is halfway to the horn.
 
 The dynamics of Series B create a specific pattern:
 
@@ -111,7 +111,7 @@ Magical thinking is the belief that one's thoughts, wishes, or rituals can influ
 
 The technology industry's relationship with magical thinking is not incidental. It is foundational. Consider the following beliefs that are widely held and rarely examined:
 
-- A company with no revenue can be worth \$1 billion because it *could* have revenue someday
+- A company with no revenue can be worth $1 billion because it *could* have revenue someday
 - A product that does not work yet *will* work because the team is "world-class"
 - A market that does not exist *will* exist because the founder has "vision"
 - A technology that has never been demonstrated at scale *will* scale because the investor deck says so
@@ -119,13 +119,13 @@ The technology industry's relationship with magical thinking is not incidental. 
 
 Each of these beliefs follows the same structure: a current absence is interpreted as a future presence, with no mechanism connecting the two. This is, by any reasonable definition, magical thinking. The unicorn is the perfect mascot for this cognitive pattern, because the unicorn is an animal whose primary characteristic is that people believe in it despite never having seen one.
 
-The difference between a startup engaging in magical thinking and a medieval peasant believing in unicorns is that the peasant did not have access to \$60 million in Series B funding. The structure of the belief is identical. The economic consequences are not.
+The difference between a startup engaging in magical thinking and a medieval peasant believing in unicorns is that the peasant did not have access to $60 million in Series B funding. The structure of the belief is identical. The economic consequences are not.
 
 ## The Billion Dollar Valuation
 
 A billion dollars is a specific number. It represents one thousand million. It is enough to pay the annual salary of 20,000 teachers, or to fund the entire budget of a small nation, or to buy approximately 2.3 billion cups of coffee, depending on where you buy them. It is also, since 2013, the threshold at which a private company earns the right to be called a unicorn.
 
-The billion-dollar valuation is not a measurement of what a company is worth in the way that an appraisal measures what a house is worth. It is a measurement of what investors are willing to pay for a percentage of the company, extrapolated to the whole. If an investor pays \$100 million for 10% of a company, the company is "worth" \$1 billion. This is true in the same way that a painting is "worth" whatever someone paid for it at auction — technically accurate and practically meaningless until someone else agrees.
+The billion-dollar valuation is not a measurement of what a company is worth in the way that an appraisal measures what a house is worth. It is a measurement of what investors are willing to pay for a percentage of the company, extrapolated to the whole. If an investor pays $100 million for 10% of a company, the company is "worth" $1 billion. This is true in the same way that a painting is "worth" whatever someone paid for it at auction — technically accurate and practically meaningless until someone else agrees.
 
 The number of unicorns has grown dramatically:
 
@@ -312,7 +312,7 @@ Consider how the lifecycle of a typical unicorn startup maps to the bestiary:
 
 1. **Founding:** The company is born as a **pegasus** — a genuinely useful idea with wings. It can fly. It is impressive. The founders believe it can reach Olympus.
 
-2. **Series A:** The company encounters **magical thinking**. The product works in a demo. Investors see a horn where there is a prototype. The pegasus becomes a **unicorn** — not because it changed, but because someone valued it at \$1 billion.
+2. **Series A:** The company encounters **magical thinking**. The product works in a demo. Investors see a horn where there is a prototype. The pegasus becomes a **unicorn** — not because it changed, but because someone valued it at $1 billion.
 
 3. **Series B:** The company must now grow at a rate that justifies its valuation. It begins to resemble a **siren** — singing a beautiful song about total addressable market while the ship drifts toward rocks that look suspiciously like unit economics.
 
@@ -363,11 +363,11 @@ Implementation: p5.js with state machine for stages, createButton() controls, an
 
 ## Symbolic Representation and the Power of the Horn
 
-The unicorn's horn — the single feature that distinguishes it from a horse — is perhaps the most efficient symbolic representation in the history of finance. The horn represents the quality that transforms an ordinary thing into an extraordinary one. A horse is useful. A horse with a horn is magical. A company is functional. A company valued at \$1 billion is a unicorn.
+The unicorn's horn — the single feature that distinguishes it from a horse — is perhaps the most efficient symbolic representation in the history of finance. The horn represents the quality that transforms an ordinary thing into an extraordinary one. A horse is useful. A horse with a horn is magical. A company is functional. A company valued at $1 billion is a unicorn.
 
 Symbolic representation works because symbols compress complex ideas into recognizable images. The horn does not need to be explained. It does not need a footnote. Everyone who sees a unicorn understands that the horn is the point. In the startup ecosystem, the horn is the valuation — the single number that transforms a company from ordinary to mythical.
 
-This is why the \$1 billion threshold matters psychologically even though it is economically arbitrary. There is no material difference between a company valued at \$999 million and one valued at \$1.001 billion. But the second company has a horn. It is a unicorn. It appears on lists. Journalists write about it. Other investors want in. The symbolic representation — the horn — creates the reality it supposedly describes.
+This is why the $1 billion threshold matters psychologically even though it is economically arbitrary. There is no material difference between a company valued at $999 million and one valued at $1.001 billion. But the second company has a horn. It is a unicorn. It appears on lists. Journalists write about it. Other investors want in. The symbolic representation — the horn — creates the reality it supposedly describes.
 
 The same mechanism applies to every mythical beast in our bestiary. The dragon's fire, the phoenix's ashes, the siren's song — each is a symbolic representation that compresses a complex real-world phenomenon into a single, memorable image. The fire represents the capacity to destroy existing structures. The ashes represent the claim that destruction was actually transformation. The song represents the beauty of a promise that leads to ruin.
 
@@ -375,11 +375,11 @@ The same mechanism applies to every mythical beast in our bestiary. The dragon's
 
 Allegorical interpretation is not a passive skill. It must be practiced. Consider the following headline, which could appear in any major technology publication:
 
-> "AI Startup Raises \$500M at \$6B Valuation to Build Autonomous Customer Service Platform"
+> "AI Startup Raises $500M at $6B Valuation to Build Autonomous Customer Service Platform"
 
 An allegorically literate reader processes this headline through the bestiary:
 
-- The company is a **unicorn** (valued above \$1 billion with no public information about profitability)
+- The company is a **unicorn** (valued above $1 billion with no public information about profitability)
 - The product is a **siren** ("autonomous" customer service is the promise of "set it and forget it")
 - The funding round is **magical thinking** (\$500 million committed to a vision, not a verified outcome)
 - The valuation is **symbolic representation** (\$6 billion is the horn — it transforms a customer service tool into a mythical creature)
@@ -409,13 +409,13 @@ This reading does not require cynicism. It requires literacy. The allegorical in
 - Every stage of a startup's lifecycle maps to a different mythical beast, and the beast changes as the company's relationship to evidence changes
 
 ??? question "Self-Assessment: Can you identify the unicorn-industrial complex in action? Click to test yourself."
-    A startup with \$3 million in annual revenue is valued at \$2 billion after a Series C round led by a prominent venture capital firm. The founder is profiled in three major publications, all of which use the word "visionary." The company's product works reliably only on the founder's laptop. Employees accept below-market salaries in exchange for stock options that will be valuable "when we IPO." Name every component of the unicorn-industrial complex operating in this scenario. If you identified all six (founder narrative, investor incentives, press coverage, employee buy-in, magical thinking, mythical product-market fit), you are developing unicorn literacy. If you identified only the product problem, you are thinking like an engineer. If you identified none, you may be a venture capitalist.
+    A startup with $3 million in annual revenue is valued at $2 billion after a Series C round led by a prominent venture capital firm. The founder is profiled in three major publications, all of which use the word "visionary." The company's product works reliably only on the founder's laptop. Employees accept below-market salaries in exchange for stock options that will be valuable "when we IPO." Name every component of the unicorn-industrial complex operating in this scenario. If you identified all six (founder narrative, investor incentives, press coverage, employee buy-in, magical thinking, mythical product-market fit), you are developing unicorn literacy. If you identified only the product problem, you are thinking like an engineer. If you identified none, you may be a venture capitalist.
 
 !!! mascot-celebration "Chapter Complete"
 
     <img src="../../img/mascot/celebration.png" class="mascot-admonition-img">
     You have learned that a horse with a horn can be worth
-    \$4.7 trillion if enough people agree not to ask whether the
+    $4.7 trillion if enough people agree not to ask whether the
     horn is real. The literature suggests this is the most
     important lesson in modern economics. Further research is,
     as always, needed.

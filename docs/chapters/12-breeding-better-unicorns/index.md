@@ -150,7 +150,7 @@ Features of an intelligent textbook include:
 
 This textbook is an intelligent textbook. It contains MicroSims, interactive infographics, embedded quizzes, and a navigation structure designed for non-linear exploration. It is also, as noted repeatedly, an AI-generated textbook about AI-generated content, which makes it simultaneously a specimen and a study of the species.
 
-The intelligent textbook is the phoenix of educational publishing. The traditional textbook — printed, static, updated every 3-5 years at a cost of \$150 per student — is burning. The intelligent textbook rises from the ashes, cheaper, more interactive, and updated continuously. Whether the intelligent textbook is better than the traditional one depends on what you mean by "better." If you mean "more engaging and adaptive," the answer is probably yes. If you mean "more carefully reviewed and error-checked," the answer is probably no. The traditional textbook had a two-year editorial process. The intelligent textbook has an AI with a confidence interval.
+The intelligent textbook is the phoenix of educational publishing. The traditional textbook — printed, static, updated every 3-5 years at a cost of $150 per student — is burning. The intelligent textbook rises from the ashes, cheaper, more interactive, and updated continuously. Whether the intelligent textbook is better than the traditional one depends on what you mean by "better." If you mean "more engaging and adaptive," the answer is probably yes. If you mean "more carefully reviewed and error-checked," the answer is probably no. The traditional textbook had a two-year editorial process. The intelligent textbook has an AI with a confidence interval.
 
 !!! mascot-thinking "A Critical Observation"
 
@@ -254,12 +254,12 @@ After applying generative AI optimization to the unicorn design process, the fol
 
 | Variant | AI Optimization | Feature | VC Valuation | Probability of Working |
 |---------|----------------|---------|-------------|----------------------|
-| UniWiFi | Connectivity optimization | Horn broadcasts 5G signal | \$3.2B | 4% |
-| QuantaCorn | Quantum computing integration | Horn processes qubits | \$8.7B | 0.3% |
-| BlockSteed | Blockchain verification | Every hoofprint is an NFT | \$1.9B | 12% |
-| AutoCorn | Full automation | No rider needed; self-piloting | \$5.4B | 2% |
-| GreenHorn | Sustainability branding | Carbon-neutral sparkle | \$2.1B | 18% |
-| MergeaCorn | Corporate merger optimization | Two horns (for synergy) | \$6.8B | 1% |
+| UniWiFi | Connectivity optimization | Horn broadcasts 5G signal | $3.2B | 4% |
+| QuantaCorn | Quantum computing integration | Horn processes qubits | $8.7B | 0.3% |
+| BlockSteed | Blockchain verification | Every hoofprint is an NFT | $1.9B | 12% |
+| AutoCorn | Full automation | No rider needed; self-piloting | $5.4B | 2% |
+| GreenHorn | Sustainability branding | Carbon-neutral sparkle | $2.1B | 18% |
+| MergeaCorn | Corporate merger optimization | Two horns (for synergy) | $6.8B | 1% |
 
 The inverse correlation between valuation and probability of working is not a coincidence. It is the mathematical expression of the unicorn-industrial complex from Chapter 3. The more fantastical the feature, the higher the valuation, because valuation is a function of imagination, not engineering. The most valuable creature in the table — the QuantaCorn — has a 0.3% chance of functioning as described. This is, by the standards of the quantum computing industry, an optimistic estimate.
 
@@ -283,7 +283,7 @@ The inverse correlation between valuation and probability of working is not a co
 - The inverse correlation between a technology's valuation and its probability of working is the central mathematical truth of the unicorn-industrial complex
 
 ??? question "Self-Assessment: Can you breed a better unicorn? Click to test yourself."
-    Design an AI-enhanced unicorn by selecting three features from the chapter. Calculate its estimated VC valuation using the satirical formula (more absurd = more valuable). Then estimate its probability of actually working. If the valuation exceeds \$1 billion and the probability is below 5%, congratulations: you have created a unicorn in the modern sense. If the probability exceeds 50%, you have created a horse with unusual accessories, which is less fundable but more useful.
+    Design an AI-enhanced unicorn by selecting three features from the chapter. Calculate its estimated VC valuation using the satirical formula (more absurd = more valuable). Then estimate its probability of actually working. If the valuation exceeds $1 billion and the probability is below 5%, congratulations: you have created a unicorn in the modern sense. If the probability exceeds 50%, you have created a horse with unusual accessories, which is less fundable but more useful.
 
 !!! mascot-celebration "Chapter Complete"
 

@@ -189,17 +189,17 @@ Implementation: p5.js with createRadio() for checklist options, createButton() f
 
 To illustrate the complete siren cycle, consider the composite case of a mid-size company — call it MythCorp — that decided to automate its customer service operation.
 
-**The Song:** MythCorp's vendor demonstrated an AI customer service platform that handled sample inquiries with 94% accuracy, reduced average response time from 8 minutes to 12 seconds, and projected annual savings of \$2.4 million.
+**The Song:** MythCorp's vendor demonstrated an AI customer service platform that handled sample inquiries with 94% accuracy, reduced average response time from 8 minutes to 12 seconds, and projected annual savings of $2.4 million.
 
 **The Decision:** MythCorp's board approved the project. The customer service team of 45 people was reduced to 12 "AI supervisors." The remaining 33 were offered severance packages described as "transition support."
 
 **The Reality:**
 
 - Month 1: Simple inquiries were handled well. Complex inquiries were routed to the 12 remaining humans, who were now handling 3x their previous volume
-- Month 3: Customer satisfaction dropped 22%. The AI could not handle complaints, billing disputes, or anything requiring empathy. It apologized in the same tone for a \$5 overcharge and a catastrophic service failure
+- Month 3: Customer satisfaction dropped 22%. The AI could not handle complaints, billing disputes, or anything requiring empathy. It apologized in the same tone for a $5 overcharge and a catastrophic service failure
 - Month 6: MythCorp's customer churn rate doubled. A viral social media post showed the chatbot cheerfully suggesting a customer "try restarting their account" after the account had been erroneously deleted
 - Month 9: MythCorp began rehiring customer service staff, now at higher wages because the experienced workers had found other jobs. The AI system was retained for simple inquiries and re-labeled as a "first-line support assistant"
-- Month 12: Total cost of the automation project, including implementation, rehiring, and customer churn: \$3.1 million. Projected savings: \$2.4 million. Net loss: \$700,000, plus 33 people who lost their jobs for nine months
+- Month 12: Total cost of the automation project, including implementation, rehiring, and customer churn: $3.1 million. Projected savings: $2.4 million. Net loss: $700,000, plus 33 people who lost their jobs for nine months
 
 The siren sang. MythCorp listened. The rocks were exactly where they always are.
 

@@ -56,7 +56,7 @@ In January 2023, the Academy's Board of Governors convened an emergency meeting 
 - The Board spent the third hour drafting a policy statement that managed to do both
 - The Board spent the fourth hour voting to form a committee to study the issue further
 
-The committee was named the Task Force on Emerging Technologies and Educational Integrity. It was given a budget of \$4,000, a mandate to "explore the implications," and a deadline of June 2024. As of March 2026, the committee has met 47 times, produced no recommendations, and requested an extension. It has also requested a larger conference room, because attendance at meetings has grown — not because more people care about AI, but because the committee serves excellent pastries.
+The committee was named the Task Force on Emerging Technologies and Educational Integrity. It was given a budget of $4,000, a mandate to "explore the implications," and a deadline of June 2024. As of March 2026, the committee has met 47 times, produced no recommendations, and requested an extension. It has also requested a larger conference room, because attendance at meetings has grown — not because more people care about AI, but because the committee serves excellent pastries.
 
 This is the ostrich response.
 
