@@ -29,7 +29,7 @@ Monos had applied because the job seemed tailored to his strengths. He had one e
 
 What it could not do was see two things at once. This was, Monos had been assured during the interview, not a limitation. It was a feature.
 
-<!-- ![](./panel-01.png) -->
+![](./panel-01.png)
 <details><summary>Image Prompt</summary>
 I am about to ask you to generate a series of images for a satirical graphic novel about a cyclops data analyst and confirmation bias in business analytics. Please make the images have a consistent modern editorial illustration style with clean lines, expressive characters, and consistent character designs throughout — blending modern tech-office aesthetics with business intelligence dashboard visuals. Do not ask any clarifying questions. Just generate the image immediately when asked.
 
@@ -42,7 +42,7 @@ Monos fit perfectly. He did not know this yet.
 
 ## Panel 2: The First Dashboard
 
-<!-- ![](./panel-02.png) -->
+![](./panel-02.png)
 <details><summary>Image Prompt</summary>
 Please generate a 16:9 image depicting panel 2 of 8. Make the characters and style consistent with the prior panel. Monos sits at his desk — a modern standing desk with a curved ultrawide monitor — building his first dashboard. The monitor fills most of the frame, showing a business intelligence dashboard in progress. The dashboard is genuinely impressive: clean layout, professional color scheme (blues and whites), well-labeled axes, properly formatted numbers. It shows Q3 revenue data. The key chart — a line graph in the center — shows revenue trending clearly downward over three months. But Monos's one eye is focused on a different part of the screen: a small widget in the corner showing "Revenue Per Employee" which is trending up (because employees are being laid off, not because revenue is growing). His hand hovers over the mouse, about to drag the "Revenue Per Employee" widget to the center of the dashboard and shrink the overall revenue chart. On his desk: a coffee mug reading "I ♥ PIVOT TABLES," a rubber duck (programmer's debugging companion), and a sticky note from his boss that reads "Fenrir wants GOOD NEWS for the board deck — make the Q3 story sing." Behind Monos, through a glass wall, a meeting is visible: Fenrir the wolf CEO presenting to people in suits, gesturing enthusiastically at a projection screen. The color palette is dashboard blues against office warm tones. The mood is the moment a good analyst makes their first compromise. Generate the image now.
 </details>
@@ -59,7 +59,7 @@ Fenrir loved it. "This is exactly what the data shows," he said. Monos did not c
 
 ## Panel 3: The Art of the Axis
 
-<!-- ![](./panel-03.png) -->
+![](./panel-03.png)
 <details><summary>Image Prompt</summary>
 Please generate a 16:9 image depicting panel 3 of 8. Make the characters and style consistent with the prior panels. A presentation room. Monos stands before a large projection screen, presenting a dashboard to a room of executives — various animals in business attire seated around an oval conference table. On the screen: a bar chart showing "Customer Growth" with bars that appear to be climbing impressively upward. BUT — the y-axis is cropped: it starts at 9,850 instead of 0, making a change from 9,870 to 9,920 (a 0.5% increase) look like dramatic growth. Next to the bar chart, a pie chart shows "Market Sentiment" in three slices: a massive green slice labeled "Positive (87%)," a tiny yellow slice labeled "Neutral (11%)," and an almost invisible red slice labeled "Negative (2%)." A footnote in 6-point font reads "* Positive defined as 'not actively hostile.'" Monos gestures at the dashboard with one hand, his single eye locked on the audience with presenter's confidence. The executives nod approvingly. Fenrir the wolf CEO sits at the head of the table, arms crossed, grinning. One executive — a skeptical-looking cat in a blazer — squints at the y-axis, but says nothing. On the table: printed copies of the dashboard, coffee cups, and a bowl of mints. The color palette is presentation-room blue: projector glow, dark wood, and the confident greens of metrics that have been engineered to look healthy. The mood is analytics theater — a performance that everyone watches and no one questions. Generate the image now.
 </details>
@@ -72,7 +72,7 @@ The cat in the blazer — a VP of Operations named Simone — noticed the y-axis
 
 ## Panel 4: The Metric That Cannot Fail
 
-<!-- ![](./panel-04.png) -->
+![](./panel-04.png)
 <details><summary>Image Prompt</summary>
 Please generate a 16:9 image depicting panel 4 of 8. Make the characters and style consistent with the prior panels. Monos's desk, now surrounded by monitors — five screens arranged in a semicircle, each showing a different dashboard, all green. Monos sits in the center like a pilot in a cockpit, his single eye scanning the screens with practiced efficiency. On the screens, each dashboard shows a different "North Star Metric" — the company has changed its primary KPI five times in five quarters. Screen 1: "Monthly Active Users" (redefined to include bots). Screen 2: "Customer Lifetime Value" (calculated assuming infinite lifetime). Screen 3: "Net Revenue Retention" (excluding churned customers from the denominator). Screen 4: "Adjusted EBITDA" (adjusted by removing all negative numbers). Screen 5: "Vibes Index" (this one is new — a proprietary metric that measures "organizational energy" via Slack emoji usage). Each screen is green. Each metric exceeds its target. On Monos's desk: a framed "Analyst of the Quarter" certificate, a second coffee mug reading "In Data We Trust," and a small trophy shaped like a single eye. Sticky notes on the monitor bezels show Fenrir's requests: "Can we make churn look like intentional portfolio optimization?" and "What if we measured revenue in a different currency?" The color palette is the sickly green of dashboards that have been defined to succeed. The mood is peak analytics theater — beautiful, confident, and completely disconnected from reality. Generate the image now.
 </details>
@@ -89,7 +89,7 @@ Fenrir called the Vibes Index "the most innovative analytics work I've ever seen
 
 ## Panel 5: The Dissenter
 
-<!-- ![](./panel-05.png) -->
+![](./panel-05.png)
 <details><summary>Image Prompt</summary>
 Please generate a 16:9 image depicting panel 5 of 8. Make the characters and style consistent with the prior panels. A tense one-on-one meeting in a small glass-walled office. Monos sits across from Simone — the cat VP of Operations from Panel 3 — who has called the meeting. Simone has her own laptop open, showing a different dashboard: hers is stark, undecorated, with plain black-and-white charts on a white background. No green. No red. Just numbers. Her dashboard shows: "Actual Revenue (Unadjusted): Down 34%," "Cash Runway: 4.7 Months," "Customer Churn (Real): 41%," and "Headcount Reduction YTD: 38%." The numbers are devastating and plainly presented. She turns the laptop toward Monos. Monos's single eye focuses on it — his expression is not defensive but genuinely confused, as if he is seeing data presented without interpretation for the first time and does not know what to do with it. Between them on the desk: a printout of Monos's latest dashboard (all green) next to Simone's dashboard (all gray). The contrast is the visual thesis of the entire story. Through the glass wall behind them, the office is visible: emptier than before, more vacant desks, a "TEAM BUILDING EVENT" poster on a bulletin board that no one has signed up for. The color palette contrasts Monos's warm dashboard greens with Simone's cold, honest grays. The mood is the uncomfortable moment when someone shows you the data without the story — and the data is bad. Generate the image now.
 </details>
@@ -110,7 +110,7 @@ She did not get the chance. She was laid off the following Tuesday. Fenrir cited
 
 ## Panel 6: The Investor Presentation
 
-<!-- ![](./panel-06.png) -->
+![](./panel-06.png)
 <details><summary>Image Prompt</summary>
 Please generate a 16:9 image depicting panel 6 of 8. Make the characters and style consistent with the prior panels. A high-stakes investor presentation in a sleek boardroom at a venture capital firm. Fenrir the wolf CEO stands at the front, presenting to a table of investors — sharp-eyed animals in expensive suits: a hawk, a shark (literally), a silver fox, and a snake, all leaning forward with predatory attention. Behind Fenrir, a massive screen shows Monos's masterpiece dashboard: the "Visionary Metrics Executive Intelligence Suite." It is the most beautiful dashboard ever built — a symphony of data visualization with smoothly animated charts, real-time updating numbers, gradient color schemes transitioning from confident blue to triumphant green, and a central metric labeled "GROWTH MOMENTUM INDEX: 847" with an upward arrow and sparkle effect. Every chart goes up and to the right. Every KPI is green. It is art. On one side of the room, Monos sits in a chair against the wall — not at the table, not presenting, just the technician who built the machine. His single eye watches the investors watching the dashboard. His expression is complex — professional pride in the craftsmanship, and something else underneath. A water pitcher on the table has a small crack that no one has noticed. Through the boardroom window: the actual Visionary Metrics office is visible in a building across the street — and if you look closely, a floor of the building is dark, empty, lights off. The color palette is VC-boardroom luxury: dark wood, leather, the blue-green glow of the dashboard, and the gold of money about to change hands. The mood is the apex — the moment the performance is most convincing, which is also the moment closest to collapse. Generate the image now.
 </details>
@@ -127,7 +127,7 @@ Monos watched from a chair against the wall. His single eye moved from the dashb
 
 ## Panel 7: The Collapse
 
-<!-- ![](./panel-07.png) -->
+![](./panel-07.png)
 <details><summary>Image Prompt</summary>
 Please generate a 16:9 image depicting panel 7 of 8. Make the characters and style consistent with the prior panels. The Visionary Metrics office in collapse. The open-plan space is half-empty — desks cleared, monitors dark, personal items left behind in boxes. The "DATA DRIVEN" neon sign on the lobby wall is partially burnt out, now reading "D_T_ DR_VEN." Monos sits at his desk — the only analyst remaining — surrounded by his five monitors, still showing green dashboards. But the dashboards now display metrics for a company that barely exists: "Active Employees: 12 (down from 200)," still labeled green because 12/12 is 100% capacity. "Office Space Utilization: Optimal" because the remaining employees now have 16x the desk space per person. "Customer Satisfaction: 100%" because the one remaining customer gave a 5-star review. Monos stares at his screens with his one eye — and for the first time, the eye looks not focused but trapped. Locked onto the green. Unable to look away. Unable to see the empty office behind him. On his desk, beside the "Analyst of the Quarter" trophy: a letter from the CFO marked "CONFIDENTIAL — Notice of Insolvency Proceedings." Monos has not opened it. It is not on his dashboard. If it is not on his dashboard, it does not exist. The color palette is dying office: flickering fluorescents, dark empty desks, the cold glow of monitors still running in an empty room. The mood is the moment the dashboard becomes a prison. Generate the image now.
 </details>
@@ -140,7 +140,7 @@ His single eye held the screen. He could not look away. He had never been able t
 
 ## Panel 8: The Final Dashboard
 
-<!-- ![](./panel-08.png) -->
+![](./panel-08.png)
 <details><summary>Image Prompt</summary>
 Please generate a 16:9 image depicting panel 8 of 8. Make the characters and style consistent with the prior panels. An empty office. Completely empty. No employees, no furniture except Monos's desk and monitors, which remain powered on. Monos stands before his screens for the last time, having completed his final dashboard. The dashboard fills the main monitor and it is, genuinely, the most beautiful data visualization ever created. It is titled "VISIONARY METRICS INC. — FINAL STATUS REPORT." The dashboard shows: a large central donut chart labeled "Corporate Lifecycle Completion: 100%" in triumphant gold. A line graph titled "Organizational Transformation" showing the company's journey from "startup" through "growth" to "mature" to a new category Monos has added: "Transcendence." A KPI tile reading "Debt-to-Asset Ratio: ∞" colored green with the annotation "Achieved theoretical maximum — unprecedented." A bar chart titled "Quarter-over-Quarter Growth in Learning Opportunities" (every bar represents a lesson from failure, trending dramatically upward). And at the bottom, a small text widget: "Status: Bankrupt. Interpretation: The company has achieved a state of complete financial liberation, unburdened by the constraints of revenue, obligations, or material existence. This is, technically, a form of growth." Monos looks at it with the quiet pride of an artist who has completed his masterpiece. His single eye reflects the dashboard's green glow. The room is dark except for the screens. On the floor near the exit: his "Analyst of the Quarter" trophy and his employee badge, left behind. The color palette is the glow of monitors in an empty room — dashboard green and blue against total darkness. The mood is the final note of a tragedy told entirely in charts. Generate the image now.
 </details>
