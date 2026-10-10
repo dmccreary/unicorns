@@ -1,7 +1,7 @@
 {
   "title": "Hype Cycle Journey Interactive Timeline",
   "creator": "Dan McCreary",
-  "subject": "High School Geometry",
+  "subject": "Unicorns and Other Mythical Beasts",
   "description": "Interactive MicroSim for hype cycle journey interactive timeline",
   "date": "2026-03-27",
   "educational": {
@@ -9,9 +9,10 @@
       "9",
       "10",
       "11",
-      "12"
+      "12",
+      "Adult"
     ],
-    "subjectArea": "Mathematics",
+    "subjectArea": "Other",
     "topic": "Hype Cycle Journey Interactive Timeline",
     "learningObjectives": [
       "TODO: Add learning objectives"

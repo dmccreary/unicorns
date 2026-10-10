@@ -1,7 +1,7 @@
 {
   "title": "AI Hype Cycle with Mythical Beasts",
   "creator": "Dan McCreary",
-  "subject": "High School Geometry",
+  "subject": "Unicorns and Other Mythical Beasts",
   "description": "Interactive MicroSim for ai hype cycle with mythical beasts",
   "date": "2026-03-27",
   "educational": {
@@ -9,9 +9,10 @@
       "9",
       "10",
       "11",
-      "12"
+      "12",
+      "Adult"
     ],
-    "subjectArea": "Mathematics",
+    "subjectArea": "Other",
     "topic": "AI Hype Cycle with Mythical Beasts",
     "learningObjectives": [
       "TODO: Add learning objectives"

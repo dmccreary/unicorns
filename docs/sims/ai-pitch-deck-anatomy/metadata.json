@@ -1,7 +1,7 @@
 {
   "title": "Anatomy of an AI Pitch Deck",
   "creator": "Dan McCreary",
-  "subject": "High School Geometry",
+  "subject": "Unicorns and Other Mythical Beasts",
   "description": "Interactive MicroSim for anatomy of an ai pitch deck",
   "date": "2026-03-27",
   "educational": {
@@ -9,9 +9,10 @@
       "9",
       "10",
       "11",
-      "12"
+      "12",
+      "Adult"
     ],
-    "subjectArea": "Mathematics",
+    "subjectArea": "Other",
     "topic": "Anatomy of an AI Pitch Deck",
     "learningObjectives": [
       "TODO: Add learning objectives"

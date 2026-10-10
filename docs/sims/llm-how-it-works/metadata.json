@@ -1,7 +1,7 @@
 {
   "title": "How a Large Language Model Works",
   "creator": "Dan McCreary",
-  "subject": "High School Geometry",
+  "subject": "Unicorns and Other Mythical Beasts",
   "description": "Interactive MicroSim for how a large language model works",
   "date": "2026-03-27",
   "educational": {
@@ -9,9 +9,10 @@
       "9",
       "10",
       "11",
-      "12"
+      "12",
+      "Adult"
     ],
-    "subjectArea": "Mathematics",
+    "subjectArea": "Other",
     "topic": "How a Large Language Model Works",
     "learningObjectives": [
       "TODO: Add learning objectives"

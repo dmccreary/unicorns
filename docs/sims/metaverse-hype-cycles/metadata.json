@@ -1,7 +1,7 @@
 {
   "title": "Metaverse Hype Cycle History",
   "creator": "Dan McCreary",
-  "subject": "High School Geometry",
+  "subject": "Unicorns and Other Mythical Beasts",
   "description": "Interactive MicroSim for metaverse hype cycle history",
   "date": "2026-03-27",
   "educational": {
@@ -9,9 +9,10 @@
       "9",
       "10",
       "11",
-      "12"
+      "12",
+      "Adult"
     ],
-    "subjectArea": "Mathematics",
+    "subjectArea": "Other",
     "topic": "Metaverse Hype Cycle History",
     "learningObjectives": [
       "TODO: Add learning objectives"

@@ -1,7 +1,7 @@
 {
   "title": "Unicorn Population Dynamics Simulator",
   "creator": "Dan McCreary",
-  "subject": "High School Geometry",
+  "subject": "Unicorns and Other Mythical Beasts",
   "description": "Interactive MicroSim for unicorn population dynamics simulator",
   "date": "2026-03-27",
   "educational": {
@@ -9,9 +9,10 @@
       "9",
       "10",
       "11",
-      "12"
+      "12",
+      "Adult"
     ],
-    "subjectArea": "Mathematics",
+    "subjectArea": "Other",
     "topic": "Unicorn Population Dynamics Simulator",
     "learningObjectives": [
       "TODO: Add learning objectives"
